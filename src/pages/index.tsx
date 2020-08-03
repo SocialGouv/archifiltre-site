@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Link as GatsbyLink } from 'gatsby'
+import { Link, Link as GatsbyLink } from 'gatsby'
 import { Grid, Button, Theme } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 
@@ -38,6 +38,7 @@ const IndexPage: FC = () => {
           </Grid>
         </div>
       </Hero>
+      <Link to="/blog/my-first-post/">Go to my first Markdown blog post</Link>
     </Layout>
   )
 }

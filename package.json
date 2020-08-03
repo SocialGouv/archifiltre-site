@@ -35,6 +35,8 @@
     "gatsby-plugin-offline": "latest",
     "gatsby-plugin-react-helmet": "latest",
     "gatsby-plugin-typescript": "latest",
+    "gatsby-source-filesystem": "^2.3.23",
+    "gatsby-transformer-remark": "^2.8.27",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "^6.0.0"
