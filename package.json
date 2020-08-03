@@ -31,7 +31,7 @@
     "gatsby": "latest",
     "gatsby-plugin-google-analytics": "latest",
     "gatsby-plugin-manifest": "latest",
-    "gatsby-plugin-material-ui": "^2.1.6",
+    "gatsby-plugin-material-ui": "^2.1.10",
     "gatsby-plugin-offline": "latest",
     "gatsby-plugin-react-helmet": "latest",
     "gatsby-plugin-typescript": "latest",
