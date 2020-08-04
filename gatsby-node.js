@@ -17,8 +17,6 @@ require('ts-node').register({
 
 // Import typescript files below
 
-// exports.createPages = require('./src/gatsby/createPages').createPages
-
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
