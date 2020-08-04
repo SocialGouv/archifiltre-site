@@ -1,21 +1,12 @@
 {
-  "name": "gatsby-material-typescript-starter",
-  "private": true,
-  "description": "A simple starter using Typescript & Material-ui",
-  "version": "0.1.0",
-  "author": "Julien CARON <juliencaron@protonmail.com>",
-  "keywords": [
-    "gatsby",
-    "typescript",
-    "eslint",
-    "prettier",
-    "material-ui"
-  ],
+  "name": "archifiltre-site",
+  "description": "Archifiltre website",
+  "version": "1.0.0",
+  "author": "Archifiltre",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
+    "dev": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "run-p lint:**",
@@ -29,7 +20,6 @@
     "@material-ui/styles": "latest",
     "deepmerge": "^4.2.2",
     "gatsby": "latest",
-    "gatsby-plugin-google-analytics": "latest",
     "gatsby-plugin-manifest": "latest",
     "gatsby-plugin-material-ui": "^2.1.10",
     "gatsby-plugin-offline": "latest",
@@ -62,9 +52,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Junscuzzy/gatsby-material-typescript-starter"
+    "url": "https://github.com/SocialGouv/archifiltre-site"
   },
   "bugs": {
-    "url": "https://github.com/Junscuzzy/gatsby-material-typescript-starter/issues"
+    "url": "https://github.com/SocialGouv/archifiltre-site/issues"
   }
 }
