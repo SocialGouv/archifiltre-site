@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import { Link, Link as GatsbyLink } from 'gatsby'
 import { Grid, Button, Theme } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 
@@ -19,26 +18,35 @@ const IndexPage: FC = () => {
     <Layout>
       <SEO title="Home" />
       <Hero
-        title="Hi people"
-        description="Welcome to your new Gatsby site. Now go build something great with
-          Typescript and Material-ui."
+        title="Archifiltre"
+        description="Vos fichiers et dossiers, comme vous ne les avez jamais vus."
       >
         <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
               <Button
-                component={GatsbyLink}
-                to="/page-2/"
+                target="_blank"
+                href="https://github.com/SocialGouv/archifiltre/releases/download/v3.0.0/archifiltre.exe"
                 variant="contained"
+                size="large"
                 color="primary"
               >
-                Go to page 2
+                Télécharger
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                target="_blank"
+                href="https://github.com/SocialGouv/archifiltre/wiki/Wiki-Archifiltre"
+                size="large"
+                variant="contained"
+              >
+                Documentation
               </Button>
             </Grid>
           </Grid>
         </div>
       </Hero>
-      <Link to="/blog/my-first-post/">Go to my first Markdown blog post</Link>
     </Layout>
   )
 }

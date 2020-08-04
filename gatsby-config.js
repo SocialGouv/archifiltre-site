@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/camelcase */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Typescript blog Starter`,
-    description: `A simple blog starter using Typescript in front & back side with eslint & prettier.`,
+    title: `Archifiltre`,
+    description: `Vos arborescences, comme vous ne les avez jamais vues`,
     author: {
-      name: 'Julien CARON',
-      content: 'I like build some things using Javascript',
+      name: 'Archifiltre',
+      content: 'Fabrique des ministères sociaux',
     },
     social: {
-      github: 'https://github.com/Junscuzzy',
+      github: 'https://github.com/SocialGouv/archifiltre',
     },
   },
   plugins: [
