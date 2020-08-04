@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "latest",
     "deepmerge": "^4.2.2",
     "gatsby": "latest",

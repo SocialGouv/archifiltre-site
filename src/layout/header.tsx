@@ -1,7 +1,10 @@
 import { Link as GatsbyLink } from 'gatsby'
 import React, { FC } from 'react'
-import { AppBar, Toolbar, Typography, Link, Button } from '@material-ui/core'
+import { AppBar, Toolbar, Link, Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
+import Brightness7Icon from '@material-ui/icons/Brightness7'
+import Brightness4Icon from '@material-ui/icons/Brightness4'
+import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles({
   toolbar: {},
@@ -14,29 +17,40 @@ const useStyles = makeStyles({
 })
 
 export interface HeaderProps {
-  siteTitle?: string
   theme: 'light' | 'dark'
   onToggleTheme: () => void
 }
 
-const Header: FC<HeaderProps> = ({ siteTitle = '', onToggleTheme }) => {
+const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
   const classes = useStyles()
 
   return (
-    <AppBar component="header" position="static">
+    <AppBar component="header" position="static" color="default">
       <Toolbar className={classes.toolbar}>
-        <Typography variant="h6" className={classes.title}>
-          <Link
-            to="/"
-            component={GatsbyLink}
-            color="inherit"
-            className={classes.link}
-          >
-            {siteTitle}
-          </Link>
-        </Typography>
+        <Link
+          to="/"
+          component={GatsbyLink}
+          color="inherit"
+          className={classes.link}
+        >
+          <img src="images/logo.png" alt="Logo" width="50" />
+        </Link>
+        <Box flex={1} />
+        <Button color="inherit" component={GatsbyLink} to="/downloads">
+          Téléchargements
+        </Button>
+        <Button color="inherit" component={GatsbyLink} to="/faq">
+          FAQ
+        </Button>
+        <Button color="inherit" component={GatsbyLink} to="/about">
+          A propos
+        </Button>
+        <Button color="inherit" component={GatsbyLink} to="/contact">
+          Contact
+        </Button>
+        <Box flex={1} />
         <Button color="inherit" onClick={onToggleTheme}>
-          Dark mode
+          {theme === 'light' ? <Brightness4Icon /> : <Brightness7Icon />}
         </Button>
       </Toolbar>
     </AppBar>
