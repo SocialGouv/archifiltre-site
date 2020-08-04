@@ -18,6 +18,9 @@ const SecondPage: FC = () => (
       <Link component={GatsbyLink} to="/">
         Go back to the homepage
       </Link>
+      <Link component={GatsbyLink} to="/blog/my-first-post/">
+        Go to my first Markdown blog post
+      </Link>
     </Typography>
   </Layout>
 )

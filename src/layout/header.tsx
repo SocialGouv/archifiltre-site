@@ -36,7 +36,7 @@ const Header: FC<HeaderProps> = ({ siteTitle = '', onToggleTheme }) => {
           </Link>
         </Typography>
         <Button color="inherit" onClick={onToggleTheme}>
-          Toggle Theme
+          Dark mode
         </Button>
       </Toolbar>
     </AppBar>
