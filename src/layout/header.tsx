@@ -45,9 +45,6 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
         <Button color="inherit" component={GatsbyLink} to="/about">
           A propos
         </Button>
-        <Button color="inherit" component={GatsbyLink} to="/test">
-          TEST
-        </Button>
         <Box flex={1} />
         <Button color="inherit" onClick={onToggleTheme}>
           {theme === 'light' ? <Brightness4Icon /> : <Brightness7Icon />}
