@@ -1,4 +1,9 @@
 /* eslint-disable @typescript-eslint/camelcase */
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV || 'dev'}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Archifiltre`,
@@ -15,6 +20,15 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: process.env.MATOMO_APPLICATION_ID,
+        matomoUrl: process.env.MATOMO_URL,
+        siteUrl: process.env.SITE_URL,
+        dev: true,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
