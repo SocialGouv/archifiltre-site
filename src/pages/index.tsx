@@ -5,6 +5,8 @@ import { makeStyles } from '@material-ui/styles'
 import Layout from '../layout'
 import SEO from '../components/seo'
 import Hero from '../components/hero'
+import FlashOnIcon from '@material-ui/icons/FlashOn'
+import Box from '@material-ui/core/Box'
 import { Link as GatsbyLink } from 'gatsby'
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -15,6 +17,35 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingTop: theme.spacing(3),
   },
 }))
+
+const features = [
+  {
+    title: 'Rapide',
+    description:
+      'Archifiltre analyse vos arborescences en un rien de temps.Archifiltre analyse vos arborescences en un rien de temps.Archifiltre analyse vos arborescences en un rien de temps',
+    icon: <FlashOnIcon />,
+  },
+  {
+    title: 'Rapide2',
+    description: 'Archifiltre analyse vos arborescences en un rien de temps',
+    icon: <FlashOnIcon />,
+  },
+  {
+    title: 'Rapide3',
+    description: 'Archifiltre analyse vos arborescences en un rien de temps',
+    icon: <FlashOnIcon />,
+  },
+  {
+    title: 'Rapide4',
+    description: 'Archifiltre analyse vos arborescences en un rien de temps',
+    icon: <FlashOnIcon />,
+  },
+  {
+    title: 'Rapide5',
+    description: 'Archifiltre analyse vos arborescences en un rien de temps',
+    icon: <FlashOnIcon />,
+  },
+]
 
 const IndexPage: FC = () => {
   const classes = useStyles()
@@ -63,6 +94,22 @@ const IndexPage: FC = () => {
           </Grid>
         </div>
       </Hero>
+      <Grid container spacing={2}>
+        <Grid item>text</Grid>
+        <Grid item>image</Grid>
+      </Grid>
+      <Grid container spacing={2}>
+        {features.map(feature => (
+          <Grid item md={4} key={feature.title}>
+            <Box>
+              <Box>
+                {feature.icon}&nbsp;{feature.title}
+              </Box>
+              <Box>{feature.description}</Box>
+            </Box>
+          </Grid>
+        ))}
+      </Grid>
     </Layout>
   )
 }
