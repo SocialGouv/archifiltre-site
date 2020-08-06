@@ -3,7 +3,6 @@ import SEO from '../components/seo'
 import Layout from '../layout'
 import Box from '@material-ui/core/Box'
 import versions from '../versions'
-import GetAppIcon from '@material-ui/icons/GetApp'
 import DownloadLink from '../components/download-link'
 
 const Downloads: FC = () => {
@@ -28,7 +27,7 @@ const Downloads: FC = () => {
         {versions.map(version => (
           <div key={`${version.name}-${version.number}`}>
             <h3>
-              {version.name} {version.number}
+              {version.name} {version.number} - {version.date}
             </h3>
             <Box>
               {version.platforms.map(platform => (
