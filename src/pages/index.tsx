@@ -5,10 +5,14 @@ import { makeStyles } from '@material-ui/styles'
 import Layout from '../layout'
 import SEO from '../components/seo'
 import Hero from '../components/hero'
+import { Link as GatsbyLink } from 'gatsby'
 
 const useStyles = makeStyles((theme: Theme) => ({
   heroButtons: {
     marginTop: theme.spacing(4),
+  },
+  downloadLink: {
+    paddingTop: theme.spacing(3),
   },
 }))
 
@@ -18,7 +22,7 @@ const IndexPage: FC = () => {
     <Layout>
       <SEO title="Home" />
       <Hero
-        title="Archifiltre"
+        title="archifiltre"
         description="Vos fichiers et dossiers, comme vous ne les avez jamais vus."
       >
         <div className={classes.heroButtons}>
@@ -42,6 +46,18 @@ const IndexPage: FC = () => {
                 variant="contained"
               >
                 Documentation
+              </Button>
+            </Grid>
+          </Grid>
+          <Grid container justify="center" className={classes.downloadLink}>
+            <Grid item>
+              <Button
+                color="inherit"
+                component={GatsbyLink}
+                to="/downloads"
+                size="small"
+              >
+                Besoin d&rsquo;une ancienne version ?
               </Button>
             </Grid>
           </Grid>
