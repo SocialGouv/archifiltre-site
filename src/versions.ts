@@ -2,6 +2,7 @@ export default [
   {
     number: '3.0.0',
     name: 'Poetic Papangue',
+    date: '27/07/2020',
     platforms: [
       {
         name: 'Windows 64 bits',
@@ -28,6 +29,7 @@ export default [
   {
     number: '2.1.1',
     name: 'Optimistic Otter',
+    date: '29/05/2020',
     platforms: [
       {
         name: 'Windows 64 bits',
@@ -54,6 +56,7 @@ export default [
   {
     number: '2.1.0',
     name: 'Optimistic Otter',
+    date: '02/03/2020',
     platforms: [
       {
         name: 'Windows 64 bits',
@@ -75,6 +78,7 @@ export default [
   {
     number: '2.0.0',
     name: 'Nosy Narwhal',
+    date: '24/12/2019',
     platforms: [
       {
         name: 'Windows 64 bits',
@@ -96,6 +100,7 @@ export default [
   {
     number: '1.13.1',
     name: 'Magic Moose',
+    date: '15/11/2019',
     platforms: [
       {
         name: 'Windows 64 bits',
@@ -117,6 +122,7 @@ export default [
   {
     number: '1.13.0',
     name: 'Magic Moose',
+    date: '23/10/2019',
     platforms: [
       {
         name: 'Windows 64 bits',
@@ -133,6 +139,7 @@ export default [
   {
     number: '1.12.0',
     name: 'Lucky Llama',
+    date: '09/08/2019',
     platforms: [
       {
         name: 'Windows 64 bits',
@@ -149,6 +156,7 @@ export default [
   {
     number: '1.11.0',
     name: 'Kinky Kookaburra',
+    date: '25/07/2019',
     platforms: [
       {
         name: 'Windows 64 bits',
@@ -165,6 +173,7 @@ export default [
   {
     number: '1.10.0',
     name: 'Jazzy Jellyfish',
+    date: '10/05/2019',
     platforms: [
       {
         name: 'Windows 64 bits',
@@ -181,6 +190,7 @@ export default [
   {
     number: '1.9.0',
     name: 'Irrational Indoraptor',
+    date: '18/10/2018',
     platforms: [
       {
         name: 'Windows 64 bits',
@@ -197,6 +207,7 @@ export default [
   {
     number: '1.8.0',
     name: 'Hipster Hippo',
+    date: '17/07/2018',
     platforms: [
       {
         name: 'Online',
@@ -207,6 +218,7 @@ export default [
   {
     number: '1.7.0',
     name: 'Gentle Gorilla',
+    date: '20/06/2018',
     platforms: [
       {
         name: 'Online',
@@ -217,6 +229,7 @@ export default [
   {
     number: '1.6.0',
     name: 'Frolic Fox',
+    date: '13/06/2018',
     platforms: [
       {
         name: 'Online',
@@ -227,6 +240,7 @@ export default [
   {
     number: '1.5.0',
     name: 'Elegant Elephant',
+    date: '16/05/2018',
     platforms: [
       {
         name: 'Online',
@@ -237,6 +251,7 @@ export default [
   {
     number: '1.4.0',
     name: 'Demanding Dolphin',
+    date: '14/04/2018',
     platforms: [
       {
         name: 'Online',
@@ -247,6 +262,7 @@ export default [
   {
     number: '1.3.0',
     name: 'Cheeky Cheetah',
+    date: '28/03/2018',
     platforms: [
       {
         name: 'Online',
@@ -257,6 +273,7 @@ export default [
   {
     number: '1.2.0',
     name: 'Bonkers Bumblebee',
+    date: '15/03/2018',
     platforms: [
       {
         name: 'Online',
@@ -267,6 +284,7 @@ export default [
   {
     number: '1.1.0',
     name: 'Abstract Antilope',
+    date: '02/03/2018',
     platforms: [
       {
         name: 'Online',
