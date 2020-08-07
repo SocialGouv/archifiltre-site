@@ -5,7 +5,6 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector'
 import TimelineContent from '@material-ui/lab/TimelineContent'
 import TimelineItem from '@material-ui/lab/TimelineItem'
 import { TimelineOppositeContent } from '@material-ui/lab'
-import { Link as GatsbyLink } from 'gatsby'
 import { Typography, Link } from '@material-ui/core'
 
 type TimelineElementProps = {
@@ -40,10 +39,10 @@ const TimelineElement: FC<TimelineElementProps> = ({
       {isConnectorDisplayed && <TimelineConnector />}
     </TimelineSeparator>
     <TimelineContent>
-      <Typography color={isMajor ? 'primary' : ''}>{title}</Typography>
+      <Typography color={isMajor ? 'primary' : 'inherit'}>{title}</Typography>
       {link && (
         <div>
-          <Link component={GatsbyLink} to={link} target="_blank">
+          <Link href={link} target="_blank">
             En savoir plus
           </Link>
         </div>
