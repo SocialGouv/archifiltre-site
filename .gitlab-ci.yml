@@ -38,7 +38,7 @@ Build:
   artifacts:
     expire_in: 1 day
     paths:
-      - out
+      - public
 
 Register image:
   extends: .autodevops_register_image
