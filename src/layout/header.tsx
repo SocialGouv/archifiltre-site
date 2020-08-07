@@ -36,6 +36,9 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
           <img src="images/logo.png" alt="Logo" width="50" />
         </Link>
         <Box flex={1} />
+        <Button color="inherit" component={GatsbyLink} to="/">
+          Accueil
+        </Button>
         <Button color="inherit" component={GatsbyLink} to="/changelog">
           Nouveautés
         </Button>

@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import SEO from '../components/seo'
 import Layout from '../layout'
 import Box from '@material-ui/core/Box'
-import versions from '../versions'
+import versions from '../display-data/versions'
 import DownloadLink from '../components/download-link'
 
 const Downloads: FC = () => {

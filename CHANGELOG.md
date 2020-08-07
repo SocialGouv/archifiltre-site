@@ -6,14 +6,14 @@
 * **about:** fix timeline console errors ([#19](https://github.com/SocialGouv/archifiltre-site/issues/19)) ([618e41b](https://github.com/SocialGouv/archifiltre-site/commit/618e41b88a4e41243dc665e1d623bea6e549b9d9))
 
 
-### Features
+### ProductFeatures
 
 * **downloads:** add dates on downloads page ([#18](https://github.com/SocialGouv/archifiltre-site/issues/18)) ([0132659](https://github.com/SocialGouv/archifiltre-site/commit/01326594132d365b0b59103bf17dea16df7ddb4f))
 
 # 1.0.0 (2020-08-07)
 
 
-### Features
+### ProductFeatures
 
 * **about:** add timeline on about page ([#16](https://github.com/SocialGouv/archifiltre-site/issues/16)) ([ff6c799](https://github.com/SocialGouv/archifiltre-site/commit/ff6c7994b3c998c74baf1f80b8ccd73450c199fe))
 * **ci:** add CI/CD configuration ([#15](https://github.com/SocialGouv/archifiltre-site/issues/15)) ([214fd4e](https://github.com/SocialGouv/archifiltre-site/commit/214fd4ec855b9ebb311a7c88235d4365639baab7)), closes [#17](https://github.com/SocialGouv/archifiltre-site/issues/17)

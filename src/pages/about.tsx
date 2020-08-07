@@ -3,7 +3,7 @@ import SEO from '../components/seo'
 import Layout from '../layout'
 import Timeline from '@material-ui/lab/Timeline'
 import TimelineElement from '../components/timeline-element'
-import { timelineElements } from '../components/timeline-data'
+import { timelineElements } from '../display-data/timeline-data'
 
 const Downloads: FC = () => {
   return (

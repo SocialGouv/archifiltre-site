@@ -4,11 +4,15 @@ import { makeStyles } from '@material-ui/styles'
 
 import Layout from '../layout'
 import SEO from '../components/seo'
-import Hero from '../components/hero'
+import HomepageHeader from '../components/homepage-header'
+import Box from '@material-ui/core/Box'
 import { Link as GatsbyLink } from 'gatsby'
+import Presentation from '../components/presentation'
+import ProductFeatures from '../components/product-features'
+import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme: Theme) => ({
-  heroButtons: {
+  headerButtons: {
     marginTop: theme.spacing(4),
   },
   downloadLink: {
@@ -21,11 +25,11 @@ const IndexPage: FC = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Hero
+      <HomepageHeader
         title="archifiltre"
         description="Vos fichiers et dossiers, comme vous ne les avez jamais vus."
       >
-        <div className={classes.heroButtons}>
+        <div className={classes.headerButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
               <Button
@@ -62,7 +66,18 @@ const IndexPage: FC = () => {
             </Grid>
           </Grid>
         </div>
-      </Hero>
+      </HomepageHeader>
+      <Box p={3} textAlign="center">
+        <Box pb={3}>
+          <Typography variant="h5" color="textPrimary">
+            Fonctionnalités
+          </Typography>
+        </Box>
+        <Presentation />
+      </Box>
+      <Box p={6}>
+        <ProductFeatures />
+      </Box>
     </Layout>
   )
 }
