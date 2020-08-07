@@ -4,13 +4,15 @@ import { makeStyles } from '@material-ui/styles'
 
 import Layout from '../layout'
 import SEO from '../components/seo'
-import Hero from '../components/hero'
-import FlashOnIcon from '@material-ui/icons/FlashOn'
+import HomepageHeader from '../components/homepage-header'
 import Box from '@material-ui/core/Box'
 import { Link as GatsbyLink } from 'gatsby'
+import Presentation from '../components/presentation'
+import ProductFeatures from '../components/product-features'
+import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme: Theme) => ({
-  heroButtons: {
+  headerButtons: {
     marginTop: theme.spacing(4),
   },
   downloadLink: {
@@ -18,45 +20,16 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }))
 
-const features = [
-  {
-    title: 'Rapide',
-    description:
-      'Archifiltre analyse vos arborescences en un rien de temps.Archifiltre analyse vos arborescences en un rien de temps.Archifiltre analyse vos arborescences en un rien de temps',
-    icon: <FlashOnIcon />,
-  },
-  {
-    title: 'Rapide2',
-    description: 'Archifiltre analyse vos arborescences en un rien de temps',
-    icon: <FlashOnIcon />,
-  },
-  {
-    title: 'Rapide3',
-    description: 'Archifiltre analyse vos arborescences en un rien de temps',
-    icon: <FlashOnIcon />,
-  },
-  {
-    title: 'Rapide4',
-    description: 'Archifiltre analyse vos arborescences en un rien de temps',
-    icon: <FlashOnIcon />,
-  },
-  {
-    title: 'Rapide5',
-    description: 'Archifiltre analyse vos arborescences en un rien de temps',
-    icon: <FlashOnIcon />,
-  },
-]
-
 const IndexPage: FC = () => {
   const classes = useStyles()
   return (
     <Layout>
       <SEO title="Home" />
-      <Hero
+      <HomepageHeader
         title="archifiltre"
         description="Vos fichiers et dossiers, comme vous ne les avez jamais vus."
       >
-        <div className={classes.heroButtons}>
+        <div className={classes.headerButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
               <Button
@@ -93,23 +66,18 @@ const IndexPage: FC = () => {
             </Grid>
           </Grid>
         </div>
-      </Hero>
-      <Grid container spacing={2}>
-        <Grid item>text</Grid>
-        <Grid item>image</Grid>
-      </Grid>
-      <Grid container spacing={2}>
-        {features.map(feature => (
-          <Grid item md={4} key={feature.title}>
-            <Box>
-              <Box>
-                {feature.icon}&nbsp;{feature.title}
-              </Box>
-              <Box>{feature.description}</Box>
-            </Box>
-          </Grid>
-        ))}
-      </Grid>
+      </HomepageHeader>
+      <Box p={3} textAlign="center">
+        <Box pb={3}>
+          <Typography variant="h5" color="textPrimary">
+            Fonctionnalités
+          </Typography>
+        </Box>
+        <Presentation />
+      </Box>
+      <Box p={6}>
+        <ProductFeatures />
+      </Box>
     </Layout>
   )
 }

@@ -21,6 +21,15 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['Quicksand'],
+          urls: ['/fonts/fonts.css'],
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-matomo',
       options: {
         siteId: process.env.MATOMO_APPLICATION_ID,
