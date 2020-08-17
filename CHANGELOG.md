@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.1.0...v1.2.0) (2020-08-17)
+
+
+### Features
+
+* add ambassador page ([#26](https://github.com/SocialGouv/archifiltre-site/issues/26)) ([642341e](https://github.com/SocialGouv/archifiltre-site/commit/642341e64a4d820d295e47fe7864c07e8ffc3f63))
+* add openlab page ([#27](https://github.com/SocialGouv/archifiltre-site/issues/27)) ([b226d4b](https://github.com/SocialGouv/archifiltre-site/commit/b226d4b36ebf565bf19b6c20fb2e9b2869ad527b))
+
 # [1.1.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.0.0...v1.1.0) (2020-08-07)
 
 
