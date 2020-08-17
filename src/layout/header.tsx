@@ -39,6 +39,9 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
         <Button color="inherit" component={GatsbyLink} to="/">
           Accueil
         </Button>
+        <Button color="inherit" component={GatsbyLink} to="/openlab">
+          Openlab
+        </Button>
         <Button color="inherit" component={GatsbyLink} to="/changelog">
           Nouveautés
         </Button>
