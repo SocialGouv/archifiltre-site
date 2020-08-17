@@ -6,6 +6,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   content: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
+    margin: -theme.spacing(2),
   },
   title: {
     fontFamily: 'Quicksand',
