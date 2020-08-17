@@ -15,8 +15,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     minHeight: '100vh',
   },
   main: {
-    marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(2),
+    margin: theme.spacing(2),
   },
 }))
 
@@ -44,7 +43,7 @@ const Layout: FC<{ container?: boolean }> = ({
             {children}
           </Container>
         ) : (
-          <main>{children}</main>
+          <main className={classes.main}>{children}</main>
         )}
         <Footer />
       </div>

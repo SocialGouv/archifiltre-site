@@ -45,6 +45,9 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
         <Button color="inherit" component={GatsbyLink} to="/faq">
           FAQ
         </Button>
+        <Button color="inherit" component={GatsbyLink} to="/ambassador">
+          Devenir ambassadeur
+        </Button>
         <Button color="inherit" component={GatsbyLink} to="/about">
           A propos
         </Button>
