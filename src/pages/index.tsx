@@ -1,16 +1,19 @@
 import { Button, Grid, Theme } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import { makeStyles } from "@material-ui/styles";
+import { Link as GatsbyLink } from "gatsby";
 import React, { FC } from "react";
+
 import HomepageHeader from "../components/homepage-header";
+import HomepageTweets from "../components/homepage-tweets";
 import Presentation from "../components/presentation";
 import ProductFeatures from "../components/product-features";
 import SEO from "../components/seo";
+import versions from "../display-data/versions";
 import Layout from "../layout";
-import { Link as GatsbyLink } from "gatsby";
-import HomepageTweets from "../components/homepage-tweets";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import { defaultOperatingSystem, getOperatingSystem } from "../utils/os-util";
 
 const useStyles = makeStyles((theme: Theme) => ({
   downloadLink: {
@@ -20,6 +23,19 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginTop: theme.spacing(4),
   },
 }));
+
+const getDownloadLink = (): string => {
+  const userOperatingSystem = getOperatingSystem();
+  if (versions?.length <= 0) {
+    return "";
+  }
+  const lastVersion = versions[0];
+  const lastVersionPlatform =
+    lastVersion.platforms.find(
+      (platform) => platform?.id === userOperatingSystem
+    ) || lastVersion.platforms[defaultOperatingSystem];
+  return lastVersionPlatform?.url;
+};
 
 const IndexPage: FC = () => {
   const classes = useStyles();
@@ -35,7 +51,7 @@ const IndexPage: FC = () => {
             <Grid item>
               <Button
                 target="_blank"
-                href="https://github.com/SocialGouv/archifiltre/releases/download/v3.0.0/archifiltre.exe"
+                href={getDownloadLink()}
                 variant="contained"
                 size="large"
                 color="primary"

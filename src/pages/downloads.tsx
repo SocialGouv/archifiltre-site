@@ -7,6 +7,7 @@ import DownloadLink from "../components/download-link";
 import SEO from "../components/seo";
 import versions from "../display-data/versions";
 import Layout from "../layout";
+import { getPlatformName, Platform } from "../utils/os-util";
 
 const Downloads: FC = () => {
   return (
@@ -41,11 +42,14 @@ const Downloads: FC = () => {
               </Button>
             </h3>
             <Box>
-              {version.platforms.map((platform) => (
-                <Box key={`${platform.name}-${version.number}`}>
-                  <DownloadLink url={platform.url} label={platform.name} />
-                </Box>
-              ))}
+              {version.platforms.map((platform: Platform) => {
+                const platformName = getPlatformName(platform);
+                return (
+                  <Box key={`${platformName}-${version.number}`}>
+                    <DownloadLink url={platform.url} label={platformName} />
+                  </Box>
+                );
+              })}
             </Box>
           </div>
         ))}
