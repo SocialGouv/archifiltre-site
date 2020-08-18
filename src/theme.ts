@@ -1,18 +1,18 @@
-import deepMerge from 'deepmerge'
-import { grey } from '@material-ui/core/colors'
+import { grey } from "@material-ui/core/colors";
 import {
   createMuiTheme,
   responsiveFontSizes,
-  ThemeOptions,
   Theme,
-} from '@material-ui/core/styles'
+  ThemeOptions,
+} from "@material-ui/core/styles";
+import deepMerge from "deepmerge";
 
 const darkBlue = {
-  light: '#576393',
-  main: '#2E3D79',
-  dark: '#202a54',
-  contrastText: '#fff',
-}
+  contrastText: "#fff",
+  dark: "#202a54",
+  light: "#576393",
+  main: "#2E3D79",
+};
 
 const makeTheme = (variant: ThemeOptions): Theme => {
   const common = {
@@ -20,27 +20,27 @@ const makeTheme = (variant: ThemeOptions): Theme => {
       primary: darkBlue,
       secondary: grey,
     },
-  }
+  };
 
-  const theme = createMuiTheme(deepMerge(common, variant))
-  return responsiveFontSizes(theme)
-}
+  const theme = createMuiTheme(deepMerge(common, variant));
+  return responsiveFontSizes(theme);
+};
 
 const light: ThemeOptions = {
   palette: {
-    type: 'light',
+    type: "light",
   },
-}
+};
 
 const dark: ThemeOptions = {
   palette: {
-    type: 'dark',
+    type: "dark",
   },
-}
+};
 
 const themes = {
-  light: makeTheme(light),
   dark: makeTheme(dark),
-}
+  light: makeTheme(light),
+};
 
-export default themes
+export default themes;

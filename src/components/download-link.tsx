@@ -1,17 +1,17 @@
-import React, { FC } from 'react'
-import { Button } from '@material-ui/core'
-import GetAppIcon from '@material-ui/icons/GetApp'
+import { Button } from "@material-ui/core";
+import GetAppIcon from "@material-ui/icons/GetApp";
+import React, { FC } from "react";
 
 type DownloadLinkProps = {
-  url: string
-  label: string
-}
+  url: string;
+  label: string;
+};
 
 const DownloadLink: FC<DownloadLinkProps> = ({ url, label }) => (
   <Button target="_blank" href={url} color="inherit">
     <GetAppIcon />
     {label}
   </Button>
-)
+);
 
-export default DownloadLink
+export default DownloadLink;

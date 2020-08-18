@@ -1,15 +1,15 @@
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from "gatsby";
 
 export interface SiteMetadata {
-  title: string
-  description: string
+  title: string;
+  description: string;
   author: {
-    name: string
-    content: string
-  }
+    name: string;
+    content: string;
+  };
   social: {
-    github: string
-  }
+    github: string;
+  };
 }
 
 export default (): SiteMetadata => {
@@ -29,7 +29,7 @@ export default (): SiteMetadata => {
         }
       }
     }
-  `)
+  `);
 
-  return data.site.siteMetadata
-}
+  return data.site.siteMetadata;
+};

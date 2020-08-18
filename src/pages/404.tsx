@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
+import { Typography } from "@material-ui/core";
+import React, { FC } from "react";
 
-import Layout from '../layout'
-import SEO from '../components/seo'
-import { Typography } from '@material-ui/core'
+import SEO from "../components/seo";
+import Layout from "../layout";
 
 const NotFoundPage: FC = () => (
   <Layout container>
@@ -14,6 +14,6 @@ const NotFoundPage: FC = () => (
       You just hit a route that doesn&#39;t exist... the sadness.
     </Typography>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;

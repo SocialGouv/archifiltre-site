@@ -5,32 +5,32 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { FC } from 'react'
-import { Helmet } from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql, useStaticQuery } from "gatsby";
+import React, { FC } from "react";
+import { Helmet } from "react-helmet";
 
 interface MetaProperty {
-  property: string
-  content: string
+  property: string;
+  content: string;
 }
 
 interface MetaName {
-  name: string
-  content: string
+  name: string;
+  content: string;
 }
 
-type Meta = MetaName | MetaProperty
+type Meta = MetaName | MetaProperty;
 
 export interface SEOProps {
-  title: string
-  description?: string
-  lang?: string
-  meta?: Meta[]
+  title: string;
+  description?: string;
+  lang?: string;
+  meta?: Meta[];
 }
 
 const SEO: FC<SEOProps> = ({
-  description = '',
-  lang = 'en',
+  description = "",
+  lang = "en",
   meta = [],
   title,
 }) => {
@@ -47,10 +47,10 @@ const SEO: FC<SEOProps> = ({
           }
         }
       }
-    `,
-  )
+    `
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
@@ -61,40 +61,40 @@ const SEO: FC<SEOProps> = ({
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          content: metaDescription,
           name: `description`,
-          content: metaDescription,
         },
         {
+          content: title,
           property: `og:title`,
-          content: title,
         },
         {
+          content: metaDescription,
           property: `og:description`,
-          content: metaDescription,
         },
         {
-          property: `og:type`,
           content: `website`,
+          property: `og:type`,
         },
         {
-          name: `twitter:card`,
           content: `summary`,
+          name: `twitter:card`,
         },
         {
-          name: `twitter:creator`,
           content: site.siteMetadata.author.name,
+          name: `twitter:creator`,
         },
         {
-          name: `twitter:title`,
           content: title,
+          name: `twitter:title`,
         },
         {
-          name: `twitter:description`,
           content: metaDescription,
+          name: `twitter:description`,
         },
       ].concat(meta)}
     />
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;

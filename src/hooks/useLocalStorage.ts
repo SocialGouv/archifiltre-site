@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState } from 'react'
+import { useState } from "react";
 
 /**
  * React Hook wrapper for LocalStorage
@@ -8,13 +8,13 @@ import { useState } from 'react'
  * @param initialValue
  */
 
-type PersistReturn = [any, (arg1?: any) => void]
+type PersistReturn = [any, (arg1?: any) => void];
 
-export type usePersistFunc = (key: string) => PersistReturn
+export type usePersistFunc = (key: string) => PersistReturn;
 
 export default function useLocalStorage(key: string, initialValue: any) {
   // Prevent build error "window is undefined" but keep keep working
-  const isServer = typeof window === 'undefined'
+  const isServer = typeof window === "undefined";
 
   // State to store our value
   // Pass initial state function to useState so logic is only executed once
@@ -22,17 +22,17 @@ export default function useLocalStorage(key: string, initialValue: any) {
     // Get from local storage then
     // parse stored json or return initialValue
     if (isServer) {
-      return initialValue
+      return initialValue;
     }
 
     try {
-      const item = window.localStorage.getItem(key)
-      return item ? JSON.parse(item) : initialValue
+      const item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
     } catch (error) {
-      console.log(error)
-      return initialValue
+      console.log(error);
+      return initialValue;
     }
-  })
+  });
 
   // Return a wrapped version of useState's setter function that ...
   // ... persists the new value to localStorage.
@@ -40,17 +40,17 @@ export default function useLocalStorage(key: string, initialValue: any) {
     try {
       // Allow value to be a function so we have same API as useState
       const valueToStore =
-        value instanceof Function ? value(storedValue) : value
+        value instanceof Function ? value(storedValue) : value;
       // Save state
-      setStoredValue(valueToStore)
+      setStoredValue(valueToStore);
       // Save to local storage
       if (!isServer) {
-        window.localStorage.setItem(key, JSON.stringify(valueToStore))
+        window.localStorage.setItem(key, JSON.stringify(valueToStore));
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-  }
+  };
 
-  return [storedValue, setValue]
+  return [storedValue, setValue];
 }

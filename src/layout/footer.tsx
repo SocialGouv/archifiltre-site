@@ -1,19 +1,18 @@
-import React, { FC } from "react";
-
-import { makeStyles } from "@material-ui/styles";
-import { Container, Theme, Link, Grid } from "@material-ui/core";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import { Container, Grid, Link, Theme } from "@material-ui/core";
 import BookIcon from "@material-ui/icons/Book";
-import YouTubeIcon from "@material-ui/icons/YouTube";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MailIcon from "@material-ui/icons/Mail";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import YouTubeIcon from "@material-ui/icons/YouTube";
+import { makeStyles } from "@material-ui/styles";
 import { Link as GatsbyLink } from "gatsby";
+import React, { FC } from "react";
 
 const useStyles = makeStyles((theme: Theme) => ({
   footer: {
-    padding: theme.spacing(3, 2),
-    marginTop: "auto",
     backgroundColor: theme.palette.background.paper,
+    marginTop: "auto",
+    padding: theme.spacing(3, 2),
   },
 }));
 
