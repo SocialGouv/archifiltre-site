@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.2.0...v1.3.0) (2020-08-18)
+
+
+### Features
+
+* add mentions legales page ([#30](https://github.com/SocialGouv/archifiltre-site/issues/30)) ([5f3a63b](https://github.com/SocialGouv/archifiltre-site/commit/5f3a63b51254ffbb6f8d79bfd35965b1fdde742e))
+
 # [1.2.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.1.0...v1.2.0) (2020-08-17)
 
 
