@@ -1,24 +1,24 @@
-import React, { FC } from 'react'
+import React, { FC } from "react";
 
-import { makeStyles } from '@material-ui/styles'
-import { Container, Theme, Link, Grid } from '@material-ui/core'
-import TwitterIcon from '@material-ui/icons/Twitter'
-import BookIcon from '@material-ui/icons/Book'
-import YouTubeIcon from '@material-ui/icons/YouTube'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import MailIcon from '@material-ui/icons/Mail'
-import { Link as GatsbyLink } from 'gatsby'
+import { makeStyles } from "@material-ui/styles";
+import { Container, Theme, Link, Grid } from "@material-ui/core";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import BookIcon from "@material-ui/icons/Book";
+import YouTubeIcon from "@material-ui/icons/YouTube";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import MailIcon from "@material-ui/icons/Mail";
+import { Link as GatsbyLink } from "gatsby";
 
 const useStyles = makeStyles((theme: Theme) => ({
   footer: {
     padding: theme.spacing(3, 2),
-    marginTop: 'auto',
+    marginTop: "auto",
     backgroundColor: theme.palette.background.paper,
   },
-}))
+}));
 
 const Footer: FC = () => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <footer className={classes.footer}>
       <Container maxWidth="md">
@@ -35,7 +35,7 @@ const Footer: FC = () => {
           <Grid item>
             <Link
               component={GatsbyLink}
-              to="/cgu"
+              to="/mentions-legales"
               target="_blank"
               color="inherit"
             >
@@ -95,7 +95,7 @@ const Footer: FC = () => {
         </Grid>
       </Container>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
