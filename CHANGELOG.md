@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.4.0...v1.5.0) (2020-08-21)
+
+
+### Features
+
+* add changelog page ([#32](https://github.com/SocialGouv/archifiltre-site/issues/32)) ([ac27f92](https://github.com/SocialGouv/archifiltre-site/commit/ac27f92428dc6ea64f2e30ab761206b2a092206d))
+* add faq page ([#33](https://github.com/SocialGouv/archifiltre-site/issues/33)) ([953859b](https://github.com/SocialGouv/archifiltre-site/commit/953859bdd212b8e6e43d64e2bb76892457c49aa5))
+
 # [1.4.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.3.0...v1.4.0) (2020-08-21)
 
 
