@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.3.0...v1.4.0) (2020-08-21)
+
+
+### Features
+
+* add tweets integration ([#31](https://github.com/SocialGouv/archifiltre-site/issues/31)) ([05f6a38](https://github.com/SocialGouv/archifiltre-site/commit/05f6a38681647dc8d33385e38e04f201c9a45e1e))
+
 # [1.3.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.2.0...v1.3.0) (2020-08-18)
 
 
