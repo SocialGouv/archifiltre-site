@@ -10,6 +10,8 @@ import { Link as GatsbyLink } from 'gatsby'
 import Presentation from '../components/presentation'
 import ProductFeatures from '../components/product-features'
 import Typography from '@material-ui/core/Typography'
+import HomepageTweets from '../components/homepage-tweets'
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
 
 const useStyles = makeStyles((theme: Theme) => ({
   headerButtons: {
@@ -67,16 +69,37 @@ const IndexPage: FC = () => {
           </Grid>
         </div>
       </HomepageHeader>
-      <Box p={3} textAlign="center">
-        <Box pb={3}>
+      <Box p={3} pb={6} textAlign="center">
+        <Box p={3}>
           <Typography variant="h5" color="textPrimary">
             Fonctionnalités
           </Typography>
         </Box>
         <Presentation />
       </Box>
-      <Box p={6}>
+      <Box>
         <ProductFeatures />
+      </Box>
+      <Box p={3} textAlign="center">
+        <Box p={3}>
+          <Typography variant="h5" color="textPrimary">
+            Ils parlent de nous
+          </Typography>
+        </Box>
+        <HomepageTweets />
+        <Grid container justify="center">
+          <Grid item>
+            <Button
+              color="inherit"
+              component={GatsbyLink}
+              to="/social"
+              size="small"
+              endIcon={<ArrowForwardIcon />}
+            >
+              Tous les avis
+            </Button>
+          </Grid>
+        </Grid>
       </Box>
     </Layout>
   )

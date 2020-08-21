@@ -37,7 +37,8 @@
     "gatsby-transformer-remark": "^2.8.28",
     "react": "latest",
     "react-dom": "latest",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-tweet-embed": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "latest",
