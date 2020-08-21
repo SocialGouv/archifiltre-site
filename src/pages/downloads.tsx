@@ -1,11 +1,12 @@
-import React, { FC } from 'react'
-import SEO from '../components/seo'
-import Layout from '../layout'
-import Box from '@material-ui/core/Box'
-import versions from '../display-data/versions'
-import DownloadLink from '../components/download-link'
-import { Link as GatsbyLink } from 'gatsby'
-import { Button } from '@material-ui/core'
+import { Button } from "@material-ui/core";
+import Box from "@material-ui/core/Box";
+import { Link as GatsbyLink } from "gatsby";
+import React, { FC } from "react";
+
+import DownloadLink from "../components/download-link";
+import SEO from "../components/seo";
+import versions from "../display-data/versions";
+import Layout from "../layout";
 
 const Downloads: FC = () => {
   return (
@@ -26,7 +27,7 @@ const Downloads: FC = () => {
             label="Linux/MacOS"
           />
         </Box>
-        {versions.map(version => (
+        {versions.map((version) => (
           <div key={`${version.name}-${version.number}`}>
             <h3>
               {`${version.name} ${version.number} - ${version.date} - `}
@@ -40,7 +41,7 @@ const Downloads: FC = () => {
               </Button>
             </h3>
             <Box>
-              {version.platforms.map(platform => (
+              {version.platforms.map((platform) => (
                 <Box key={`${platform.name}-${version.number}`}>
                   <DownloadLink url={platform.url} label={platform.name} />
                 </Box>
@@ -50,7 +51,7 @@ const Downloads: FC = () => {
         ))}
       </Box>
     </Layout>
-  )
-}
+  );
+};
 
-export default Downloads
+export default Downloads;

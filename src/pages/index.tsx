@@ -1,29 +1,28 @@
-import React, { FC } from 'react'
-import { Grid, Button, Theme } from '@material-ui/core'
-import { makeStyles } from '@material-ui/styles'
-
-import Layout from '../layout'
-import SEO from '../components/seo'
-import HomepageHeader from '../components/homepage-header'
-import Box from '@material-ui/core/Box'
-import { Link as GatsbyLink } from 'gatsby'
-import Presentation from '../components/presentation'
-import ProductFeatures from '../components/product-features'
-import Typography from '@material-ui/core/Typography'
-import HomepageTweets from '../components/homepage-tweets'
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
+import { Button, Grid, Theme } from "@material-ui/core";
+import Box from "@material-ui/core/Box";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/styles";
+import React, { FC } from "react";
+import HomepageHeader from "../components/homepage-header";
+import Presentation from "../components/presentation";
+import ProductFeatures from "../components/product-features";
+import SEO from "../components/seo";
+import Layout from "../layout";
+import { Link as GatsbyLink } from "gatsby";
+import HomepageTweets from "../components/homepage-tweets";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 
 const useStyles = makeStyles((theme: Theme) => ({
-  headerButtons: {
-    marginTop: theme.spacing(4),
-  },
   downloadLink: {
     paddingTop: theme.spacing(3),
   },
-}))
+  headerButtons: {
+    marginTop: theme.spacing(4),
+  },
+}));
 
 const IndexPage: FC = () => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <Layout>
       <SEO title="Home" />
@@ -102,7 +101,7 @@ const IndexPage: FC = () => {
         </Grid>
       </Box>
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

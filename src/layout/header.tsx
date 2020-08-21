@@ -1,28 +1,28 @@
-import { Link as GatsbyLink } from 'gatsby'
-import React, { FC } from 'react'
-import { AppBar, Toolbar, Link, Button } from '@material-ui/core'
-import { makeStyles } from '@material-ui/styles'
-import Brightness7Icon from '@material-ui/icons/Brightness7'
-import Brightness4Icon from '@material-ui/icons/Brightness4'
-import Box from '@material-ui/core/Box'
+import { AppBar, Button, Link, Toolbar } from "@material-ui/core";
+import Box from "@material-ui/core/Box";
+import Brightness4Icon from "@material-ui/icons/Brightness4";
+import Brightness7Icon from "@material-ui/icons/Brightness7";
+import { makeStyles } from "@material-ui/styles";
+import { Link as GatsbyLink } from "gatsby";
+import React, { FC } from "react";
 
 const useStyles = makeStyles({
-  toolbar: {},
+  link: {
+    textDecoration: "none",
+  },
   title: {
     flexGrow: 1,
   },
-  link: {
-    textDecoration: 'none',
-  },
-})
+  toolbar: {},
+});
 
 export interface HeaderProps {
-  theme: 'light' | 'dark'
-  onToggleTheme: () => void
+  theme: "light" | "dark";
+  onToggleTheme: () => void;
 }
 
 const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <AppBar component="header" position="static" color="default">
@@ -56,11 +56,11 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
         </Button>
         <Box flex={1} />
         <Button color="inherit" onClick={onToggleTheme}>
-          {theme === 'light' ? <Brightness4Icon /> : <Brightness7Icon />}
+          {theme === "light" ? <Brightness4Icon /> : <Brightness7Icon />}
         </Button>
       </Toolbar>
     </AppBar>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

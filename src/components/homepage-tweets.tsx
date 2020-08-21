@@ -1,34 +1,35 @@
-import React, { FC } from 'react'
-import { Box, Theme } from '@material-ui/core'
-import { homepageTweets } from '../display-data/tweets-data'
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
-import Typography from '@material-ui/core/Typography'
-import CardActions from '@material-ui/core/CardActions'
-import Button from '@material-ui/core/Button'
-import { makeStyles } from '@material-ui/styles'
-import TwitterIcon from '@material-ui/icons/Twitter'
+import { Box, Theme } from "@material-ui/core";
+import Button from "@material-ui/core/Button";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import Typography from "@material-ui/core/Typography";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import { makeStyles } from "@material-ui/styles";
+import React, { FC } from "react";
+
+import { homepageTweets } from "../display-data/tweets-data";
 
 const useStyles = makeStyles((theme: Theme) => ({
-  root: {
-    minWidth: 275,
-    margin: theme.spacing(2),
-  },
   bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  title: {
-    fontSize: 14,
+    display: "inline-block",
+    margin: "0 2px",
+    transform: "scale(0.8)",
   },
   pos: {
     marginBottom: 12,
   },
-}))
+  root: {
+    margin: theme.spacing(2),
+    minWidth: 275,
+  },
+  title: {
+    fontSize: 14,
+  },
+}));
 
 const HomepageTweets: FC = () => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <Box display="flex" justifyContent="space-between">
       {homepageTweets.map((tweet, index: number) => (
@@ -58,7 +59,7 @@ const HomepageTweets: FC = () => {
         </Card>
       ))}
     </Box>
-  )
-}
+  );
+};
 
-export default HomepageTweets
+export default HomepageTweets;

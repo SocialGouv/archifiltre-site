@@ -4,4 +4,4 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-export { default as wrapRootElement } from './src/libs/wrapRootElement'
+export { default as wrapRootElement } from "./src/libs/wrapRootElement.tsx";

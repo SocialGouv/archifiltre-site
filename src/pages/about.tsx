@@ -1,9 +1,10 @@
-import React, { FC } from 'react'
-import SEO from '../components/seo'
-import Layout from '../layout'
-import Timeline from '@material-ui/lab/Timeline'
-import TimelineElement from '../components/timeline-element'
-import { timelineElements } from '../display-data/timeline-data'
+import Timeline from "@material-ui/lab/Timeline";
+import React, { FC } from "react";
+
+import SEO from "../components/seo";
+import TimelineElement from "../components/timeline-element";
+import { timelineElements } from "../display-data/timeline-data";
+import Layout from "../layout";
 
 const Downloads: FC = () => {
   return (
@@ -21,11 +22,11 @@ const Downloads: FC = () => {
               isConnectorDisplayed={index !== timelineElements.length - 1}
               key={`${date}-${index}`}
             />
-          ),
+          )
         )}
       </Timeline>
     </Layout>
-  )
-}
+  );
+};
 
-export default Downloads
+export default Downloads;

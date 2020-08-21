@@ -1,30 +1,30 @@
-import React, { FC } from 'react'
-import { makeStyles } from '@material-ui/styles'
-import { Typography, Container, Theme } from '@material-ui/core'
+import { Container, Theme, Typography } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
+import React, { FC } from "react";
 
 const useStyles = makeStyles((theme: Theme) => ({
   content: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6),
     margin: -theme.spacing(2),
+    padding: theme.spacing(8, 0, 6),
   },
   title: {
-    fontFamily: 'Quicksand',
-    letterSpacing: '0.16rem',
+    fontFamily: "Quicksand",
+    letterSpacing: "0.16rem",
   },
-}))
+}));
 
 export interface HomepageHeaderProps {
-  title: string
-  description?: string
+  title: string;
+  description?: string;
 }
 
 const HomepageHeader: FC<HomepageHeaderProps> = ({
   title,
-  description = '',
+  description = "",
   children,
 }) => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <div className={classes.content}>
       <Container maxWidth="sm">
@@ -44,7 +44,7 @@ const HomepageHeader: FC<HomepageHeaderProps> = ({
         {children}
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default HomepageHeader
+export default HomepageHeader;
