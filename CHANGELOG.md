@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.6.0...v1.7.0) (2020-08-24)
+
+
+### Features
+
+* make toolbar responsive ([#36](https://github.com/SocialGouv/archifiltre-site/issues/36)) ([3d47155](https://github.com/SocialGouv/archifiltre-site/commit/3d47155861e89e1b1fa10d43198c4c6f21d903e8))
+
 # [1.6.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.5.0...v1.6.0) (2020-08-24)
 
 
