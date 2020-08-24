@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/camelcase */
+const path = require(`path`);
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "dev"}`,
@@ -9,6 +10,8 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       options: {
         custom: {
@@ -41,6 +44,13 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages`,
       },
       resolve: `gatsby-source-filesystem`,
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `static`, `images`),
+      },
     },
     {
       // If you want to use styled components you should change the injection order.
