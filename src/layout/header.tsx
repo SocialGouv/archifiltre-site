@@ -1,11 +1,15 @@
-import { AppBar, Button, Link, Toolbar } from "@material-ui/core";
+import { AppBar, Button, Link, Theme, Toolbar } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import Brightness7Icon from "@material-ui/icons/Brightness7";
 import { makeStyles } from "@material-ui/styles";
 import { graphql, Link as GatsbyLink, StaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import React, { FC } from "react";
+
+import MobileHeader from "../components/mobile-header";
+import { HeaderLink, headerLinks } from "../display-data/header-links";
 
 const useStyles = makeStyles({
   link: {
@@ -36,6 +40,9 @@ export const logoQuery = graphql`
 
 const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
   const classes = useStyles();
+  const isMobile = useMediaQuery((theme: Theme) =>
+    theme.breakpoints.down("sm")
+  );
 
   return (
     <StaticQuery
@@ -52,28 +59,36 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
               <Img fixed={data.file.childImageSharp.fixed} />
             </Link>
             <Box flex={1} />
-            <Button color="inherit" component={GatsbyLink} to="/">
-              Accueil
-            </Button>
-            <Button color="inherit" component={GatsbyLink} to="/openlab">
-              Openlab
-            </Button>
-            <Button color="inherit" component={GatsbyLink} to="/changelog">
-              Nouveautés
-            </Button>
-            <Button color="inherit" component={GatsbyLink} to="/faq">
-              FAQ
-            </Button>
-            <Button color="inherit" component={GatsbyLink} to="/ambassador">
-              Devenir ambassadeur
-            </Button>
-            <Button color="inherit" component={GatsbyLink} to="/about">
-              A propos
-            </Button>
-            <Box flex={1} />
-            <Button color="inherit" onClick={onToggleTheme}>
-              {theme === "light" ? <Brightness4Icon /> : <Brightness7Icon />}
-            </Button>
+            {!isMobile &&
+              headerLinks.map(({ url, label }: HeaderLink) => (
+                <Button
+                  key={url}
+                  color="inherit"
+                  component={GatsbyLink}
+                  to={url}
+                >
+                  {label}
+                </Button>
+              ))}
+            {isMobile && (
+              <MobileHeader
+                headerLinks={headerLinks}
+                theme={theme}
+                onToggleTheme={onToggleTheme}
+              />
+            )}
+            {!isMobile && (
+              <>
+                <Box flex={1} />
+                <Button color="inherit" onClick={onToggleTheme}>
+                  {theme === "light" ? (
+                    <Brightness4Icon />
+                  ) : (
+                    <Brightness7Icon />
+                  )}
+                </Button>
+              </>
+            )}
           </Toolbar>
         </AppBar>
       )}

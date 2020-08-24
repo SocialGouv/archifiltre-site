@@ -75,7 +75,7 @@ const IndexPage: FC = () => {
               <Button
                 color="inherit"
                 component={GatsbyLink}
-                to="/downloads"
+                to="/telechargements"
                 size="small"
               >
                 Besoin d&rsquo;une ancienne version ?
