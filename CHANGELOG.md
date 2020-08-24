@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.5.0...v1.6.0) (2020-08-24)
+
+
+### Features
+
+* add auto detect os for main download link ([#28](https://github.com/SocialGouv/archifiltre-site/issues/28)) ([65870ff](https://github.com/SocialGouv/archifiltre-site/commit/65870ff2800f0dd59865a68c7ab14041616bf978))
+* add team information ([#34](https://github.com/SocialGouv/archifiltre-site/issues/34)) ([e22a043](https://github.com/SocialGouv/archifiltre-site/commit/e22a043d4c8418b5d3020742d458ee9d1793e315))
+* update publication director in legal mentions ([#35](https://github.com/SocialGouv/archifiltre-site/issues/35)) ([7503adf](https://github.com/SocialGouv/archifiltre-site/commit/7503adf48bc7ca1f2c291a303730bd5987024fa4))
+
 # [1.5.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.4.0...v1.5.0) (2020-08-21)
 
 
