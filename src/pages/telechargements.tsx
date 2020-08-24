@@ -9,7 +9,7 @@ import versions from "../display-data/versions";
 import Layout from "../layout";
 import { getPlatformName, Platform } from "../utils/os-util";
 
-const Downloads: FC = () => {
+const Telechargements: FC = () => {
   return (
     <Layout>
       <SEO title="Téléchargements" />
@@ -58,4 +58,4 @@ const Downloads: FC = () => {
   );
 };
 
-export default Downloads;
+export default Telechargements;
