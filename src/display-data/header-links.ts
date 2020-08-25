@@ -5,27 +5,15 @@ export type HeaderLink = {
 
 export const headerLinks: HeaderLink[] = [
   {
-    label: "Accueil",
-    url: "/",
+    label: "Le produit",
+    url: "/produit",
   },
   {
-    label: "Openlab",
-    url: "/openlab",
-  },
-  {
-    label: "Nouveautés",
-    url: "/nouveautes",
+    label: "Qui sommes-nous ?",
+    url: "/qui-sommes-nous",
   },
   {
     label: "FAQ",
     url: "/faq",
-  },
-  {
-    label: "Ambassadeur",
-    url: "/ambassadeur",
-  },
-  {
-    label: "A propos",
-    url: "/a-propos",
   },
 ];

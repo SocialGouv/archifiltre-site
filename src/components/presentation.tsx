@@ -1,48 +1,46 @@
-import { Grid } from "@material-ui/core";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import { makeStyles } from "@material-ui/core/styles";
+import { Box, Grid } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
+import { graphql, StaticQuery } from "gatsby";
+import Img from "gatsby-image";
 import React, { FC } from "react";
 
 import { presentationData } from "../display-data/presentation-data";
 
-const useStyles = makeStyles({
-  media: {
-    height: 200,
-  },
-  root: {
-    width: 400,
-  },
-});
+export const imageQuery = graphql`
+  query {
+    file(relativePath: { eq: "presentation.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 600, maxHeight: 320) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
-const Presentation: FC = () => {
-  const classes = useStyles();
-
-  return (
-    <Grid container spacing={2} justify="center">
-      {presentationData.map((presentationItem) => (
-        <Grid item key={presentationItem.title}>
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image={presentationItem.image}
-                title={presentationItem.title}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="body1" component="h2">
-                  {presentationItem.title}
+const Presentation: FC = () => (
+  <StaticQuery
+    query={imageQuery}
+    render={(data) => (
+      <Grid container spacing={1} alignItems="center">
+        <Grid item md={6}>
+          <Grid container spacing={6}>
+            {presentationData.map((presentationItem) => (
+              <Grid item md={6} key={presentationItem.title}>
+                <Typography variant="h6" color="textPrimary">
+                  <Box>{presentationItem.logo}</Box>
+                  <Box>{presentationItem.title}</Box>
                 </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
+              </Grid>
+            ))}
+          </Grid>
         </Grid>
-      ))}
-    </Grid>
-  );
-};
+        <Grid item md={6}>
+          <Img fluid={data.file.childImageSharp.fluid} />
+        </Grid>
+      </Grid>
+    )}
+  />
+);
 
 export default Presentation;

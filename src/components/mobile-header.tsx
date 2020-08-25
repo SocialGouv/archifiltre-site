@@ -61,6 +61,13 @@ const MobileHeader: FC<MobileHaderProps> = ({
             {label}
           </MenuItem>
         ))}
+        <MenuItem
+          onClick={handleClose}
+          component={GatsbyLink}
+          to="/co-construction"
+        >
+          Co-créer Archifiltre
+        </MenuItem>
         <MenuItem onClick={onToggleTheme}>
           <span>Thème</span>
           {theme === "light" ? <Brightness4Icon /> : <Brightness7Icon />}
