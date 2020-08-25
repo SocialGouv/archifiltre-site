@@ -10,8 +10,18 @@ import TimelineElement from "../components/timeline-element";
 import { currentMembers, oldMembers } from "../display-data/team-data";
 import { timelineElements } from "../display-data/timeline-data";
 import Layout from "../layout";
+import { createStyles, makeStyles } from "@material-ui/styles";
+
+const useStyles = makeStyles(() =>
+  createStyles({
+    grid: {
+      width: "100%",
+    },
+  })
+);
 
 const Downloads: FC = () => {
+  const classes = useStyles();
   return (
     <Layout>
       <SEO title="FAQ" />
@@ -21,9 +31,9 @@ const Downloads: FC = () => {
         </Typography>
       </Box>
       <Grid container spacing={2}>
-        {currentMembers.map(({ job, name, photo }) => (
-          <Grid key={name} item md={3}>
-            <TeamMember job={job} name={name} photo={photo} />
+        {currentMembers.map(({ job, name, photo, url }) => (
+          <Grid key={name} item md={3} className={classes.grid}>
+            <TeamMember job={job} name={name} photo={photo} url={url} />
           </Grid>
         ))}
       </Grid>
@@ -33,9 +43,9 @@ const Downloads: FC = () => {
         </Typography>
       </Box>
       <Grid container spacing={2}>
-        {oldMembers.map(({ job, name, photo }) => (
-          <Grid key={name} item md={3}>
-            <TeamMember job={job} name={name} photo={photo} />
+        {oldMembers.map(({ job, name, photo, url }) => (
+          <Grid key={name} item md={3} className={classes.grid}>
+            <TeamMember job={job} name={name} photo={photo} url={url} />
           </Grid>
         ))}
       </Grid>

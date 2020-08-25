@@ -3,23 +3,27 @@ import Avatar from "@material-ui/core/Avatar";
 import CardHeader from "@material-ui/core/CardHeader";
 import { createStyles, makeStyles } from "@material-ui/styles";
 import React, { FC } from "react";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import Button from "@material-ui/core/Button";
+import CardActions from "@material-ui/core/CardActions";
 
 type TeamMemberProps = {
   job: string;
   name: string;
   photo: string;
+  url: string;
 };
 
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
-      height: 100,
+      minHeight: 120,
       minWidth: 200,
     },
   })
 );
 
-const TeamMember: FC<TeamMemberProps> = ({ job, name, photo }) => {
+const TeamMember: FC<TeamMemberProps> = ({ job, name, photo, url }) => {
   const classes = useStyles();
   return (
     <Card className={classes.root}>
@@ -32,6 +36,16 @@ const TeamMember: FC<TeamMemberProps> = ({ job, name, photo }) => {
         title={name}
         subheader={job}
       />
+      <CardActions>
+        <Button
+          size="small"
+          startIcon={<LinkedInIcon />}
+          target="_blank"
+          href={url}
+        >
+          Voir le profil
+        </Button>
+      </CardActions>
     </Card>
   );
 };
