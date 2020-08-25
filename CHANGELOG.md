@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.7.0...v1.8.0) (2020-08-25)
+
+
+### Features
+
+* add photos on openlab page ([#37](https://github.com/SocialGouv/archifiltre-site/issues/37)) ([b89e6ea](https://github.com/SocialGouv/archifiltre-site/commit/b89e6eaa68dd61640318a9f6e35d2819610900b6))
+
 # [1.7.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.6.0...v1.7.0) (2020-08-24)
 
 
