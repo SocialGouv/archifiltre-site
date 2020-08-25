@@ -1,4 +1,4 @@
-import { grey } from "@material-ui/core/colors";
+import { blue, grey } from "@material-ui/core/colors";
 import {
   createMuiTheme,
   responsiveFontSizes,
@@ -15,13 +15,13 @@ const darkBlue = {
 };
 
 const makeTheme = (variant: ThemeOptions): Theme => {
+  const type = variant?.palette?.type;
   const common = {
     palette: {
-      primary: darkBlue,
+      primary: type === "light" ? darkBlue : blue,
       secondary: grey,
     },
   };
-
   const theme = createMuiTheme(deepMerge(common, variant));
   return responsiveFontSizes(theme);
 };
