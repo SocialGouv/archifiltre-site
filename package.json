@@ -36,6 +36,7 @@
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-transformer-remark": "^2.8.28",
     "gatsby-transformer-sharp": "^2.5.13",
+    "js-cookie": "^2.2.1",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "^6.1.0",
