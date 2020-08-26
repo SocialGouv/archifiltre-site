@@ -1,13 +1,14 @@
 import { Container, CssBaseline, Theme } from "@material-ui/core";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { makeStyles, ThemeProvider } from "@material-ui/styles";
 import React, { FC } from "react";
 
+import CookieConsent from "../components/cookie-consent";
 import useLocalStorage from "../hooks/useLocalStorage";
 import useSiteMetadata from "../hooks/useSiteMetadata";
 import themes from "../theme";
 import Footer from "./footer";
 import Header from "./header";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const useStyles = makeStyles((theme: Theme) => ({
   main: {
@@ -39,6 +40,7 @@ const Layout: FC<{ container?: boolean }> = ({
   return (
     <ThemeProvider theme={themes[theme as ThemeMode]}>
       <CssBaseline />
+      <CookieConsent />
       <div className={classes.root}>
         <Header siteTitle={title} onToggleTheme={toggleTheme} theme={theme} />
         {container ? (
