@@ -30,7 +30,7 @@ export const logoQuery = graphql`
   query {
     file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 160, height: 18) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -80,6 +80,15 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
             {!isMobile && (
               <>
                 <Box flex={1} />
+                <Button
+                  disableElevation
+                  color="primary"
+                  variant="outlined"
+                  component={GatsbyLink}
+                  to="/co-construction"
+                >
+                  Co-créez Archifiltre
+                </Button>
                 <Button color="inherit" onClick={onToggleTheme}>
                   {theme === "light" ? (
                     <Brightness4Icon />

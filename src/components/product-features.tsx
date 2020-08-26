@@ -17,20 +17,27 @@ const useStyles = makeStyles((theme: Theme) => ({
 const ProductFeatures: FC = () => {
   const classes = useStyles();
   return (
-    <Grid container className={classes.content} alignItems="center" spacing={4}>
-      {featureData.map((feature) => (
-        <Grid item md={4} key={feature.title}>
-          <Box>
-            <Box>
-              <Typography variant="h5" color="textPrimary">
-                {feature.icon} {feature.title}
-              </Typography>
+    <Box className={classes.content}>
+      <Box pb={6} display="flex" justifyContent="center">
+        <Typography variant="h5" color="textPrimary">
+          Pourquoi c&rsquo;est si simple ?
+        </Typography>
+      </Box>
+      <Grid container alignItems="center" spacing={2}>
+        {featureData.map((feature) => (
+          <Grid item md={3} key={feature.title}>
+            <Box p={3}>
+              <Box>
+                <Typography variant="h5" color="textPrimary">
+                  {feature.icon} {feature.title}
+                </Typography>
+              </Box>
+              <Box>{feature.description}</Box>
             </Box>
-            <Box>{feature.description}</Box>
-          </Box>
-        </Grid>
-      ))}
-    </Grid>
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
   );
 };
 

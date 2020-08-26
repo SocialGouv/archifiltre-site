@@ -14,15 +14,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       options: {
-        custom: {
-          families: ["Quicksand"],
-          urls: ["/fonts/fonts.css"],
-        },
-      },
-      resolve: "gatsby-plugin-web-font-loader",
-    },
-    {
-      options: {
         dev: true,
         matomoUrl: process.env.MATOMO_URL,
         siteId: process.env.MATOMO_APPLICATION_ID,
@@ -66,7 +57,7 @@ module.exports = {
       options: {
         background_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/images/logo.png`,
+        icon: `static/images/favicon.png`,
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,

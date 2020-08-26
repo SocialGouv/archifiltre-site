@@ -41,11 +41,8 @@ const IndexPage: FC = () => {
   const classes = useStyles();
   return (
     <Layout>
-      <SEO title="Home" />
-      <HomepageHeader
-        title="archifiltre"
-        description="Vos fichiers et dossiers, comme vous ne les avez jamais vus."
-      >
+      <SEO title="Accueil" />
+      <HomepageHeader title="Vos fichiers et dossiers, comme vous ne les avez jamais vus">
         <div className={classes.headerButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
@@ -57,16 +54,6 @@ const IndexPage: FC = () => {
                 color="primary"
               >
                 Télécharger
-              </Button>
-            </Grid>
-            <Grid item>
-              <Button
-                target="_blank"
-                href="https://github.com/SocialGouv/archifiltre/wiki/Wiki-Archifiltre"
-                size="large"
-                variant="contained"
-              >
-                Documentation
               </Button>
             </Grid>
           </Grid>
@@ -85,12 +72,24 @@ const IndexPage: FC = () => {
         </div>
       </HomepageHeader>
       <Box p={3} pb={6} textAlign="center">
-        <Box p={3}>
+        <Box p={3} pb={6}>
           <Typography variant="h5" color="textPrimary">
-            Fonctionnalités
+            Ce que nous faisons
           </Typography>
         </Box>
         <Presentation />
+        <Grid container justify="center" className={classes.downloadLink}>
+          <Grid item>
+            <Button
+              color="inherit"
+              target="_blank"
+              href="https://github.com/SocialGouv/archifiltre/wiki/Wiki-Archifiltre"
+              endIcon={<ArrowForwardIcon />}
+            >
+              Documentation
+            </Button>
+          </Grid>
+        </Grid>
       </Box>
       <Box>
         <ProductFeatures />
@@ -108,7 +107,6 @@ const IndexPage: FC = () => {
               color="inherit"
               component={GatsbyLink}
               to="/social"
-              size="small"
               endIcon={<ArrowForwardIcon />}
             >
               Tous les avis

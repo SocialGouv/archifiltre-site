@@ -24,7 +24,19 @@ const Downloads: FC = () => {
   const classes = useStyles();
   return (
     <Layout>
-      <SEO title="FAQ" />
+      <SEO title="Qui sommes-nous ?" />
+      <Box p={3} textAlign="center">
+        <Typography component="h1" variant="h5" color="textPrimary">
+          Qui sommes-nous ?
+        </Typography>
+      </Box>
+      <Box textAlign="center">
+        <Typography variant="body1">
+          Le produit archifiltre est développé au sein d&rsquo;une start-up
+          d&rsquo;Etat faisant partie de la Fabrique numérique des ministères
+          sociaux.
+        </Typography>
+      </Box>
       <Box p={3} textAlign="center">
         <Typography variant="h5" color="textPrimary">
           L&rsquo;équipe
@@ -51,7 +63,7 @@ const Downloads: FC = () => {
       </Grid>
       <Box p={3} textAlign="center">
         <Typography variant="h5" color="textPrimary">
-          Histiorique du projet
+          Historique du projet
         </Typography>
       </Box>
       <Timeline align="alternate">

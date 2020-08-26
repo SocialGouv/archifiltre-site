@@ -41,6 +41,15 @@ const Footer: FC = () => {
               Mentions légales
             </Link>
           </Grid>
+          <Grid item>
+            <Link
+              href="mailto:archifiltre@sg.social.gouv.fr"
+              target="_blank"
+              color="inherit"
+            >
+              Nous contacter
+            </Link>
+          </Grid>
         </Grid>
         <Grid container spacing={2} justify="center">
           <Grid item>
