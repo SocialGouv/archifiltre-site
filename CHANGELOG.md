@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.10.0...v1.11.0) (2020-08-26)
+
+
+### Features
+
+* add cookie consent message ([#41](https://github.com/SocialGouv/archifiltre-site/issues/41)) ([7696c0e](https://github.com/SocialGouv/archifiltre-site/commit/7696c0e562df24fc08c4ea5ca5b33722f4cdd4fa))
+
 # [1.10.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.9.0...v1.10.0) (2020-08-26)
 
 
