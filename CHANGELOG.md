@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.9.0...v1.10.0) (2020-08-26)
+
+
+### Features
+
+* **design:** update misc UI elements ([#38](https://github.com/SocialGouv/archifiltre-site/issues/38)) ([e98b894](https://github.com/SocialGouv/archifiltre-site/commit/e98b894f90b27b14f3e6d99bf86dd4c2e9f6e836))
+
 # [1.9.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.8.0...v1.9.0) (2020-08-26)
 
 
