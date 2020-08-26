@@ -7,6 +7,7 @@ import useSiteMetadata from "../hooks/useSiteMetadata";
 import themes from "../theme";
 import Footer from "./footer";
 import Header from "./header";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const useStyles = makeStyles((theme: Theme) => ({
   main: {
@@ -27,7 +28,9 @@ const Layout: FC<{ container?: boolean }> = ({
 }) => {
   const classes = useStyles();
   const { title } = useSiteMetadata();
-  const [theme, setTheme] = useLocalStorage("theme", "light");
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const initialThemeValue = prefersDarkMode ? "dark" : "light";
+  const [theme, setTheme] = useLocalStorage("theme", initialThemeValue);
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
