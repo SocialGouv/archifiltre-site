@@ -28,9 +28,16 @@ export interface HeaderProps {
 
 export const logoQuery = graphql`
   query {
-    file(relativePath: { eq: "logo.png" }) {
+    logo: file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
         fixed(width: 160, height: 18) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    logoWhite: file(relativePath: { eq: "logo-white.png" }) {
+      childImageSharp {
+        fixed(width: 170, height: 18) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -57,8 +64,12 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
               className={classes.link}
             >
               <Img
-                fixed={data.file.childImageSharp.fixed}
                 alt="Logo Archifiltre"
+                fixed={
+                  theme === "light"
+                    ? data.logo.childImageSharp.fixed
+                    : data.logoWhite.childImageSharp.fixed
+                }
               />
             </Link>
             <Box flex={1} />
