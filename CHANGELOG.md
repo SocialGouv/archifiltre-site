@@ -1,3 +1,11 @@
+# [1.9.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.8.0...v1.9.0) (2020-08-26)
+
+
+### Features
+
+* **about:** add linkedin links ([#39](https://github.com/SocialGouv/archifiltre-site/issues/39)) ([be71a6c](https://github.com/SocialGouv/archifiltre-site/commit/be71a6c31be62bc40203c197ead5ccbb7cfe716f))
+* update primary color on dark theme ([#40](https://github.com/SocialGouv/archifiltre-site/issues/40)) ([5a2613e](https://github.com/SocialGouv/archifiltre-site/commit/5a2613e1143e1fe6a63653974e7cd0e08432782b))
+
 # [1.8.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.7.0...v1.8.0) (2020-08-25)
 
 
