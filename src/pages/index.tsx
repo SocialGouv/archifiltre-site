@@ -14,6 +14,7 @@ import SEO from "../components/seo";
 import versions from "../display-data/versions";
 import Layout from "../layout";
 import { defaultOperatingSystem, getOperatingSystem } from "../utils/os-util";
+import GetAppIcon from "@material-ui/icons/GetApp";
 
 const useStyles = makeStyles((theme: Theme) => ({
   downloadLink: {
@@ -52,6 +53,7 @@ const IndexPage: FC = () => {
                 variant="contained"
                 size="large"
                 color="primary"
+                startIcon={<GetAppIcon />}
               >
                 Télécharger
               </Button>
@@ -65,7 +67,7 @@ const IndexPage: FC = () => {
                 to="/telechargements"
                 size="small"
               >
-                Besoin d&rsquo;une ancienne version ?
+                Besoin d&rsquo;une autre version ?
               </Button>
             </Grid>
           </Grid>
@@ -74,7 +76,7 @@ const IndexPage: FC = () => {
       <Box p={3} pb={6} textAlign="center">
         <Box p={3} pb={6}>
           <Typography variant="h5" color="textPrimary">
-            Ce que nous faisons
+            Ce qu&rsquo;Archifiltre permet
           </Typography>
         </Box>
         <Presentation />

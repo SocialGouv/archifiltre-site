@@ -285,7 +285,7 @@ export default [
   },
   {
     date: "02/03/2018",
-    name: "Abstract Antilope",
+    name: "Abstract Antilop",
     number: "1.1.0",
     platforms: [
       {

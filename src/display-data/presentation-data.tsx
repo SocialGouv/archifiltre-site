@@ -1,25 +1,24 @@
+import AddToPhotosIcon from "@material-ui/icons/AddToPhotos";
 import FileCopyIcon from "@material-ui/icons/FileCopy";
 import InfoIcon from "@material-ui/icons/Info";
 import SearchIcon from "@material-ui/icons/Search";
-import StorageIcon from "@material-ui/icons/Storage";
-
 import React from "react";
 
 export const presentationData = [
   {
     logo: <InfoIcon />,
-    title: "Obtenez des informations",
+    title: "Appréhender des arborescences",
   },
   {
-    logo: <StorageIcon />,
-    title: "Enrichissez vos données",
+    logo: <AddToPhotosIcon />,
+    title: "Enrichir des métadonnées",
   },
   {
     logo: <SearchIcon />,
-    title: "Menez une opération d'audit",
+    title: "Mener un audit",
   },
   {
     logo: <FileCopyIcon />,
-    title: "Identifiez les redondances",
+    title: "Identifier les redondances",
   },
 ];

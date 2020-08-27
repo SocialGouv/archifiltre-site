@@ -6,73 +6,73 @@ import SEO from "../components/seo";
     <h1>FAQ</h1>
 </div>
 
-## Comment archifiltre détecte-t-il les doublons ?
+## Comment installer Archifiltre ?
 
-Pour déterminer que deux éléments sont identiques, nous utilisons une fonction de hachage reposant sur l'[algorithme MD5](https://fr.wikipedia.org/wiki/MD5). Cet méthode est appliquée sur tous les fichiers en utilisant leur contenu et pas leur métadonnées. Ainsi, même si deux fichiers ont le même contenu mais pas le même nom, il seront détectés comme des redondances. Pour les dossiers, nous juxtasposons les hashs MD5 de ses enfants et en calculons un nouveau hash.
+Vous pouvez installer Archifiltre en cliquant sur le lien de la page d'accueil. **Pas besoin d'installation**, un double clic sur l'exécutable ouvrira Archifiltre. Des versions web sont disponibles (jusqu'à la version 1.8) mais ne sont plus maintenues à jour.
 
-## Quelles sont les caractéristiques minimales pour faire fonctionner archifiltre ?
+## Quelles sont les caractéristiques minimales pour faire fonctionner Archifiltre ?
 
 Voici la configuration recommandée pour faire fonctionner Archifiltre correctement :
-- Système d‘exploitation Windows 64 bits, Windows 32 bits, Linux ou MacOS
-- 8Go de RAM
+- Système d‘exploitation **Windows 64 bits**, **Windows 32 bits**, **Linux** ou **MacOS**
+- **8Go** de RAM
 - Pas de limite de mémoire de processus
-Depuis la version 1.9, Archifiltre est une application locale. Téléchargez simplement l’exécutable et double-cliquez dessus, inutile de l’installer !
+Depuis la version 1.9, Archifiltre est une **application locale**. Téléchargez simplement l’exécutable et double-cliquez dessus, inutile de l’installer !
 
-## Comment récupérer mes logs d'utilisation ?
+## Est-ce que j'ai besoin de me créer un compte pour utiliser Archifiltre ?
 
-Pour accéder à vos logs locaux, cherchez le fichier "archifiltre-logs-{date-des-logs}". Il se trouve :
-- Sur Windows : C:\Users\\{utilisateur}\AppData\Roaming\archifiltre
-- Sur Mac : /Users/{utilisateur}/Library/Application Support/archifiltre
-- Sur Linux : /home/.config/archifiltre
-
-## Avec quels langages et technologies ArchiFiltre est-il développé ?
-
-Archifiltre est développé avec les technologies suivantes :
-- Javascript et Typescript pour les langages de programmation
-- HTML et CSS pour l'interface utilisateur
-- Electron pour créer un exécutable avec du code Javascript
-- Material UI pour les composants graphiques
-- React et Redux pour la gestion des données et leur affichage
-
-Pour le détail de toutes les technologies utilisées, vous pouvez consulter notre code, open-source sur [GitHub](https://github.com/SocialGouv/archifiltre)
+**Non**, tout fonctionne sans création de compte.
 
 ## Est-ce que les données des serveurs que je veux analyser seront protégées ?
 
-Archifiltre n'exploite pas les données personnelles des utilisateurs. Cependant, nous utilisons [Matomo](https://fr.matomo.org/), un outil open-source pour avoir des statistiques d'utilisation sur notre outil. Lorsque vous utilisez Archifiltre, voici les informations auxquelles nous avons accès :
+**Archifiltre n'exploite pas les données personnelles des utilisateur·trice·s**. Cependant, nous utilisons [Matomo](https://fr.matomo.org/), un outil open-source pour avoir des statistiques d'utilisation sur notre outil. Lorsque vous utilisez Archifiltre, voici les informations auxquelles nous avons accès :
 - Lors du dépôt de fichiers:
-  - le nombre de fichiers déposés
-  - leur répartition par extension
-  - le temps total du chargement
-- Export en CSV (mais pas son contenu): si vous en avez réalisé 1 ou plusieurs
-- Export en RESIP (mais pas son contenu): idem
-- Export en METS (mais pas son contenu): idem
-- Export d'un rapport d'audit (mais pas son contenu): idem
-- Ajout d'une description à un élément (mais pas le texte lui-même)
-- Ajout d'un tag à un élément: nombre de tags créés mais pas les tags eux-mêmes
-- Changement entre vue par nombre et par volume: si vous avez utilisé les différentes vues
-- Changement entre vue par type et par date
-- Double-clic sur un élément pour zoomer dessus: le nombre de clics
-
-## Est-ce que j'ai besoin de me créer un compte pour utiliser archifiltre ?
-
-Non, tout fonctionne sans création de compte.
-
-## Comment installer Archifiltre
-
-Vous pouvez installer archifiltre en cliquant sur le lien de la page d'accueil. Pas besoin d'installation, un double clic sur l'exécutable ouvrira archifiltre. Des versions web sont disponibles (jusqu'à la version 1.8) mais ne sont plus maintenues à jour.
-
-## Est-ce que je dois mettre à jour régulièrement archifiltre ?
-
-Nous vous conseillons d'utiliser la dernière version d'achifiltre, mais il est possible de télécharger et d'utiliser les anciennes versions.
-
-## Quels types de fichiers peuvent être analysés ?
-
-Archifiltre prend en compte toutes les extensions de fichiers et exclut juste les fichiers cachés et système de l'analyse. De plus, la plupart des extensions de fichiers auront un code couleur dans l'arborescence, mais celles qui ne peuvent pas être catégorisées seront affichées en gris.
+  - le **nombre de fichiers déposés**
+  - leur **répartition par extension**
+  - le **temps total du chargement**
+- **Export en CSV** (mais pas son contenu): si vous en avez réalisé 1 ou plusieurs
+- **Export en RESIP** (mais pas son contenu): idem
+- **Export en METS** (mais pas son contenu): idem
+- **Export d'un rapport d'audit** (mais pas son contenu): idem
+- Ajout d'une **description** à un élément (mais pas le texte lui-même)
+- Ajout d'un **tag** à un élément: nombre de tags créés mais pas les tags eux-mêmes
+- Changement entre **vue par nombre et par volume**: si vous avez utilisé les différentes vues
+- Changement entre **vue par type et par date**
+- Double-clic sur un élément pour **zoomer** dessus: le nombre de clics
 
 ## Je ne suis pas archiviste, est-ce que je peux utiliser Archifiltre ?
 
-Oui, Archifiltre peut être utilisé par tout le monde. Certaines fonctionnalités ont été conçues spécialement pour les archivistes, mais le logiciel peut être utilisé par tout le monde pour visualiser des arborescences et travailler dessus.
+Oui, Archifiltre peut être utilisé par tout le monde. Certaines fonctionnalités ont été conçues spécialement pour les archivistes, mais le logiciel peut être utilisé par tout le monde pour visualiser des arborescences de fichiers, auditer, et enrichir leurs métadonnées.
+
+## Quels types de fichiers peuvent être analysés ?
+
+Archifiltre prend en compte **toutes les extensions de fichiers** et exclut juste les fichiers cachés et système de l'analyse. De plus, la plupart des **extensions** de fichiers auront un **code couleur** dans l'arborescence, mais celles qui ne peuvent pas être catégorisées seront affichées en gris.
+
+## Comment Archifiltre détecte-t-il les doublons ?
+
+Pour déterminer que deux éléments sont identiques, nous utilisons une fonction de hachage reposant sur **l'[algorithme MD5](https://fr.wikipedia.org/wiki/MD5)**. Cette méthode est appliquée sur tous les fichiers à partir leur contenu mais pas de leurs métadonnées (nom du fichier par exemple). Ainsi, même si deux fichiers ont le même contenu mais pas le même nom, il seront détectés comme des redondances. Pour les dossiers, nous juxtaposons les hashs MD5 de leurs enfants et en calculons un nouveau hash.
+
+## Est-ce que je dois mettre à jour régulièrement Archifiltre ?
+
+**Nous vous conseillons d'utiliser la dernière version d'Achifiltre**, mais il est possible de télécharger et d'utiliser les anciennes versions.
+
+## Comment récupérer mes logs d'utilisation ?
+
+Pour accéder à vos logs locaux, cherchez le fichier **"archifiltre-logs-{date-des-logs}"**. Il se trouve :
+- Sur **Windows** : C:\Users\\{utilisateur}\AppData\Roaming\archifiltre
+- Sur **Mac** : /Users/{utilisateur}/Library/Application Support/archifiltre
+- Sur **Linux** : /home/.config/archifiltre
+
+## Avec quels langages et technologies Archifiltre est-il développé ?
+
+Archifiltre est développé avec les technologies suivantes :
+- **Javascript** et **Typescript** pour les langages de programmation
+- **HTML** et **CSS** pour l'interface utilisateur
+- **Electron** pour créer un exécutable avec du code Javascript
+- **Material UI** pour les composants graphiques
+- **React** et **Redux** pour la gestion des données et leur affichage
+
+Pour le détail de toutes les technologies utilisées, vous pouvez consulter notre code, open-source sur [GitHub](https://github.com/SocialGouv/archifiltre).
 
 ## Qui contacter si j'ai des suggestions d'amélioration ?
 
-Pour suggérer des améliorations, vous pouvez laisser une issue sur [GitHub](https://github.com/SocialGouv/archifiltre/issues) ou nous contacter par [mail](mailto:archifiltre@sg.social.gouv.fr)
+Pour suggérer des améliorations, vous pouvez laisser une **issue sur [GitHub](https://github.com/SocialGouv/archifiltre/issues)**, suggérer du code via une **[pull request](https://github.com/SocialGouv/archifiltre/pulls)** ou nous **contacter par [mail](mailto:archifiltre@sg.social.gouv.fr)**.
