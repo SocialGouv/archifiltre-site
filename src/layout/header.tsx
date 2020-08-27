@@ -1,5 +1,6 @@
 import { AppBar, Button, Link, Theme, Toolbar } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
+import Tooltip from "@material-ui/core/Tooltip";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import Brightness7Icon from "@material-ui/icons/Brightness7";
@@ -92,17 +93,21 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
                 >
                   Co-créez Archifiltre
                 </Button>
-                <Button
-                  color="inherit"
-                  onClick={onToggleTheme}
-                  aria-label="Thème clair/sombre"
+                <Tooltip
+                  title={theme === "light" ? "Thème sombre" : "Thème clair"}
                 >
-                  {theme === "light" ? (
-                    <Brightness4Icon />
-                  ) : (
-                    <Brightness7Icon />
-                  )}
-                </Button>
+                  <Button
+                    color="inherit"
+                    onClick={onToggleTheme}
+                    aria-label="Thème clair/sombre"
+                  >
+                    {theme === "light" ? (
+                      <Brightness4Icon />
+                    ) : (
+                      <Brightness7Icon />
+                    )}
+                  </Button>
+                </Tooltip>
               </>
             )}
           </Toolbar>
