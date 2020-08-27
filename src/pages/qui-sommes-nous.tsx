@@ -2,6 +2,7 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Timeline from "@material-ui/lab/Timeline";
+import { createStyles, makeStyles } from "@material-ui/styles";
 import React, { FC } from "react";
 
 import SEO from "../components/seo";
@@ -10,7 +11,6 @@ import TimelineElement from "../components/timeline-element";
 import { currentMembers, oldMembers } from "../display-data/team-data";
 import { timelineElements } from "../display-data/timeline-data";
 import Layout from "../layout";
-import { createStyles, makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -32,9 +32,12 @@ const Downloads: FC = () => {
       </Box>
       <Box textAlign="center">
         <Typography variant="body1">
-          Le produit archifiltre est développé au sein d&rsquo;une start-up
+          Le produit Archifiltre est développé au sein d&rsquo;une start-up
           d&rsquo;Etat faisant partie de la Fabrique numérique des ministères
-          sociaux.
+          sociaux. L&rsquo;équipe associe les archivistes des ministères sociaux
+          et des profils techniques complémentaires (Développeur, UX designer,
+          Product Manager, etc) pour développer un outil avec les méthodes
+          agiles en co-construction permanente avec ses utilisateur·trice·s.
         </Typography>
       </Box>
       <Box p={3} textAlign="center">
