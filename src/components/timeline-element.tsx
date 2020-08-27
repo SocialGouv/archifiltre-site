@@ -8,7 +8,7 @@ import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
 import React, { FC, ReactNode } from "react";
 
 type TimelineElementProps = {
-  title: string;
+  title: ReactNode;
   date: string;
   link?: string;
   icon?: ReactNode;
