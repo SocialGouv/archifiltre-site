@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.12.0...v1.13.0) (2020-08-28)
+
+
+### Features
+
+* update available environment variables ([#51](https://github.com/SocialGouv/archifiltre-site/issues/51)) ([1fcb0e3](https://github.com/SocialGouv/archifiltre-site/commit/1fcb0e3fd5cec1e272b2b97f783e74de53b3264f))
+
 # [1.12.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.11.0...v1.12.0) (2020-08-27)
 
 
