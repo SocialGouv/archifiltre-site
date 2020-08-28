@@ -4,7 +4,9 @@ const path = require(`path`);
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "dev"}`,
 });
-
+console.log("===========================");
+console.log("process.env", process.env);
+console.log("===========================");
 module.exports = {
   plugins: [
     `gatsby-plugin-typescript`,
@@ -14,7 +16,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       options: {
-        dev: true,
         matomoUrl: process.env.MATOMO_URL,
         siteId: process.env.MATOMO_APPLICATION_ID,
         siteUrl: process.env.SITE_URL,
