@@ -19,7 +19,8 @@
         "@typescript-eslint",
         "react",
         "react-hooks",
-        "prettier"
+        "prettier",
+        "import"
     ],
     "env": {
         "browser": true,
@@ -29,7 +30,15 @@
     "settings": {
         "react": {
             "version": "detect"
-          }
+          },
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true
+            }
+        }
     },
     "rules": {
         "prettier/prettier": "error",

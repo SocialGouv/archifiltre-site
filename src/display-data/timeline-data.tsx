@@ -1,12 +1,14 @@
-import GroupIcon from "@material-ui/icons/Group";
 import BookmarkIcon from "@material-ui/icons/Bookmark";
-import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
 import BuildIcon from "@material-ui/icons/Build";
 import BusinessIcon from "@material-ui/icons/Business";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 import EmojiEmotionsIcon from "@material-ui/icons/EmojiEmotions";
-import EuroIcon from "@material-ui/icons/Euro";
 import ForumIcon from "@material-ui/icons/Forum";
+import GroupIcon from "@material-ui/icons/Group";
+import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
+import Looks3Icon from "@material-ui/icons/Looks3";
+import LooksOneIcon from "@material-ui/icons/LooksOne";
+import LooksTwoIcon from "@material-ui/icons/LooksTwo";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import PlayCircleFilledWhiteIcon from "@material-ui/icons/PlayCircleFilledWhite";
 import PublicIcon from "@material-ui/icons/Public";
@@ -14,9 +16,6 @@ import SyncIcon from "@material-ui/icons/Sync";
 import VideocamIcon from "@material-ui/icons/Videocam";
 import WorkIcon from "@material-ui/icons/Work";
 import React, { ReactNode } from "react";
-import LooksOneIcon from "@material-ui/icons/LooksOne";
-import LooksTwoIcon from "@material-ui/icons/LooksTwo";
-import Looks3Icon from "@material-ui/icons/Looks3";
 
 export type TimelineElement = {
   title: ReactNode;

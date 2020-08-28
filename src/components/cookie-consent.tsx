@@ -4,14 +4,15 @@ import cookie from "js-cookie";
 import React, { useCallback, useEffect, useState } from "react";
 
 const CookieConsent = () => {
-  const [isCookieConsentHidden, setCookieConsentHidden] = useState(false);
+  const [isCookieConsentHidden, setIsCookieConsentHidden] = useState(false);
+
   useEffect(() => {
-    setCookieConsentHidden(cookie.get("cookieConsent"));
-  }, []);
+    setIsCookieConsentHidden(cookie.get("cookieConsent"));
+  }, [setIsCookieConsentHidden]);
   const onClose = useCallback(() => {
-    setCookieConsentHidden(true);
+    setIsCookieConsentHidden(true);
     cookie.set("cookieConsent", true, { expires: 365 });
-  }, []);
+  }, [setIsCookieConsentHidden]);
 
   return (
     <Snackbar open={!isCookieConsentHidden}>

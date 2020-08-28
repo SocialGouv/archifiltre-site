@@ -2,6 +2,7 @@ import { Button, Grid, Theme } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import GetAppIcon from "@material-ui/icons/GetApp";
 import { makeStyles } from "@material-ui/styles";
 import { Link as GatsbyLink } from "gatsby";
 import React, { FC } from "react";
@@ -14,7 +15,6 @@ import SEO from "../components/seo";
 import versions from "../display-data/versions";
 import Layout from "../layout";
 import { defaultOperatingSystem, getOperatingSystem } from "../utils/os-util";
-import GetAppIcon from "@material-ui/icons/GetApp";
 
 const useStyles = makeStyles((theme: Theme) => ({
   downloadLink: {

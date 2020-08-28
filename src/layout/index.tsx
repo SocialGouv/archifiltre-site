@@ -5,7 +5,6 @@ import React, { FC } from "react";
 
 import CookieConsent from "../components/cookie-consent";
 import useLocalStorage from "../hooks/useLocalStorage";
-import useSiteMetadata from "../hooks/useSiteMetadata";
 import themes from "../theme";
 import Footer from "./footer";
 import Header from "./header";
@@ -28,7 +27,6 @@ const Layout: FC<{ container?: boolean }> = ({
   container = false,
 }) => {
   const classes = useStyles();
-  const { title } = useSiteMetadata();
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const initialThemeValue = prefersDarkMode ? "dark" : "light";
   const [theme, setTheme] = useLocalStorage("theme", initialThemeValue);
@@ -42,7 +40,7 @@ const Layout: FC<{ container?: boolean }> = ({
       <CssBaseline />
       <CookieConsent />
       <div className={classes.root}>
-        <Header siteTitle={title} onToggleTheme={toggleTheme} theme={theme} />
+        <Header onToggleTheme={toggleTheme} theme={theme} />
         {container ? (
           <Container component="main" maxWidth="md" className={classes.main}>
             {children}
