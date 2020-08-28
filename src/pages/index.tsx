@@ -14,7 +14,12 @@ import ProductFeatures from "../components/product-features";
 import SEO from "../components/seo";
 import versions from "../display-data/versions";
 import Layout from "../layout";
-import { defaultOperatingSystem, getOperatingSystem } from "../utils/os-util";
+import { trackAppDownload } from "../tracker";
+import {
+  defaultOperatingSystem,
+  getOperatingSystem,
+  OS,
+} from "../utils/os-util";
 
 const useStyles = makeStyles((theme: Theme) => ({
   downloadLink: {
@@ -40,6 +45,10 @@ const getDownloadLink = (): string => {
 
 const IndexPage: FC = () => {
   const classes = useStyles();
+  const onDownloadClick = () => {
+    const userOperatingSystem = OS[getOperatingSystem()];
+    trackAppDownload(versions[0].number, userOperatingSystem);
+  };
   return (
     <Layout>
       <SEO title="Accueil" />
@@ -54,6 +63,7 @@ const IndexPage: FC = () => {
                 variant="contained"
                 size="large"
                 color="primary"
+                onClick={onDownloadClick}
                 startIcon={<GetAppIcon />}
               >
                 Télécharger
