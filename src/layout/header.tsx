@@ -56,7 +56,10 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
               color="inherit"
               className={classes.link}
             >
-              <Img fixed={data.file.childImageSharp.fixed} />
+              <Img
+                fixed={data.file.childImageSharp.fixed}
+                alt="Logo Archifiltre"
+              />
             </Link>
             <Box flex={1} />
             {!isMobile &&
@@ -89,7 +92,11 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
                 >
                   Co-créez Archifiltre
                 </Button>
-                <Button color="inherit" onClick={onToggleTheme}>
+                <Button
+                  color="inherit"
+                  onClick={onToggleTheme}
+                  aria-label="Thème clair/sombre"
+                >
                   {theme === "light" ? (
                     <Brightness4Icon />
                   ) : (

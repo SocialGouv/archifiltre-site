@@ -1,4 +1,4 @@
-import { Container, Grid, Link, Theme } from "@material-ui/core";
+import { Button, Container, Grid, Link, Theme } from "@material-ui/core";
 import BookIcon from "@material-ui/icons/Book";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MailIcon from "@material-ui/icons/Mail";
@@ -26,18 +26,14 @@ const Footer: FC = () => {
             <Link
               href="https://www.fabrique.social.gouv.fr/"
               target="_blank"
+              rel="noopener"
               color="inherit"
             >
               Fabrique des ministères sociaux
             </Link>
           </Grid>
           <Grid item>
-            <Link
-              component={GatsbyLink}
-              to="/mentions-legales"
-              target="_blank"
-              color="inherit"
-            >
+            <Link component={GatsbyLink} to="/mentions-legales" color="inherit">
               Mentions légales
             </Link>
           </Grid>
@@ -45,6 +41,7 @@ const Footer: FC = () => {
             <Link
               href="mailto:archifiltre@sg.social.gouv.fr"
               target="_blank"
+              rel="noopener"
               color="inherit"
             >
               Nous contacter
@@ -56,7 +53,9 @@ const Footer: FC = () => {
             <Link
               href="https://twitter.com/archifiltre"
               target="_blank"
+              rel="noopener"
               color="inherit"
+              aria-label="Twitter"
             >
               <TwitterIcon />
             </Link>
@@ -65,7 +64,9 @@ const Footer: FC = () => {
             <Link
               href="https://github.com/SocialGouv/archifiltre/wiki/Wiki-Archifiltre"
               target="_blank"
+              rel="noopener"
               color="inherit"
+              aria-label="Wiki archifiltre"
             >
               <BookIcon />
             </Link>
@@ -74,7 +75,9 @@ const Footer: FC = () => {
             <Link
               href="https://www.youtube.com/channel/UClDwrT-Y1NY9WnEiXLMHp6w"
               target="_blank"
+              rel="noopener"
               color="inherit"
+              aria-label="Youtube"
             >
               <YouTubeIcon />
             </Link>
@@ -83,7 +86,9 @@ const Footer: FC = () => {
             <Link
               href="https://github.com/SocialGouv/archifiltre"
               target="_blank"
+              rel="noopener"
               color="inherit"
+              aria-label="GitHub"
             >
               <GitHubIcon />
             </Link>
@@ -91,8 +96,10 @@ const Footer: FC = () => {
           <Grid item>
             <Link
               href="mailto:archifiltre@sg.social.gouv.fr"
+              rel="noopener"
               target="_blank"
               color="inherit"
+              aria-label="Nous contacter"
             >
               <MailIcon />
             </Link>

@@ -41,6 +41,7 @@ const TeamMember: FC<TeamMemberProps> = ({ job, name, photo, url }) => {
           size="small"
           startIcon={<LinkedInIcon />}
           target="_blank"
+          rel="noopener"
           href={url}
         >
           Voir le profil
