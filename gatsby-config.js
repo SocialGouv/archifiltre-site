@@ -5,9 +5,7 @@ const path = require(`path`);
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "dev"}`,
 });
-console.log("===========================");
-console.log("process.env", process.env);
-console.log("===========================");
+
 module.exports = {
   plugins: [
     `gatsby-plugin-typescript`,
