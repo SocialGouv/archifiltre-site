@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/camelcase */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require(`path`);
 
 require("dotenv").config({
@@ -38,11 +39,11 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
     },
     {
-      resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: path.join(__dirname, `static`, `images`),
       },
+      resolve: `gatsby-source-filesystem`,
     },
     {
       // If you want to use styled components you should change the injection order.

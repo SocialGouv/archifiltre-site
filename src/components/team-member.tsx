@@ -1,11 +1,11 @@
 import { Card } from "@material-ui/core";
 import Avatar from "@material-ui/core/Avatar";
-import CardHeader from "@material-ui/core/CardHeader";
-import { createStyles, makeStyles } from "@material-ui/styles";
-import React, { FC } from "react";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Button from "@material-ui/core/Button";
 import CardActions from "@material-ui/core/CardActions";
+import CardHeader from "@material-ui/core/CardHeader";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import { createStyles, makeStyles } from "@material-ui/styles";
+import React, { FC } from "react";
 
 type TeamMemberProps = {
   job: string;

@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   root: {
     margin: theme.spacing(2),
-    minWidth: 275,
     minHeight: 200,
+    minWidth: 275,
   },
   title: {
     fontSize: 14,
