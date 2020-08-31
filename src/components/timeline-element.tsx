@@ -42,7 +42,7 @@ const TimelineElement: FC<TimelineElementProps> = ({
       <Typography color={isMajor ? "primary" : "inherit"}>{title}</Typography>
       {link && (
         <div>
-          <Link href={link} target="_blank">
+          <Link href={link} target="_blank" rel="noopener">
             En savoir plus
           </Link>
         </div>

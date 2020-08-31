@@ -8,7 +8,7 @@ type DownloadLinkProps = {
 };
 
 const DownloadLink: FC<DownloadLinkProps> = ({ url, label }) => (
-  <Button target="_blank" href={url} color="inherit">
+  <Button target="_blank" href={url} color="inherit" rel="noopener">
     <GetAppIcon />
     {label}
   </Button>

@@ -19,7 +19,7 @@ const ProductFeatures: FC = () => {
   return (
     <Box className={classes.content}>
       <Box pb={6} display="flex" justifyContent="center">
-        <Typography variant="h5" color="textPrimary">
+        <Typography variant="h5" component="h2" color="textPrimary">
           Pourquoi c&rsquo;est si simple ?
         </Typography>
       </Box>

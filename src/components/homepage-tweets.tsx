@@ -54,6 +54,7 @@ const HomepageTweets: FC = () => {
                 size="small"
                 startIcon={<TwitterIcon />}
                 target="_blank"
+                rel="noopener"
                 href={tweet.url}
               >
                 Voir le tweet
