@@ -1,3 +1,11 @@
+# [1.16.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.15.0...v1.16.0) (2020-08-31)
+
+
+### Features
+
+* improve social page ([#47](https://github.com/SocialGouv/archifiltre-site/issues/47)) ([89e865d](https://github.com/SocialGouv/archifiltre-site/commit/89e865d970ad97efe316d5e74cdd17bab16e8009))
+* update faq page with an accordion ([#46](https://github.com/SocialGouv/archifiltre-site/issues/46)) ([b7f073d](https://github.com/SocialGouv/archifiltre-site/commit/b7f073d4a7b41e380296cd3201a94bac5a6904f8))
+
 # [1.15.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.14.0...v1.15.0) (2020-08-31)
 
 
