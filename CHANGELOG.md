@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.14.0...v1.15.0) (2020-08-31)
+
+
+### Features
+
+* **tracking:** add matomo trackers ([#50](https://github.com/SocialGouv/archifiltre-site/issues/50)) ([1533fb8](https://github.com/SocialGouv/archifiltre-site/commit/1533fb8e4b7242bcd40e5166861b773e6728fb85))
+
 # [1.14.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.13.0...v1.14.0) (2020-08-31)
 
 
