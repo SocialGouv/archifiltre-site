@@ -17,6 +17,10 @@ type TeamMemberProps = {
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
+      display: "flex",
+      flexDirection: "column",
+      height: "100%",
+      justifyContent: "space-between",
       minHeight: 120,
       minWidth: 200,
     },
@@ -42,6 +46,7 @@ const TeamMember: FC<TeamMemberProps> = ({ job, name, photo, url }) => {
           startIcon={<LinkedInIcon />}
           target="_blank"
           rel="noopener"
+          color="primary"
           href={url}
         >
           Voir le profil
