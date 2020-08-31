@@ -1,3 +1,11 @@
+# [1.14.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.13.0...v1.14.0) (2020-08-31)
+
+
+### Features
+
+* **a11y:** improve a11y and best practices with Lighthouse ([#52](https://github.com/SocialGouv/archifiltre-site/issues/52)) ([c4c00ce](https://github.com/SocialGouv/archifiltre-site/commit/c4c00ce289579701986c2d76006e0e20f63878b0))
+* add links on product page ([#49](https://github.com/SocialGouv/archifiltre-site/issues/49)) ([9ebf5dd](https://github.com/SocialGouv/archifiltre-site/commit/9ebf5dd0c95c0dd69278d7036a8b3a8e5a51da04))
+
 # [1.13.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.12.0...v1.13.0) (2020-08-28)
 
 
