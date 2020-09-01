@@ -1,6 +1,19 @@
 import SEO from "../components/seo";
+import Img from "gatsby-image";
 
 <SEO title="Co-construction" />
+
+export const imageQuery = graphql`
+  query {
+    file(relativePath: { eq: "openlab.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600, maxHeight: 320) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
 <div align="center">
     <h1>Co-construction</h1>
@@ -38,7 +51,7 @@ limité.
 ### Photos des openlabs précédents
 
 <div align="center">
-    <img src="images/openlab/openlab1.jpg" width="800px" alt="openlab Archifiltre"/>
+    <Img fluid={props.data.file.childImageSharp.fluid} alt="Openlab Archifiltre"/>
 </div>
 
 ## Devenez ambassadeur·drice·s Archifiltre !

@@ -36,7 +36,7 @@ const Telechargements: FC = () => (
             <Button
               color="primary"
               component={GatsbyLink}
-              to="/changelog"
+              to="/produit"
               size="small"
             >
               Nouveautés

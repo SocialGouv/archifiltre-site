@@ -1,10 +1,11 @@
-import { Box, Grid } from "@material-ui/core";
+import { Box, Grid, Theme } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import { graphql, StaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import React, { FC } from "react";
 
 import { presentationData } from "../display-data/presentation-data";
+import { makeStyles } from "@material-ui/styles";
 
 export const imageQuery = graphql`
   query {
@@ -18,29 +19,38 @@ export const imageQuery = graphql`
   }
 `;
 
-const Presentation: FC = () => (
-  <StaticQuery
-    query={imageQuery}
-    render={(data) => (
-      <Grid container spacing={1} alignItems="center">
-        <Grid item md={6}>
-          <Grid container spacing={6}>
-            {presentationData.map((presentationItem) => (
-              <Grid item md={6} key={presentationItem.title}>
-                <Typography variant="h6" color="textPrimary">
-                  <Box>{presentationItem.logo}</Box>
-                  <Box>{presentationItem.title}</Box>
-                </Typography>
-              </Grid>
-            ))}
+const useStyles = makeStyles((theme: Theme) => ({
+  root: {
+    width: "100%",
+  },
+}));
+
+const Presentation: FC = () => {
+  const classes = useStyles();
+  return (
+    <StaticQuery
+      query={imageQuery}
+      render={(data) => (
+        <Grid container spacing={1} alignItems="center" justify="center">
+          <Grid item md={6}>
+            <Grid container spacing={6} justify="center">
+              {presentationData.map((presentationItem) => (
+                <Grid item md={6} key={presentationItem.title}>
+                  <Typography variant="h6" color="textPrimary">
+                    <Box>{presentationItem.logo}</Box>
+                    <Box>{presentationItem.title}</Box>
+                  </Typography>
+                </Grid>
+              ))}
+            </Grid>
+          </Grid>
+          <Grid item md={6} className={classes.root}>
+            <Img fluid={data.file.childImageSharp.fluid} />
           </Grid>
         </Grid>
-        <Grid item md={6}>
-          <Img fluid={data.file.childImageSharp.fluid} />
-        </Grid>
-      </Grid>
-    )}
-  />
-);
+      )}
+    />
+  );
+};
 
 export default Presentation;
