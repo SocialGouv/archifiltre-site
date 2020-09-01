@@ -7,7 +7,7 @@ declare global {
 type TrackerAction = {
   type: string;
   title?: string;
-  value?: any;
+  value?: string;
 };
 
 const sanitizeTrackerData = (trackerAction: TrackerAction) =>

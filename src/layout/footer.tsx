@@ -1,4 +1,4 @@
-import { Button, Container, Grid, Link, Theme } from "@material-ui/core";
+import { Container, Grid, Link, Theme } from "@material-ui/core";
 import BookIcon from "@material-ui/icons/Book";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MailIcon from "@material-ui/icons/Mail";
