@@ -1,3 +1,17 @@
+# [1.17.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.16.0...v1.17.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* **logo:** fix bad logo display in dark theme ([#42](https://github.com/SocialGouv/archifiltre-site/issues/42)) ([569212f](https://github.com/SocialGouv/archifiltre-site/commit/569212f4300b65410c6f7239d2bb1154d1d36095))
+* **ui:** fix several non responsive elements ([#43](https://github.com/SocialGouv/archifiltre-site/issues/43)) ([f9eef8f](https://github.com/SocialGouv/archifiltre-site/commit/f9eef8f228113ba1e4ec3c4927443dddd7a43f29))
+
+
+### Features
+
+* add tooltip on toggle theme button ([#45](https://github.com/SocialGouv/archifiltre-site/issues/45)) ([0090a07](https://github.com/SocialGouv/archifiltre-site/commit/0090a07cf0a4602a5cabbb1e76c95aab4c080e25))
+* update misc ui elements ([#54](https://github.com/SocialGouv/archifiltre-site/issues/54)) ([05e67af](https://github.com/SocialGouv/archifiltre-site/commit/05e67af41bd6790e833b10c98732ee0fd3fb6b24))
+
 # [1.16.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.15.0...v1.16.0) (2020-08-31)
 
 
