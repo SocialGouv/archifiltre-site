@@ -1853,21 +1853,21 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@socialgouv/eslint-config-react@^1.25.0":
-  version "1.25.0"
-  resolved "https://registry.yarnpkg.com/@socialgouv/eslint-config-react/-/eslint-config-react-1.25.0.tgz#0ac2f85d27e1459634fdd85fb1c839ae51e367cc"
-  integrity sha512-aZ0YNrPXBaGsWa7FGv9XqZ/myuMyfaL7iGUtZtVAixtDp+rnTMOe0GiOEs3G7edDu0eLUf8bXiFRpCXyoifBcA==
+"@socialgouv/eslint-config-react@^1.28.0":
+  version "1.28.0"
+  resolved "https://registry.yarnpkg.com/@socialgouv/eslint-config-react/-/eslint-config-react-1.28.0.tgz#7712c7cb3f764e1abb6741808e207c6dc40b7cab"
+  integrity sha512-sr33Jm6soubogVXSgb/C3TJFBpypCYuOKW+tKrajdtVIyHxETNJ22/N0uJg3oTgnIR5nQkapKiSDD5Q8M/z1lA==
   dependencies:
-    "@socialgouv/eslint-config-recommended" "^1.25.0"
+    "@socialgouv/eslint-config-recommended" "^1.28.0"
     babel-eslint "^10.1.0"
     eslint-plugin-jsx-a11y "~6.3.1"
     eslint-plugin-react "~7.20.6"
-    eslint-plugin-react-hooks "~4.0.8"
+    eslint-plugin-react-hooks "~4.1.0"
 
-"@socialgouv/eslint-config-recommended@^1.25.0":
-  version "1.25.0"
-  resolved "https://registry.yarnpkg.com/@socialgouv/eslint-config-recommended/-/eslint-config-recommended-1.25.0.tgz#4b7b6d82334b4140b98aea0afa6eb331fe081804"
-  integrity sha512-WuFCQb9ScYmMJiolPC0EVjXONFKnvAeSRJe1hZdNoaERhkKXWxRSQzd4Maz8K9uXwOPdJ98XX3d2KUKRk1+dyA==
+"@socialgouv/eslint-config-recommended@^1.28.0":
+  version "1.28.0"
+  resolved "https://registry.yarnpkg.com/@socialgouv/eslint-config-recommended/-/eslint-config-recommended-1.28.0.tgz#01999c4095072f172350daf7f344f10d9ec54802"
+  integrity sha512-oTrxLkIWLfHX120E+RQo3pb1g7W2T10Hu/yXS+TbYI2jBNDM+yCWTonA8EYyDFU/FqNspKA3h/sHhLEJiv9AgQ==
   dependencies:
     eslint-config-prettier "~6.11.0"
     eslint-plugin-import "~2.22.0"
@@ -5590,10 +5590,10 @@ eslint-import-resolver-node@^0.3.3:
     debug "^2.6.9"
     resolve "^1.13.1"
 
-eslint-import-resolver-typescript@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-2.2.1.tgz#4b9bdfb51af7e14947ebc40ffdd6c32d5924b905"
-  integrity sha512-wxlVdwuWY6R5+CoesIy6n8EZX4k9lEeZGWTVBoX9g//8Xma8JMtL/p3AGnG43rRyXmIrX+/0IN8lpOPzrw1fSw==
+eslint-import-resolver-typescript@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-2.3.0.tgz#0870988098bc6c6419c87705e6b42bee89425445"
+  integrity sha512-MHSXvmj5e0SGOOBhBbt7C+fWj1bJbtSYFAD85Xeg8nvUtuooTod2HQb8bfhE9f5QyyNxEfgzqOYFCvmdDIcCuw==
   dependencies:
     debug "^4.1.1"
     glob "^7.1.6"
@@ -5690,15 +5690,10 @@ eslint-plugin-react-hooks@^1.7.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.7.0.tgz#6210b6d5a37205f0b92858f895a4e827020a7d04"
   integrity sha512-iXTCFcOmlWvw4+TOE8CLWj6yX1GwzT0Y6cUfHHZqWnSk144VmVIRcVGtUAzrLES7C798lmvnt02C7rxaOX1HNA==
 
-eslint-plugin-react-hooks@^4.1.0:
+eslint-plugin-react-hooks@^4.1.0, eslint-plugin-react-hooks@~4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.1.0.tgz#6323fbd5e650e84b2987ba76370523a60f4e7925"
   integrity sha512-36zilUcDwDReiORXmcmTc6rRumu9JIM3WjSvV0nclHoUQ0CNrX866EwONvLR/UqaeqFutbAnVu8PEmctdo2SRQ==
-
-eslint-plugin-react-hooks@~4.0.8:
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.8.tgz#a9b1e3d57475ccd18276882eff3d6cba00da7a56"
-  integrity sha512-6SSb5AiMCPd8FDJrzah+Z4F44P2CdOaK026cXFV+o/xSRzfOiV1FNFeLl2z6xm3yqWOQEZ5OfVgiec90qV2xrQ==
 
 eslint-plugin-react@^7.20.2, eslint-plugin-react@^7.20.6, eslint-plugin-react@~7.20.6:
   version "7.20.6"
@@ -11938,10 +11933,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
-  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
+prettier@^2.0.5, prettier@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.1.tgz#d9485dd5e499daa6cb547023b87a6cf51bee37d6"
+  integrity sha512-9bY+5ZWCfqj3ghYBLxApy2zf6m+NJo5GzmLTpr9FsApsfjriNnS2dahWReHMi7qNPhhHl9SYHJs2cHZLgexNIw==
 
 pretty-bytes@^5.1.0, pretty-bytes@^5.3.0:
   version "5.3.0"
