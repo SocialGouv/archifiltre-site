@@ -19,7 +19,7 @@ const DownloadLink: FC<DownloadLinkProps> = ({ url, label, version }) => {
     <Button
       target="_blank"
       href={url}
-      color="inherit"
+      color="primary"
       rel="noopener"
       onClick={onClick}
     >

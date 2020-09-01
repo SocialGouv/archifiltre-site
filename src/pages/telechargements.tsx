@@ -34,12 +34,12 @@ const Telechargements: FC = () => (
           <h3>
             {`${version.name} ${version.number} - ${version.date} - `}
             <Button
-              color="inherit"
+              color="primary"
               component={GatsbyLink}
               to="/changelog"
               size="small"
             >
-              Nouveautés de cette version
+              Nouveautés
             </Button>
           </h3>
           <Box>

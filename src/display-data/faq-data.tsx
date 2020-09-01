@@ -57,7 +57,7 @@ export const faqData = [
           utilisateur·trice·s
         </strong>
         . Cependant, nous utilisons{" "}
-        <Link href="https://fr.matomo.org/" target="_blank" color="inherit">
+        <Link href="https://fr.matomo.org/" target="_blank" color="primary">
           Matomo
         </Link>
         , un outil open-source pour avoir des statistiques d&#39;utilisation sur
@@ -155,7 +155,7 @@ export const faqData = [
           <Link
             href="https://fr.wikipedia.org/wiki/MD5"
             target="_blank"
-            color="inherit"
+            color="primary"
           >
             algorithme MD5
           </Link>
@@ -237,7 +237,7 @@ export const faqData = [
           <Link
             href="https://github.com/SocialGouv/archifiltre"
             target="_blank"
-            color="inherit"
+            color="primary"
           >
             GitHub
           </Link>
@@ -257,7 +257,7 @@ export const faqData = [
             <Link
               href="https://github.com/SocialGouv/archifiltre/issues"
               target="_blank"
-              color="inherit"
+              color="primary"
             >
               GitHub
             </Link>
@@ -267,7 +267,7 @@ export const faqData = [
             <Link
               href="https://github.com/SocialGouv/archifiltre/pulls"
               target="_blank"
-              color="inherit"
+              color="primary"
             >
               pull request
             </Link>
@@ -278,7 +278,7 @@ export const faqData = [
             <Link
               href="mailto:archifiltre@sg.social.gouv.fr"
               target="_blank"
-              color="inherit"
+              color="primary"
             >
               mail
             </Link>

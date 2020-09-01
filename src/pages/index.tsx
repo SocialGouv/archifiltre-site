@@ -73,7 +73,7 @@ const IndexPage: FC = () => {
           <Grid container justify="center" className={classes.downloadLink}>
             <Grid item>
               <Button
-                color="inherit"
+                color="primary"
                 component={GatsbyLink}
                 to="/telechargements"
                 size="small"
@@ -86,7 +86,7 @@ const IndexPage: FC = () => {
       </HomepageHeader>
       <Box p={3} pb={6} textAlign="center">
         <Box p={3} pb={6}>
-          <Typography variant="h5" component="h2" color="textPrimary">
+          <Typography variant="h4" component="h2" color="textPrimary">
             Ce qu&rsquo;Archifiltre permet
           </Typography>
         </Box>
@@ -94,7 +94,7 @@ const IndexPage: FC = () => {
         <Grid container justify="center" className={classes.downloadLink}>
           <Grid item>
             <Button
-              color="inherit"
+              color="primary"
               target="_blank"
               rel="noopener"
               href="https://github.com/SocialGouv/archifiltre/wiki/Wiki-Archifiltre"
@@ -108,9 +108,9 @@ const IndexPage: FC = () => {
       <Box>
         <ProductFeatures />
       </Box>
-      <Box p={3} textAlign="center">
-        <Box p={3}>
-          <Typography variant="h5" component="h2" color="textPrimary">
+      <Box p={3}>
+        <Box p={3} textAlign="center">
+          <Typography variant="h4" component="h2" color="textPrimary">
             Ils parlent de nous
           </Typography>
         </Box>
@@ -118,7 +118,7 @@ const IndexPage: FC = () => {
         <Grid container justify="center">
           <Grid item>
             <Button
-              color="inherit"
+              color="primary"
               component={GatsbyLink}
               to="/social"
               endIcon={<ArrowForwardIcon />}
