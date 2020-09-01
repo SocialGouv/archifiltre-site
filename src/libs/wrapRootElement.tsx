@@ -4,7 +4,7 @@ import React, { ReactNode } from "react";
 
 import themes from "../theme";
 
-const wrapRootElement = ({ element }: { element: ReactNode }) => {
+const wrapRootElement = ({ element }: { element: ReactNode }): ReactNode => {
   function getTheme(): Theme {
     const isServer = typeof window === "undefined";
 

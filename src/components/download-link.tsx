@@ -13,7 +13,7 @@ type DownloadLinkProps = {
 const DownloadLink: FC<DownloadLinkProps> = ({ url, label, version }) => {
   const onClick = useCallback(() => {
     trackAppDownload(version, label);
-  }, [label]);
+  }, [version, label]);
 
   return (
     <Button

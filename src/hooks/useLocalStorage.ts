@@ -12,7 +12,7 @@ type PersistReturn = [any, (arg1?: any) => void];
 
 export type usePersistFunc = (key: string) => PersistReturn;
 
-export default function useLocalStorage(key: string, initialValue: any) {
+export default function useLocalStorage(key: string, initialValue: any): any {
   // Prevent build error "window is undefined" but keep keep working
   const isServer = typeof window === "undefined";
 

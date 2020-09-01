@@ -1,9 +1,9 @@
 import { Snackbar } from "@material-ui/core";
 import { Alert } from "@material-ui/lab";
 import cookie from "js-cookie";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { FC, useCallback, useEffect, useState } from "react";
 
-const CookieConsent = () => {
+const CookieConsent: FC = () => {
   const [isCookieConsentHidden, setIsCookieConsentHidden] = useState(false);
 
   useEffect(() => {
