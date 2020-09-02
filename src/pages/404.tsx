@@ -8,10 +8,11 @@ const NotFoundPage: FC = () => (
   <Layout container>
     <SEO title="404: Not found" />
     <Typography variant="h2" gutterBottom component="h1">
-      NOT FOUND
+      404 NOT FOUND
     </Typography>
     <Typography variant="body1">
-      You just hit a route that doesn&#39;t exist... the sadness.
+      Vous tentez d&#39;accéder à une page qui n&#39;existe pas... C&#39;est
+      triste.
     </Typography>
   </Layout>
 );
