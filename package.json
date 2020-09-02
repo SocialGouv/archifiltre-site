@@ -33,6 +33,7 @@
     "gatsby-plugin-react-helmet": "latest",
     "gatsby-plugin-sharp": "^2.6.34",
     "gatsby-plugin-typescript": "latest",
+    "gatsby-remark-autolink-headers": "^2.3.12",
     "gatsby-source-filesystem": "^2.3.29",
     "gatsby-transformer-remark": "^2.8.34",
     "gatsby-transformer-sharp": "^2.5.14",
