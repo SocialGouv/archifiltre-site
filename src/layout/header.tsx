@@ -31,14 +31,14 @@ export const logoQuery = graphql`
   query {
     logo: file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
-        fixed(width: 160, height: 18) {
+        fixed(width: 160, height: 20) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     logoWhite: file(relativePath: { eq: "logo-white.png" }) {
       childImageSharp {
-        fixed(width: 170, height: 18) {
+        fixed(width: 160, height: 20) {
           ...GatsbyImageSharpFixed
         }
       }
