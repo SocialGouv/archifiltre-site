@@ -74,7 +74,7 @@ module.exports = {
       content: "Fabrique des ministères sociaux",
       name: "Archifiltre",
     },
-    description: `Vos arborescences, comme vous ne les avez jamais vues`,
+    description: `Visualisez et améliorez vos arborescences de fichiers !`,
     social: {
       github: "https://github.com/SocialGouv/archifiltre",
     },
