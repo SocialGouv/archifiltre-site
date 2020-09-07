@@ -52,7 +52,7 @@ const IndexPage: FC = () => {
   return (
     <Layout>
       <SEO title="Accueil" />
-      <HomepageHeader title="Vos fichiers et dossiers, comme vous ne les avez jamais vus">
+      <HomepageHeader title="Visualisez et améliorez vos arborescences de fichiers !">
         <div className={classes.headerButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
