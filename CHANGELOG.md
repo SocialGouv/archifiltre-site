@@ -1,3 +1,11 @@
+# [1.18.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.17.0...v1.18.0) (2020-09-07)
+
+
+### Features
+
+* update website logo ([#71](https://github.com/SocialGouv/archifiltre-site/issues/71)) ([47edb53](https://github.com/SocialGouv/archifiltre-site/commit/47edb53d1fd96f2943c020972ca812b47ae99901))
+* **homepage:** update slug ([#73](https://github.com/SocialGouv/archifiltre-site/issues/73)) ([be48e5e](https://github.com/SocialGouv/archifiltre-site/commit/be48e5e430e85a47b7895d59e5289212690d2e53))
+
 # [1.17.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.16.0...v1.17.0) (2020-09-01)
 
 
