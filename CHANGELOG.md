@@ -1,3 +1,12 @@
+# [1.19.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.18.0...v1.19.0) (2020-09-08)
+
+
+### Features
+
+* update presentation image resolution ([#75](https://github.com/SocialGouv/archifiltre-site/issues/75)) ([8d63e46](https://github.com/SocialGouv/archifiltre-site/commit/8d63e46468fe40b3289ab511201638afac7cd33d))
+* **misc:** add static pages for version and latest build ([#68](https://github.com/SocialGouv/archifiltre-site/issues/68)) ([c731484](https://github.com/SocialGouv/archifiltre-site/commit/c731484a7dc7abedce8f3cf3d69f7a54f856cb73))
+* **ui:** misc UI updates ([#74](https://github.com/SocialGouv/archifiltre-site/issues/74)) ([68bb27e](https://github.com/SocialGouv/archifiltre-site/commit/68bb27e5ede28258eb7615fb6d26382dfd98c366))
+
 # [1.18.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.17.0...v1.18.0) (2020-09-07)
 
 
