@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme: Theme) => ({
   headerButtons: {
     marginTop: theme.spacing(4),
   },
+  downloadButton: {
+    fontWeight: "bold",
+  },
 }));
 
 const getDownloadLink = (): string => {
@@ -65,6 +68,7 @@ const IndexPage: FC = () => {
                 color="primary"
                 onClick={onDownloadClick}
                 startIcon={<GetAppIcon />}
+                className={classes.downloadButton}
               >
                 Télécharger
               </Button>
@@ -114,7 +118,9 @@ const IndexPage: FC = () => {
             Ils parlent de nous
           </Typography>
         </Box>
-        <HomepageTweets />
+        <Box pb={2}>
+          <HomepageTweets />
+        </Box>
         <Grid container justify="center">
           <Grid item>
             <Button

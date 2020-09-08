@@ -15,7 +15,7 @@ export const presentationData = [
   },
   {
     logo: <SearchIcon />,
-    title: "Mener un audit",
+    title: "Mener une opération d'audit",
   },
   {
     logo: <FileCopyIcon />,
