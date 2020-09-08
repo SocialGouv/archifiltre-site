@@ -1,11 +1,11 @@
 import { Box, Grid, Theme } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/styles";
 import { graphql, StaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import React, { FC } from "react";
 
 import { presentationData } from "../display-data/presentation-data";
-import { makeStyles } from "@material-ui/styles";
 
 export const imageQuery = graphql`
   query {
@@ -20,6 +20,12 @@ export const imageQuery = graphql`
 `;
 
 const useStyles = makeStyles((theme: Theme) => ({
+  icon: {
+    "&>svg": {
+      height: "auto",
+      width: theme.spacing(6),
+    },
+  },
   root: {
     width: "100%",
   },
@@ -33,11 +39,11 @@ const Presentation: FC = () => {
       render={(data) => (
         <Grid container spacing={1} alignItems="center" justify="center">
           <Grid item md={6}>
-            <Grid container spacing={6} justify="center">
+            <Grid container spacing={4} justify="center">
               {presentationData.map((presentationItem) => (
                 <Grid item md={6} key={presentationItem.title}>
-                  <Typography variant="h6" color="textPrimary">
-                    <Box>{presentationItem.logo}</Box>
+                  <Typography variant="h5" color="textPrimary">
+                    <Box className={classes.icon}>{presentationItem.logo}</Box>
                     <Box>{presentationItem.title}</Box>
                   </Typography>
                 </Grid>

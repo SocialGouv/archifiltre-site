@@ -28,6 +28,7 @@ const makeTheme = (variant: ThemeOptions): Theme => {
 
 const light: ThemeOptions = {
   palette: {
+    background: { default: "rgba(0, 0, 0, 0.04)" },
     type: "light",
   },
 };

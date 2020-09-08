@@ -11,6 +11,8 @@ import TimelineElement from "../components/timeline-element";
 import { currentMembers, oldMembers } from "../display-data/team-data";
 import { timelineElements } from "../display-data/timeline-data";
 import Layout from "../layout";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -39,6 +41,18 @@ const Downloads: FC = () => {
           Product Manager, etc) pour développer un outil avec les méthodes
           agiles en co-construction permanente avec ses utilisateur·trice·s.
         </Typography>
+        <Box p={2}>
+          <Button
+            size="small"
+            startIcon={<TwitterIcon />}
+            target="_blank"
+            rel="noopener"
+            href="https://twitter.com/archifiltre"
+            color="primary"
+          >
+            Nous suivre sur Twitter
+          </Button>
+        </Box>
       </Box>
       <Box p={3} textAlign="center">
         <Typography variant="h5" color="textPrimary">
