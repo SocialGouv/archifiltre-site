@@ -279,6 +279,7 @@ export const faqData = [
               href="mailto:archifiltre@sg.social.gouv.fr"
               target="_blank"
               color="primary"
+              rel="noopener"
             >
               mail
             </Link>

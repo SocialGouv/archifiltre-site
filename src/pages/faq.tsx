@@ -15,7 +15,7 @@ const FAQ: FC = () => {
     <Layout>
       <SEO title="FAQ" />
       <Box p={3} textAlign="center">
-        <Typography component="h1" variant="h5" color="textPrimary">
+        <Typography component="h1" variant="h4" color="textPrimary">
           FAQ
         </Typography>
       </Box>

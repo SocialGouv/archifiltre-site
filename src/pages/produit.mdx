@@ -1,15 +1,19 @@
 import SEO from "../components/seo";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
+import Typography from "@material-ui/core/Typography";
 import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
 import MapIcon from '@material-ui/icons/Map';
 import MergeTypeIcon from '@material-ui/icons/MergeType';
 
 <SEO title="Produit" />
 
-<div align="center">
-    <h1>Le produit</h1>
-</div>
+<Box p={3} textAlign="center">
+    <Typography component="h1" variant="h4" color="textPrimary">
+        Le produit
+    </Typography>
+</Box>
 
 <Grid container spacing={3} justify="center">
     <Grid item md={3}>
@@ -51,7 +55,11 @@ import MergeTypeIcon from '@material-ui/icons/MergeType';
 </Grid>
 
 
-## Nouveautés
+<Box pt={7} textAlign="center">
+    <Typography component="h1" variant="h5" color="textPrimary">
+        Nouveautés
+    </Typography>
+</Box>
 
 ## v3.0.0 Poetic Papangue - 27/07/2020 {#300}
 

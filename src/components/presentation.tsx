@@ -23,10 +23,10 @@ const useStyles = makeStyles((theme: Theme) => ({
   icon: {
     "&>svg": {
       height: "auto",
-      width: theme.spacing(6),
+      width: theme.spacing(4.5),
     },
   },
-  root: {
+  image: {
     width: "100%",
   },
 }));
@@ -50,7 +50,7 @@ const Presentation: FC = () => {
               ))}
             </Grid>
           </Grid>
-          <Grid item md={6} className={classes.root}>
+          <Grid item md={6} className={classes.image}>
             <Link to="/produit" component={GatsbyLink}>
               <Img
                 fluid={data.file.childImageSharp.fluid}

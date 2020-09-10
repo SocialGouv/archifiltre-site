@@ -1,6 +1,8 @@
 import Box from "@material-ui/core/Box";
+import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import Timeline from "@material-ui/lab/Timeline";
 import { createStyles, makeStyles } from "@material-ui/styles";
 import React, { FC } from "react";
@@ -11,8 +13,6 @@ import TimelineElement from "../components/timeline-element";
 import { currentMembers, oldMembers } from "../display-data/team-data";
 import { timelineElements } from "../display-data/timeline-data";
 import Layout from "../layout";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -28,7 +28,7 @@ const Downloads: FC = () => {
     <Layout>
       <SEO title="Qui sommes-nous ?" />
       <Box p={3} textAlign="center">
-        <Typography component="h1" variant="h5" color="textPrimary">
+        <Typography component="h1" variant="h4" color="textPrimary">
           Qui sommes-nous ?
         </Typography>
       </Box>
