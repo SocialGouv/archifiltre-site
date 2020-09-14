@@ -10,7 +10,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -26,6 +25,16 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/layout/index.tsx"),
         },
+        gatsbyRemarkPlugins: [
+          {
+            options: {
+              elements: [`h2`],
+              enableCustomId: true,
+              icon: false,
+            },
+            resolve: `gatsby-remark-autolink-headers`,
+          },
+        ],
       },
       resolve: `gatsby-plugin-mdx`,
     },

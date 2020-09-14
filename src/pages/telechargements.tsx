@@ -32,11 +32,11 @@ const Telechargements: FC = () => (
       {versions.map((version) => (
         <div key={`${version.name}-${version.number}`}>
           <h3>
-            {`${version.name} ${version.number} - ${version.date} - `}
+            {`v${version.number} ${version.name} - ${version.date} - `}
             <Button
               color="primary"
               component={GatsbyLink}
-              to="/produit"
+              to={`/produit#${version.number.replace(/\./g, "")}`}
               size="small"
             >
               Nouveautés
