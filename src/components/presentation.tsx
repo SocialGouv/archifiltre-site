@@ -1,7 +1,7 @@
-import { Box, Grid, Theme } from "@material-ui/core";
+import { Box, Grid, Link, Theme } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/styles";
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, Link as GatsbyLink, StaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import React, { FC } from "react";
 
@@ -51,7 +51,12 @@ const Presentation: FC = () => {
             </Grid>
           </Grid>
           <Grid item md={6} className={classes.root}>
-            <Img fluid={data.file.childImageSharp.fluid} />
+            <Link to="/produit" component={GatsbyLink}>
+              <Img
+                fluid={data.file.childImageSharp.fluid}
+                alt="Screenshot d'Archifiltre"
+              />
+            </Link>
           </Grid>
         </Grid>
       )}
