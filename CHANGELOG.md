@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.20.0...v1.21.0) (2020-09-15)
+
+
+### Features
+
+* update website font ([#78](https://github.com/SocialGouv/archifiltre-site/issues/78)) ([01673ab](https://github.com/SocialGouv/archifiltre-site/commit/01673ab9744d95a365a47e6d7a233910bd98dde2))
+
 # [1.20.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.19.0...v1.20.0) (2020-09-15)
 
 
