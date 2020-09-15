@@ -46,6 +46,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
     },
     {
+      options: {
+        custom: {
+          families: ["OpenSans"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+      resolve: "gatsby-plugin-web-font-loader",
+    },
+    {
       // If you want to use styled components you should change the injection order.
       options: {
         // stylesProvider: {
