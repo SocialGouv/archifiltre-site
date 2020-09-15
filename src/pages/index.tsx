@@ -22,14 +22,14 @@ import {
 } from "../utils/os-util";
 
 const useStyles = makeStyles((theme: Theme) => ({
+  downloadButton: {
+    fontWeight: "bold",
+  },
   downloadLink: {
     paddingTop: theme.spacing(3),
   },
   headerButtons: {
     marginTop: theme.spacing(4),
-  },
-  downloadButton: {
-    fontWeight: "bold",
   },
 }));
 

@@ -66,7 +66,7 @@ const MobileHeader: FC<MobileHaderProps> = ({
           component={GatsbyLink}
           to="/co-construction"
         >
-          Co-créer Archifiltre
+          Co-créez Archifiltre
         </MenuItem>
         <MenuItem onClick={onToggleTheme}>
           <span>Thème</span>

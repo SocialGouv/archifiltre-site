@@ -1,7 +1,7 @@
 import { Container, CssBaseline, Theme } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { makeStyles, ThemeProvider } from "@material-ui/styles";
-import React, { FC } from "react";
+import React, { createContext, FC } from "react";
 
 import CookieConsent from "../components/cookie-consent";
 import useLocalStorage from "../hooks/useLocalStorage";
@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     minHeight: "100vh",
   },
 }));
+
+export const ThemeContext = createContext<ThemeMode>("light");
 
 type ThemeMode = "light" | "dark";
 
@@ -41,13 +43,15 @@ const Layout: FC<{ container?: boolean }> = ({
       <CookieConsent />
       <div className={classes.root}>
         <Header onToggleTheme={toggleTheme} theme={theme} />
-        {container ? (
-          <Container component="main" maxWidth="md" className={classes.main}>
-            {children}
-          </Container>
-        ) : (
-          <main className={classes.main}>{children}</main>
-        )}
+        <ThemeContext.Provider value={theme}>
+          {container ? (
+            <Container component="main" maxWidth="md" className={classes.main}>
+              {children}
+            </Container>
+          ) : (
+            <main className={classes.main}>{children}</main>
+          )}
+        </ThemeContext.Provider>
         <Footer />
       </div>
     </ThemeProvider>

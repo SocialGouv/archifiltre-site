@@ -98,7 +98,7 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
                 <Button
                   disableElevation
                   color="primary"
-                  variant="outlined"
+                  variant="contained"
                   component={GatsbyLink}
                   to="/co-construction"
                 >
