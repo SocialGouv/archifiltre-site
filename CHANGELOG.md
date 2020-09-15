@@ -1,3 +1,12 @@
+# [1.20.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.19.0...v1.20.0) (2020-09-15)
+
+
+### Features
+
+* add ambassador schema on co-construction page ([#77](https://github.com/SocialGouv/archifiltre-site/issues/77)) ([c1fad15](https://github.com/SocialGouv/archifiltre-site/commit/c1fad15588fe70723a746ab2860b83613a067324))
+* **homepage:** add link to product on homepage ([#76](https://github.com/SocialGouv/archifiltre-site/issues/76)) ([79d96dc](https://github.com/SocialGouv/archifiltre-site/commit/79d96dcc25672f1e4e6a252a306f4b9c485b4ca2))
+* **product:** improve product page ([#69](https://github.com/SocialGouv/archifiltre-site/issues/69)) ([021d15e](https://github.com/SocialGouv/archifiltre-site/commit/021d15eec6d5da110b666d9125f5e321b6a3fb7b))
+
 # [1.19.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.18.0...v1.19.0) (2020-09-08)
 
 
