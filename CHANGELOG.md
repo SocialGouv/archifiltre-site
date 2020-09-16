@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.21.0...v1.22.0) (2020-09-16)
+
+
+### Features
+
+* **ci:** use archifiltre.fabrique.social.gouv.fr ([5dfb4a9](https://github.com/SocialGouv/archifiltre-site/commit/5dfb4a97d6c848db584826817c944e6696cdd7ba))
+
 # [1.21.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.20.0...v1.21.0) (2020-09-15)
 
 
