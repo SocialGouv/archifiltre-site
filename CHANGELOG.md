@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.22.0...v1.23.0) (2020-09-18)
+
+
+### Features
+
+* update openlab photo and proportions ([#81](https://github.com/SocialGouv/archifiltre-site/issues/81)) ([e13dea5](https://github.com/SocialGouv/archifiltre-site/commit/e13dea57538ddeb032114fbf52ebdf55f8c60bfa))
+
 # [1.22.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.21.0...v1.22.0) (2020-09-16)
 
 
