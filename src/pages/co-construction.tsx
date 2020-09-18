@@ -23,9 +23,9 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 export const query = graphql`
   query {
-    openlab: file(relativePath: { eq: "openlab.jpg" }) {
+    openlab: file(relativePath: { eq: "openlab.png" }) {
       childImageSharp {
-        fluid(maxWidth: 600, maxHeight: 320) {
+        fluid(maxWidth: 507, maxHeight: 670) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -70,8 +70,8 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
       <Box pb={4} textAlign="center">
         <Typography variant="h5">Participez aux openlabs</Typography>
       </Box>
-      <Grid container spacing={2} className={classes.grid}>
-        <Grid item md={6}>
+      <Grid container spacing={2} className={classes.grid} alignItems="center">
+        <Grid item md={8}>
           <Typography variant="h6">
             <strong>Qu’est-ce qu’un Openlab ?</strong>
           </Typography>
@@ -116,7 +116,7 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
             car le nombre de places est limité.
           </p>
         </Grid>
-        <Grid item md={6} className={classes.image}>
+        <Grid item md={4} className={classes.image}>
           <Img
             fluid={data.openlab.childImageSharp.fluid}
             alt="Openlab Archifiltre"
@@ -128,15 +128,15 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
           Devenez ambassadeur·drice·s Archifiltre !
         </Typography>
       </Box>
-      <Grid container spacing={2}>
-        <Grid item md={6} className={classes.image}>
+      <Grid container spacing={2} alignItems="center">
+        <Grid item md={4} className={classes.image}>
           <ThemeImage
             lightThemeImage={data.ambassadeur.childImageSharp.fluid}
             darkThemeImage={data.ambassadeurWhite.childImageSharp.fluid}
             alt="Devenir ambassadeur Archifiltre"
           />
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={8}>
           <p>
             <em>
               Embarquez pour l’aventure Archifiltre en tant
