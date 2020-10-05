@@ -1,3 +1,11 @@
+# [1.24.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.23.0...v1.24.0) (2020-10-05)
+
+
+### Features
+
+* add automake ([#86](https://github.com/SocialGouv/archifiltre-site/issues/86)) ([16134ac](https://github.com/SocialGouv/archifiltre-site/commit/16134aca13530ab0ff41e75f3b042585d651a28f))
+* add libtool for CI ([#87](https://github.com/SocialGouv/archifiltre-site/issues/87)) ([d4e81ed](https://github.com/SocialGouv/archifiltre-site/commit/d4e81ed343f2180d30db0aa9bc2fa3ef821c1876))
+
 # [1.23.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.22.0...v1.23.0) (2020-09-18)
 
 
