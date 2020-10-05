@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.24.0...v1.25.0) (2020-10-05)
+
+
+### Features
+
+* update before script config ([#88](https://github.com/SocialGouv/archifiltre-site/issues/88)) ([b8ed006](https://github.com/SocialGouv/archifiltre-site/commit/b8ed006eb951e41baafe0c0953da1a9f32fa59eb))
+
 # [1.24.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.23.0...v1.24.0) (2020-10-05)
 
 
