@@ -65,51 +65,55 @@ export const faqData = [
         auxquelles nous avons accès :
         <ul>
           <li>
-            Lors du dépôt de fichiers :
+            Lors du dépôt de fichiers:
             <ul>
-              <li>
-                le <strong>nombre de fichiers déposés</strong>
-              </li>
-              <li>
-                leur <strong>répartition par extension</strong>
-              </li>
-              <li>
-                le <strong>temps total du chargement</strong>
-              </li>
+              <li>le volume total analysé</li>
+              <li>le nombre de fichiers déposés</li>
+              <li>le nombre de dossiers déposés</li>
+              <li>leur répartition par extension</li>
+              <li>le temps total du chargement</li>
             </ul>
           </li>
           <li>
-            <strong>Export en CSV</strong> (mais pas son contenu): si vous en
+            Export en CSV/CSV avec empreintes (mais pas son contenu): si vous en
             avez réalisé 1 ou plusieurs
           </li>
+          <li>Export en RESIP (mais pas son contenu): idem</li>
+          <li>Export en METS (mais pas son contenu): idem</li>
           <li>
-            <strong>Export en RESIP</strong> (mais pas son contenu): idem
+            Export d&#39;un rapport d&#39;audit (mais pas son contenu): idem
           </li>
           <li>
-            <strong>Export en METS</strong> (mais pas son contenu): idem
+            Ajout d&#39;une description à un élément (mais pas le texte
+            lui-même)
           </li>
           <li>
-            <strong>Export d&#39;un rapport d&#39;audit</strong> (mais pas son
-            contenu): idem
+            Ajout d&#39;un tag à un élément: nombre de tags créés mais pas les
+            tags eux-mêmes
           </li>
           <li>
-            Ajout d&#39;une <strong>description</strong> à un élément (mais pas
-            le texte lui-même)
+            Changement entre vue par nombre et par volume: si vous avez utilisé
+            les différentes vues
+          </li>
+          <li>Changement entre vue par type et par date</li>
+          <li>
+            Double-clic sur un élément pour zoomer dessus: le nombre de clics
           </li>
           <li>
-            Ajout d&#39;un <strong>tag</strong> à un élément: nombre de tags
-            créés mais pas les tags eux-mêmes
+            Clics sur les onglets (Général, Enrichissement, Audit, Redondances)
           </li>
           <li>
-            Changement entre <strong>vue par nombre et par volume</strong>: si
-            vous avez utilisé les différentes vues
+            Recherche effectuée (mais pas son contenu): si vous en avez réalisé
+            1 ou plusieurs
+          </li>
+          <li>Activation du mode déplacement</li>
+          <li>
+            Déplacement effectué (mais pas le nom des éléments déplacés): si
+            vous en avez réalisé 1 ou plusieurs
           </li>
           <li>
-            Changement entre <strong>vue par type et par date</strong>
-          </li>
-          <li>
-            Double-clic sur un élément pour <strong>zoomer</strong> dessus: le
-            nombre de clics
+            Elements tagués &quot;A éliminer&quot; (mais pas le nom des éléments
+            tagés): si vous en avez réalisé 1 ou plusieurs
           </li>
         </ul>
       </span>
