@@ -1,9 +1,8 @@
-import { Container, Grid, Link, Theme } from "@material-ui/core";
-import BookIcon from "@material-ui/icons/Book";
+import { Button, Container, Grid, Link, Theme } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import MailIcon from "@material-ui/icons/Mail";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import RecordVoiceOverIcon from "@material-ui/icons/RecordVoiceOver";
 import { makeStyles } from "@material-ui/styles";
 import { Link as GatsbyLink } from "gatsby";
 import React, { FC } from "react";
@@ -13,6 +12,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     backgroundColor: theme.palette.background.paper,
     marginTop: "auto",
     padding: theme.spacing(3, 2),
+  },
+  feedback: {
+    padding: theme.spacing(2),
   },
 }));
 
@@ -24,16 +26,16 @@ const Footer: FC = () => {
         <Grid container spacing={2} justify="center">
           <Grid item>
             <Link
-              href="https://www.fabrique.social.gouv.fr/"
+              href="https://github.com/SocialGouv/archifiltre/wiki/Wiki-Archifiltre"
               target="_blank"
               rel="noopener"
-              color="inherit"
+              color="primary"
             >
-              Fabrique des ministères sociaux
+              Documentation
             </Link>
           </Grid>
           <Grid item>
-            <Link component={GatsbyLink} to="/mentions-legales" color="inherit">
+            <Link component={GatsbyLink} to="/mentions-legales" color="primary">
               Mentions légales
             </Link>
           </Grid>
@@ -42,10 +44,30 @@ const Footer: FC = () => {
               href="mailto:archifiltre@sg.social.gouv.fr"
               target="_blank"
               rel="noopener"
-              color="inherit"
+              color="primary"
             >
               Nous contacter
             </Link>
+          </Grid>
+        </Grid>
+        <Grid
+          container
+          justify="center"
+          alignItems="center"
+          spacing={1}
+          className={classes.feedback}
+        >
+          <Grid item>
+            <Button
+              color="primary"
+              startIcon={<RecordVoiceOverIcon />}
+              href="https://bit.ly/315pAd8"
+              target="_blank"
+              rel="noopener"
+              variant="contained"
+            >
+              Donnez votre avis
+            </Button>
           </Grid>
         </Grid>
         <Grid container spacing={2} justify="center">
@@ -58,17 +80,6 @@ const Footer: FC = () => {
               aria-label="Twitter"
             >
               <TwitterIcon />
-            </Link>
-          </Grid>
-          <Grid item>
-            <Link
-              href="https://github.com/SocialGouv/archifiltre/wiki/Wiki-Archifiltre"
-              target="_blank"
-              rel="noopener"
-              color="inherit"
-              aria-label="Wiki archifiltre"
-            >
-              <BookIcon />
             </Link>
           </Grid>
           <Grid item>
@@ -93,20 +104,19 @@ const Footer: FC = () => {
               <GitHubIcon />
             </Link>
           </Grid>
-          <Grid item>
-            <Link
-              href="mailto:archifiltre@sg.social.gouv.fr"
-              rel="noopener"
-              target="_blank"
-              color="inherit"
-              aria-label="Nous contacter"
-            >
-              <MailIcon />
-            </Link>
-          </Grid>
         </Grid>
         <Grid container spacing={2} justify="center">
-          <Grid item>© {new Date().getFullYear()} Archifiltre</Grid>
+          <Grid item>
+            © {new Date().getFullYear()} Archifiltre -{" "}
+            <Link
+              href="https://www.fabrique.social.gouv.fr/"
+              target="_blank"
+              rel="noopener"
+              color="primary"
+            >
+              Fabrique des ministères sociaux
+            </Link>
+          </Grid>
         </Grid>
       </Container>
     </footer>
