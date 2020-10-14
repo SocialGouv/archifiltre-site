@@ -1,3 +1,11 @@
+# [1.26.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.25.0...v1.26.0) (2020-10-14)
+
+
+### Features
+
+* **footer:** add feedback button in footer ([#90](https://github.com/SocialGouv/archifiltre-site/issues/90)) ([59589d9](https://github.com/SocialGouv/archifiltre-site/commit/59589d9cdb98e4a529dfbc9f12582243f29d8449))
+* update faq page ([#89](https://github.com/SocialGouv/archifiltre-site/issues/89)) ([8b34d58](https://github.com/SocialGouv/archifiltre-site/commit/8b34d5827023a679165c0917bb003e32be3b8614))
+
 # [1.25.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.24.0...v1.25.0) (2020-10-05)
 
 
