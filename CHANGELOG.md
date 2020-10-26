@@ -1,3 +1,16 @@
+# [1.27.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.26.0...v1.27.0) (2020-10-26)
+
+
+### Bug Fixes
+
+* fix download latest button always having the windows url ([8d4d59a](https://github.com/SocialGouv/archifiltre-site/commit/8d4d59a477756e295ef47652d2f66a7508e2c2f9))
+
+
+### Features
+
+* **3.1:** add v3.1 to website ([#92](https://github.com/SocialGouv/archifiltre-site/issues/92)) ([c0b52ae](https://github.com/SocialGouv/archifiltre-site/commit/c0b52ae4ba345eda4beee4538ab4db2d8e25a17a))
+* **test:** trigger MEP ([#93](https://github.com/SocialGouv/archifiltre-site/issues/93)) ([f296da5](https://github.com/SocialGouv/archifiltre-site/commit/f296da52b4f9f64834cb01189d96f11592915cae))
+
 # [1.26.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.25.0...v1.26.0) (2020-10-14)
 
 
