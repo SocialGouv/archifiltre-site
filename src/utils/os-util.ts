@@ -9,6 +9,8 @@ export enum OS {
   LINUX,
   MAC,
   WEB,
+  MSI32,
+  MSI64,
 }
 
 export const operatingSystems = [
