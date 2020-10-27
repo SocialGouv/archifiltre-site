@@ -33,7 +33,7 @@ const MobileHeader: FC<MobileHaderProps> = ({
 
   return (
     <div>
-      <Button onClick={handleClick}>
+      <Button aria-label="Menu" onClick={handleClick}>
         <MenuIcon />
       </Button>
       <Menu
