@@ -39,6 +39,16 @@ export const operatingSystems = [
     key: "Online",
     name: "Online",
   },
+  {
+    id: OS.MSI32,
+    key: "Msi32",
+    name: "Windows MSI 32 bits"
+  },
+  {
+    id: OS.MSI64,
+    key: "Msi64",
+    name: "Windows MSI 64 bits"
+  }
 ];
 
 export const defaultOperatingSystem = OS.WIN64;
