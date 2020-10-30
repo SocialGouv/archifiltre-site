@@ -3,6 +3,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import RecordVoiceOverIcon from "@material-ui/icons/RecordVoiceOver";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { makeStyles } from "@material-ui/styles";
 import { Link as GatsbyLink } from "gatsby";
 import React, { FC } from "react";
@@ -80,6 +81,17 @@ const Footer: FC = () => {
               aria-label="Twitter"
             >
               <TwitterIcon />
+            </Link>
+          </Grid>
+          <Grid item>
+            <Link
+              href="https://www.linkedin.com/company/archifiltre/"
+              target="_blank"
+              rel="noopener"
+              color="inherit"
+              aria-label="LinkedIn"
+            >
+              <LinkedInIcon />
             </Link>
           </Grid>
           <Grid item>
