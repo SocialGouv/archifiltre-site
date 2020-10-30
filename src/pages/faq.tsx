@@ -20,12 +20,12 @@ const FAQ: FC = () => {
         </Typography>
       </Box>
       <Box>
-        {faqData.map(({ question, answer }) => (
+        {faqData.map(({ question, answer }, index) => (
           <Accordion key={question}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
+              aria-controls={`panel${index}-content`}
+              id={`panel${index}-header`}
             >
               <Typography variant="h6">{question}</Typography>
             </AccordionSummary>
