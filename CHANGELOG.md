@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.27.0...v1.28.0) (2020-10-30)
+
+
+### Features
+
+* **a11y:** improve website accessibility ([#94](https://github.com/SocialGouv/archifiltre-site/issues/94)) ([c1671be](https://github.com/SocialGouv/archifiltre-site/commit/c1671be83ec99314d1c1ad9aae7329c083bd0b0a))
+
 # [1.27.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.26.0...v1.27.0) (2020-10-26)
 
 
