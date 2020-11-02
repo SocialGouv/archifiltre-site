@@ -1,3 +1,15 @@
+# [1.29.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.28.0...v1.29.0) (2020-11-02)
+
+
+### Bug Fixes
+
+* fix download MSI version text display ([83c20c7](https://github.com/SocialGouv/archifiltre-site/commit/83c20c744c7ebce89971793fecec15f6ffbee8b0))
+
+
+### Features
+
+* **footer:** add linkedin link ([#96](https://github.com/SocialGouv/archifiltre-site/issues/96)) ([362b46e](https://github.com/SocialGouv/archifiltre-site/commit/362b46e6c92272a8abea596406acb5f5d9309c5d))
+
 # [1.28.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.27.0...v1.28.0) (2020-10-30)
 
 
