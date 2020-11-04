@@ -2,6 +2,43 @@ import { OS } from "../utils/os-util";
 
 export default [
   {
+    date: "04/11/2020",
+    name: "Queer Quetzal",
+    number: "3.1.1",
+    platforms: [
+      {
+        id: OS.WIN64,
+        url:
+            "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.1.exe",
+      },
+      {
+        id: OS.WIN32,
+        url:
+            "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.1-32bit.exe",
+      },
+      {
+        id: OS.LINUX,
+        url:
+            "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.1.AppImage",
+      },
+      {
+        id: OS.MAC,
+        url:
+            "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.1.dmg",
+      },
+      {
+        id: OS.MSI64,
+        url:
+            "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.1.msi",
+      },
+      {
+        id: OS.MSI32,
+        url:
+            "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.1-32bit.msi",
+      },
+    ],
+  },
+  {
     date: "26/10/2020",
     name: "Queer Quetzal",
     number: "3.1.0",
