@@ -1,3 +1,10 @@
+# [1.30.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.29.0...v1.30.0) (2020-11-04)
+
+
+### Features
+
+* **presentation:** update presentation image ([#101](https://github.com/SocialGouv/archifiltre-site/issues/101)) ([2e502be](https://github.com/SocialGouv/archifiltre-site/commit/2e502be3e064321fef145d7582fb564d58c0bec2))
+
 # [1.29.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.28.0...v1.29.0) (2020-11-02)
 
 
