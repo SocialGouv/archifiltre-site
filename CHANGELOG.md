@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.31.0...v1.32.0) (2020-11-05)
+
+
+### Features
+
+* **3.1.1:** temporary remove 3.1.1 ([#103](https://github.com/SocialGouv/archifiltre-site/issues/103)) ([6f12c4f](https://github.com/SocialGouv/archifiltre-site/commit/6f12c4f99430de405c166920194187128088dabb))
+
 # [1.31.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.30.0...v1.31.0) (2020-11-04)
 
 
