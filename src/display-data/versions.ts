@@ -1,8 +1,8 @@
 import { OS } from "../utils/os-util";
 
 export default [
-  /*{
-    date: "04/11/2020",
+  {
+    date: "05/11/2020",
     name: "Queer Quetzal",
     number: "3.1.1",
     platforms: [
@@ -37,7 +37,7 @@ export default [
             "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.1/archifiltre-3.1.1-32bit.msi",
       },
     ],
-  },*/
+  },
   {
     date: "26/10/2020",
     name: "Queer Quetzal",
