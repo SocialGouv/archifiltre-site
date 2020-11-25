@@ -1,3 +1,10 @@
+# [1.34.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.33.0...v1.34.0) (2020-11-25)
+
+
+### Features
+
+* **openlab:** update openlab page ([#106](https://github.com/SocialGouv/archifiltre-site/issues/106)) ([ad92ff0](https://github.com/SocialGouv/archifiltre-site/commit/ad92ff0d23800de8458d3df02b5fc5e344b48e67))
+
 # [1.33.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.32.0...v1.33.0) (2020-11-05)
 
 
