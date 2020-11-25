@@ -76,11 +76,10 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
             <strong>Qu’est-ce qu’un Openlab ?</strong>
           </Typography>
           <p>
-            Un Openlab est un <strong>moment d’échanges</strong>, sur le temps
-            d’une journée, entre l’équipe projet Archifiltre et les
-            utilisateur·trice·s, à propos de l’outil Archifiltre. Durant cette
-            journée, des <strong>ateliers de co-construction</strong>
-            ont lieu afin de discuter autour des fonctionnalités et de
+            Un Openlab est un <strong>moment d’échanges</strong>, le temps d’une journée
+            ou d’un atelier, entre l’équipe projet Archifiltre et les utilisateur·trice·s,
+            à propos de l’outil Archifiltre. Durant cet openlab, des ateliers de
+            co-construction ont lieu afin de discuter des fonctionnalités et de
             l’interface de l’outil, des attentes des utilisateur·trice·s et des
             cas d’usage rencontrés. Quelques exemples d’ateliers :
           </p>
@@ -99,21 +98,25 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
             <strong>Quand et où ?</strong>
           </Typography>
           <p>
-            Les Openlabs se déroulent à Paris et ont lieu tous les trois mois
-            environ. Le prochain Openlab aura lieu{" "}
-            <strong>fin septembre – début octobre</strong>. La date exacte sera
-            communiquée ultérieurement en fonction de l’évolution des conditions
-            sanitaires.
+            Les openlabs peuvent se dérouler <strong>à Paris, en
+            présentiel</strong> sur une journée, <strong>ou en
+            visioconférence</strong> sur des temps d'ateliers plus
+            courts (maximum 2 heures). La mise en place d’openlabs en
+            visioconférence avec des outils interactifs nous permet de
+            multiplier le nombre d’ateliers et d’être en contact avec
+            l’ensemble de nos utilisateur·trice·s.
           </p>
           <Typography variant="h6">
             <strong>Comment s’inscrire ?</strong>
           </Typography>
           <p>
-            Un <strong>mail est envoyé par l’équipe Archifiltre</strong> via les
-            listes de diffusions ou sur les réseaux sociaux. Les conditions
+            Un mail est envoyé par l’équipe Archifiltre via les listes de
+            diffusions ou sur les réseaux sociaux (Twitter ou LinkedIn)
+            indiquant l'organisation d'un nouvel openlab. Les conditions
             d’inscription sont communiquées dans ces communications. Dès
-            réception de ce mail, n’hésitez pas à vous inscrire très rapidement
-            car le nombre de places est limité.
+            la publication ou la réception du message, n’hésitez pas à
+            vous inscrire très rapidement car <strong>le nombre de places
+            est limité</strong>.
           </p>
         </Grid>
         <Grid item md={4} className={classes.image}>
