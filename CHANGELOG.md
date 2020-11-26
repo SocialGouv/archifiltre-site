@@ -1,3 +1,10 @@
+# [1.35.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.34.0...v1.35.0) (2020-11-26)
+
+
+### Features
+
+* **latest-build:** update latest build link ([#107](https://github.com/SocialGouv/archifiltre-site/issues/107)) ([73af922](https://github.com/SocialGouv/archifiltre-site/commit/73af9220bc4119950dd1bff0499c8711bff58af6))
+
 # [1.34.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.33.0...v1.34.0) (2020-11-25)
 
 
