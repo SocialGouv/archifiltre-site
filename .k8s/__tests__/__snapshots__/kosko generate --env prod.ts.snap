@@ -4,17 +4,17 @@ exports[`kosko generate --prod 1`] = `
 "---
 metadata:
   annotations:
-    app.gitlab.com/app: socialgouv-sample-nxt-app
+    app.gitlab.com/app: socialgouv-archifiltre-site
     app.gitlab.com/env: prod2
     app.gitlab.com/env.name: prod2
   labels:
     app: app
-    application: sample-nxt-app
-    owner: sample-nxt-app
-    team: sample-nxt-app
+    application: archifiltre-site
+    owner: archifiltre-site
+    team: archifiltre-site
     component: nginx
   name: app
-  namespace: sample-nxt-app
+  namespace: archifiltre-site
 spec:
   replicas: 1
   selector:
@@ -23,19 +23,19 @@ spec:
   template:
     metadata:
       annotations:
-        app.gitlab.com/app: socialgouv-sample-nxt-app
+        app.gitlab.com/app: socialgouv-archifiltre-site
         app.gitlab.com/env: prod2
         app.gitlab.com/env.name: prod2
       labels:
         app: app
-        application: sample-nxt-app
-        owner: sample-nxt-app
-        team: sample-nxt-app
+        application: archifiltre-site
+        owner: archifiltre-site
+        team: archifiltre-site
         component: nginx
     spec:
       containers:
         - image: >-
-            registry.gitlab.factory.social.gouv.fr/socialgouv/sample-nxt-app/app:1.2.3
+            registry.gitlab.factory.social.gouv.fr/socialgouv/archifiltre-site/app:1.2.3
           livenessProbe:
             failureThreshold: 6
             httpGet:
@@ -76,15 +76,15 @@ kind: Deployment
 metadata:
   labels:
     app: app
-    application: sample-nxt-app
-    owner: sample-nxt-app
-    team: sample-nxt-app
+    application: archifiltre-site
+    owner: archifiltre-site
+    team: archifiltre-site
   name: app
   annotations:
-    app.gitlab.com/app: socialgouv-sample-nxt-app
+    app.gitlab.com/app: socialgouv-archifiltre-site
     app.gitlab.com/env: prod2
     app.gitlab.com/env.name: prod2
-  namespace: sample-nxt-app
+  namespace: archifiltre-site
 spec:
   ports:
     - name: http
@@ -101,16 +101,16 @@ metadata:
     kubernetes.io/ingress.class: nginx
     certmanager.k8s.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/tls-acme: 'true'
-    app.gitlab.com/app: socialgouv-sample-nxt-app
+    app.gitlab.com/app: socialgouv-archifiltre-site
     app.gitlab.com/env: prod2
     app.gitlab.com/env.name: prod2
   labels:
     app: app
-    application: sample-nxt-app
-    owner: sample-nxt-app
-    team: sample-nxt-app
+    application: archifiltre-site
+    owner: archifiltre-site
+    team: archifiltre-site
   name: app
-  namespace: sample-nxt-app
+  namespace: archifiltre-site
 spec:
   rules:
     - host: archifiltre.fabrique.social.gouv.fr
