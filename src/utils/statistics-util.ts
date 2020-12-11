@@ -15,8 +15,8 @@ const translateStatistics = (statistics: Statistic[]) => {
     ["METS/RESIP Export"]: "Exports METS/RESIP",
     ["Excel Export"]: "Exports Excel",
     ["Audit report export"]: "Rapports d'audit générés",
-    youtubeViews: "Vues sur Youtube",
-    wikiViews: "Vues sur le wiki",
+    youtubeViews: "Vues sur la chaîne Youtube",
+    wikiViews: "Vues sur le Wiki Archifiltre",
   };
 
   return statistics.map((statistic) => ({
