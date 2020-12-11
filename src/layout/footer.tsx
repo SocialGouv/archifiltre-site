@@ -3,7 +3,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import RecordVoiceOverIcon from "@material-ui/icons/RecordVoiceOver";
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { makeStyles } from "@material-ui/styles";
 import { Link as GatsbyLink } from "gatsby";
 import React, { FC } from "react";
@@ -48,6 +48,11 @@ const Footer: FC = () => {
               color="primary"
             >
               Nous contacter
+            </Link>
+          </Grid>
+          <Grid item>
+            <Link component={GatsbyLink} to="/statistiques" color="primary">
+              Statistiques
             </Link>
           </Grid>
         </Grid>
