@@ -40,12 +40,14 @@
     "gatsby-transformer-remark": "^2.8.34",
     "gatsby-transformer-sharp": "^2.5.21",
     "js-cookie": "^2.2.1",
+    "lodash": "^4.17.20",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "^6.1.0",
     "react-tweet-embed": "^1.2.2"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.165",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",

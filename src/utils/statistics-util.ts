@@ -1,76 +1,54 @@
-export type Statistic = {
-  label: string;
-  value: number;
-};
-
-export const sanitizeStatistics = (statistics: Statistic[]) => {
-  const aggregatedStatistics = aggregateStatistics(statistics);
-  return translateStatistics(aggregatedStatistics);
-};
-
-const translateStatistics = (statistics: Statistic[]) => {
-  const labelTranslations: { [initialName: string]: any } = {
-    FileTreeDrop: "Analyses effectuées",
-    ["CSV Export"]: "Exports CSV",
-    ["METS/RESIP Export"]: "Exports METS/RESIP",
-    ["Excel Export"]: "Exports Excel",
-    ["Audit report export"]: "Rapports d'audit générés",
-    youtubeViews: "Vues sur la chaîne Youtube",
-    wikiViews: "Vues sur le Wiki Archifiltre",
-  };
-
-  return statistics.map((statistic) => ({
-    ...statistic,
-    label: labelTranslations[statistic.label],
-  }));
-};
+import { compose, map, sum } from "lodash/fp";
+import { statisticsConfig } from "../display-data/statistics";
+import {
+  AggregatedStatisticConfig,
+  SimpleStatisticConfig,
+  Statistic,
+  StatisticConfig,
+} from "../types/statistic-types";
 
 const findElementByLabel = (statistics: Statistic[], label: string) => {
   return statistics.find((statistic) => statistic.label === label);
 };
 
-const getCsvExports = (statistics: Statistic[]) => {
-  const csvExportEvents =
-    findElementByLabel(statistics, "CSV Export")?.value || 0;
-  const csvExportWithHashesEvents =
-    findElementByLabel(statistics, "CSV with hashes Export")?.value || 0;
-  const treeCsvExportEvents =
-    findElementByLabel(statistics, "Tree CSV Export")?.value || 0;
+const getValue = (statistic: Statistic) => statistic?.value || 0;
 
-  return {
-    label: "CSV Export",
-    value: csvExportEvents + csvExportWithHashesEvents + treeCsvExportEvents,
-  };
-};
+const findValueByLabel = compose(getValue, findElementByLabel);
 
-const getMetsResipExports = (statistics: Statistic[]) => {
-  const metsExportEvents =
-    findElementByLabel(statistics, "METS Export")?.value || 0;
-  const resipExportEvents =
-    findElementByLabel(statistics, "RESIP Export")?.value || 0;
+const extractAggregatedStatisticProps = (
+  statistics: Statistic[],
+  configItem: AggregatedStatisticConfig
+) =>
+  compose(
+    sum,
+    map((field) => findValueByLabel(statistics, field))
+  )(configItem.fields);
 
-  return {
-    label: "METS/RESIP Export",
-    value: metsExportEvents + resipExportEvents,
-  };
-};
+const extractSimpleStatisticProps = (
+  statistics: Statistic[],
+  configItem: SimpleStatisticConfig
+) => findValueByLabel(statistics, configItem.field);
 
-const getFilteredStatistics = (statistics: Statistic[]) => {
-  const excludedLabels = [
-    "CSV Export",
-    "CSV with hashes Export",
-    "Tree CSV Export",
-    "METS Export",
-    "RESIP Export",
-  ];
-  return statistics.filter(
-    (statistic) => !excludedLabels.includes(statistic.label)
-  );
-};
+const isAggregatedStatistic = (
+  configItem: StatisticConfig
+): configItem is AggregatedStatisticConfig => configItem.type === "aggregated";
 
-const aggregateStatistics = (statistics: Statistic[]) => {
-  const csvExport = getCsvExports(statistics);
-  const metsResipExport = getMetsResipExports(statistics);
-  const filteredStatistics = getFilteredStatistics(statistics);
-  return [...filteredStatistics, csvExport, metsResipExport];
-};
+const extractStatisticProps = (
+  statistics: Statistic[],
+  configItem: StatisticConfig
+) =>
+  isAggregatedStatistic(configItem)
+    ? extractAggregatedStatisticProps(statistics, configItem)
+    : extractSimpleStatisticProps(statistics, configItem);
+
+const extractStatisticsProps = (
+  statistics: Statistic[],
+  config: StatisticConfig[]
+) =>
+  config.map((configItem) => ({
+    label: configItem.label,
+    value: extractStatisticProps(statistics, configItem),
+  }));
+
+export const sanitizeStatistics = (statistics: Statistic[]) =>
+  extractStatisticsProps(statistics, statisticsConfig);
