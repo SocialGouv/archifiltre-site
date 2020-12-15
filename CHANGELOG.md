@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.36.0...v1.37.0) (2020-12-15)
+
+
+### Features
+
+* **product:** add video on product page ([#116](https://github.com/SocialGouv/archifiltre-site/issues/116)) ([cdf65d9](https://github.com/SocialGouv/archifiltre-site/commit/cdf65d9c07ef672eed194d82da665dc4f3652ae8))
+
 # [1.36.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.35.0...v1.36.0) (2020-12-11)
 
 
