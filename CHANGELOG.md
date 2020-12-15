@@ -1,3 +1,10 @@
+# [1.38.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.37.0...v1.38.0) (2020-12-15)
+
+
+### Features
+
+* **stats:** update stats ([#115](https://github.com/SocialGouv/archifiltre-site/issues/115)) ([bd94c60](https://github.com/SocialGouv/archifiltre-site/commit/bd94c60e20b24604ec643f8ce71d8dca4d27632c))
+
 # [1.37.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.36.0...v1.37.0) (2020-12-15)
 
 
