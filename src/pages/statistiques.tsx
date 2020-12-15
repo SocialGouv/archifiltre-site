@@ -7,12 +7,31 @@ import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
 import Layout from "../layout";
 import axios from "axios";
-import { sanitizeStatistics, Statistic } from "../utils/statistics-util";
+import { sanitizeStatistics } from "../utils/statistics-util";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import { createStyles, makeStyles } from "@material-ui/styles";
+import { Statistic } from "../types/statistic-types";
+
+const useStyles = makeStyles(() =>
+  createStyles({
+    grid: {
+      width: "100%",
+    },
+    card: {
+      display: "flex",
+      flexDirection: "column",
+      height: "100%",
+      justifyContent: "space-between",
+      minHeight: 120,
+      minWidth: 200,
+    },
+  })
+);
 
 const Statistiques = () => {
   const [statistics, setStatistics] = useState<Statistic[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const classes = useStyles();
 
   useEffect(() => {
     const fetchStatistics = async () => {
@@ -46,10 +65,10 @@ const Statistiques = () => {
           <div>Chargement en cours...</div>
         </Box>
       ) : (
-        <Grid container spacing={3}>
+        <Grid container spacing={2}>
           {statistics.map(({ label, value }) => (
-            <Grid item xs={3} key={label}>
-              <Card>
+            <Grid item md={3} key={label} className={classes.grid}>
+              <Card className={classes.card}>
                 <CardContent>
                   <Typography color="textSecondary" gutterBottom>
                     {label}
