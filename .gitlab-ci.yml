@@ -29,7 +29,7 @@ Build:
     paths:
       - .cache
   before_script:
-    - apk add automake autoconf libtool dpkg pkgconfig nasm libpng cmake m4
+    - apk add automake autoconf libtool dpkg pkgconfig nasm libpng libpng-dev g++
   script:
     - yarn config set cache-folder $CI_PROJECT_DIR/.cache/yarn
     - yarn --frozen-lockfile --prefer-offline
