@@ -1,3 +1,11 @@
+## [1.39.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.39.0...v1.39.1) (2020-12-17)
+
+
+### Bug Fixes
+
+* **ci:** fix pipeline errors ([#119](https://github.com/SocialGouv/archifiltre-site/issues/119)) ([ca13b96](https://github.com/SocialGouv/archifiltre-site/commit/ca13b9688c4dc3d5c9c0b36502e9f20a335653ce))
+* **deps:** update all non-major dependencies ([#97](https://github.com/SocialGouv/archifiltre-site/issues/97)) ([e1b604a](https://github.com/SocialGouv/archifiltre-site/commit/e1b604a09d14d7ec1f6281dc29884823ef241e81))
+
 # [1.39.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.38.0...v1.39.0) (2020-12-17)
 
 
