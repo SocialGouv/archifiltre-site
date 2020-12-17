@@ -44,6 +44,7 @@
         "prettier/prettier": "error",
         "react/prop-types": 0,
         "import/prefer-default-export": "off",
-        "@typescript-eslint/explicit-function-return-type": "off"
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "jest/no-deprecated-functions": "off"
     }
 }
