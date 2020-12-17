@@ -25,6 +25,9 @@ const useStyles = makeStyles(() =>
       minHeight: 120,
       minWidth: 200,
     },
+    statsCount: {
+      textAlign: "center",
+    },
   })
 );
 
@@ -51,7 +54,7 @@ const Statistiques = () => {
       <SEO title="Statistiques" />
       <Box p={3} textAlign="center">
         <Typography component="h1" variant="h4" color="textPrimary">
-          Statistiques
+          Statistiques (depuis le 17 avril 2019)
         </Typography>
       </Box>
       {isLoading ? (
@@ -73,7 +76,12 @@ const Statistiques = () => {
                   <Typography color="textSecondary" gutterBottom>
                     {label}
                   </Typography>
-                  <Typography variant="h5" component="h2" color="primary">
+                  <Typography
+                    variant="h5"
+                    component="h2"
+                    color="primary"
+                    className={classes.statsCount}
+                  >
                     <strong>{value}</strong>
                   </Typography>
                 </CardContent>

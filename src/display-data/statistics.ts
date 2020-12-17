@@ -2,23 +2,28 @@ import { StatisticConfig } from "../types/statistic-types";
 
 export const statisticsConfig: StatisticConfig[] = [
   {
-    label: "Analyses effectuées",
-    field: "FileTreeDrop",
-    type: "simple",
+    label: "Téléchargements d'Archifiltre",
+    fields: ["download", "appDownload"],
+    type: "aggregated",
   },
   {
-    label: "Exports CSV",
+    label: "Exports CSV (avec empreinte...)",
     fields: ["CSV Export", "CSV with hashes Export", "Tree CSV Export"],
     type: "aggregated",
   },
   {
-    label: "Exports METS/RESIP",
+    label: "Exports Excel (depuis le 26/10/2020)",
+    field: "Excel Export",
+    type: "simple",
+  },
+  {
+    label: "Exports METS/RESIP (pour transfert vers SAE)",
     fields: ["METS Export", "RESIP Export"],
     type: "aggregated",
   },
   {
-    label: "Exports Excel",
-    field: "Excel Export",
+    label: "Analyses effectuées",
+    field: "FileTreeDrop",
     type: "simple",
   },
   {
@@ -32,18 +37,13 @@ export const statisticsConfig: StatisticConfig[] = [
     type: "simple",
   },
   {
-    label: "Vues sur le Wiki Archifiltre (14 derniers jours)",
-    field: "wikiViews",
+    label: "Visites sur le site (depuis le 09/12/2019)",
+    field: "visitsCount",
     type: "simple",
   },
   {
-    label: "Téléchargements d'Archifiltre",
-    fields: ["download", "appDownload"],
-    type: "aggregated",
-  },
-  {
-    label: "Visites sur le site",
-    field: "visitsCount",
+    label: "Vues sur le Wiki Archifiltre (14 derniers jours)",
+    field: "wikiViews",
     type: "simple",
   },
 ];
