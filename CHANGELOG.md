@@ -1,3 +1,10 @@
+# [1.39.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.38.0...v1.39.0) (2020-12-17)
+
+
+### Features
+
+* **stats:** add stats footnote ([#117](https://github.com/SocialGouv/archifiltre-site/issues/117)) ([8243e2f](https://github.com/SocialGouv/archifiltre-site/commit/8243e2fab0fd791760a3f34eccf3d2ad8162475b))
+
 # [1.38.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.37.0...v1.38.0) (2020-12-15)
 
 
