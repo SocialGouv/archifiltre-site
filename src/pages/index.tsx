@@ -4,15 +4,15 @@ import Typography from "@material-ui/core/Typography";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import { makeStyles } from "@material-ui/styles";
 import { Link as GatsbyLink } from "gatsby";
-import React, { FC } from 'react'
+import React, { FC } from "react";
 
+import DownloadLatestVersionButton from "../components/download-latest-version-button";
 import HomepageHeader from "../components/homepage-header";
 import HomepageTweets from "../components/homepage-tweets";
 import Presentation from "../components/presentation";
 import ProductFeatures from "../components/product-features";
 import SEO from "../components/seo";
 import Layout from "../layout";
-import DownloadLatestVersionButton from "../components/download-latest-version-button";
 
 const useStyles = makeStyles((theme: Theme) => ({
   downloadLink: {

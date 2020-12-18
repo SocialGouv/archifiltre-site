@@ -1,22 +1,20 @@
-import React, { useEffect, useState } from "react";
-import SEO from "../components/seo";
 import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import Grid from "@material-ui/core/Grid";
-import Layout from "../layout";
-import axios from "axios";
-import { sanitizeStatistics } from "../utils/statistics-util";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
 import { createStyles, makeStyles } from "@material-ui/styles";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+
+import SEO from "../components/seo";
+import Layout from "../layout";
 import { Statistic } from "../types/statistic-types";
+import { sanitizeStatistics } from "../utils/statistics-util";
 
 const useStyles = makeStyles(() =>
   createStyles({
-    grid: {
-      width: "100%",
-    },
     card: {
       display: "flex",
       flexDirection: "column",
@@ -24,6 +22,9 @@ const useStyles = makeStyles(() =>
       justifyContent: "space-between",
       minHeight: 120,
       minWidth: 200,
+    },
+    grid: {
+      width: "100%",
     },
     statsCount: {
       textAlign: "center",
@@ -54,7 +55,7 @@ const Statistiques = () => {
       <SEO title="Statistiques" />
       <Box p={3} textAlign="center">
         <Typography component="h1" variant="h4" color="textPrimary">
-          Statistiques (depuis le 17 avril 2019)
+          Statistiques (depuis le 1 janvier 2020)
         </Typography>
       </Box>
       {isLoading ? (

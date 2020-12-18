@@ -1,12 +1,17 @@
-import { defaultOperatingSystem, getOperatingSystem, OS } from '../utils/os-util'
-import versions from '../display-data/versions'
-import GetAppIcon from '@material-ui/icons/GetApp'
-import { Button, Theme } from '@material-ui/core'
-import React, { useEffect, useState } from 'react'
-import { trackAppDownload } from '../tracker'
-import { makeStyles } from '@material-ui/styles'
+import { Button } from "@material-ui/core";
+import GetAppIcon from "@material-ui/icons/GetApp";
+import { makeStyles } from "@material-ui/styles";
+import React, { useEffect, useState } from "react";
 
-const useStyles = makeStyles((theme: Theme) => ({
+import versions from "../display-data/versions";
+import { trackAppDownload } from "../tracker";
+import {
+  defaultOperatingSystem,
+  getOperatingSystem,
+  OS,
+} from "../utils/os-util";
+
+const useStyles = makeStyles(() => ({
   downloadButton: {
     fontWeight: "bold",
   },
@@ -25,14 +30,13 @@ const getDownloadLink = (): string => {
   return lastVersionPlatform.url;
 };
 
-
 const DownloadLatestVersionButton = () => {
   const classes = useStyles();
   const [downloadLink, setDownloadLink] = useState(getDownloadLink());
 
   useEffect(() => {
     setDownloadLink(getDownloadLink());
-  }, [setDownloadLink])
+  }, [setDownloadLink]);
 
   const onDownloadClick = () => {
     const userOperatingSystem = OS[getOperatingSystem()];
@@ -58,7 +62,7 @@ const DownloadLatestVersionButton = () => {
     >
       Télécharger
     </Button>
-  )
-}
+  );
+};
 
 export default DownloadLatestVersionButton;

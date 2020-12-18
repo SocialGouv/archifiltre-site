@@ -1,4 +1,5 @@
 import { compose, map, sum } from "lodash/fp";
+
 import { statisticsConfig } from "../display-data/statistics";
 import {
   AggregatedStatisticConfig,

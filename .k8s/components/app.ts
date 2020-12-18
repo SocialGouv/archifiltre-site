@@ -3,7 +3,7 @@ import env from "@kosko/env";
 import { create } from "@socialgouv/kosko-charts/components/nginx";
 
 const manifests = create("app", {
-  env
+  env,
 });
 
 export default manifests;
