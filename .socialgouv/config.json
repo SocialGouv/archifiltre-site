@@ -1,0 +1,5 @@
+{
+  "type": "nginx",
+  "name": "archifiltre-site",
+  "subdomain": "archifiltre"
+}
