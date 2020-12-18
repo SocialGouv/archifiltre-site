@@ -1,3 +1,15 @@
+# [1.40.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.39.1...v1.40.0) (2020-12-18)
+
+
+### Bug Fixes
+
+* ci deps upgrade ([63bd838](https://github.com/SocialGouv/archifiltre-site/commit/63bd838f94eb8a2be2bf1bbc312b6007345dd913))
+
+
+### Features
+
+* **stats:** update stats base date ([#120](https://github.com/SocialGouv/archifiltre-site/issues/120)) ([53e5226](https://github.com/SocialGouv/archifiltre-site/commit/53e5226c0dee6a601c0317462a9b39230d0132ab))
+
 ## [1.39.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.39.0...v1.39.1) (2020-12-17)
 
 
