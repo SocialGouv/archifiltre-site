@@ -2,6 +2,7 @@ import { Button, Theme } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+import MailIcon from "@material-ui/icons/Mail";
 import { makeStyles } from "@material-ui/styles";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
@@ -10,7 +11,6 @@ import React, { FC } from "react";
 import SEO from "../components/seo";
 import ThemeImage from "../components/theme-image";
 import Layout from "../layout";
-import MailIcon from "@material-ui/icons/Mail";
 
 const useStyles = makeStyles((theme: Theme) => ({
   grid: {
@@ -76,12 +76,13 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
             <strong>Qu’est-ce qu’un Openlab ?</strong>
           </Typography>
           <p>
-            Un Openlab est un <strong>moment d’échanges</strong>, le temps d’une journée
-            ou d’un atelier, entre l’équipe projet Archifiltre et les utilisateur·trice·s,
-            à propos de l’outil Archifiltre. Durant cet openlab, des ateliers de
-            co-construction ont lieu afin de discuter des fonctionnalités et de
-            l’interface de l’outil, des attentes des utilisateur·trice·s et des
-            cas d’usage rencontrés. Quelques exemples d’ateliers :
+            Un Openlab est un <strong>moment d’échanges</strong>, le temps d’une
+            journée ou d’un atelier, entre l’équipe projet Archifiltre et les
+            utilisateur·trice·s, à propos de l’outil Archifiltre. Durant cet
+            openlab, des ateliers de co-construction ont lieu afin de discuter
+            des fonctionnalités et de l’interface de l’outil, des attentes des
+            utilisateur·trice·s et des cas d’usage rencontrés. Quelques exemples
+            d’ateliers :
           </p>
           <ul>
             <li>
@@ -98,13 +99,13 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
             <strong>Quand et où ?</strong>
           </Typography>
           <p>
-            Les openlabs peuvent se dérouler <strong>à Paris, en
-            présentiel</strong> sur une journée, <strong>ou en
-            visioconférence</strong> sur des temps d'ateliers plus
+            Les openlabs peuvent se dérouler{" "}
+            <strong>à Paris, en présentiel</strong> sur une journée,{" "}
+            <strong>ou en visioconférence</strong> sur des temps d'ateliers plus
             courts (maximum 2 heures). La mise en place d’openlabs en
             visioconférence avec des outils interactifs nous permet de
-            multiplier le nombre d’ateliers et d’être en contact avec
-            l’ensemble de nos utilisateur·trice·s.
+            multiplier le nombre d’ateliers et d’être en contact avec l’ensemble
+            de nos utilisateur·trice·s.
           </p>
           <Typography variant="h6">
             <strong>Comment s’inscrire ?</strong>
@@ -113,10 +114,10 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
             Un mail est envoyé par l’équipe Archifiltre via les listes de
             diffusions ou sur les réseaux sociaux (Twitter ou LinkedIn)
             indiquant l'organisation d'un nouvel openlab. Les conditions
-            d’inscription sont communiquées dans ces communications. Dès
-            la publication ou la réception du message, n’hésitez pas à
-            vous inscrire très rapidement car <strong>le nombre de places
-            est limité</strong>.
+            d’inscription sont communiquées dans ces communications. Dès la
+            publication ou la réception du message, n’hésitez pas à vous
+            inscrire très rapidement car{" "}
+            <strong>le nombre de places est limité</strong>.
           </p>
         </Grid>
         <Grid item md={4} className={classes.image}>

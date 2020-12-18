@@ -1,21 +1,21 @@
 import { Button, Container, Grid, Link, Theme } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import RecordVoiceOverIcon from "@material-ui/icons/RecordVoiceOver";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import YouTubeIcon from "@material-ui/icons/YouTube";
-import RecordVoiceOverIcon from "@material-ui/icons/RecordVoiceOver";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { makeStyles } from "@material-ui/styles";
 import { Link as GatsbyLink } from "gatsby";
 import React, { FC } from "react";
 
 const useStyles = makeStyles((theme: Theme) => ({
+  feedback: {
+    padding: theme.spacing(2),
+  },
   footer: {
     backgroundColor: theme.palette.background.paper,
     marginTop: "auto",
     padding: theme.spacing(3, 2),
-  },
-  feedback: {
-    padding: theme.spacing(2),
   },
 }));
 
