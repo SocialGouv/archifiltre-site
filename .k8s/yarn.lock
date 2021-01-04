@@ -626,10 +626,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@socialgouv/kosko-charts@^4.1.3":
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/@socialgouv/kosko-charts/-/kosko-charts-4.1.3.tgz#c458ffcefba7131105e5a5cf49810787db617cb5"
-  integrity sha512-e1uXR/mFqXcQ21MeFQajAxTZ5RnFUsSBIrSxKio+VQ++kXRPVYh30BObVSCQzzzAUywZZPExHEVGxon+6IjI8w==
+"@socialgouv/kosko-charts@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@socialgouv/kosko-charts/-/kosko-charts-4.2.1.tgz#2c77660753232a789f7e34b8ccbfe770cdc8e386"
+  integrity sha512-0aElGuwa20JXyksyXAx49c9r9KJyuxr0uKpG8IfEv+X4SSvhou4bqWBn6F1/EUgJeqHCzp2MqCFGwJs/VHg5Cw==
   dependencies:
     "@kosko/env" "^1.0.1"
     "@kubernetes-models/sealed-secrets" "^1.0.2"
@@ -3802,7 +3802,7 @@ tr46@^2.0.2:
   dependencies:
     punycode "^2.1.1"
 
-ts-node@^9.0.0:
+ts-node@^9.1.1:
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.1.1.tgz#51a9a450a3e959401bda5f004a72d54b936d376d"
   integrity sha512-hPlt7ZACERQGf03M253ytLY3dHbGNGrAq9qIHWUY9XHYl1z7wYngSr3OQ5xmui8o2AaxsONxIzjafLUiWBo1Fg==
