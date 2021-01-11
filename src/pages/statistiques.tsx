@@ -32,9 +32,15 @@ const useStyles = makeStyles(() =>
   })
 );
 
+const minutesSinceTimestamp = (lastFetchTimestamp: number) => {
+  const timeDifference = Date.now() - lastFetchTimestamp;
+  return Math.floor(timeDifference / (60 * 1000));
+};
+
 const Statistiques = () => {
   const [statistics, setStatistics] = useState<Statistic[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [lastFetchTimestamp, setLastFetchTimestamp] = useState(0);
   const classes = useStyles();
 
   useEffect(() => {
@@ -43,12 +49,15 @@ const Statistiques = () => {
       const fetchedStatistics = await axios
         .get(`${process.env.STATISTICS_URL}/statistics`)
         .then(({ data }) => data);
-      const sanitizedStatistics = sanitizeStatistics(fetchedStatistics);
+      const sanitizedStatistics = sanitizeStatistics(fetchedStatistics.result);
+      setLastFetchTimestamp(fetchedStatistics.lastFetchTimestamp);
       setStatistics(sanitizedStatistics);
       setIsLoading(false);
     };
     fetchStatistics();
   }, []);
+
+  const minutesSinceLastFetch = minutesSinceTimestamp(lastFetchTimestamp);
 
   return (
     <Layout>
@@ -69,27 +78,36 @@ const Statistiques = () => {
           <div>Chargement en cours...</div>
         </Box>
       ) : (
-        <Grid container spacing={2}>
-          {statistics.map(({ label, value }) => (
-            <Grid item md={3} key={label} className={classes.grid}>
-              <Card className={classes.card}>
-                <CardContent>
-                  <Typography color="textSecondary" gutterBottom>
-                    {label}
-                  </Typography>
-                  <Typography
-                    variant="h5"
-                    component="h2"
-                    color="primary"
-                    className={classes.statsCount}
-                  >
-                    <strong>{value}</strong>
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
+        <Box>
+          <Grid container spacing={2}>
+            {statistics.map(({ label, value }) => (
+              <Grid item md={3} key={label} className={classes.grid}>
+                <Card className={classes.card}>
+                  <CardContent>
+                    <Typography color="textSecondary" gutterBottom>
+                      {label}
+                    </Typography>
+                    <Typography
+                      variant="h5"
+                      component="h2"
+                      color="primary"
+                      className={classes.statsCount}
+                    >
+                      <strong>{value}</strong>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+          <Box display="flex" justifyContent="center">
+            <Typography variant="body2" gutterBottom>
+              {`Dernière mise à jour il y a ${
+                minutesSinceLastFetch || "< 1"
+              } minute(s)`}
+            </Typography>
+          </Box>
+        </Box>
       )}
     </Layout>
   );
