@@ -1,3 +1,10 @@
+# [1.42.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.41.0...v1.42.0) (2021-01-20)
+
+
+### Features
+
+* **stats:** update date label ([#129](https://github.com/SocialGouv/archifiltre-site/issues/129)) ([643030f](https://github.com/SocialGouv/archifiltre-site/commit/643030f9c8e2deb274407d04613dd7bb8a88fcc9))
+
 # [1.41.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.40.0...v1.41.0) (2021-01-12)
 
 
