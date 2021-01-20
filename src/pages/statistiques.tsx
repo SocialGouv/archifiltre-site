@@ -64,7 +64,7 @@ const Statistiques = () => {
       <SEO title="Statistiques" />
       <Box p={3} textAlign="center">
         <Typography component="h1" variant="h4" color="textPrimary">
-          Statistiques (depuis le 1 janvier 2020)
+          Statistiques (depuis le 1<sup>er</sup> janvier 2020)
         </Typography>
       </Box>
       {isLoading ? (
