@@ -2,6 +2,8 @@
 
 exports[`kosko generate --prod 1`] = `
 "---
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   annotations:
     app.gitlab.com/app: socialgouv-archifiltre-site
@@ -70,9 +72,9 @@ spec:
               path: /index.html
               port: http
             periodSeconds: 5
-apiVersion: apps/v1
-kind: Deployment
 ---
+apiVersion: v1
+kind: Service
 metadata:
   labels:
     app: app
@@ -93,9 +95,9 @@ spec:
   selector:
     app: app
   type: ClusterIP
-apiVersion: v1
-kind: Service
 ---
+apiVersion: extensions/v1beta1
+kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
@@ -124,7 +126,5 @@ spec:
     - hosts:
         - archifiltre.fabrique.social.gouv.fr
       secretName: app-crt
-apiVersion: extensions/v1beta1
-kind: Ingress
 "
 `;
