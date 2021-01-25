@@ -1,6 +1,7 @@
 export type Platform = {
   id: OS;
   url: string;
+  hashUrl?: string;
 };
 
 export enum OS {

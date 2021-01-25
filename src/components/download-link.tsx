@@ -22,8 +22,8 @@ const DownloadLink: FC<DownloadLinkProps> = ({ url, label, version }) => {
       color="primary"
       rel="noopener"
       onClick={onClick}
+      startIcon={<GetAppIcon />}
     >
-      <GetAppIcon />
       {label}
     </Button>
   );

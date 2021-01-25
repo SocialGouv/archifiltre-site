@@ -8,6 +8,7 @@ import SEO from "../components/seo";
 import versions from "../display-data/versions";
 import Layout from "../layout";
 import { getPlatformName, Platform } from "../utils/os-util";
+import HashLink from "../components/hash-link";
 
 const Telechargements: FC = () => (
   <Layout>
@@ -52,6 +53,12 @@ const Telechargements: FC = () => (
                     label={platformName}
                     version={version.number}
                   />
+                  {platform.hashUrl && (
+                    <Box display="inline">
+                      {" - "}
+                      <HashLink url={platform.hashUrl} label="Hash" />
+                    </Box>
+                  )}
                 </Box>
               );
             })}
