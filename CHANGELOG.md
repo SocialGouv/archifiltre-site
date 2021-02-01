@@ -1,3 +1,16 @@
+# [1.43.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.42.0...v1.43.0) (2021-02-01)
+
+
+### Bug Fixes
+
+* **deps:** update all dependencies ([#127](https://github.com/SocialGouv/archifiltre-site/issues/127)) ([47eda6f](https://github.com/SocialGouv/archifiltre-site/commit/47eda6f18979ac8bb431c0344e1f5aea79f7459e))
+* **deps:** update all dependencies to ^1.0.3 ([fb12414](https://github.com/SocialGouv/archifiltre-site/commit/fb12414ce084140826aecf88de175d7d14eb9eaa))
+
+
+### Features
+
+* **downloads:** add hashes in download page ([505ff44](https://github.com/SocialGouv/archifiltre-site/commit/505ff446a6ebe2164610cdfb7a965f7b6c6bc212))
+
 # [1.42.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.41.0...v1.42.0) (2021-01-20)
 
 
