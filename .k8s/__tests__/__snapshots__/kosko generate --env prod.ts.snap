@@ -2,8 +2,12 @@
 
 exports[`kosko generate --prod 1`] = `
 "---
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   annotations:
+    kapp.k14s.io/disable-default-ownership-label-rules: ''
+    kapp.k14s.io/disable-default-label-scoping-rules: ''
     app.gitlab.com/app: socialgouv-archifiltre-site
     app.gitlab.com/env: prod2
     app.gitlab.com/env.name: prod2
@@ -23,6 +27,8 @@ spec:
   template:
     metadata:
       annotations:
+        kapp.k14s.io/disable-default-ownership-label-rules: ''
+        kapp.k14s.io/disable-default-label-scoping-rules: ''
         app.gitlab.com/app: socialgouv-archifiltre-site
         app.gitlab.com/env: prod2
         app.gitlab.com/env.name: prod2
@@ -70,9 +76,9 @@ spec:
               path: /index.html
               port: http
             periodSeconds: 5
-apiVersion: apps/v1
-kind: Deployment
 ---
+apiVersion: v1
+kind: Service
 metadata:
   labels:
     app: app
@@ -81,6 +87,8 @@ metadata:
     team: archifiltre-site
   name: app
   annotations:
+    kapp.k14s.io/disable-default-ownership-label-rules: ''
+    kapp.k14s.io/disable-default-label-scoping-rules: ''
     app.gitlab.com/app: socialgouv-archifiltre-site
     app.gitlab.com/env: prod2
     app.gitlab.com/env.name: prod2
@@ -93,14 +101,16 @@ spec:
   selector:
     app: app
   type: ClusterIP
-apiVersion: v1
-kind: Service
 ---
+apiVersion: extensions/v1beta1
+kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     certmanager.k8s.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/tls-acme: 'true'
+    kapp.k14s.io/disable-default-ownership-label-rules: ''
+    kapp.k14s.io/disable-default-label-scoping-rules: ''
     app.gitlab.com/app: socialgouv-archifiltre-site
     app.gitlab.com/env: prod2
     app.gitlab.com/env.name: prod2
@@ -124,7 +134,5 @@ spec:
     - hosts:
         - archifiltre.fabrique.social.gouv.fr
       secretName: app-crt
-apiVersion: extensions/v1beta1
-kind: Ingress
 "
 `;
