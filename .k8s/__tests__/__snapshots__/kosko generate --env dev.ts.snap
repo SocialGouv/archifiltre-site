@@ -26,6 +26,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
+    kapp.k14s.io/disable-default-ownership-label-rules: ''
+    kapp.k14s.io/disable-default-label-scoping-rules: ''
     app.gitlab.com/app: socialgouv-archifiltre-site
     app.gitlab.com/env: master-dev2
     app.gitlab.com/env.name: master-dev2
@@ -46,6 +48,8 @@ spec:
   template:
     metadata:
       annotations:
+        kapp.k14s.io/disable-default-ownership-label-rules: ''
+        kapp.k14s.io/disable-default-label-scoping-rules: ''
         app.gitlab.com/app: socialgouv-archifiltre-site
         app.gitlab.com/env: master-dev2
         app.gitlab.com/env.name: master-dev2
@@ -106,6 +110,8 @@ metadata:
     cert: wildcard
   name: app
   annotations:
+    kapp.k14s.io/disable-default-ownership-label-rules: ''
+    kapp.k14s.io/disable-default-label-scoping-rules: ''
     app.gitlab.com/app: socialgouv-archifiltre-site
     app.gitlab.com/env: master-dev2
     app.gitlab.com/env.name: master-dev2
@@ -124,6 +130,8 @@ kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
+    kapp.k14s.io/disable-default-ownership-label-rules: ''
+    kapp.k14s.io/disable-default-label-scoping-rules: ''
     app.gitlab.com/app: socialgouv-archifiltre-site
     app.gitlab.com/env: master-dev2
     app.gitlab.com/env.name: master-dev2
