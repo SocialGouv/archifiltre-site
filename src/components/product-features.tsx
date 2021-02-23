@@ -23,14 +23,17 @@ const ProductFeatures: FC = () => {
           Pourquoi c&rsquo;est si simple ?
         </Typography>
       </Box>
-      <Grid container alignItems="center" spacing={2}>
+      <Grid container spacing={2}>
         {featureData.map((feature) => (
           <Grid item md={3} key={feature.title}>
             <Box p={3}>
-              <Box>
-                <Typography variant="h5" color="textPrimary">
-                  {feature.icon} {feature.title}
-                </Typography>
+              <Box display="flex" alignItems="center" paddingBottom={1}>
+                {feature.icon}
+                <Box paddingLeft={1}>
+                  <Typography variant="h5" color="textPrimary">
+                    {feature.title}
+                  </Typography>
+                </Box>
               </Box>
               <Box>{feature.description}</Box>
             </Box>
