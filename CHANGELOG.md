@@ -1,3 +1,10 @@
+## [1.43.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.43.1...v1.43.2) (2021-03-01)
+
+
+### Bug Fixes
+
+* **a11y:** improve title component hierarchy on index page ([#143](https://github.com/SocialGouv/archifiltre-site/issues/143)) ([6a890b8](https://github.com/SocialGouv/archifiltre-site/commit/6a890b8a98c1ef863758b442fe82505b99bbd215))
+
 ## [1.43.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.43.0...v1.43.1) (2021-02-12)
 
 
