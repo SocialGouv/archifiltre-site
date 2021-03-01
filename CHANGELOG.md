@@ -1,3 +1,10 @@
+## [1.43.3](https://github.com/SocialGouv/archifiltre-site/compare/v1.43.2...v1.43.3) (2021-03-01)
+
+
+### Bug Fixes
+
+* **perf:** remove unused font loading plugin ([#145](https://github.com/SocialGouv/archifiltre-site/issues/145)) ([6abbfc7](https://github.com/SocialGouv/archifiltre-site/commit/6abbfc7872068e9ffc78f6144fd1c0028dffca28))
+
 ## [1.43.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.43.1...v1.43.2) (2021-03-01)
 
 
