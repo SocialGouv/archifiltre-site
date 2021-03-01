@@ -42,7 +42,7 @@ const Presentation: FC = () => {
             <Grid container spacing={4} justify="center">
               {presentationData.map((presentationItem) => (
                 <Grid item md={6} key={presentationItem.title}>
-                  <Typography variant="h5" color="textPrimary">
+                  <Typography variant="h5" component="h3" color="textPrimary">
                     <Box className={classes.icon}>{presentationItem.logo}</Box>
                     <Box>{presentationItem.title}</Box>
                   </Typography>

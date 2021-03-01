@@ -30,7 +30,7 @@ const ProductFeatures: FC = () => {
               <Box display="flex" alignItems="center" paddingBottom={1}>
                 {feature.icon}
                 <Box paddingLeft={1}>
-                  <Typography variant="h5" color="textPrimary">
+                  <Typography variant="h5" component="h3" color="textPrimary">
                     {feature.title}
                   </Typography>
                 </Box>
