@@ -1,10 +1,12 @@
 import Box from "@material-ui/core/Box";
+import IconButton from "@material-ui/core/IconButton";
 import makeStyles from "@material-ui/core/styles/makeStyles";
+import Tooltip from "@material-ui/core/Tooltip";
 import Typography from "@material-ui/core/Typography";
+import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import React, { FC, ReactNode } from "react";
 
 import { RawStatisticConfig } from "../types/statistic-types";
-import { STATISTICS_TEXT_COLOR } from "../utils/colors";
 import { spaceNumberForAnyValue } from "../utils/number-util";
 
 type StatisticRawProps = {
@@ -13,7 +15,6 @@ type StatisticRawProps = {
 
 const useDataStyle = makeStyles({
   root: {
-    color: STATISTICS_TEXT_COLOR,
     fontSize: "35px",
     lineHeight: "47px",
   },
@@ -21,7 +22,6 @@ const useDataStyle = makeStyles({
 
 const useLabelStyle = makeStyles({
   root: {
-    color: STATISTICS_TEXT_COLOR,
     fontSize: "15px",
     lineHeight: "22px",
     marginTop: "8px",
@@ -32,13 +32,30 @@ const spaceNumber = spaceNumberForAnyValue<ReactNode>({
   minDigits: 5,
 });
 
-const StatisticRaw: FC<StatisticRawProps> = ({ statistic }) => (
-  <Box width={1}>
-    <Typography classes={useDataStyle()}>
-      {spaceNumber(statistic.value)}
-    </Typography>
-    <Typography classes={useLabelStyle()}>{statistic.label}</Typography>
-  </Box>
-);
+const StatisticRaw: FC<StatisticRawProps> = ({ statistic }) => {
+  return (
+    <Box width={1}>
+      <Typography classes={useDataStyle()} color="textSecondary">
+        {spaceNumber(statistic.value)}
+      </Typography>
+      <Box display="flex" flexWrap="wrap">
+        <Typography classes={useLabelStyle()} color="textSecondary">
+          {statistic.label}{" "}
+          {statistic.tooltip && (
+            <Tooltip title={statistic.tooltip}>
+              <IconButton size="small" aria-label="info">
+                <InfoOutlinedIcon
+                  fontSize="small"
+                  color="secondary"
+                  titleAccess="info"
+                />
+              </IconButton>
+            </Tooltip>
+          )}
+        </Typography>
+      </Box>
+    </Box>
+  );
+};
 
 export default StatisticRaw;

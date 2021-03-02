@@ -6,7 +6,6 @@ import Typography from "@material-ui/core/Typography";
 import React, { FC } from "react";
 
 import { StatisticsBlock as StatisticsBlockType } from "../types/statistic-types";
-import { STATISTICS_TEXT_COLOR } from "../utils/colors";
 import Statistic from "./statistic";
 
 type StatisticsBlockProps = {
@@ -30,7 +29,6 @@ const useCardContentStyles = makeStyles({
 
 const useTitleStyle = makeStyles({
   root: {
-    color: STATISTICS_TEXT_COLOR,
     fontSize: "15px",
     fontWeight: "bold",
     lineHeight: "22px",
@@ -41,7 +39,11 @@ const useTitleStyle = makeStyles({
 const StatisticsBlock: FC<StatisticsBlockProps> = ({ block }) => (
   <Card classes={useCardStyles()}>
     <CardContent classes={useCardContentStyles()}>
-      <Typography classes={useTitleStyle()} align="center">
+      <Typography
+        classes={useTitleStyle()}
+        color="textSecondary"
+        align="center"
+      >
         {block.title}
       </Typography>
       <Box display="flex" justifyContent="space-around">
