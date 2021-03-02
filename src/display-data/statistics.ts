@@ -1,4 +1,156 @@
-import { StatisticConfig } from "../types/statistic-types";
+import { StatisticConfig, StatisticsGroup } from "../types/statistic-types";
+
+export const statisticsLayout: StatisticsGroup[] = [
+  {
+    blocks: [
+      {
+        size: 3,
+        statistics: [
+          {
+            label: "utilisateurs",
+            type: "raw",
+            value: 1420,
+          },
+        ],
+        title: "Utilisateur•rice•s",
+      },
+      {
+        size: 3,
+        statistics: [
+          {
+            label: "téléchargements depuis la création",
+            type: "raw",
+            value: 15200,
+          },
+        ],
+        title: "Téléchargements",
+      },
+      {
+        size: 3,
+        statistics: [
+          {
+            label: "note donnée par les utilisateurs, sur 5",
+            tooltip:
+              "Question posée : « Et si vous deviez donner une note à Archifiltre ? » (49 répondants)",
+            type: "raw",
+            value: 4.2,
+          },
+        ],
+        title: "note",
+      },
+      {
+        size: 3,
+        statistics: [
+          {
+            label:
+              "des utilisateurs le recommanderaient à leurs collègues (NPS)",
+            tooltip:
+              "Question posée : « A quel point recommanderiez-vous Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10. (49 répondants)",
+            type: "raw",
+            value: "60%",
+          },
+        ],
+        title: "recommandation",
+      },
+    ],
+    title: "En résumé 📌",
+  },
+  {
+    blocks: [
+      {
+        size: 6,
+        statistics: [
+          {
+            label: "personnes",
+            type: "raw",
+            value: 1420,
+          },
+          {
+            label: "active",
+            type: "raw",
+            value: 1190,
+          },
+        ],
+        title: "En chiffres",
+      },
+      {
+        size: 6,
+        statistics: [
+          {
+            label: "",
+            type: "raw",
+            value: "",
+          },
+        ],
+        title: "Localisation",
+      },
+    ],
+    title: "Utilisateur•rice•s 👨🏿‍💻 👩🏼‍💻 👨🏽‍💻",
+  },
+  {
+    blocks: [
+      {
+        size: 6,
+        statistics: [
+          {
+            label: "téléchargements depuis avril 2019",
+            type: "raw",
+            value: 15200,
+          },
+          {
+            label: "téléchargements de la dernière version (3.1.1)",
+            type: "raw",
+            value: 438,
+          },
+        ],
+        title: "En nombre",
+      },
+      {
+        size: 3,
+        statistics: [],
+        title: "Versions",
+      },
+      {
+        size: 3,
+        statistics: [],
+        title: "Système d'exploitation",
+      },
+    ],
+    title: "Téléchargements 🔗",
+  },
+  {
+    blocks: [
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "Go de données analysées",
+            type: "raw",
+            value: 13890,
+          },
+        ],
+        title: "Total",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "Go d'éléments tagués « à supprimer »",
+            type: "raw",
+            value: 13890,
+          },
+        ],
+        title: "Gain de stockage",
+      },
+      {
+        size: 4,
+        statistics: [],
+        title: "Donnée écologique",
+      },
+    ],
+    title: "Volume de données 📈",
+  },
+];
 
 export const statisticsConfig: StatisticConfig[] = [
   {
