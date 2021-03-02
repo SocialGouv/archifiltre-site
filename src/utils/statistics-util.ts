@@ -1,11 +1,15 @@
+// eslint-disable-next-line import/named
 import { compose, map, sum } from "lodash/fp";
 
-import { statisticsConfig } from "../display-data/statistics";
 import {
   AggregatedStatisticConfig,
+  isRawStatistic,
+  RawStatisticConfig,
   SimpleStatisticConfig,
   Statistic,
   StatisticConfig,
+  StatisticsBlock,
+  StatisticsGroup,
 } from "../types/statistic-types";
 
 const findElementByLabel = (statistics: Statistic[], label: string) => {
@@ -16,7 +20,7 @@ const getValue = (statistic: Statistic) => statistic?.value || 0;
 
 const findValueByLabel = compose(getValue, findElementByLabel);
 
-const extractAggregatedStatisticProps = (
+export const extractAggregatedStatisticProps = (
   statistics: Statistic[],
   configItem: AggregatedStatisticConfig
 ) =>
@@ -34,22 +38,49 @@ const isAggregatedStatistic = (
   configItem: StatisticConfig
 ): configItem is AggregatedStatisticConfig => configItem.type === "aggregated";
 
-const extractStatisticProps = (
-  statistics: Statistic[],
-  configItem: StatisticConfig
-) =>
-  isAggregatedStatistic(configItem)
-    ? extractAggregatedStatisticProps(statistics, configItem)
-    : extractSimpleStatisticProps(statistics, configItem);
+const formatAggregatedStatistic = (statistic: AggregatedStatisticConfig) => (
+  data: Statistic[]
+): RawStatisticConfig => ({
+  label: statistic.label,
+  type: "raw",
+  value: extractAggregatedStatisticProps(data, statistic),
+});
 
-const extractStatisticsProps = (
-  statistics: Statistic[],
-  config: StatisticConfig[]
-) =>
-  config.map((configItem) => ({
-    label: configItem.label,
-    value: extractStatisticProps(statistics, configItem),
-  }));
+const formatSimpleStatistic = (statistic: SimpleStatisticConfig) => (
+  data: Statistic[]
+): RawStatisticConfig => ({
+  label: statistic.label,
+  type: "raw",
+  value: extractSimpleStatisticProps(data, statistic),
+});
 
-export const sanitizeStatistics = (statistics: Statistic[]) =>
-  extractStatisticsProps(statistics, statisticsConfig);
+const formatStatistic = (statistic: StatisticConfig) => {
+  if (isAggregatedStatistic(statistic)) {
+    return formatAggregatedStatistic(statistic);
+  }
+
+  if (isRawStatistic(statistic)) {
+    return () => statistic;
+  }
+
+  return formatSimpleStatistic(statistic);
+};
+
+const formatBlock = (block: StatisticsBlock) => (
+  data: Statistic[]
+): StatisticsBlock => ({
+  size: block.size,
+  statistics: block.statistics.map((stat) => formatStatistic(stat)(data)),
+  title: block.title,
+});
+
+const formatGroup = (group: StatisticsGroup) => (
+  data: Statistic[]
+): StatisticsGroup => ({
+  blocks: group.blocks.map((block) => formatBlock(block)(data)),
+  title: group.title,
+});
+
+export const formatStatistics = (statisticsLayout: StatisticsGroup[]) => (
+  data: Statistic[]
+) => statisticsLayout.map((group) => formatGroup(group)(data));
