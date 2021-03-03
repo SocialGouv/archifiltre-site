@@ -114,6 +114,9 @@ metadata:
     app.gitlab.com/app: socialgouv-archifiltre-site
     app.gitlab.com/env: prod2
     app.gitlab.com/env.name: prod2
+    nginx.ingress.kubernetes.io/configuration-snippet: >-
+      if ($request_uri ~* \\\\.(js|css|gif|jpe?g|png)) { expires 1y; add_header
+      Cache-Control \\"max-age=31556952, public\\"; }
   labels:
     app: app
     application: archifiltre-site
