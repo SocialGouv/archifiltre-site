@@ -6,9 +6,14 @@ export type Statistic = {
   value: number;
 };
 
+export type Formatting = "none" | "piechart";
+
+export type ChartData = { label: string; value: number };
+
 type BaseStatisticConfig = {
   label: string;
   tooltip?: string;
+  formatting?: Formatting;
 };
 
 export type AggregatedStatisticConfig = BaseStatisticConfig & {
@@ -24,16 +29,28 @@ export type SimpleStatisticConfig = BaseStatisticConfig & {
 export type RawStatisticConfig = BaseStatisticConfig & {
   value: ReactNode;
   type: "raw";
+  formatting?: "none";
+};
+
+export type PiechartStatisticConfig = BaseStatisticConfig & {
+  value: ChartData[];
+  type: "raw";
+  formatting: "piechart";
 };
 
 export type StatisticConfig =
   | SimpleStatisticConfig
   | AggregatedStatisticConfig
-  | RawStatisticConfig;
+  | RawStatisticConfig
+  | PiechartStatisticConfig;
 
 export const isRawStatistic = (
   stat: StatisticConfig
 ): stat is RawStatisticConfig => stat.type === "raw";
+
+export const isPiechart = (
+  stat: StatisticConfig
+): stat is PiechartStatisticConfig => stat.formatting === "piechart";
 
 export type StatisticsBlock = {
   title: string;
