@@ -8,8 +8,8 @@ import SEO from "../components/seo";
 import StatisticsGroup from "../components/statistics-group";
 import { statisticsLayout } from "../display-data/statistics";
 import Layout from "../layout";
-import { Statistic } from "../types/statistic-types";
-import { sanitizeStatistics } from "../utils/statistics-util";
+import { StatisticsGroup as StatisticsGroupType } from "../types/statistic-types";
+import { formatStatistics } from "../utils/statistics-util";
 
 const minutesSinceTimestamp = (lastFetchTimestamp: number) => {
   const timeDifference = Date.now() - lastFetchTimestamp;
@@ -17,18 +17,19 @@ const minutesSinceTimestamp = (lastFetchTimestamp: number) => {
 };
 
 const Statistiques = () => {
-  // eslint-disable-next-line no-unused-vars
-  const [statistics, setStatistics] = useState<Statistic[]>([]);
+  const [statistics, setStatistics] = useState<StatisticsGroupType[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [lastFetchTimestamp, setLastFetchTimestamp] = useState(0);
 
   useEffect(() => {
     const fetchStatistics = async () => {
-      // setIsLoading(true);
+      setIsLoading(true);
       const fetchedStatistics = await axios
         .get(`${process.env.STATISTICS_URL}/statistics`)
         .then(({ data }) => data);
-      const sanitizedStatistics = sanitizeStatistics(fetchedStatistics.result);
+      const sanitizedStatistics = formatStatistics(statisticsLayout)(
+        fetchedStatistics.result
+      );
       setLastFetchTimestamp(fetchedStatistics.lastFetchTimestamp);
       setStatistics(sanitizedStatistics);
       setIsLoading(false);
@@ -60,7 +61,7 @@ const Statistiques = () => {
             </Box>
           ) : (
             <Box>
-              {statisticsLayout.map((group, index) => (
+              {statistics.map((group, index) => (
                 <Box key={index} marginBottom={5}>
                   <StatisticsGroup group={group} />
                 </Box>

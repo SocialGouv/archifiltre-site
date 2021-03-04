@@ -18,9 +18,9 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 3,
         statistics: [
           {
+            fields: ["download", "appDownload"],
             label: "téléchargements depuis la création",
-            type: "raw",
-            value: 15200,
+            type: "aggregated",
           },
         ],
         title: "Téléchargements",
