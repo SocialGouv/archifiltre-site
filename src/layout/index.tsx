@@ -3,7 +3,6 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { makeStyles, ThemeProvider } from "@material-ui/styles";
 import React, { createContext, FC } from "react";
 
-import CookieConsent from "../components/cookie-consent";
 import useLocalStorage from "../hooks/useLocalStorage";
 import themes from "../theme";
 import Footer from "./footer";
@@ -40,7 +39,6 @@ const Layout: FC<{ container?: boolean }> = ({
   return (
     <ThemeProvider theme={themes[theme as ThemeMode]}>
       <CssBaseline />
-      <CookieConsent />
       <div className={classes.root}>
         <Header onToggleTheme={toggleTheme} theme={theme} />
         <ThemeContext.Provider value={theme}>
