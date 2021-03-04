@@ -150,6 +150,160 @@ export const statisticsLayout: StatisticsGroup[] = [
     ],
     title: "Volume de données 📈",
   },
+  {
+    blocks: [
+      {
+        size: 3,
+        statistics: [
+          {
+            label: "sessions par semaine en moyenne",
+            type: "raw",
+            value: 3.2,
+          },
+        ],
+        title: "Fréquence",
+      },
+      {
+        size: 3,
+        statistics: [
+          {
+            label: "minutes par session en moyenne",
+            type: "raw",
+            value: 40,
+          },
+        ],
+        title: "Durée",
+      },
+      {
+        size: 3,
+        statistics: [
+          {
+            label: "actions par session en moyenne",
+            type: "raw",
+            value: 32,
+          },
+        ],
+        title: "Actions",
+      },
+      {
+        size: 3,
+        statistics: [
+          {
+            fields: [
+              "CSV Export",
+              "CSV with hashes Export",
+              "Tree CSV Export",
+              "Excel Export",
+              "METS Export",
+              "RESIP Export",
+            ],
+            label: "exports au total",
+            type: "aggregated",
+          },
+        ],
+        title: "Exports",
+      },
+    ],
+    title: "Usages 💻",
+  },
+  {
+    blocks: [
+      {
+        size: 4,
+        statistics: [
+          {
+            field: "visitsCount",
+            label: "visiteurs uniques",
+            type: "simple",
+          },
+        ],
+        title: "Site web",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "Vues par mois en moyenne",
+            type: "raw",
+            value: 2789,
+          },
+        ],
+        title: "Wiki",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            field: "youtubeViews",
+            label: "Vues sur nos vidéos (tutoriels, démo produit...)",
+            type: "simple",
+          },
+        ],
+        title: "Youtube",
+      },
+    ],
+    title: "Vues sur les autres canaux 👀",
+  },
+  {
+    blocks: [
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "personnes ont contribué à la conception du produit",
+            type: "raw",
+            value: 67,
+          },
+        ],
+        title: "Co-designers",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "personnes ont participé à des sessions de formation",
+            type: "raw",
+            value: 128,
+          },
+        ],
+        title: "Personnes formées",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "personnes nous suivent sur les réseaux sociaux (cumul)",
+            type: "raw",
+            value: 1278,
+          },
+        ],
+        title: "Followers",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "sessions de présentation du produit",
+            type: "raw",
+            value: 34,
+          },
+        ],
+        title: "Présentations",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "personnes ayant assisté à ces présentations",
+            type: "raw",
+            value: 324,
+          },
+        ],
+        title: "Personnes touchées",
+      },
+    ],
+    title: "Communauté 👩🏾 👨‍🦰 🧓🏿",
+  },
 ];
 
 export const statisticsConfig: StatisticConfig[] = [
