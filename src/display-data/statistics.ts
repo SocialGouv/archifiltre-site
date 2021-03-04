@@ -93,26 +93,61 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 6,
         statistics: [
           {
+            fields: ["download", "appDownload"],
             label: "téléchargements depuis avril 2019",
-            type: "raw",
-            value: 15200,
+            type: "aggregated",
           },
           {
+            fields: [
+              "v3.1.1 WIN64",
+              "v3.1.1 MAC",
+              "v3.1.1 Windows 64 bits",
+              "v3.1.1 Windows 32 bits",
+              "v3.1.1 LINUX",
+              "v3.1.1 Linux 64 bits",
+              "v3.1.1 MacOS",
+              "v3.1.1 Windows MSI 32 bits",
+            ],
             label: "téléchargements de la dernière version (3.1.1)",
-            type: "raw",
-            value: 438,
+            type: "aggregated",
           },
         ],
         title: "En nombre",
       },
       {
         size: 3,
-        statistics: [],
-        title: "Versions",
+        statistics: [
+          {
+            formatting: "piechart",
+            label: "",
+            type: "raw",
+            value: [
+              { label: "v3.1.1", value: 1812 },
+              { label: "v3.0.0", value: 185 },
+              { label: "v3.2.0", value: 352 },
+              { label: "v3.1.0", value: 83 },
+              { label: "v2.0.0", value: 27 },
+              { label: "v2.1.1", value: 16 },
+              { label: "v2.1.0", value: 11 },
+            ],
+          },
+        ],
+        title: "Versions utilisées lors du dernier mois",
       },
       {
         size: 3,
-        statistics: [],
+        statistics: [
+          {
+            formatting: "piechart",
+            label: "",
+            type: "raw",
+            value: [
+              { label: "Windows", value: 16452 },
+              { label: "MacOS", value: 1269 },
+              { label: "linux", value: 155 },
+            ],
+          },
+        ],
         title: "Système d'exploitation",
       },
     ],
