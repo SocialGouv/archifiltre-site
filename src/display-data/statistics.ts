@@ -77,6 +77,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 6,
         statistics: [
           {
+            formatting: "mapchart",
             label: "",
             type: "raw",
             value: "",
