@@ -1,3 +1,10 @@
+# [1.44.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.43.3...v1.44.0) (2021-03-08)
+
+
+### Features
+
+* remove cookie consent and update privacy policy ([#153](https://github.com/SocialGouv/archifiltre-site/issues/153)) ([390233c](https://github.com/SocialGouv/archifiltre-site/commit/390233ca85c1fe937a7c5d51acac301d57d6ae54))
+
 ## [1.43.3](https://github.com/SocialGouv/archifiltre-site/compare/v1.43.2...v1.43.3) (2021-03-01)
 
 
