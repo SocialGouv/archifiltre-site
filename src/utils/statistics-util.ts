@@ -4,7 +4,7 @@ import { compose, map, sum } from "lodash/fp";
 import {
   AggregatedStatisticConfig,
   isRawStatistic,
-  RawStatisticConfig,
+  RenderingStatisticConfig,
   SimpleStatisticConfig,
   Statistic,
   StatisticConfig,
@@ -38,23 +38,28 @@ const isAggregatedStatistic = (
   configItem: StatisticConfig
 ): configItem is AggregatedStatisticConfig => configItem.type === "aggregated";
 
+const extractCommonProps = ({ label, formatting }: StatisticConfig) => ({
+  formatting,
+  label,
+});
+
 const formatAggregatedStatistic = (statistic: AggregatedStatisticConfig) => (
   data: Statistic[]
-): RawStatisticConfig => ({
-  label: statistic.label,
+): RenderingStatisticConfig => ({
+  ...extractCommonProps(statistic),
   type: "raw",
   value: extractAggregatedStatisticProps(data, statistic),
 });
 
 const formatSimpleStatistic = (statistic: SimpleStatisticConfig) => (
   data: Statistic[]
-): RawStatisticConfig => ({
-  label: statistic.label,
+): RenderingStatisticConfig => ({
+  ...extractCommonProps(statistic),
   type: "raw",
   value: extractSimpleStatisticProps(data, statistic),
 });
 
-const formatStatistic = (statistic: StatisticConfig) => {
+const baseFormatStatistic = (statistic: StatisticConfig) => {
   if (isAggregatedStatistic(statistic)) {
     return formatAggregatedStatistic(statistic);
   }
@@ -66,9 +71,20 @@ const formatStatistic = (statistic: StatisticConfig) => {
   return formatSimpleStatistic(statistic);
 };
 
+const formatStatistic = (statistic: StatisticConfig) => (
+  data: Statistic[]
+): RenderingStatisticConfig => {
+  return {
+    ...baseFormatStatistic(statistic)(data),
+    switchDisplayConfig: statistic.switchDisplayConfig
+      ? formatStatistic(statistic.switchDisplayConfig)(data)
+      : undefined,
+  };
+};
+
 const formatBlock = (block: StatisticsBlock) => (
   data: Statistic[]
-): StatisticsBlock => ({
+): StatisticsBlock<RenderingStatisticConfig> => ({
   size: block.size,
   statistics: block.statistics.map((stat) => formatStatistic(stat)(data)),
   title: block.title,
@@ -76,11 +92,12 @@ const formatBlock = (block: StatisticsBlock) => (
 
 const formatGroup = (group: StatisticsGroup) => (
   data: Statistic[]
-): StatisticsGroup => ({
+): StatisticsGroup<RenderingStatisticConfig> => ({
   blocks: group.blocks.map((block) => formatBlock(block)(data)),
   title: group.title,
 });
 
 export const formatStatistics = (statisticsLayout: StatisticsGroup[]) => (
   data: Statistic[]
-) => statisticsLayout.map((group) => formatGroup(group)(data));
+): StatisticsGroup<RenderingStatisticConfig>[] =>
+  statisticsLayout.map((group) => formatGroup(group)(data));

@@ -6,7 +6,12 @@ export type Statistic = {
   value: number;
 };
 
-export type Formatting = "none" | "piechart" | "mapchart";
+export enum Formatting {
+  NONE,
+  PIECHARTS,
+  CONNECTED_DOTS,
+  MAPCHART,
+}
 
 export type ChartData = { label: string; value: number };
 
@@ -29,13 +34,20 @@ export type SimpleStatisticConfig = BaseStatisticConfig & {
 export type RawStatisticConfig = BaseStatisticConfig & {
   value: ReactNode;
   type: "raw";
-  formatting?: "none";
+  formatting?: Formatting;
 };
 
-export type PiechartStatisticConfig = BaseStatisticConfig & {
+export type StatisticConfig = (
+  | SimpleStatisticConfig
+  | AggregatedStatisticConfig
+  | RawStatisticConfig
+) & {
+  switchDisplayConfig?: StatisticConfig;
+};
+
+export type PiechartStatisticsConfig = RawStatisticConfig & {
+  formatting: Formatting.PIECHARTS;
   value: ChartData[];
-  type: "raw";
-  formatting: "piechart";
 };
 
 export type MapChartStatisticConfig = BaseStatisticConfig & {
@@ -44,32 +56,44 @@ export type MapChartStatisticConfig = BaseStatisticConfig & {
   formatting: "mapchart";
 };
 
-export type StatisticConfig =
-  | SimpleStatisticConfig
-  | AggregatedStatisticConfig
+export type ConnectedDotsStatisticsConfig = RawStatisticConfig & {
+  formatting: Formatting.CONNECTED_DOTS;
+  value: Record<string, number>;
+};
+
+export type RenderingStatisticConfig = (
   | RawStatisticConfig
-  | PiechartStatisticConfig
-  | MapChartStatisticConfig;
+  | PiechartStatisticsConfig
+  | ConnectedDotsStatisticsConfig
+  | MapChartStatisticConfig
+) & {
+  switchDisplayConfig?: RenderingStatisticConfig;
+};
 
 export const isRawStatistic = (
   stat: StatisticConfig
 ): stat is RawStatisticConfig => stat.type === "raw";
 
 export const isPiechart = (
-  stat: StatisticConfig
-): stat is PiechartStatisticConfig => stat.formatting === "piechart";
+  stat: RenderingStatisticConfig
+): stat is PiechartStatisticsConfig => stat.formatting === Formatting.PIECHARTS;
+
+export const isConnectedDots = (
+  stat: RenderingStatisticConfig
+): stat is ConnectedDotsStatisticsConfig =>
+  stat.formatting === Formatting.CONNECTED_DOTS;
 
 export const isMapChart = (
   stat: StatisticConfig
-): stat is MapChartStatisticConfig => stat.formatting === "mapchart";
+): stat is MapChartStatisticConfig => stat.formatting === Formatting.MAPCHART;
 
-export type StatisticsBlock = {
+export type StatisticsBlock<StatType = StatisticConfig> = {
   title: string;
   size: GridSize;
-  statistics: StatisticConfig[];
+  statistics: StatType[];
 };
 
-export type StatisticsGroup = {
+export type StatisticsGroup<StatType = StatisticConfig> = {
   title: string;
-  blocks: StatisticsBlock[];
+  blocks: StatisticsBlock<StatType>[];
 };

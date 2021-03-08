@@ -4,11 +4,14 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import Typography from "@material-ui/core/Typography";
 import React, { FC } from "react";
 
-import type { StatisticsGroup as StatisticsGroupType } from "../types/statistic-types";
+import type {
+  RenderingStatisticConfig,
+  StatisticsGroup as StatisticsGroupType,
+} from "../types/statistic-types";
 import StatisticsBlock from "./statistics-block";
 
 type StatisticsGroupProps = {
-  group: StatisticsGroupType;
+  group: StatisticsGroupType<RenderingStatisticConfig>;
 };
 
 const useTitleStyle = makeStyles({
