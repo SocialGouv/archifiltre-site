@@ -1,1 +1,0 @@
-export const STATISTICS_TEXT_COLOR = "#4A4A4A";
