@@ -8,7 +8,10 @@ import SEO from "../components/seo";
 import StatisticsGroup from "../components/statistics-group";
 import { statisticsLayout } from "../display-data/statistics";
 import Layout from "../layout";
-import { StatisticsGroup as StatisticsGroupType } from "../types/statistic-types";
+import {
+  RenderingStatisticConfig,
+  StatisticsGroup as StatisticsGroupType,
+} from "../types/statistic-types";
 import { formatStatistics } from "../utils/statistics-util";
 
 const minutesSinceTimestamp = (lastFetchTimestamp: number) => {
@@ -17,7 +20,9 @@ const minutesSinceTimestamp = (lastFetchTimestamp: number) => {
 };
 
 const Statistiques = () => {
-  const [statistics, setStatistics] = useState<StatisticsGroupType[]>([]);
+  const [statistics, setStatistics] = useState<
+    StatisticsGroupType<RenderingStatisticConfig>[]
+  >([]);
   const [isLoading, setIsLoading] = useState(false);
   const [lastFetchTimestamp, setLastFetchTimestamp] = useState(0);
 
@@ -44,7 +49,7 @@ const Statistiques = () => {
       <SEO title="Statistiques" />
       <Box p={3} textAlign="center">
         <Typography component="h1" variant="h4" color="textPrimary">
-          Statistiques (depuis le 1<sup>er</sup> janvier 2020)
+          Statistiques
         </Typography>
       </Box>
       <Box display="flex" justifyContent="center">

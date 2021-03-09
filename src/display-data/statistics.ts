@@ -1,21 +1,32 @@
-import { StatisticConfig, StatisticsGroup } from "../types/statistic-types";
+import {
+  Formatting,
+  StatisticConfig,
+  StatisticsGroup,
+} from "../types/statistic-types";
 
 export const statisticsLayout: StatisticsGroup[] = [
   {
     blocks: [
       {
-        size: 3,
+        size: 6,
         statistics: [
           {
-            label: "utilisateurs",
+            label: "utilisateurs quotidiens",
+            switchDisplayConfig: {
+              field: "last30DaysVisits",
+              formatting: Formatting.CONNECTED_DOTS,
+              label: "utilisateurs",
+              type: "simple",
+            },
+            tooltip: "utilisateurs uniques par jour lors des 30 derniers jours",
             type: "raw",
-            value: 1420,
+            value: 40,
           },
         ],
         title: "Utilisateur•rice•s",
       },
       {
-        size: 3,
+        size: 6,
         statistics: [
           {
             fields: ["download", "appDownload"],
@@ -26,7 +37,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         title: "Téléchargements",
       },
       {
-        size: 3,
+        size: 6,
         statistics: [
           {
             label: "note donnée par les utilisateurs, sur 5",
@@ -39,7 +50,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         title: "note",
       },
       {
-        size: 3,
+        size: 6,
         statistics: [
           {
             label:
@@ -47,7 +58,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             tooltip:
               "Question posée : « A quel point recommanderiez-vous Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10. (49 répondants)",
             type: "raw",
-            value: "60%",
+            value: "90%",
           },
         ],
         title: "recommandation",
@@ -61,23 +72,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 6,
         statistics: [
           {
-            label: "personnes",
-            type: "raw",
-            value: 1420,
-          },
-          {
-            label: "active",
-            type: "raw",
-            value: 1190,
-          },
-        ],
-        title: "En chiffres",
-      },
-      {
-        size: 6,
-        statistics: [
-          {
-            formatting: "mapchart",
+            formatting: Formatting.MAPCHART,
             label: "",
             type: "raw",
             value: "",
@@ -95,7 +90,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             fields: ["download", "appDownload"],
-            label: "téléchargements depuis avril 2019",
+            label: "téléchargements depuis le 1er janvier 2020",
             type: "aggregated",
           },
           {
@@ -119,13 +114,13 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 3,
         statistics: [
           {
-            formatting: "piechart",
+            formatting: Formatting.PIECHARTS,
             label: "",
             type: "raw",
             value: [
-              { label: "v3.1.x", value: 1895 },
-              { label: "v3.0.0", value: 185 },
               { label: "v2", value: 54 },
+              { label: "v3.0.0", value: 185 },
+              { label: "v3.1.x", value: 1895 },
             ],
           },
         ],
@@ -135,7 +130,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 3,
         statistics: [
           {
-            formatting: "piechart",
+            formatting: Formatting.PIECHARTS,
             label: "",
             type: "raw",
             value: [
@@ -158,7 +153,7 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             label: "Go de données analysées",
             type: "raw",
-            value: 13890,
+            value: "En cours...",
           },
         ],
         title: "Total",
@@ -169,14 +164,20 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             label: "Go d'éléments tagués « à supprimer »",
             type: "raw",
-            value: 13890,
+            value: "En cours...",
           },
         ],
         title: "Gain de stockage",
       },
       {
         size: 4,
-        statistics: [],
+        statistics: [
+          {
+            label: "",
+            type: "raw",
+            value: "En cours...",
+          },
+        ],
         title: "Donnée écologique",
       },
     ],
@@ -188,20 +189,9 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 3,
         statistics: [
           {
-            label: "sessions par semaine en moyenne",
-            type: "raw",
-            value: 3.2,
-          },
-        ],
-        title: "Fréquence",
-      },
-      {
-        size: 3,
-        statistics: [
-          {
             label: "minutes par session en moyenne",
             type: "raw",
-            value: 40,
+            value: 12,
           },
         ],
         title: "Durée",
@@ -212,7 +202,7 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             label: "actions par session en moyenne",
             type: "raw",
-            value: 32,
+            value: 12.3,
           },
         ],
         title: "Actions",
@@ -244,6 +234,66 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 4,
         statistics: [
           {
+            label: "personnes ont contribué à la conception du produit",
+            type: "raw",
+            value: 122,
+          },
+        ],
+        title: "Co-designers",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "personnes ont participé à des sessions de formation",
+            type: "raw",
+            value: 211,
+          },
+        ],
+        title: "Personnes formées",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "personnes nous suivent sur les réseaux sociaux (cumul)",
+            type: "raw",
+            value: 672,
+          },
+        ],
+        title: "Followers",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "sessions de présentation du produit",
+            type: "raw",
+            value: 96,
+          },
+        ],
+        title: "Présentations",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "personnes ayant assisté à ces présentations",
+            type: "raw",
+            value: 1792,
+          },
+        ],
+        title: "Personnes touchées",
+      },
+    ],
+    title: "Communauté 👩🏾 👨‍🦰 🧓🏿",
+  },
+  {
+    blocks: [
+      {
+        size: 4,
+        statistics: [
+          {
             field: "visitsCount",
             label: "visiteurs uniques",
             type: "simple",
@@ -257,7 +307,7 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             label: "Vues par mois en moyenne",
             type: "raw",
-            value: 2789,
+            value: 340,
           },
         ],
         title: "Wiki",
@@ -275,66 +325,6 @@ export const statisticsLayout: StatisticsGroup[] = [
       },
     ],
     title: "Vues sur les autres canaux 👀",
-  },
-  {
-    blocks: [
-      {
-        size: 4,
-        statistics: [
-          {
-            label: "personnes ont contribué à la conception du produit",
-            type: "raw",
-            value: 67,
-          },
-        ],
-        title: "Co-designers",
-      },
-      {
-        size: 4,
-        statistics: [
-          {
-            label: "personnes ont participé à des sessions de formation",
-            type: "raw",
-            value: 128,
-          },
-        ],
-        title: "Personnes formées",
-      },
-      {
-        size: 4,
-        statistics: [
-          {
-            label: "personnes nous suivent sur les réseaux sociaux (cumul)",
-            type: "raw",
-            value: 1278,
-          },
-        ],
-        title: "Followers",
-      },
-      {
-        size: 4,
-        statistics: [
-          {
-            label: "sessions de présentation du produit",
-            type: "raw",
-            value: 34,
-          },
-        ],
-        title: "Présentations",
-      },
-      {
-        size: 4,
-        statistics: [
-          {
-            label: "personnes ayant assisté à ces présentations",
-            type: "raw",
-            value: 324,
-          },
-        ],
-        title: "Personnes touchées",
-      },
-    ],
-    title: "Communauté 👩🏾 👨‍🦰 🧓🏿",
   },
 ];
 

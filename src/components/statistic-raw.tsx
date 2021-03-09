@@ -34,7 +34,7 @@ const spaceNumber = spaceNumberForAnyValue<ReactNode>({
 
 const StatisticRaw: FC<StatisticRawProps> = ({ statistic }) => {
   return (
-    <Box width={1}>
+    <Box width={1} paddingTop={3}>
       <Typography classes={useDataStyle()} color="textSecondary">
         {spaceNumber(statistic.value)}
       </Typography>

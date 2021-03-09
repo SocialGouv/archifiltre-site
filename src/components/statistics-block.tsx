@@ -5,11 +5,14 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import Typography from "@material-ui/core/Typography";
 import React, { FC } from "react";
 
-import { StatisticsBlock as StatisticsBlockType } from "../types/statistic-types";
+import {
+  RenderingStatisticConfig,
+  StatisticsBlock as StatisticsBlockType,
+} from "../types/statistic-types";
 import Statistic from "./statistic";
 
 type StatisticsBlockProps = {
-  block: StatisticsBlockType;
+  block: StatisticsBlockType<RenderingStatisticConfig>;
 };
 
 const useCardStyles = makeStyles({
@@ -48,7 +51,7 @@ const StatisticsBlock: FC<StatisticsBlockProps> = ({ block }) => (
       </Typography>
       <Box display="flex" justifyContent="space-around">
         {block.statistics.map((statistic, index) => (
-          <Box key={index} width={1} paddingTop={3}>
+          <Box key={index} width={1}>
             <Statistic statistic={statistic} />
           </Box>
         ))}
