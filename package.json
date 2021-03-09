@@ -15,6 +15,9 @@
     "k8s": "yarn --silent --cwd .k8s"
   },
   "dependencies": {
+    "@devexpress/dx-react-chart": "^2.7.4",
+    "@devexpress/dx-react-chart-material-ui": "^2.7.4",
+    "@devexpress/dx-react-core": "^2.7.4",
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
@@ -23,6 +26,7 @@
     "@mdx-js/react": "^1.6.22",
     "@socialgouv/eslint-config-react": "^1.53.0",
     "axios": "^0.21.0",
+    "date-fns": "^2.19.0",
     "deepmerge": "^4.2.2",
     "gatsby": "^2.32.4",
     "gatsby-image": "^2.11.0",
@@ -41,7 +45,9 @@
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "^6.1.0",
-    "react-tweet-embed": "^1.2.2"
+    "react-simple-maps": "^2.3.0",
+    "react-tweet-embed": "^1.2.2",
+    "react-use": "^17.1.1"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.168",
@@ -49,10 +55,10 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/react-helmet": "^6.1.0",
+    "@types/react-simple-maps": "^1.0.3",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
     "eslint": "^7.21.0",
-    "eslint-config-prettier": "^8.1.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
