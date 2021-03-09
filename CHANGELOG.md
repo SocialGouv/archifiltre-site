@@ -1,3 +1,10 @@
+# [1.45.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.44.0...v1.45.0) (2021-03-09)
+
+
+### Features
+
+* **stats:** revamp statistics page ([#147](https://github.com/SocialGouv/archifiltre-site/issues/147)) ([#148](https://github.com/SocialGouv/archifiltre-site/issues/148)) ([6992c08](https://github.com/SocialGouv/archifiltre-site/commit/6992c08f1910b977dbca18274e62237d6b6e57c8))
+
 # [1.44.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.43.3...v1.44.0) (2021-03-08)
 
 
