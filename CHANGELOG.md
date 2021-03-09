@@ -1,3 +1,10 @@
+## [1.45.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.45.0...v1.45.1) (2021-03-09)
+
+
+### Bug Fixes
+
+* **k8s:** revert update ingress caching policy ([#146](https://github.com/SocialGouv/archifiltre-site/issues/146)) ([#158](https://github.com/SocialGouv/archifiltre-site/issues/158)) ([65d9da4](https://github.com/SocialGouv/archifiltre-site/commit/65d9da45e6e237f61c844a19dd6b106f78e98b48))
+
 # [1.45.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.44.0...v1.45.0) (2021-03-09)
 
 
