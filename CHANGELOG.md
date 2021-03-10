@@ -1,3 +1,10 @@
+# [1.46.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.45.1...v1.46.0) (2021-03-10)
+
+
+### Features
+
+* **typeform:** add redirection page to typeform ([#157](https://github.com/SocialGouv/archifiltre-site/issues/157)) ([d084063](https://github.com/SocialGouv/archifiltre-site/commit/d0840635dbb291156b41152f4688b51a7039845e))
+
 ## [1.45.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.45.0...v1.45.1) (2021-03-09)
 
 
