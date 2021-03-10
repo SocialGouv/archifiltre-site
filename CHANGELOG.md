@@ -1,3 +1,10 @@
+# [1.47.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.46.0...v1.47.0) (2021-03-10)
+
+
+### Features
+
+* **stats:** add show more stats button ([#159](https://github.com/SocialGouv/archifiltre-site/issues/159)) ([cde7d60](https://github.com/SocialGouv/archifiltre-site/commit/cde7d6031042f34f335dc230750a2711ca13862b))
+
 # [1.46.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.45.1...v1.46.0) (2021-03-10)
 
 
