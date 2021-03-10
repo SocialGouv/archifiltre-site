@@ -5,7 +5,7 @@ import {
   isMapChart,
   isPiechart,
   RenderingStatisticConfig,
-} from "../types/statistic-types";
+} from "../../types/statistic-types";
 import StatisticsConnectedDots from "./statistic-connected-dots";
 import StatisticMapChart from "./statistic-mapchart";
 import StatisticPiechart from "./statistic-piecharts";

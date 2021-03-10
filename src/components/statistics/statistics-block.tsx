@@ -8,7 +8,7 @@ import React, { FC } from "react";
 import {
   RenderingStatisticConfig,
   StatisticsBlock as StatisticsBlockType,
-} from "../types/statistic-types";
+} from "../../types/statistic-types";
 import Statistic from "./statistic";
 
 type StatisticsBlockProps = {

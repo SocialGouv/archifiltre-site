@@ -12,7 +12,7 @@ import { format, parseISO } from "date-fns/fp";
 import { compose } from "lodash/fp";
 import React, { FC, useMemo } from "react";
 
-import { ConnectedDotsStatisticsConfig } from "../types/statistic-types";
+import { ConnectedDotsStatisticsConfig } from "../../types/statistic-types";
 
 type StatisticsConnectedDotsProps = {
   statistic: ConnectedDotsStatisticsConfig;

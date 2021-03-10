@@ -1,11 +1,14 @@
+import { Collapse } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
-import CircularProgress from "@material-ui/core/CircularProgress";
 import Typography from "@material-ui/core/Typography";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useToggle } from "react-use";
 
 import SEO from "../components/seo";
-import StatisticsGroup from "../components/statistics-group";
+import ShowMoreButton from "../components/statistics/show-more";
+import StatisticsGroup from "../components/statistics/statistics-group";
+import StatisticsLoading from "../components/statistics/statistics-loading";
 import { statisticsLayout } from "../display-data/statistics";
 import Layout from "../layout";
 import {
@@ -25,6 +28,7 @@ const Statistiques = () => {
   >([]);
   const [isLoading, setIsLoading] = useState(false);
   const [lastFetchTimestamp, setLastFetchTimestamp] = useState(0);
+  const [showMore, toggleShowMore] = useToggle(false);
 
   useEffect(() => {
     const fetchStatistics = async () => {
@@ -55,22 +59,28 @@ const Statistiques = () => {
       <Box display="flex" justifyContent="center">
         <Box maxWidth="960px">
           {isLoading ? (
-            <Box
-              display="flex"
-              justifyContent="center"
-              flexDirection="column"
-              alignItems="center"
-            >
-              <CircularProgress />
-              <div>Chargement en cours...</div>
-            </Box>
+            <StatisticsLoading />
           ) : (
             <Box>
-              {statistics.map((group, index) => (
-                <Box key={index} marginBottom={5}>
-                  <StatisticsGroup group={group} />
+              {statistics.length > 0 && (
+                <Box marginBottom={5}>
+                  <StatisticsGroup group={statistics[0]} />
                 </Box>
-              ))}
+              )}
+
+              <Collapse in={showMore}>
+                {statistics.slice(1).map((group, index) => (
+                  <Box key={index} marginBottom={5}>
+                    <StatisticsGroup group={group} />
+                  </Box>
+                ))}
+              </Collapse>
+              <Box display="flex" justifyContent="center">
+                <ShowMoreButton
+                  showMore={showMore}
+                  toggleShowMore={toggleShowMore}
+                />
+              </Box>
               <Box display="flex" justifyContent="center">
                 <Typography variant="body2" gutterBottom>
                   {`Dernière mise à jour il y a ${

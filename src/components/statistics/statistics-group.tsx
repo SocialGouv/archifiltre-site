@@ -7,7 +7,7 @@ import React, { FC } from "react";
 import type {
   RenderingStatisticConfig,
   StatisticsGroup as StatisticsGroupType,
-} from "../types/statistic-types";
+} from "../../types/statistic-types";
 import StatisticsBlock from "./statistics-block";
 
 type StatisticsGroupProps = {
