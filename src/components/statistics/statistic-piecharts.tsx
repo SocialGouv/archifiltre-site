@@ -8,7 +8,7 @@ import {
 import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import React, { FC, useCallback, useState } from "react";
 
-import { PiechartStatisticsConfig } from "../types/statistic-types";
+import { PiechartStatisticsConfig } from "../../types/statistic-types";
 
 type StatisticPiechartProps = {
   statistic: PiechartStatisticsConfig;

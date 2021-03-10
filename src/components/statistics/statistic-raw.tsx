@@ -6,8 +6,8 @@ import Typography from "@material-ui/core/Typography";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import React, { FC, ReactNode } from "react";
 
-import { RawStatisticConfig } from "../types/statistic-types";
-import { spaceNumberForAnyValue } from "../utils/number-util";
+import { RawStatisticConfig } from "../../types/statistic-types";
+import { spaceNumberForAnyValue } from "../../utils/number-util";
 
 type StatisticRawProps = {
   statistic: RawStatisticConfig;
