@@ -1,3 +1,10 @@
+# [1.48.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.47.0...v1.48.0) (2021-03-12)
+
+
+### Features
+
+* **cgu:** split cgu in two pages ([#160](https://github.com/SocialGouv/archifiltre-site/issues/160)) ([779de23](https://github.com/SocialGouv/archifiltre-site/commit/779de23779a4ad6f5286637a7a6e4a5ae2ee9a10))
+
 # [1.47.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.46.0...v1.47.0) (2021-03-10)
 
 
