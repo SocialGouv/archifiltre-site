@@ -42,6 +42,15 @@ const Footer: FC = () => {
           </Grid>
           <Grid item>
             <Link
+              component={GatsbyLink}
+              to="/politique-de-confidentialite"
+              color="primary"
+            >
+              Politique de confidentialité
+            </Link>
+          </Grid>
+          <Grid item>
+            <Link
               href="mailto:archifiltre@sg.social.gouv.fr"
               target="_blank"
               rel="noopener"
