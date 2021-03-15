@@ -1,3 +1,10 @@
+# [1.49.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.48.0...v1.49.0) (2021-03-15)
+
+
+### Features
+
+* Use no-k8s autodevops mode. ([#162](https://github.com/SocialGouv/archifiltre-site/issues/162)) ([ecfcc2b](https://github.com/SocialGouv/archifiltre-site/commit/ecfcc2bb757024f5f381f76e4762f4fafceb3373))
+
 # [1.48.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.47.0...v1.48.0) (2021-03-12)
 
 
