@@ -1,10 +1,12 @@
 include:
   - project: SocialGouv/gitlab-ci-yml
     file: /autodevops.yml
-    ref: v20.7.3
+    ref: v20.7.10
 
 variables:
+  AUTO_DEVOPS_KANIKO: "🕹️"
   AUTO_DEVOPS_RELEASE_AUTO: "🔖"
+  AUTO_DEVOPS_ENABLE_KAPP: "🕹️"
   AUTO_DEVOPS_PRODUCTION_AUTO: "🚀"
 
 Install:
@@ -41,8 +43,3 @@ Build:
     expire_in: 1 day
     paths:
       - public
-
-Register image:
-  extends: .autodevops_register_image
-  variables:
-    IMAGE_NAME: $CI_REGISTRY_IMAGE/app
