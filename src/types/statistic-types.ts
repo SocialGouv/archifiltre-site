@@ -50,10 +50,9 @@ export type PiechartStatisticsConfig = RawStatisticConfig & {
   value: ChartData[];
 };
 
-export type MapChartStatisticConfig = BaseStatisticConfig & {
-  value: ReactNode;
-  type: "raw";
-  formatting: "mapchart";
+export type MapChartStatisticConfig = RawStatisticConfig & {
+  value: Record<string, number>;
+  formatting: Formatting.MAPCHART;
 };
 
 export type ConnectedDotsStatisticsConfig = RawStatisticConfig & {
