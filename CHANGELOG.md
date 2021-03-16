@@ -1,3 +1,10 @@
+# [1.50.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.49.1...v1.50.0) (2021-03-16)
+
+
+### Features
+
+* **stats:** add real world map ([#161](https://github.com/SocialGouv/archifiltre-site/issues/161)) ([789ad23](https://github.com/SocialGouv/archifiltre-site/commit/789ad2305389bf56ff0f6f06c4455198f0fadc54))
+
 ## [1.49.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.49.0...v1.49.1) (2021-03-15)
 
 
