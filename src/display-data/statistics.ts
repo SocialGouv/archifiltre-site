@@ -72,10 +72,10 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 6,
         statistics: [
           {
+            field: "visitorCountries",
             formatting: Formatting.MAPCHART,
             label: "",
-            type: "raw",
-            value: "",
+            type: "simple",
           },
         ],
         title: "Localisation",

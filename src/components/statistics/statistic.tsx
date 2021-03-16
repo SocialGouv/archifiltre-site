@@ -21,7 +21,7 @@ const getContent = (statistic: RenderingStatisticConfig) => {
     return <StatisticPiechart statistic={statistic} />;
   }
   if (isMapChart(statistic)) {
-    return <StatisticMapChart />;
+    return <StatisticMapChart statistic={statistic} />;
   }
   if (isConnectedDots(statistic)) {
     return <StatisticsConnectedDots statistic={statistic} />;
