@@ -76,7 +76,7 @@ const Footer: FC = () => {
             <Button
               color="primary"
               startIcon={<RecordVoiceOverIcon />}
-              href="https://bit.ly/315pAd8"
+              href="https://form.typeform.com/to/lTwzr0dP"
               target="_blank"
               rel="noopener"
               variant="contained"
