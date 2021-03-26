@@ -1,3 +1,10 @@
+## [1.50.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.50.0...v1.50.1) (2021-03-26)
+
+
+### Bug Fixes
+
+* fix typeform link ([#165](https://github.com/SocialGouv/archifiltre-site/issues/165)) ([2bba49b](https://github.com/SocialGouv/archifiltre-site/commit/2bba49bdf77d97fd8336e9f54b80a657d739edba))
+
 # [1.50.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.49.1...v1.50.0) (2021-03-16)
 
 
