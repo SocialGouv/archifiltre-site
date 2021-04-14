@@ -4,11 +4,11 @@ import { Link as GatsbyLink } from "gatsby";
 import React, { FC } from "react";
 
 import DownloadLink from "../components/download-link";
+import HashLink from "../components/hash-link";
 import SEO from "../components/seo";
 import versions from "../display-data/versions";
 import Layout from "../layout";
 import { getPlatformName, Platform } from "../utils/os-util";
-import HashLink from "../components/hash-link";
 
 const Telechargements: FC = () => (
   <Layout>

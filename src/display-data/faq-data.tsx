@@ -75,47 +75,59 @@ export const faqData = [
             </ul>
           </li>
           <li>
-            Export en CSV/CSV avec empreintes (mais pas son contenu): si vous en
-            avez réalisé 1 ou plusieurs
+            Export Excel/CSV/CSV hiérarchisé/CSV avec empreintes (mais pas leur
+            contenu): si vous en avez réalisé un ou plusieurs
           </li>
           <li>Export en RESIP (mais pas son contenu): idem</li>
           <li>Export en METS (mais pas son contenu): idem</li>
           <li>
             Export d&#39;un rapport d&#39;audit (mais pas son contenu): idem
           </li>
+          <li>Export du script de suppression (mais pas son contenu): idem</li>
           <li>
             Ajout d&#39;une description à un élément (mais pas le texte
             lui-même)
           </li>
           <li>
-            Ajout d&#39;un tag à un élément: nombre de tags créés mais pas les
-            tags eux-mêmes
+            Ajout d&#39;un tag à un élément: nombre de tags créés (avec leur
+            contenu)
           </li>
           <li>
-            Changement entre vue par nombre et par volume: si vous avez utilisé
-            les différentes vues
+            Renommage d&#39;un élément (sans son nouveau ni son ancien nom)
           </li>
-          <li>Changement entre vue par type et par date</li>
+          <li>
+            Changement de classement : par volume, par date, alphanumérique
+          </li>
+          <li>Changement de pondération : par volume, par nombre</li>
+          <li>Changement de coloration : par type, par date</li>
           <li>
             Double-clic sur un élément pour zoomer dessus: le nombre de clics
+          </li>
+          <li>
+            Utilisation du zoom dans une session (via la molette ou la barre de
+            navigation)
           </li>
           <li>
             Clics sur les onglets (Général, Enrichissement, Audit, Redondances)
           </li>
           <li>
             Recherche effectuée (mais pas son contenu): si vous en avez réalisé
-            1 ou plusieurs
+            une ou plusieurs
           </li>
           <li>Activation du mode déplacement</li>
           <li>
             Déplacement effectué (mais pas le nom des éléments déplacés): si
-            vous en avez réalisé 1 ou plusieurs
+            vous en avez réalisé un ou plusieurs
           </li>
           <li>
             Elements tagués &quot;A éliminer&quot; (mais pas le nom des éléments
-            tagés): si vous en avez réalisé 1 ou plusieurs
+            tagés): si vous en avez réalisé un ou plusieurs
           </li>
         </ul>
+        <strong>
+          Si vous ne souhaitez pas nous envoyer ces données, vous pouvez
+          désactiver leur remontée depuis les paramètres d&#39;Archifiltre.
+        </strong>
       </span>
     ),
     question:

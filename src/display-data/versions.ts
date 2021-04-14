@@ -2,6 +2,55 @@ import { OS } from "../utils/os-util";
 
 export default [
   {
+    date: "14/04/2021",
+    name: "Romantic Raccoon",
+    number: "3.2.0",
+    platforms: [
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-win64.sha512",
+        id: OS.WIN64,
+        url:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0.exe",
+      },
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-win32.sha512",
+        id: OS.WIN32,
+        url:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0-32bit.exe",
+      },
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-linux.sha512",
+        id: OS.LINUX,
+        url:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0.AppImage",
+      },
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-mac.sha512",
+        id: OS.MAC,
+        url:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0.dmg",
+      },
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-win64-msi.sha512",
+        id: OS.MSI64,
+        url:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0.msi",
+      },
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-win32-msi.sha512",
+        id: OS.MSI32,
+        url:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0-32bit.msi",
+      },
+    ],
+  },
+  {
     date: "05/11/2020",
     name: "Queer Quetzal",
     number: "3.1.1",
