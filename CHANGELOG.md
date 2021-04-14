@@ -1,3 +1,10 @@
+# [1.51.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.50.1...v1.51.0) (2021-04-14)
+
+
+### Features
+
+* **3.2:** add 3.2 changes ([#169](https://github.com/SocialGouv/archifiltre-site/issues/169)) ([86c2af0](https://github.com/SocialGouv/archifiltre-site/commit/86c2af057d8aa3da23cba2d83ba64e8d2e9c9726))
+
 ## [1.50.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.50.0...v1.50.1) (2021-03-26)
 
 
