@@ -1,3 +1,10 @@
+## [1.51.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.51.1...v1.51.2) (2021-04-15)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#166](https://github.com/SocialGouv/archifiltre-site/issues/166)) ([e344b33](https://github.com/SocialGouv/archifiltre-site/commit/e344b3395dc62aa56bc46fc872967c310a869e99))
+
 ## [1.51.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.51.0...v1.51.1) (2021-04-15)
 
 
