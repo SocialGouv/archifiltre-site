@@ -1,3 +1,10 @@
+## [1.51.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.51.0...v1.51.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([#168](https://github.com/SocialGouv/archifiltre-site/issues/168)) ([112f6c1](https://github.com/SocialGouv/archifiltre-site/commit/112f6c15b639993168788d0679dfe0e82d2c01e3))
+
 # [1.51.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.50.1...v1.51.0) (2021-04-14)
 
 
