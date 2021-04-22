@@ -1,3 +1,10 @@
+## [1.52.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.52.0...v1.52.1) (2021-04-22)
+
+
+### Bug Fixes
+
+* **gitlab:** update to SocialGouv/gitlab-ci-yml@v21.0.2 ([f9e147a](https://github.com/SocialGouv/archifiltre-site/commit/f9e147ae80b22e0c858cc46bb017bd1884b721a2))
+
 # [1.52.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.51.3...v1.52.0) (2021-04-19)
 
 
