@@ -306,4 +306,115 @@ export const faqData = [
     ),
     question: "Qui contacter si j'ai des suggestions d'amélioration ?",
   },
+  {
+    answer: (
+      <span>
+        Archifiltre n’a pas fait l’objet d’un audit RSSI. Cependant, l’outil est
+        aligné et conforme au process qualité mis en place à la Fabrique
+        Numérique des ministères sociaux, à savoir : l’amélioration continue du
+        code de l’outil (<strong>refactoring</strong>) ainsi qu’une phase
+        obligatoire de vérification du code par un autre développeur (
+        <strong>code review</strong>) avant toutes publications. La qualité du
+        code est assurée par des{" "}
+        <strong>tests unitaires et fonctionnels</strong>. Il sont automatisés et
+        lancés à chaque changement dans le code.
+        <br />
+        <br />
+        De plus, plusieurs robots analysent le code d’Archifiltre en continu :{" "}
+        <Link
+          href="https://www.whitesourcesoftware.com/free-developer-tools/renovate"
+          target="_blank"
+          color="primary"
+          rel="noopener"
+        >
+          Renovate bot
+        </Link>{" "}
+        scanne les dépendances pour s’assurer qu’elles sont bien à jour et
+        propose des patchs toutes les semaines pour les mises à jour mineures,
+        et tous les mois pour les mises à jour majeures.{" "}
+        <Link
+          href="https://dependabot.com/"
+          target="_blank"
+          color="primary"
+          rel="noopener"
+        >
+          Dependabot
+        </Link>{" "}
+        scanne aussi les dépendances mais à la recherche de failles de sécurité
+        et propose de la même manière des patchs quand des failles sont
+        détectées. Enfin,{" "}
+        <Link
+          href="https://securitylab.github.com/tools/codeql/"
+          target="_blank"
+          color="primary"
+          rel="noopener"
+        >
+          CodeQL
+        </Link>{" "}
+        vérifie le code à chaque nouvelle modification pour détecter des failles
+        liées au code (entrées utilisateur, faille de navigateur, problèmes de
+        mémoire, etc). A la manière de Renovate bot ou dependabot, des
+        correctifs sont automatiquement proposés.
+        <br />
+        <br />
+        Au sujet du build d’Archifiltre, il ne se fait pas sur la machine d’un
+        développeur mais directement sur les <strong>serveurs de GitHub</strong>
+        . Cette plateforme offre les dernières garanties de sécurité :
+        <strong>authentification multi-facteurs, segmentations, etc</strong>. De
+        plus, les versions Windows et Mac sont signées avec un{" "}
+        <strong>certificat obtenu auprès d’organismes agréés</strong>. Pour
+        Windows, la signature a été obtenue auprès de SSL.com un organisme agréé
+        par Microsoft. La signature Mac a quant à elle été obtenue directement
+        auprès d’Apple, via un compte Apple Developer. En outre , tous les
+        binaires générés (pour Windows, Mac et Linux) sont associés à une{" "}
+        <strong>somme de contrôle générée via l’algorithme SHA512</strong>, à la
+        manière de l’ANSSI.
+        <br />
+        <br />
+        Enfin, sur la remontée de données à des services de tracking et de
+        monitoring, elles sont <strong>
+          anonymisées et désactivables
+        </strong>.{" "}
+        <Link
+          href="https://fr.matomo.org/"
+          target="_blank"
+          color="primary"
+          rel="noopener"
+        >
+          Matomo
+        </Link>{" "}
+        est utilisé pour la remontée des données d’utilisation, et{" "}
+        <Link
+          href="https://sentry.io/"
+          target="_blank"
+          color="primary"
+          rel="noopener"
+        >
+          Sentry
+        </Link>{" "}
+        pour les erreurs. Les deux outils sont <strong>open-source</strong>.
+        Aucune donnée personnelle n’est remontée et même les données anonymes
+        peuvent entièrement être désactivées. La liste complète des données
+        remontées est plus haut dans cette FAQ.
+        <br />
+        <br />
+        Tous ces processus (vérifications de sécurité via des bots, build,
+        signature, génération des sommes de contrôle, publication, etc) sont
+        entièrement{" "}
+        <strong>
+          publics et vérifiables sur le{" "}
+          <Link
+            href="https://github.com/SocialGouv/archifiltre"
+            target="_blank"
+            color="primary"
+            rel="noopener"
+          >
+            GitHub d’Archifiltre
+          </Link>
+        </strong>
+        .
+      </span>
+    ),
+    question: "Quelles sont les garanties de sécurité d'Archifiltre ?",
+  },
 ];
