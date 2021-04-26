@@ -1,3 +1,10 @@
+# [1.53.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.52.3...v1.53.0) (2021-04-26)
+
+
+### Features
+
+* **faq:** add security question in FAQ ([#172](https://github.com/SocialGouv/archifiltre-site/issues/172)) ([cb1f3c8](https://github.com/SocialGouv/archifiltre-site/commit/cb1f3c898a264c70e9a14c248f6e1ac82ddd20cc))
+
 ## [1.52.3](https://github.com/SocialGouv/archifiltre-site/compare/v1.52.2...v1.52.3) (2021-04-26)
 
 
