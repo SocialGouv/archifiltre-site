@@ -1,3 +1,10 @@
+## [1.52.3](https://github.com/SocialGouv/archifiltre-site/compare/v1.52.2...v1.52.3) (2021-04-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-use to ^17.2.4 ([#176](https://github.com/SocialGouv/archifiltre-site/issues/176)) ([e531cbb](https://github.com/SocialGouv/archifiltre-site/commit/e531cbb3802c67033ca3bb5825372c1fa33e570b))
+
 ## [1.52.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.52.1...v1.52.2) (2021-04-22)
 
 
