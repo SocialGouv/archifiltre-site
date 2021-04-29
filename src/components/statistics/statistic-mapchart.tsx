@@ -1,3 +1,4 @@
+import Box from "@material-ui/core/Box";
 import { Theme } from "@material-ui/core/styles";
 import { PaletteColor } from "@material-ui/core/styles/createPalette";
 import Tooltip from "@material-ui/core/Tooltip";
@@ -42,44 +43,47 @@ const StatisticMapChart: FC<StatisticMapChartProps> = ({ statistic }) => {
   const countries = statistic.value;
   const colorGetter = getCountryColor(countries, primary);
   return (
-    <ComposableMap height={400} projectionConfig={{ scale: 150 }}>
-      <Geographies geography={geoUrl}>
-        {({ geographies }: any) =>
-          geographies.map((geo: any) => (
-            <Tooltip title={tooltipContent} key={geo.rsmKey}>
-              <g>
-                <Geography
-                  geography={geo}
-                  onMouseEnter={() => {
-                    const { NAME } = geo.properties;
-                    const countryValue = findCountryValue(
-                      countries,
-                      geo.properties.ISO_A2
-                    );
-                    setTooltipContent(
-                      `${NAME} : ${countryValue || 0} utilisation(s)`
-                    );
-                  }}
-                  onMouseLeave={() => {
-                    setTooltipContent("");
-                  }}
-                  style={{
-                    default: {
-                      fill: colorGetter(geo),
-                      outline: "none",
-                    },
-                    hover: {
-                      fill: primary.main,
-                      outline: "none",
-                    },
-                  }}
-                />
-              </g>
-            </Tooltip>
-          ))
-        }
-      </Geographies>
-    </ComposableMap>
+    <Box>
+      <ComposableMap height={400} projectionConfig={{ scale: 150 }}>
+        <Geographies geography={geoUrl}>
+          {({ geographies }: any) =>
+            geographies.map((geo: any) => (
+              <Tooltip title={tooltipContent} key={geo.rsmKey}>
+                <g>
+                  <Geography
+                    geography={geo}
+                    onMouseEnter={() => {
+                      const { NAME } = geo.properties;
+                      const countryValue = findCountryValue(
+                        countries,
+                        geo.properties.ISO_A2
+                      );
+                      setTooltipContent(
+                        `${NAME} : ${countryValue || 0} utilisation(s)`
+                      );
+                    }}
+                    onMouseLeave={() => {
+                      setTooltipContent("");
+                    }}
+                    style={{
+                      default: {
+                        fill: colorGetter(geo),
+                        outline: "none",
+                      },
+                      hover: {
+                        fill: primary.main,
+                        outline: "none",
+                      },
+                    }}
+                  />
+                </g>
+              </Tooltip>
+            ))
+          }
+        </Geographies>
+      </ComposableMap>
+      <Box textAlign="center">{statistic.label}</Box>
+    </Box>
   );
 };
 

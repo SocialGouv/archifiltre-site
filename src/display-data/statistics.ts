@@ -70,7 +70,7 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             field: "visitorCountries",
             formatting: Formatting.MAPCHART,
-            label: "",
+            label: "(depuis le 1er janvier 2020)",
             type: "simple",
           },
         ],
