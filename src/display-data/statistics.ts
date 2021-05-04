@@ -50,7 +50,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             label:
-              "des utilisateurs le recommanderaient à leurs collègues (NPS)",
+              "des utilisateurs recommanderaient totalement Archifiltre à leurs collègues",
             tooltip:
               "Question posée : « A quel point recommanderiez-vous Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10. (49 répondants)",
             type: "raw",
