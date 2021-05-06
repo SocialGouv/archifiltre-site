@@ -1,3 +1,16 @@
+# [1.54.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.53.1...v1.54.0) (2021-05-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @material-ui/lab to ^4.0.0-alpha.58 ([#182](https://github.com/SocialGouv/archifiltre-site/issues/182)) ([15326a6](https://github.com/SocialGouv/archifiltre-site/commit/15326a6a434dc01a097ef1d5af5c932580422e0a))
+
+
+### Features
+
+* **stats:** update number of downloads wording ([#178](https://github.com/SocialGouv/archifiltre-site/issues/178)) ([0fec48f](https://github.com/SocialGouv/archifiltre-site/commit/0fec48fa13e2f5aece04f5995cba3be517f8d6f4))
+* **stats:** update users wording ([#179](https://github.com/SocialGouv/archifiltre-site/issues/179)) ([fd52700](https://github.com/SocialGouv/archifiltre-site/commit/fd52700788866acb69ed3ee87dac52c51eb74563))
+
 ## [1.53.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.53.0...v1.53.1) (2021-04-26)
 
 
