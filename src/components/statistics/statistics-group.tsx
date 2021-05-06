@@ -22,6 +22,12 @@ const useTitleStyle = makeStyles({
   },
 });
 
+const useItemStyle = makeStyles({
+  root: {
+    width: "100%",
+  },
+});
+
 const StatisticsGroup: FC<StatisticsGroupProps> = ({ group }) => (
   <Box display="flex" width="1" flexDirection="column">
     <Box paddingBottom={2}>
@@ -32,7 +38,7 @@ const StatisticsGroup: FC<StatisticsGroupProps> = ({ group }) => (
     <Box>
       <Grid container spacing={3}>
         {group.blocks.map((block, index) => (
-          <Grid item key={index} xs={block.size}>
+          <Grid item key={index} sm={block.size} classes={useItemStyle()}>
             <StatisticsBlock block={block} />
           </Grid>
         ))}
