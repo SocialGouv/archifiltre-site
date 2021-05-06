@@ -57,7 +57,7 @@ const StatisticMapChart: FC<StatisticMapChartProps> = ({ statistic }) => {
                       geo.properties.ISO_A2
                     );
                     setTooltipContent(
-                      `${NAME} : ${countryValue || 0} utilisateur(s)`
+                      `${NAME} : ${countryValue || 0} utilisation(s)`
                     );
                   }}
                   onMouseLeave={() => {

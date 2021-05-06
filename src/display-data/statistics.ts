@@ -77,7 +77,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         title: "Localisation",
       },
     ],
-    title: "Utilisateur•rice•s 👨🏿‍💻 👩🏼‍💻 👨🏽‍💻",
+    title: "Utilisations 👨🏿‍💻 👩🏼‍💻 👨🏽‍💻",
   },
   {
     blocks: [
