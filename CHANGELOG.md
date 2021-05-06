@@ -1,3 +1,11 @@
+# [1.55.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.54.0...v1.55.0) (2021-05-06)
+
+
+### Features
+
+* **stats:** add date of start below map chart ([#180](https://github.com/SocialGouv/archifiltre-site/issues/180)) ([9e5e5f6](https://github.com/SocialGouv/archifiltre-site/commit/9e5e5f62414a043c03a85e4ee78d2b55f89541e8))
+* **stats:** add mobile responsiveness on stats page ([#177](https://github.com/SocialGouv/archifiltre-site/issues/177)) ([66fe18a](https://github.com/SocialGouv/archifiltre-site/commit/66fe18a698170b7471646454f1c8ee65e31d40b9))
+
 # [1.54.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.53.1...v1.54.0) (2021-05-06)
 
 
