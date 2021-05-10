@@ -1,3 +1,10 @@
+# [1.56.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.55.1...v1.56.0) (2021-05-10)
+
+
+### Features
+
+* **statistics:** add total dropped volume ([#185](https://github.com/SocialGouv/archifiltre-site/issues/185)) ([e6e328a](https://github.com/SocialGouv/archifiltre-site/commit/e6e328a54805764bc70a0e0c044c0479495281b5))
+
 ## [1.55.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.55.0...v1.55.1) (2021-05-06)
 
 
