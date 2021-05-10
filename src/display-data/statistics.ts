@@ -147,9 +147,9 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 4,
         statistics: [
           {
+            fields: ["totalDropVolume"],
             label: "Go de données analysées",
-            type: "raw",
-            value: "En cours...",
+            type: "aggregated",
           },
         ],
         title: "Total",
