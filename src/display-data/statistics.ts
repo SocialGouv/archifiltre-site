@@ -158,9 +158,9 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 4,
         statistics: [
           {
+            fields: ["totalMarkedToDelete"],
             label: "Go d'éléments tagués « à supprimer »",
-            type: "raw",
-            value: "En cours...",
+            type: "aggregated",
           },
         ],
         title: "Gain de stockage",
@@ -169,9 +169,9 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 4,
         statistics: [
           {
-            label: "",
-            type: "raw",
-            value: "En cours...",
+            fields: ["carbonFootprintInGrams"],
+            label: "Equivalent CO2 en grammes",
+            type: "aggregated",
           },
         ],
         title: "Donnée écologique",
