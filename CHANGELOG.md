@@ -1,3 +1,10 @@
+# [1.57.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.56.0...v1.57.0) (2021-05-12)
+
+
+### Features
+
+* **statistics:** get and display footprint in stats page ([#186](https://github.com/SocialGouv/archifiltre-site/issues/186)) ([881c4d6](https://github.com/SocialGouv/archifiltre-site/commit/881c4d631cbeaa48a79f3f3d4be126b9a25dbe40))
+
 # [1.56.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.55.1...v1.56.0) (2021-05-10)
 
 
