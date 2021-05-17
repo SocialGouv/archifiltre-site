@@ -7,9 +7,26 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 6,
         statistics: [
           {
-            label: "utilisateurs quotidiens",
+            fields: ["appDownload", "download"],
+            label: "toutes versions confondues depuis le 1er janvier 2020",
             switchDisplayConfig: {
-              field: "last30DaysVisits",
+              field: "monthlyDownload",
+              formatting: Formatting.CONNECTED_DOTS,
+              label: "",
+              type: "simple",
+            },
+            type: "aggregated",
+          },
+        ],
+        title: "Téléchargements",
+      },
+      {
+        size: 6,
+        statistics: [
+          {
+            label: "au quotidien depuis le 1er janvier 2020",
+            switchDisplayConfig: {
+              field: "totalMonthVisitors",
               formatting: Formatting.CONNECTED_DOTS,
               label: "utilisateurs",
               type: "simple",
@@ -21,17 +38,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         ],
         title: "Utilisateur•rice•s",
       },
-      {
-        size: 6,
-        statistics: [
-          {
-            fields: ["download", "appDownload"],
-            label: "téléchargements depuis le 1er janvier 2020",
-            type: "aggregated",
-          },
-        ],
-        title: "Téléchargements",
-      },
+
       {
         size: 6,
         statistics: [

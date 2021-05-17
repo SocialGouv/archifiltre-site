@@ -18,7 +18,7 @@ type StatisticsConnectedDotsProps = {
   statistic: ConnectedDotsStatisticsConfig;
 };
 
-const formatXAxisLabel = compose(format("d MMM"), parseISO);
+const formatXAxisLabel = compose(format("d MMM yy"), parseISO);
 
 const StatisticsConnectedDots: FC<StatisticsConnectedDotsProps> = ({
   statistic,
