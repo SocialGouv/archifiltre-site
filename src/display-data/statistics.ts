@@ -19,7 +19,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             value: 40,
           },
         ],
-        title: "Utilisateur•rice•s",
+        title: "Utilisateurs",
       },
       {
         size: 6,
