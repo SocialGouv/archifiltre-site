@@ -1,3 +1,10 @@
+# [1.58.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.57.0...v1.58.0) (2021-05-19)
+
+
+### Features
+
+* **stats:** display monthly downloads and visitors ([#187](https://github.com/SocialGouv/archifiltre-site/issues/187)) ([987cec5](https://github.com/SocialGouv/archifiltre-site/commit/987cec52cff059f19ec59be82037de012939f1f0))
+
 # [1.57.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.56.0...v1.57.0) (2021-05-12)
 
 
