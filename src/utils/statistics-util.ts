@@ -38,9 +38,14 @@ const isAggregatedStatistic = (
   configItem: StatisticConfig
 ): configItem is AggregatedStatisticConfig => configItem.type === "aggregated";
 
-const extractCommonProps = ({ label, formatting }: StatisticConfig) => ({
+const extractCommonProps = ({
+  label,
+  formatting,
+  tooltip,
+}: StatisticConfig) => ({
   formatting,
   label,
+  tooltip,
 });
 
 const formatAggregatedStatistic = (statistic: AggregatedStatisticConfig) => (
