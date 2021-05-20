@@ -48,7 +48,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             fields: ["totalDropVolume"],
-            label: "Go de données analysées",
+            label: "Go de données analysées depuis le 14 avril 2021",
             type: "aggregated",
           },
         ],
@@ -60,7 +60,7 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             fields: ["totalMarkedToDelete"],
             label:
-              "De données identifiées « à supprimer » depuis le 15 avril 2021",
+              "De données identifiées « à supprimer » depuis le 14 avril 2021",
             type: "aggregated",
           },
         ],
@@ -71,7 +71,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             field: "carbonFootprintInGrams",
-            label: "g d'équivalent CO2 économisés depuis le 15 avril 2021",
+            label: "g d'équivalent CO2 économisés depuis le 14 avril 2021",
             tooltip:
               "Donnée calculée à partir d'une formule exprimée par Cyber World CleanUp Day",
             type: "simple",
@@ -103,7 +103,7 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             label: "sessions de présentation du produit",
             type: "raw",
-            value: 96,
+            value: 99,
           },
         ],
         title: "Présentations",
@@ -114,7 +114,7 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             label: "personnes ayant assistées à ces présentations",
             type: "raw",
-            value: 1792,
+            value: 1915,
           },
         ],
         title: "Personnes touchées",

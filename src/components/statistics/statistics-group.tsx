@@ -39,10 +39,8 @@ const getItemStyle = makeStyles({
 
 const StatisticsGroup: FC<StatisticsGroupProps> = ({ group }) => (
   <Box display="flex" width="1" flexDirection="column">
-    {console.log(group)}
     <Box paddingBottom={2}>
       <Typography
-        // color={group.type === "primary" ? "inherit" : "textSecondary"}
         classes={
           group.type === "primary" ? getTitleStyle() : getSubtitleStyle()
         }
