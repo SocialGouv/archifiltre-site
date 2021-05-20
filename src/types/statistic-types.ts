@@ -19,17 +19,20 @@ type BaseStatisticConfig = {
 export type AggregatedStatisticConfig = BaseStatisticConfig & {
   fields: string[];
   type: "aggregated";
+  unit?: string;
 };
 
 export type SimpleStatisticConfig = BaseStatisticConfig & {
   field: string;
   type: "simple";
+  unit?: string;
 };
 
 export type RawStatisticConfig = BaseStatisticConfig & {
   value: ReactNode;
   type: "raw";
   formatting?: Formatting;
+  unit?: string;
 };
 
 export type StatisticConfig = (
@@ -87,10 +90,7 @@ export type StatisticsBlock<StatType = StatisticConfig> = {
   statistics: StatType[];
 };
 
-export type BlockType = "primary" | "secondary";
-
 export type StatisticsGroup<StatType = StatisticConfig> = {
   title: string;
   blocks: StatisticsBlock<StatType>[];
-  type: BlockType;
 };

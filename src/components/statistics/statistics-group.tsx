@@ -22,15 +22,6 @@ const getTitleStyle = makeStyles({
   },
 });
 
-const getSubtitleStyle = makeStyles({
-  root: {
-    fontSize: "12.5px",
-    fontWeight: "bold",
-    lineHeight: "22px",
-    paddingLeft: "1.5rem",
-  },
-});
-
 const getItemStyle = makeStyles({
   root: {
     width: "100%",
@@ -40,13 +31,7 @@ const getItemStyle = makeStyles({
 const StatisticsGroup: FC<StatisticsGroupProps> = ({ group }) => (
   <Box display="flex" width="1" flexDirection="column">
     <Box paddingBottom={2}>
-      <Typography
-        classes={
-          group.type === "primary" ? getTitleStyle() : getSubtitleStyle()
-        }
-        variant="h5"
-        component="h2"
-      >
+      <Typography classes={getTitleStyle()} variant="h5" component="h2">
         {group.title}
       </Typography>
     </Box>

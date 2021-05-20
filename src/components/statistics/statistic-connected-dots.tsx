@@ -23,15 +23,16 @@ const formatXAxisLabel = compose(format("d MMM yy"), parseISO);
 const StatisticsConnectedDots: FC<StatisticsConnectedDotsProps> = ({
   statistic,
 }) => {
+  const statisticValueMap = Object.keys(statistic.value).sort();
+  statisticValueMap.pop();
+
   const data = useMemo(
     () =>
-      Object.keys(statistic.value)
-        .sort()
-        .map((key) => ({
-          label: formatXAxisLabel(key),
-          value: statistic.value[key],
-        })),
-    [statistic.value]
+      statisticValueMap.map((key) => ({
+        label: formatXAxisLabel(key),
+        value: statistic.value[key],
+      })),
+    [statistic.value, statisticValueMap]
   );
 
   const renderedLabels = useMemo(

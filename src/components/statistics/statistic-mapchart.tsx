@@ -41,7 +41,6 @@ const StatisticMapChart: FC<StatisticMapChartProps> = ({ statistic }) => {
     palette: { primary },
   } = useTheme<Theme>();
   const countries = statistic.value;
-  console.log(countries);
   const colorGetter = getCountryColor(countries, primary);
   return (
     <Box>
@@ -55,7 +54,6 @@ const StatisticMapChart: FC<StatisticMapChartProps> = ({ statistic }) => {
               .map((geo: any) => (
                 <Tooltip title={tooltipContent} key={geo.rsmKey}>
                   <g>
-                    {console.log(geographies)}
                     <Geography
                       geography={geo}
                       onMouseEnter={() => {

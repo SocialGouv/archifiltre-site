@@ -30,25 +30,9 @@ const useCardContentStyles = makeStyles({
   },
 });
 
-const useTitleStyle = makeStyles({
-  root: {
-    fontSize: "15px",
-    fontWeight: "bold",
-    lineHeight: "22px",
-    textTransform: "uppercase",
-  },
-});
-
 const StatisticsBlock: FC<StatisticsBlockProps> = ({ block }) => (
   <Card classes={useCardStyles()}>
     <CardContent classes={useCardContentStyles()}>
-      <Typography
-        classes={useTitleStyle()}
-        color="textSecondary"
-        align="center"
-      >
-        {block.title}
-      </Typography>
       <Box display="flex" justifyContent="space-around">
         {block.statistics.map((statistic, index) => (
           <Box key={index} width={1}>

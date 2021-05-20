@@ -15,7 +15,8 @@ type StatisticRawProps = {
 
 const useDataStyle = makeStyles({
   root: {
-    fontSize: "35px",
+    color: "#000",
+    fontSize: "30px",
     lineHeight: "47px",
   },
 });
@@ -35,8 +36,11 @@ const spaceNumber = spaceNumberForAnyValue<ReactNode>({
 const StatisticRaw: FC<StatisticRawProps> = ({ statistic }) => {
   return (
     <Box width={1} paddingTop={3}>
-      <Typography classes={useDataStyle()} color="textSecondary">
-        {spaceNumber(statistic.value)}
+      <Typography classes={useDataStyle()} color="textPrimary">
+        {spaceNumber(statistic.value)}{" "}
+        {statistic.unit && (
+          <Typography component="span">{statistic.unit}</Typography>
+        )}
       </Typography>
       <Box display="flex" flexWrap="wrap">
         <Typography classes={useLabelStyle()} color="textSecondary">
