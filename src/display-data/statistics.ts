@@ -1,4 +1,4 @@
-import { Formatting, StatisticsGroup } from "../types/statistic-types";
+import { StatisticsGroup } from "../types/statistic-types";
 
 export const statisticsLayout: StatisticsGroup[] = [
   {
@@ -11,7 +11,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             label: "toutes versions confondues depuis le 1er janvier 2020",
             switchDisplayConfig: {
               field: "monthlyDownload",
-              formatting: Formatting.CONNECTED_DOTS,
+              formatting: "connected_dots",
               label: "",
               type: "simple",
             },
@@ -24,19 +24,25 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 6,
         statistics: [
           {
-            field: "averageDailyVisitors",
-            label: "au quotidien depuis le 1er janvier 2020",
+            field: "averageMonthlyVisitors",
+            label: "au mois depuis le 1er janvier 2020",
             switchDisplayConfig: {
               field: "totalMonthVisitors",
-              formatting: Formatting.CONNECTED_DOTS,
+              formatting: "connected_dots",
               label: "utilisateurs",
               type: "simple",
             },
             type: "simple",
           },
         ],
-        title: "Utilisateur•rice•s",
+        title: "Utilisations",
       },
+    ],
+    title: "Usages 🌐",
+    type: "primary",
+  },
+  {
+    blocks: [
       {
         size: 4,
         statistics: [
@@ -73,35 +79,9 @@ export const statisticsLayout: StatisticsGroup[] = [
         ],
         title: "Donnée écologique",
       },
-      {
-        size: 6,
-        statistics: [
-          {
-            label: "note donnée par les utilisateurs/utilisatrices, sur 5",
-            tooltip:
-              "Question posée : « Et si vous deviez donner une note à Archifiltre ? » (49 répondants)",
-            type: "raw",
-            value: 4.2,
-          },
-        ],
-        title: "note",
-      },
-      {
-        size: 6,
-        statistics: [
-          {
-            label:
-              "De recommandation par les utilisateurs/utilisatrices à leurs collègues depuis le 01/01/2020",
-            tooltip:
-              "Question posée : « A quel point recommanderiez-vous Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10. (49 répondants)",
-            type: "raw",
-            value: "90%",
-          },
-        ],
-        title: "recommandation",
-      },
     ],
-    title: "En résumé 📌",
+    title: "Volume de données 🗄️",
+    type: "primary",
   },
   {
     blocks: [
@@ -110,7 +90,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             field: "visitorCountries",
-            formatting: Formatting.MAPCHART,
+            formatting: "mapchart",
             label: "(depuis le 1er janvier 2020)",
             type: "simple",
           },
@@ -152,6 +132,7 @@ export const statisticsLayout: StatisticsGroup[] = [
       },
     ],
     title: "Communauté 👩🏾 👨‍🦰 🧓🏿",
+    type: "primary",
   },
   {
     blocks: [
@@ -190,5 +171,39 @@ export const statisticsLayout: StatisticsGroup[] = [
       },
     ],
     title: "Vues sur les autres canaux 👀",
+    type: "primary",
+  },
+  {
+    blocks: [
+      {
+        size: 6,
+        statistics: [
+          {
+            label: "note donnée par les utilisateurs/utilisatrices, sur 5",
+            tooltip:
+              "Question posée : « Et si vous deviez donner une note à Archifiltre ? » (49 répondants)",
+            type: "raw",
+            value: 4.2,
+          },
+        ],
+        title: "note",
+      },
+      {
+        size: 6,
+        statistics: [
+          {
+            label:
+              "De recommandation par les utilisateurs/utilisatrices à leurs collègues depuis le 01/01/2020",
+            tooltip:
+              "Question posée : « A quel point recommanderiez-vous Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10. (49 répondants)",
+            type: "raw",
+            value: "90%",
+          },
+        ],
+        title: "recommandation",
+      },
+    ],
+    title: "Evalutation auprès d'un panel sondé ✨",
+    type: "primary",
   },
 ];

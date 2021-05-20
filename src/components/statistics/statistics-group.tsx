@@ -14,7 +14,7 @@ type StatisticsGroupProps = {
   group: StatisticsGroupType<RenderingStatisticConfig>;
 };
 
-const useTitleStyle = makeStyles({
+const getTitleStyle = makeStyles({
   root: {
     fontSize: "20px",
     fontWeight: "bold",
@@ -22,7 +22,16 @@ const useTitleStyle = makeStyles({
   },
 });
 
-const useItemStyle = makeStyles({
+const getSubtitleStyle = makeStyles({
+  root: {
+    fontSize: "12.5px",
+    fontWeight: "bold",
+    lineHeight: "22px",
+    paddingLeft: "1.5rem",
+  },
+});
+
+const getItemStyle = makeStyles({
   root: {
     width: "100%",
   },
@@ -30,15 +39,23 @@ const useItemStyle = makeStyles({
 
 const StatisticsGroup: FC<StatisticsGroupProps> = ({ group }) => (
   <Box display="flex" width="1" flexDirection="column">
+    {console.log(group)}
     <Box paddingBottom={2}>
-      <Typography classes={useTitleStyle()} variant="h5" component="h2">
+      <Typography
+        // color={group.type === "primary" ? "inherit" : "textSecondary"}
+        classes={
+          group.type === "primary" ? getTitleStyle() : getSubtitleStyle()
+        }
+        variant="h5"
+        component="h2"
+      >
         {group.title}
       </Typography>
     </Box>
     <Box>
       <Grid container spacing={3}>
         {group.blocks.map((block, index) => (
-          <Grid item key={index} sm={block.size} classes={useItemStyle()}>
+          <Grid item key={index} sm={block.size} classes={getItemStyle()}>
             <StatisticsBlock block={block} />
           </Grid>
         ))}

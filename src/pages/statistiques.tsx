@@ -62,14 +62,15 @@ const Statistiques = () => {
             <StatisticsLoading />
           ) : (
             <Box>
-              {statistics.length > 0 && (
-                <Box marginBottom={5}>
-                  <StatisticsGroup group={statistics[0]} />
-                </Box>
-              )}
+              {statistics.length > 0 &&
+                statistics.slice(0, 2).map((group, index) => (
+                  <Box marginBottom={5} key={index}>
+                    <StatisticsGroup group={group} />
+                  </Box>
+                ))}
 
               <Collapse in={showMore}>
-                {statistics.slice(1).map((group, index) => (
+                {statistics.slice(2).map((group, index) => (
                   <Box key={index} marginBottom={5}>
                     <StatisticsGroup group={group} />
                   </Box>

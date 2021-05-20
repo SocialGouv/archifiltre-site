@@ -100,6 +100,7 @@ const formatGroup = (group: StatisticsGroup) => (
 ): StatisticsGroup<RenderingStatisticConfig> => ({
   blocks: group.blocks.map((block) => formatBlock(block)(data)),
   title: group.title,
+  type: group.type,
 });
 
 export const formatStatistics = (statisticsLayout: StatisticsGroup[]) => (
