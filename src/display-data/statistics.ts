@@ -170,7 +170,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             field: "youtubeViews",
-            label: "de nos vidéos (tutoriels, démo produit...)",
+            label: "de nos vidéos (tutoriels, démo produit...) ",
             type: "simple",
             unit: "vues",
           },
