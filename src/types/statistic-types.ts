@@ -6,12 +6,7 @@ export type Statistic = {
   value: number;
 };
 
-export enum Formatting {
-  NONE,
-  PIECHARTS,
-  CONNECTED_DOTS,
-  MAPCHART,
-}
+export type Formatting = "none" | "piecharts" | "connected_dots" | "mapchart";
 
 export type ChartData = { label: string; value: number };
 
@@ -24,17 +19,20 @@ type BaseStatisticConfig = {
 export type AggregatedStatisticConfig = BaseStatisticConfig & {
   fields: string[];
   type: "aggregated";
+  unit?: string;
 };
 
 export type SimpleStatisticConfig = BaseStatisticConfig & {
   field: string;
   type: "simple";
+  unit?: string;
 };
 
 export type RawStatisticConfig = BaseStatisticConfig & {
   value: ReactNode;
   type: "raw";
   formatting?: Formatting;
+  unit?: string;
 };
 
 export type StatisticConfig = (
@@ -46,17 +44,17 @@ export type StatisticConfig = (
 };
 
 export type PiechartStatisticsConfig = RawStatisticConfig & {
-  formatting: Formatting.PIECHARTS;
+  formatting: "piecharts";
   value: ChartData[];
 };
 
 export type MapChartStatisticConfig = RawStatisticConfig & {
   value: Record<string, number>;
-  formatting: Formatting.MAPCHART;
+  formatting: "mapchart";
 };
 
 export type ConnectedDotsStatisticsConfig = RawStatisticConfig & {
-  formatting: Formatting.CONNECTED_DOTS;
+  formatting: "connected_dots";
   value: Record<string, number>;
 };
 
@@ -75,16 +73,16 @@ export const isRawStatistic = (
 
 export const isPiechart = (
   stat: RenderingStatisticConfig
-): stat is PiechartStatisticsConfig => stat.formatting === Formatting.PIECHARTS;
+): stat is PiechartStatisticsConfig => stat.formatting === "piecharts";
 
 export const isConnectedDots = (
   stat: RenderingStatisticConfig
 ): stat is ConnectedDotsStatisticsConfig =>
-  stat.formatting === Formatting.CONNECTED_DOTS;
+  stat.formatting === "connected_dots";
 
 export const isMapChart = (
   stat: StatisticConfig
-): stat is MapChartStatisticConfig => stat.formatting === Formatting.MAPCHART;
+): stat is MapChartStatisticConfig => stat.formatting === "mapchart";
 
 export type StatisticsBlock<StatType = StatisticConfig> = {
   title: string;

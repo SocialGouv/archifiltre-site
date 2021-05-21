@@ -42,10 +42,12 @@ const extractCommonProps = ({
   label,
   formatting,
   tooltip,
+  unit,
 }: StatisticConfig) => ({
   formatting,
   label,
   tooltip,
+  unit,
 });
 
 const formatAggregatedStatistic = (statistic: AggregatedStatisticConfig) => (

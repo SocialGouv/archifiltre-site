@@ -1,4 +1,4 @@
-import { Formatting, StatisticsGroup } from "../types/statistic-types";
+import { StatisticsGroup } from "../types/statistic-types";
 
 export const statisticsLayout: StatisticsGroup[] = [
   {
@@ -11,11 +11,12 @@ export const statisticsLayout: StatisticsGroup[] = [
             label: "toutes versions confondues depuis le 1er janvier 2020",
             switchDisplayConfig: {
               field: "monthlyDownload",
-              formatting: Formatting.CONNECTED_DOTS,
+              formatting: "connected_dots",
               label: "",
               type: "simple",
             },
             type: "aggregated",
+            unit: "téléchargements",
           },
         ],
         title: "Téléchargements",
@@ -24,26 +25,33 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 6,
         statistics: [
           {
-            field: "averageDailyVisitors",
-            label: "au quotidien depuis le 1er janvier 2020",
+            field: "averageMonthlyVisitors",
+            label: "au mois depuis le 1er janvier 2020",
             switchDisplayConfig: {
               field: "totalMonthVisitors",
-              formatting: Formatting.CONNECTED_DOTS,
+              formatting: "connected_dots",
               label: "utilisateurs",
               type: "simple",
             },
             type: "simple",
+            unit: "utilisations",
           },
         ],
-        title: "Utilisateur•rice•s",
+        title: "Utilisations",
       },
+    ],
+    title: "Usages 🌐",
+  },
+  {
+    blocks: [
       {
         size: 4,
         statistics: [
           {
             fields: ["totalDropVolume"],
-            label: "Go de données analysées",
+            label: "de données analysées depuis le 14 avril 2021",
             type: "aggregated",
+            unit: "Go",
           },
         ],
         title: "Total",
@@ -54,8 +62,9 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             fields: ["totalMarkedToDelete"],
             label:
-              "De données identifiées « à supprimer » depuis le 15 avril 2021",
+              "de données identifiées « à supprimer » depuis le 14 avril 2021",
             type: "aggregated",
+            unit: "Go",
           },
         ],
         title: "Gain de stockage",
@@ -65,14 +74,114 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             field: "carbonFootprintInGrams",
-            label: "g d'équivalent CO2 économisés depuis le 15 avril 2021",
+            label: "économisés depuis le 14 avril 2021",
             tooltip:
               "Donnée calculée à partir d'une formule exprimée par Cyber World CleanUp Day",
             type: "simple",
+            unit: "g d'équivalent CO2",
           },
         ],
         title: "Donnée écologique",
       },
+    ],
+    title: "Volume de données 🗄️",
+  },
+  {
+    blocks: [
+      {
+        size: 12,
+        statistics: [
+          {
+            field: "visitorCountries",
+            formatting: "mapchart",
+            label: "(depuis le 1er janvier 2020)",
+            type: "simple",
+          },
+        ],
+        title: "Localisation",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "de l'outil depuis le 3 avril 2019",
+            type: "raw",
+            unit: "présentations",
+            value: 101,
+          },
+        ],
+        title: "Présentations",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "par une session de présentation depuis le 3 avril 2019",
+            type: "raw",
+            unit: "personnes touchées",
+            value: 1965,
+          },
+        ],
+        title: "Personnes touchées",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "nous suivent sur les réseaux sociaux (cumul)",
+            type: "raw",
+            unit: "personnes",
+            value: 777,
+          },
+        ],
+        title: "Followers",
+      },
+    ],
+    title: "Communauté 👩🏾 👨‍🦰 🧓🏿",
+  },
+  {
+    blocks: [
+      {
+        size: 4,
+        statistics: [
+          {
+            field: "visitsCount",
+            label: "sur le site web depuis le 1 janvier 2020",
+            type: "simple",
+            unit: "visiteurs uniques",
+          },
+        ],
+        title: "Site web",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            field: "wikiViews",
+            label: "en moyenne par mois",
+            type: "simple",
+            unit: "vues",
+          },
+        ],
+        title: "Wiki",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            field: "youtubeViews",
+            label: "de nos vidéos (tutoriels, démo produit...)",
+            type: "simple",
+            unit: "vues",
+          },
+        ],
+        title: "Youtube",
+      },
+    ],
+    title: "Vues sur les autres canaux 👀",
+  },
+  {
+    blocks: [
       {
         size: 6,
         statistics: [
@@ -91,104 +200,17 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             label:
-              "De recommandation par les utilisateurs/utilisatrices à leurs collègues depuis le 01/01/2020",
+              "de recommandation par les utilisateurs/utilisatrices à leurs collègues",
             tooltip:
               "Question posée : « A quel point recommanderiez-vous Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10. (49 répondants)",
             type: "raw",
-            value: "90%",
+            unit: "%",
+            value: "90",
           },
         ],
         title: "recommandation",
       },
     ],
-    title: "En résumé 📌",
-  },
-  {
-    blocks: [
-      {
-        size: 12,
-        statistics: [
-          {
-            field: "visitorCountries",
-            formatting: Formatting.MAPCHART,
-            label: "(depuis le 1er janvier 2020)",
-            type: "simple",
-          },
-        ],
-        title: "Localisation",
-      },
-      {
-        size: 4,
-        statistics: [
-          {
-            label: "sessions de présentation du produit",
-            type: "raw",
-            value: 96,
-          },
-        ],
-        title: "Présentations",
-      },
-      {
-        size: 4,
-        statistics: [
-          {
-            label: "personnes ayant assistées à ces présentations",
-            type: "raw",
-            value: 1792,
-          },
-        ],
-        title: "Personnes touchées",
-      },
-      {
-        size: 4,
-        statistics: [
-          {
-            label: "personnes nous suivent sur les réseaux sociaux (cumul)",
-            type: "raw",
-            value: 672,
-          },
-        ],
-        title: "Followers",
-      },
-    ],
-    title: "Communauté 👩🏾 👨‍🦰 🧓🏿",
-  },
-  {
-    blocks: [
-      {
-        size: 4,
-        statistics: [
-          {
-            field: "visitsCount",
-            label: "visiteurs uniques",
-            type: "simple",
-          },
-        ],
-        title: "Site web",
-      },
-      {
-        size: 4,
-        statistics: [
-          {
-            label: "Vues par mois en moyenne",
-            type: "raw",
-            value: 340,
-          },
-        ],
-        title: "Wiki",
-      },
-      {
-        size: 4,
-        statistics: [
-          {
-            field: "youtubeViews",
-            label: "Vues sur nos vidéos (tutoriels, démo produit...)",
-            type: "simple",
-          },
-        ],
-        title: "Youtube",
-      },
-    ],
-    title: "Vues sur les autres canaux 👀",
+    title: "Evalutation auprès d'un panel sondé ✨",
   },
 ];

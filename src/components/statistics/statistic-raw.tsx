@@ -13,12 +13,15 @@ type StatisticRawProps = {
   statistic: RawStatisticConfig;
 };
 
-const useDataStyle = makeStyles({
+const THEME_LIGHT = "light";
+
+const useDataStyle = makeStyles(({ palette: { type } }) => ({
   root: {
-    fontSize: "35px",
+    color: type === THEME_LIGHT ? "#000" : "#fff",
+    fontSize: "30px",
     lineHeight: "47px",
   },
-});
+}));
 
 const useLabelStyle = makeStyles({
   root: {
@@ -35,8 +38,11 @@ const spaceNumber = spaceNumberForAnyValue<ReactNode>({
 const StatisticRaw: FC<StatisticRawProps> = ({ statistic }) => {
   return (
     <Box width={1} paddingTop={3}>
-      <Typography classes={useDataStyle()} color="textSecondary">
-        {spaceNumber(statistic.value)}
+      <Typography classes={useDataStyle()} color="textPrimary">
+        {spaceNumber(statistic.value)}{" "}
+        {statistic.unit && (
+          <Typography component="span">{statistic.unit}</Typography>
+        )}
       </Typography>
       <Box display="flex" flexWrap="wrap">
         <Typography classes={useLabelStyle()} color="textSecondary">
