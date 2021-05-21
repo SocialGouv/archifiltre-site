@@ -1,3 +1,10 @@
+# [1.59.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.58.0...v1.59.0) (2021-05-21)
+
+
+### Features
+
+* **stats:** add new layout ([#190](https://github.com/SocialGouv/archifiltre-site/issues/190)) ([f4383d8](https://github.com/SocialGouv/archifiltre-site/commit/f4383d8be057941fd1f29390d4c26d2ab2b48e8d))
+
 # [1.58.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.57.0...v1.58.0) (2021-05-19)
 
 
