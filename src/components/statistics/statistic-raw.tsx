@@ -13,13 +13,15 @@ type StatisticRawProps = {
   statistic: RawStatisticConfig;
 };
 
-const useDataStyle = makeStyles({
+const THEME_LIGHT = "light";
+
+const useDataStyle = makeStyles(({ palette: { type } }) => ({
   root: {
-    color: "#000",
+    color: type === THEME_LIGHT ? "#000" : "#fff",
     fontSize: "30px",
     lineHeight: "47px",
   },
-});
+}));
 
 const useLabelStyle = makeStyles({
   root: {

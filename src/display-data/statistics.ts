@@ -34,7 +34,7 @@ export const statisticsLayout: StatisticsGroup[] = [
               type: "simple",
             },
             type: "simple",
-            unit: "utilisateurs et utilisatrices",
+            unit: "utilisations",
           },
         ],
         title: "Utilisations",
@@ -49,7 +49,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             fields: ["totalDropVolume"],
-            label: "Go de données analysées depuis le 14 avril 2021",
+            label: "de données analysées depuis le 14 avril 2021",
             type: "aggregated",
             unit: "Go",
           },
@@ -62,7 +62,7 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             fields: ["totalMarkedToDelete"],
             label:
-              "De données identifiées « à supprimer » depuis le 14 avril 2021",
+              "de données identifiées « à supprimer » depuis le 14 avril 2021",
             type: "aggregated",
             unit: "Go",
           },
@@ -107,7 +107,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             label: "de l'outil depuis le 3 avril 2019",
             type: "raw",
             unit: "présentations",
-            value: 99,
+            value: 101,
           },
         ],
         title: "Présentations",
@@ -119,7 +119,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             label: "par une session de présentation depuis le 3 avril 2019",
             type: "raw",
             unit: "personnes touchées",
-            value: 1915,
+            value: 1965,
           },
         ],
         title: "Personnes touchées",
@@ -128,10 +128,10 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 4,
         statistics: [
           {
-            label: "personnes nous suivent sur les réseaux sociaux (cumul)",
+            label: "nous suivent sur les réseaux sociaux (cumul)",
             type: "raw",
-            unit: "",
-            value: 672,
+            unit: "personnes",
+            value: 777,
           },
         ],
         title: "Followers",
@@ -158,7 +158,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             field: "wikiViews",
-            label: "en moyenne en moyenne par mois",
+            label: "en moyenne par mois",
             type: "simple",
             unit: "vues",
           },
@@ -200,7 +200,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             label:
-              "De recommandation par les utilisateurs/utilisatrices à leurs collègues depuis le 01/01/2020",
+              "de recommandation par les utilisateurs/utilisatrices à leurs collègues",
             tooltip:
               "Question posée : « A quel point recommanderiez-vous Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10. (49 répondants)",
             type: "raw",

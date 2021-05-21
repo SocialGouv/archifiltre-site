@@ -17,6 +17,8 @@ import {
 } from "../types/statistic-types";
 import { formatStatistics } from "../utils/statistics-util";
 
+const DEFAULT_VISIBLE_BLOCK = 2;
+
 const minutesSinceTimestamp = (lastFetchTimestamp: number) => {
   const timeDifference = Date.now() - lastFetchTimestamp;
   return Math.floor(timeDifference / (60 * 1000));
@@ -63,14 +65,16 @@ const Statistiques = () => {
           ) : (
             <Box>
               {statistics.length > 0 &&
-                statistics.slice(0, 2).map((group, index) => (
-                  <Box marginBottom={5} key={index}>
-                    <StatisticsGroup group={group} />
-                  </Box>
-                ))}
+                statistics
+                  .slice(0, DEFAULT_VISIBLE_BLOCK)
+                  .map((group, index) => (
+                    <Box marginBottom={5} key={index}>
+                      <StatisticsGroup group={group} />
+                    </Box>
+                  ))}
 
               <Collapse in={showMore}>
-                {statistics.slice(2).map((group, index) => (
+                {statistics.slice(DEFAULT_VISIBLE_BLOCK).map((group, index) => (
                   <Box key={index} marginBottom={5}>
                     <StatisticsGroup group={group} />
                   </Box>
