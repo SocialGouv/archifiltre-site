@@ -1,3 +1,10 @@
+## [1.59.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.59.0...v1.59.1) (2021-05-26)
+
+
+### Bug Fixes
+
+* **ci:** fix statistics prod url ([#191](https://github.com/SocialGouv/archifiltre-site/issues/191)) ([5fb55ae](https://github.com/SocialGouv/archifiltre-site/commit/5fb55ae03a98492a48193aeaaeabb20ef337d1b8))
+
 # [1.59.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.58.0...v1.59.0) (2021-05-21)
 
 
