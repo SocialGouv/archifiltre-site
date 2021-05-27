@@ -160,7 +160,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             field: "wikiViews",
             label: "en moyenne par mois",
             type: "simple",
-            unit: "vues",
+            unit: "vues sur le Wiki",
           },
         ],
         title: "Wiki",
@@ -186,11 +186,11 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 6,
         statistics: [
           {
+            field: "rating",
             label: "note donnée par les utilisateurs/utilisatrices, sur 5",
             tooltip:
               "Question posée : « Et si vous deviez donner une note à Archifiltre ? » (49 répondants)",
-            type: "raw",
-            value: 4.2,
+            type: "simple",
           },
         ],
         title: "note",
@@ -199,13 +199,13 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 6,
         statistics: [
           {
+            field: "recommendation",
             label:
               "de recommandation par les utilisateurs/utilisatrices à leurs collègues",
             tooltip:
               "Question posée : « A quel point recommanderiez-vous Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10. (49 répondants)",
-            type: "raw",
+            type: "simple",
             unit: "%",
-            value: "90",
           },
         ],
         title: "recommandation",
