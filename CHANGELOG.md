@@ -1,3 +1,11 @@
+# [1.60.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.59.1...v1.60.0) (2021-05-27)
+
+
+### Features
+
+* **favicon:** add favicon ([#193](https://github.com/SocialGouv/archifiltre-site/issues/193)) ([0fd88d3](https://github.com/SocialGouv/archifiltre-site/commit/0fd88d3cf555cbc1a07cb1b3f5ce789b131db249))
+* **typeform:** add typeform values ([#192](https://github.com/SocialGouv/archifiltre-site/issues/192)) ([5a839ae](https://github.com/SocialGouv/archifiltre-site/commit/5a839aeffe5979c210ed1ffeb1f9b5e092208b67))
+
 ## [1.59.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.59.0...v1.59.1) (2021-05-26)
 
 
