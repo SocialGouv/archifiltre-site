@@ -3,7 +3,9 @@ import { compose, map, sum } from "lodash/fp";
 
 import {
   AggregatedStatisticConfig,
+  isMultiple,
   isRawStatistic,
+  MultipleStatisticConfig,
   RenderingStatisticConfig,
   SimpleStatisticConfig,
   Statistic,
@@ -34,6 +36,16 @@ const extractSimpleStatisticProps = (
   configItem: SimpleStatisticConfig
 ) => findValueByLabel(statistics, configItem.field);
 
+const extractMultipleStatisticProps = (
+  statistics: Statistic[],
+  configItem: MultipleStatisticConfig
+) => {
+  const [firstValue, secondValue] = map((field) =>
+    findValueByLabel(statistics, field)
+  )(configItem.fields);
+  return { firstValue, secondValue };
+};
+
 const isAggregatedStatistic = (
   configItem: StatisticConfig
 ): configItem is AggregatedStatisticConfig => configItem.type === "aggregated";
@@ -58,6 +70,16 @@ const formatAggregatedStatistic = (statistic: AggregatedStatisticConfig) => (
   value: extractAggregatedStatisticProps(data, statistic),
 });
 
+const formatMultipleStatistic = (statistic: MultipleStatisticConfig) => (
+  data: Statistic[]
+): RenderingStatisticConfig => {
+  return {
+    ...extractCommonProps(statistic),
+    sublabel: statistic.sublabel,
+    type: "multiple",
+    value: extractMultipleStatisticProps(data, statistic),
+  };
+};
 const formatSimpleStatistic = (statistic: SimpleStatisticConfig) => (
   data: Statistic[]
 ): RenderingStatisticConfig => ({
@@ -71,6 +93,9 @@ const baseFormatStatistic = (statistic: StatisticConfig) => {
     return formatAggregatedStatistic(statistic);
   }
 
+  if (isMultiple(statistic)) {
+    return formatMultipleStatistic(statistic);
+  }
   if (isRawStatistic(statistic)) {
     return () => statistic;
   }

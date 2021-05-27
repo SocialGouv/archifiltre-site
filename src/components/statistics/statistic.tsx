@@ -3,11 +3,13 @@ import React, { FC } from "react";
 import {
   isConnectedDots,
   isMapChart,
+  isMultiple,
   isPiechart,
   RenderingStatisticConfig,
 } from "../../types/statistic-types";
 import StatisticsConnectedDots from "./statistic-connected-dots";
 import StatisticMapChart from "./statistic-mapchart";
+import StatisticsMultiple from "./statistic-multiple";
 import StatisticPiechart from "./statistic-piecharts";
 import StatisticRaw from "./statistic-raw";
 import StatisticsSwitcher from "./statistic-switcher";
@@ -25,6 +27,10 @@ const getContent = (statistic: RenderingStatisticConfig) => {
   }
   if (isConnectedDots(statistic)) {
     return <StatisticsConnectedDots statistic={statistic} />;
+  }
+
+  if (isMultiple(statistic)) {
+    return <StatisticsMultiple statistic={statistic} />;
   }
 
   return <StatisticRaw statistic={statistic} />;

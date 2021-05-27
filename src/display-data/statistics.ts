@@ -73,11 +73,15 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 4,
         statistics: [
           {
-            field: "carbonFootprintInGrams",
+            fields: [
+              "carbonFootprintInGrams",
+              "carbonFootprintPaperEquivalence",
+            ],
             label: "économisés depuis le 14 avril 2021",
+            sublabel: "équivalence en feuilles A4: ",
             tooltip:
               "Donnée calculée à partir d'une formule exprimée par Cyber World CleanUp Day",
-            type: "simple",
+            type: "multiple",
             unit: "g d'équivalent CO2",
           },
         ],
