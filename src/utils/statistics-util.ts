@@ -25,7 +25,7 @@ const findValueByLabel = compose(getValue, findElementByLabel);
 export const extractAggregatedStatisticProps = (
   statistics: Statistic[],
   configItem: AggregatedStatisticConfig
-) =>
+): number =>
   compose(
     sum,
     map((field) => findValueByLabel(statistics, field))
@@ -126,6 +126,7 @@ const formatGroup = (group: StatisticsGroup) => (
   data: Statistic[]
 ): StatisticsGroup<RenderingStatisticConfig> => ({
   blocks: group.blocks.map((block) => formatBlock(block)(data)),
+  date: group.date,
   title: group.title,
 });
 

@@ -28,6 +28,15 @@ const getItemStyle = makeStyles({
   },
 });
 
+const getCaptionStyle = makeStyles({
+  root: {
+    color: "#888",
+    fontSize: "10px",
+    fontStyle: "italic",
+    lineHeight: "25px",
+  },
+});
+
 const StatisticsGroup: FC<StatisticsGroupProps> = ({ group }) => (
   <Box display="flex" width="1" flexDirection="column">
     <Box paddingBottom={2}>
@@ -43,6 +52,14 @@ const StatisticsGroup: FC<StatisticsGroupProps> = ({ group }) => (
           </Grid>
         ))}
       </Grid>
+      <Typography
+        component="small"
+        display="block"
+        align="right"
+        classes={getCaptionStyle()}
+      >
+        {group.date}
+      </Typography>
     </Box>
   </Box>
 );

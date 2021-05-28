@@ -110,4 +110,5 @@ export type StatisticsBlock<StatType = StatisticConfig> = {
 export type StatisticsGroup<StatType = StatisticConfig> = {
   title: string;
   blocks: StatisticsBlock<StatType>[];
+  date?: string;
 };

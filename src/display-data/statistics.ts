@@ -8,7 +8,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             fields: ["appDownload", "download"],
-            label: "toutes versions confondues depuis le 1er janvier 2020",
+            label: "toutes versions confondues",
             switchDisplayConfig: {
               field: "monthlyDownload",
               formatting: "connected_dots",
@@ -26,7 +26,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             field: "averageMonthlyVisitors",
-            label: "au mois depuis le 1er janvier 2020",
+            label: "au mois ",
             switchDisplayConfig: {
               field: "totalMonthVisitors",
               formatting: "connected_dots",
@@ -40,6 +40,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         title: "Utilisations",
       },
     ],
+    date: "depuis 1er janvier 2020",
     title: "Usages 🌐",
   },
   {
@@ -49,7 +50,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             fields: ["totalDropVolume"],
-            label: "de données analysées depuis le 14 avril 2021",
+            label: "de données analysées",
             type: "aggregated",
             unit: "Go",
           },
@@ -61,8 +62,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             fields: ["totalMarkedToDelete"],
-            label:
-              "de données identifiées « à supprimer » depuis le 14 avril 2021",
+            label: "de données identifiées « à supprimer »",
             type: "aggregated",
             unit: "Go",
           },
@@ -78,7 +78,7 @@ export const statisticsLayout: StatisticsGroup[] = [
               "carbonFootprintPaperEquivalence",
             ],
             label: "",
-            sublabel: "Équivalence en feuilles A4: ",
+            sublabel: "Équivalence en feuilles A4 : ",
             tooltip:
               "Données calculées à partir des formules exprimées par le Cyber World CleanUp Day et par monconvertisseurco2.fr",
             type: "multiple",
@@ -88,6 +88,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         title: "Donnée écologique",
       },
     ],
+    date: "depuis le 14 avril 2021",
     title: "Volume de données 🗄️",
   },
   {
@@ -98,7 +99,7 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             field: "visitorCountries",
             formatting: "mapchart",
-            label: "(depuis le 1er janvier 2020)",
+            label: "depuis le 1er janvier 2020",
             type: "simple",
           },
         ],
@@ -108,7 +109,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 4,
         statistics: [
           {
-            label: "de l'outil depuis le 3 avril 2019",
+            label: "de l'outil",
             type: "raw",
             unit: "présentations",
             value: 101,
@@ -120,7 +121,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 4,
         statistics: [
           {
-            label: "par une session de présentation depuis le 3 avril 2019",
+            label: "par une session de présentation",
             type: "raw",
             unit: "personnes touchées",
             value: 1965,
@@ -141,6 +142,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         title: "Followers",
       },
     ],
+    date: "depuis le 3 avril 2019",
     title: "Communauté 👩🏾 👨‍🦰 🧓🏿",
   },
   {
@@ -174,7 +176,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             field: "youtubeViews",
-            label: "de nos vidéos (tutoriels, démo produit...) ",
+            label: "de nos vidéos (tutoriels, démo produit...)",
             type: "simple",
             unit: "vues",
           },
@@ -182,6 +184,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         title: "Youtube",
       },
     ],
+    date: "depuis le 1er janvier 2020",
     title: "Vues sur les autres canaux 👀",
   },
   {

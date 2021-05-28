@@ -8,6 +8,7 @@ import React, { FC, ReactNode } from "react";
 
 import { RawStatisticConfig } from "../../types/statistic-types";
 import { spaceNumberForAnyValue } from "../../utils/number-util";
+import StatisticTooltip from "./statistic-tooltip";
 
 type StatisticRawProps = {
   statistic: RawStatisticConfig;
@@ -48,15 +49,7 @@ const StatisticRaw: FC<StatisticRawProps> = ({ statistic }) => {
         <Typography classes={useLabelStyle()} color="textSecondary">
           {statistic.label}{" "}
           {statistic.tooltip && (
-            <Tooltip title={statistic.tooltip}>
-              <IconButton size="small" aria-label="info">
-                <InfoOutlinedIcon
-                  fontSize="small"
-                  color="secondary"
-                  titleAccess="info"
-                />
-              </IconButton>
-            </Tooltip>
+            <StatisticTooltip tooltip={statistic.tooltip} />
           )}
         </Typography>
       </Box>

@@ -8,6 +8,7 @@ import React, { FC, ReactNode } from "react";
 
 import { RenderMultipleStatisticConfig } from "../../types/statistic-types";
 import { spaceNumberForAnyValue } from "../../utils/number-util";
+import StatisticTooltip from "./statistic-tooltip";
 
 type StatisticMultipleProps = {
   statistic: RenderMultipleStatisticConfig;
@@ -54,15 +55,7 @@ const StatisticsMultiple: FC<StatisticMultipleProps> = ({ statistic }) => {
             {statistic.sublabel} {statistic.value.secondValue}{" "}
           </Typography>
           {statistic.tooltip && (
-            <Tooltip title={statistic.tooltip}>
-              <IconButton size="small" aria-label="info">
-                <InfoOutlinedIcon
-                  fontSize="small"
-                  color="secondary"
-                  titleAccess="info"
-                />
-              </IconButton>
-            </Tooltip>
+            <StatisticTooltip tooltip={statistic.tooltip} />
           )}
         </Typography>
       </Box>
