@@ -25,10 +25,10 @@ const useDataStyle = makeStyles(({ palette: { type } }) => ({
 
 const useLabelStyle = makeStyles({
   root: {
-    fontSize: "15px",
     "& .label-inner": {
       display: "table",
     },
+    fontSize: "15px",
     lineHeight: "22px",
     marginTop: "8px",
   },
@@ -53,7 +53,6 @@ const StatisticsMultiple: FC<StatisticMultipleProps> = ({ statistic }) => {
           <Typography className="label-inner">
             {statistic.sublabel} {statistic.value.secondValue}{" "}
           </Typography>
-          {/* {statistic.sublabel} {statistic.value.secondValue}{" "} */}
           {statistic.tooltip && (
             <Tooltip title={statistic.tooltip}>
               <IconButton size="small" aria-label="info">
