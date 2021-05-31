@@ -31,7 +31,7 @@ const useLabelStyle = makeStyles({
     },
     fontSize: "15px",
     lineHeight: "22px",
-    marginTop: "8px",
+    marginTop: "9px",
   },
 });
 
