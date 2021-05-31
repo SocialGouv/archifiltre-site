@@ -1,3 +1,10 @@
+# [1.62.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.61.0...v1.62.0) (2021-05-31)
+
+
+### Features
+
+* update api fetching ([#197](https://github.com/SocialGouv/archifiltre-site/issues/197)) ([a9b6c64](https://github.com/SocialGouv/archifiltre-site/commit/a9b6c64bc8e97557831da51574ac27d946c9aa8f))
+
 # [1.61.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.60.0...v1.61.0) (2021-05-31)
 
 
