@@ -1,3 +1,10 @@
+# [1.61.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.60.0...v1.61.0) (2021-05-31)
+
+
+### Features
+
+* **stats:** add date caption to card ([#196](https://github.com/SocialGouv/archifiltre-site/issues/196)) ([32b3f71](https://github.com/SocialGouv/archifiltre-site/commit/32b3f71591969c00356620b0c3512319a13a95eb))
+
 # [1.60.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.59.1...v1.60.0) (2021-05-27)
 
 
