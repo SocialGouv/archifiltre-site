@@ -1,5 +1,7 @@
 // eslint-disable-next-line import/named
-import { compose, map, sum } from "lodash/fp";
+import { groupBy, mapValues, sumBy } from "lodash";
+// eslint-disable-next-line import/named
+import { compose } from "lodash/fp";
 
 import {
   AggregatedStatisticConfig,
@@ -26,10 +28,9 @@ export const extractAggregatedStatisticProps = (
   statistics: Statistic[],
   configItem: AggregatedStatisticConfig
 ): number =>
-  compose(
-    sum,
-    map((field) => findValueByLabel(statistics, field))
-  )(configItem.fields);
+  statistics
+    .filter((statistic) => configItem.fields.includes(statistic.label))
+    .reduce((total, currentStatistic) => total + currentStatistic.value, 0);
 
 const extractSimpleStatisticProps = (
   statistics: Statistic[],
@@ -40,9 +41,14 @@ const extractMultipleStatisticProps = (
   statistics: Statistic[],
   configItem: MultipleStatisticConfig
 ) => {
-  const [firstValue, secondValue] = map((field) =>
-    findValueByLabel(statistics, field)
-  )(configItem.fields);
+  const filteredStatistics = statistics.filter((statistic) =>
+    configItem?.fields?.includes(statistic.label)
+  );
+  const groupedByStats = groupBy(filteredStatistics, "label");
+  const mappedValues = mapValues(groupedByStats, (statistic) =>
+    sumBy(statistic, "value")
+  );
+  const [firstValue, secondValue] = Object.values(mappedValues);
   return { firstValue, secondValue };
 };
 
