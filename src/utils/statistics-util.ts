@@ -3,7 +3,9 @@ import { compose, map, sum } from "lodash/fp";
 
 import {
   AggregatedStatisticConfig,
+  isMultiple,
   isRawStatistic,
+  MultipleStatisticConfig,
   RenderingStatisticConfig,
   SimpleStatisticConfig,
   Statistic,
@@ -23,7 +25,7 @@ const findValueByLabel = compose(getValue, findElementByLabel);
 export const extractAggregatedStatisticProps = (
   statistics: Statistic[],
   configItem: AggregatedStatisticConfig
-) =>
+): number =>
   compose(
     sum,
     map((field) => findValueByLabel(statistics, field))
@@ -33,6 +35,16 @@ const extractSimpleStatisticProps = (
   statistics: Statistic[],
   configItem: SimpleStatisticConfig
 ) => findValueByLabel(statistics, configItem.field);
+
+const extractMultipleStatisticProps = (
+  statistics: Statistic[],
+  configItem: MultipleStatisticConfig
+) => {
+  const [firstValue, secondValue] = map((field) =>
+    findValueByLabel(statistics, field)
+  )(configItem.fields);
+  return { firstValue, secondValue };
+};
 
 const isAggregatedStatistic = (
   configItem: StatisticConfig
@@ -58,6 +70,16 @@ const formatAggregatedStatistic = (statistic: AggregatedStatisticConfig) => (
   value: extractAggregatedStatisticProps(data, statistic),
 });
 
+const formatMultipleStatistic = (statistic: MultipleStatisticConfig) => (
+  data: Statistic[]
+): RenderingStatisticConfig => {
+  return {
+    ...extractCommonProps(statistic),
+    sublabel: statistic.sublabel,
+    type: "multiple",
+    value: extractMultipleStatisticProps(data, statistic),
+  };
+};
 const formatSimpleStatistic = (statistic: SimpleStatisticConfig) => (
   data: Statistic[]
 ): RenderingStatisticConfig => ({
@@ -71,6 +93,9 @@ const baseFormatStatistic = (statistic: StatisticConfig) => {
     return formatAggregatedStatistic(statistic);
   }
 
+  if (isMultiple(statistic)) {
+    return formatMultipleStatistic(statistic);
+  }
   if (isRawStatistic(statistic)) {
     return () => statistic;
   }
@@ -101,6 +126,7 @@ const formatGroup = (group: StatisticsGroup) => (
   data: Statistic[]
 ): StatisticsGroup<RenderingStatisticConfig> => ({
   blocks: group.blocks.map((block) => formatBlock(block)(data)),
+  date: group.date,
   title: group.title,
 });
 

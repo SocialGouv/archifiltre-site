@@ -35,10 +35,18 @@ export type RawStatisticConfig = BaseStatisticConfig & {
   unit?: string;
 };
 
+export type MultipleStatisticConfig = BaseStatisticConfig & {
+  type: "multiple";
+  fields?: string[];
+  unit?: string;
+  sublabel?: string;
+};
+
 export type StatisticConfig = (
   | SimpleStatisticConfig
   | AggregatedStatisticConfig
   | RawStatisticConfig
+  | MultipleStatisticConfig
 ) & {
   switchDisplayConfig?: StatisticConfig;
 };
@@ -58,11 +66,16 @@ export type ConnectedDotsStatisticsConfig = RawStatisticConfig & {
   value: Record<string, number>;
 };
 
+export type RenderMultipleStatisticConfig = MultipleStatisticConfig & {
+  value: Record<string, number>;
+};
+
 export type RenderingStatisticConfig = (
   | RawStatisticConfig
   | PiechartStatisticsConfig
   | ConnectedDotsStatisticsConfig
   | MapChartStatisticConfig
+  | RenderMultipleStatisticConfig
 ) & {
   switchDisplayConfig?: RenderingStatisticConfig;
 };
@@ -70,6 +83,10 @@ export type RenderingStatisticConfig = (
 export const isRawStatistic = (
   stat: StatisticConfig
 ): stat is RawStatisticConfig => stat.type === "raw";
+
+export const isMultiple = (
+  stat: StatisticConfig
+): stat is MultipleStatisticConfig => stat.type === "multiple";
 
 export const isPiechart = (
   stat: RenderingStatisticConfig
@@ -93,4 +110,5 @@ export type StatisticsBlock<StatType = StatisticConfig> = {
 export type StatisticsGroup<StatType = StatisticConfig> = {
   title: string;
   blocks: StatisticsBlock<StatType>[];
+  date?: string;
 };

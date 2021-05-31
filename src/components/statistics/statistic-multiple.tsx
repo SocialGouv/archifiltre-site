@@ -6,12 +6,12 @@ import Typography from "@material-ui/core/Typography";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import React, { FC, ReactNode } from "react";
 
-import { RawStatisticConfig } from "../../types/statistic-types";
+import { RenderMultipleStatisticConfig } from "../../types/statistic-types";
 import { spaceNumberForAnyValue } from "../../utils/number-util";
 import StatisticTooltip from "./statistic-tooltip";
 
-type StatisticRawProps = {
-  statistic: RawStatisticConfig;
+type StatisticMultipleProps = {
+  statistic: RenderMultipleStatisticConfig;
 };
 
 const THEME_LIGHT = "light";
@@ -26,6 +26,9 @@ const useDataStyle = makeStyles(({ palette: { type } }) => ({
 
 const useLabelStyle = makeStyles({
   root: {
+    "& .label-inner": {
+      display: "table",
+    },
     fontSize: "15px",
     lineHeight: "22px",
     marginTop: "8px",
@@ -36,18 +39,21 @@ const spaceNumber = spaceNumberForAnyValue<ReactNode>({
   minDigits: 5,
 });
 
-const StatisticRaw: FC<StatisticRawProps> = ({ statistic }) => {
+const StatisticsMultiple: FC<StatisticMultipleProps> = ({ statistic }) => {
   return (
     <Box width={1} paddingTop={3}>
       <Typography classes={useDataStyle()} color="textPrimary">
-        {spaceNumber(statistic.value)}{" "}
+        {spaceNumber(statistic.value.firstValue)}{" "}
         {statistic.unit && (
           <Typography component="span">{statistic.unit}</Typography>
         )}
       </Typography>
       <Box display="flex" flexWrap="wrap">
         <Typography classes={useLabelStyle()} color="textSecondary">
-          {statistic.label}{" "}
+          <Typography className="label-inner">{statistic.label}</Typography>
+          <Typography className="label-inner">
+            {statistic.sublabel} {statistic.value.secondValue}{" "}
+          </Typography>
           {statistic.tooltip && (
             <StatisticTooltip tooltip={statistic.tooltip} />
           )}
@@ -57,4 +63,4 @@ const StatisticRaw: FC<StatisticRawProps> = ({ statistic }) => {
   );
 };
 
-export default StatisticRaw;
+export default StatisticsMultiple;
