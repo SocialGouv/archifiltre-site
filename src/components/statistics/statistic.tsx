@@ -2,8 +2,8 @@ import React, { FC } from "react";
 
 import {
   isConnectedDots,
+  isInterpolate,
   isMapChart,
-  isMultiple,
   isPiechart,
   RenderingStatisticConfig,
 } from "../../types/statistic-types";
@@ -29,7 +29,7 @@ const getContent = (statistic: RenderingStatisticConfig) => {
     return <StatisticsConnectedDots statistic={statistic} />;
   }
 
-  if (isMultiple(statistic)) {
+  if (isInterpolate(statistic)) {
     return <StatisticsMultiple statistic={statistic} />;
   }
 

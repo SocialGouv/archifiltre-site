@@ -31,13 +31,14 @@ export type SimpleStatisticConfig = BaseStatisticConfig & {
 export type RawStatisticConfig = BaseStatisticConfig & {
   value: ReactNode;
   type: "raw";
+  sublabel?: string;
   formatting?: Formatting;
   unit?: string;
 };
 
-export type MultipleStatisticConfig = BaseStatisticConfig & {
-  type: "multiple";
-  fields?: string[];
+export type InterpolateStatisticConfig = BaseStatisticConfig & {
+  type: "interpolate";
+  value: string;
   unit?: string;
   sublabel?: string;
 };
@@ -46,7 +47,7 @@ export type StatisticConfig = (
   | SimpleStatisticConfig
   | AggregatedStatisticConfig
   | RawStatisticConfig
-  | MultipleStatisticConfig
+  | InterpolateStatisticConfig
 ) & {
   switchDisplayConfig?: StatisticConfig;
 };
@@ -66,7 +67,7 @@ export type ConnectedDotsStatisticsConfig = RawStatisticConfig & {
   value: Record<string, number>;
 };
 
-export type RenderMultipleStatisticConfig = MultipleStatisticConfig & {
+export type RenderMultipleStatisticConfig = InterpolateStatisticConfig & {
   value: Record<string, number>;
 };
 
@@ -84,9 +85,9 @@ export const isRawStatistic = (
   stat: StatisticConfig
 ): stat is RawStatisticConfig => stat.type === "raw";
 
-export const isMultiple = (
+export const isInterpolate = (
   stat: StatisticConfig
-): stat is MultipleStatisticConfig => stat.type === "multiple";
+): stat is InterpolateStatisticConfig => stat.type === "interpolate";
 
 export const isPiechart = (
   stat: RenderingStatisticConfig

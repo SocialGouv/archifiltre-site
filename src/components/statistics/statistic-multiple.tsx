@@ -1,9 +1,6 @@
 import Box from "@material-ui/core/Box";
-import IconButton from "@material-ui/core/IconButton";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import Tooltip from "@material-ui/core/Tooltip";
 import Typography from "@material-ui/core/Typography";
-import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import React, { FC, ReactNode } from "react";
 
 import { RenderMultipleStatisticConfig } from "../../types/statistic-types";
