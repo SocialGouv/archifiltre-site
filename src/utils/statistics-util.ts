@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/named
-import { keyBy, mapValues, template } from "lodash";
+import { keyBy, mapValues, round, template } from "lodash";
 // eslint-disable-next-line import/named
 import { compose } from "lodash/fp";
 
@@ -15,6 +15,8 @@ import {
   StatisticsBlock,
   StatisticsGroup,
 } from "../types/statistic-types";
+
+const KILO_TO_TONS = 0.001;
 
 const findElementByLabel = (statistics: Statistic[], label: string) => {
   return statistics.find((statistic) => statistic.label === label);
@@ -64,6 +66,11 @@ const formatAggregatedStatistic = (statistic: AggregatedStatisticConfig) => (
 const formatInterpolateData = (data: Statistic[]): Record<string, number> =>
   mapValues(keyBy(data, "label"), ({ value }) => value);
 
+const kiloToTons = (elementToRounded: string): number => {
+  const roundedElement = +elementToRounded * KILO_TO_TONS;
+  return round(+roundedElement, 1);
+};
+
 const formatInterpolateStatistic = (statistic: InterpolateStatisticConfig) => (
   data: Statistic[]
 ): RenderingStatisticConfig => {
@@ -71,7 +78,7 @@ const formatInterpolateStatistic = (statistic: InterpolateStatisticConfig) => (
     ...extractCommonProps(statistic),
     sublabel: template(statistic.sublabel || "")(formatInterpolateData(data)),
     type: "raw",
-    value: template(statistic.value)(formatInterpolateData(data)),
+    value: kiloToTons(template(statistic.value)(formatInterpolateData(data))),
   };
 };
 const formatSimpleStatistic = (statistic: SimpleStatisticConfig) => (
