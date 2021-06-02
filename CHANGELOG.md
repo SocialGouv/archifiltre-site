@@ -1,3 +1,10 @@
+## [1.62.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.62.1...v1.62.2) (2021-06-02)
+
+
+### Bug Fixes
+
+* **ci:** upgrade ([408411b](https://github.com/SocialGouv/archifiltre-site/commit/408411b6321646de1821bf311851c2def14b8d98))
+
 ## [1.62.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.62.0...v1.62.1) (2021-06-02)
 
 
