@@ -1,3 +1,10 @@
+## [1.62.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.62.0...v1.62.1) (2021-06-02)
+
+
+### Bug Fixes
+
+* **docker:** rm legacy image ([c03c46a](https://github.com/SocialGouv/archifiltre-site/commit/c03c46a0cce9d821ebe9e9b39f42473a740bd5b0))
+
 # [1.62.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.61.0...v1.62.0) (2021-05-31)
 
 
