@@ -1,3 +1,10 @@
+# [1.63.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.62.2...v1.63.0) (2021-06-03)
+
+
+### Features
+
+* **stats:** interpolate stats values ([#200](https://github.com/SocialGouv/archifiltre-site/issues/200)) ([e840b5f](https://github.com/SocialGouv/archifiltre-site/commit/e840b5fd15bb39513a6630f4795aa2e0ccb70c3d))
+
 ## [1.62.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.62.1...v1.62.2) (2021-06-02)
 
 
