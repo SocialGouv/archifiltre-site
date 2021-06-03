@@ -1,3 +1,10 @@
+## [1.63.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.63.0...v1.63.1) (2021-06-03)
+
+
+### Bug Fixes
+
+* **stats:** modify ecologic values ([#201](https://github.com/SocialGouv/archifiltre-site/issues/201)) ([316b7ab](https://github.com/SocialGouv/archifiltre-site/commit/316b7ab1243da8411c19955446069dd845519fff))
+
 # [1.63.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.62.2...v1.63.0) (2021-06-03)
 
 
