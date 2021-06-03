@@ -75,7 +75,7 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             label: "",
             sublabel:
-              "Équivalence en feuilles A4 (en millions) : <%= carbonFootprintPaperEquivalence %>",
+              "Équivalence en feuilles A4 : <%= carbonFootprintPaperEquivalence %>",
             tooltip:
               "Données calculées à partir des formules exprimées par le Cyber World CleanUp Day et par monconvertisseurco2.fr",
             type: "interpolate",
