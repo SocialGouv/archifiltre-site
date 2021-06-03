@@ -52,7 +52,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             fields: ["totalDropVolume"],
             label: "de données analysées",
             type: "aggregated",
-            unit: "Go",
+            unit: "To",
           },
         ],
         title: "Total",
@@ -73,16 +73,14 @@ export const statisticsLayout: StatisticsGroup[] = [
         size: 4,
         statistics: [
           {
-            fields: [
-              "carbonFootprintInGrams",
-              "carbonFootprintPaperEquivalence",
-            ],
             label: "",
-            sublabel: "Équivalence en feuilles A4 : ",
+            sublabel:
+              "Équivalence en feuilles A4 (en millions) : <%= carbonFootprintPaperEquivalence %>",
             tooltip:
               "Données calculées à partir des formules exprimées par le Cyber World CleanUp Day et par monconvertisseurco2.fr",
-            type: "multiple",
-            unit: "gCO2e économisés",
+            type: "interpolate",
+            unit: "tonnes CO2eq économisées",
+            value: "<%= carbonFootprintInKilo %>",
           },
         ],
         title: "Donnée écologique",
@@ -112,7 +110,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             label: "de l'outil",
             type: "raw",
             unit: "présentations",
-            value: 101,
+            value: 102,
           },
         ],
         title: "Présentations",
@@ -124,7 +122,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             label: "par une session de présentation",
             type: "raw",
             unit: "personnes touchées",
-            value: 1965,
+            value: 2315,
           },
         ],
         title: "Personnes touchées",
@@ -152,7 +150,7 @@ export const statisticsLayout: StatisticsGroup[] = [
         statistics: [
           {
             field: "visitsCount",
-            label: "sur le site web depuis le 1 janvier 2020",
+            label: "sur le site web",
             type: "simple",
             unit: "visiteurs uniques",
           },

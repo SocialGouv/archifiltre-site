@@ -1,13 +1,13 @@
 // eslint-disable-next-line import/named
-import { groupBy, mapValues, sumBy } from "lodash";
+import { keyBy, mapValues, template } from "lodash";
 // eslint-disable-next-line import/named
 import { compose } from "lodash/fp";
 
 import {
   AggregatedStatisticConfig,
-  isMultiple,
+  InterpolateStatisticConfig,
+  isInterpolate,
   isRawStatistic,
-  MultipleStatisticConfig,
   RenderingStatisticConfig,
   SimpleStatisticConfig,
   Statistic,
@@ -37,21 +37,6 @@ const extractSimpleStatisticProps = (
   configItem: SimpleStatisticConfig
 ) => findValueByLabel(statistics, configItem.field);
 
-const extractMultipleStatisticProps = (
-  statistics: Statistic[],
-  configItem: MultipleStatisticConfig
-) => {
-  const filteredStatistics = statistics.filter((statistic) =>
-    configItem?.fields?.includes(statistic.label)
-  );
-  const groupedByStats = groupBy(filteredStatistics, "label");
-  const mappedValues = mapValues(groupedByStats, (statistic) =>
-    sumBy(statistic, "value")
-  );
-  const [firstValue, secondValue] = Object.values(mappedValues);
-  return { firstValue, secondValue };
-};
-
 const isAggregatedStatistic = (
   configItem: StatisticConfig
 ): configItem is AggregatedStatisticConfig => configItem.type === "aggregated";
@@ -76,14 +61,17 @@ const formatAggregatedStatistic = (statistic: AggregatedStatisticConfig) => (
   value: extractAggregatedStatisticProps(data, statistic),
 });
 
-const formatMultipleStatistic = (statistic: MultipleStatisticConfig) => (
+const formatInterpolateData = (data: Statistic[]): Record<string, number> =>
+  mapValues(keyBy(data, "label"), ({ value }) => value);
+
+const formatInterpolateStatistic = (statistic: InterpolateStatisticConfig) => (
   data: Statistic[]
 ): RenderingStatisticConfig => {
   return {
     ...extractCommonProps(statistic),
-    sublabel: statistic.sublabel,
-    type: "multiple",
-    value: extractMultipleStatisticProps(data, statistic),
+    sublabel: template(statistic.sublabel || "")(formatInterpolateData(data)),
+    type: "raw",
+    value: template(statistic.value)(formatInterpolateData(data)),
   };
 };
 const formatSimpleStatistic = (statistic: SimpleStatisticConfig) => (
@@ -99,8 +87,8 @@ const baseFormatStatistic = (statistic: StatisticConfig) => {
     return formatAggregatedStatistic(statistic);
   }
 
-  if (isMultiple(statistic)) {
-    return formatMultipleStatistic(statistic);
+  if (isInterpolate(statistic)) {
+    return formatInterpolateStatistic(statistic);
   }
   if (isRawStatistic(statistic)) {
     return () => statistic;
