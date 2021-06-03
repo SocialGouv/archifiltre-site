@@ -1,3 +1,10 @@
+## [1.63.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.63.1...v1.63.2) (2021-06-03)
+
+
+### Bug Fixes
+
+* **stats:** remove legend for millions ([#202](https://github.com/SocialGouv/archifiltre-site/issues/202)) ([4f9223c](https://github.com/SocialGouv/archifiltre-site/commit/4f9223cc8990ea80005ac5cf165fcf442175d969))
+
 ## [1.63.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.63.0...v1.63.1) (2021-06-03)
 
 
