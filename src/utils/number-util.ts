@@ -17,21 +17,21 @@ const spaceStart = (data: string): string => {
   return `${data.slice(0, chunkSize)} ${spaceStart(data.slice(chunkSize))}`;
 };
 
-export const spaceNumber = ({ minDigits }: SpaceNumberConfig) => (
-  value: number
-) => {
-  const stringNumber = value.toString();
-  return stringNumber.length < minDigits
-    ? stringNumber
-    : spaceStart(stringNumber);
-};
+export const spaceNumber =
+  ({ minDigits }: SpaceNumberConfig) =>
+  (value: number) => {
+    const stringNumber = value.toString();
+    return stringNumber.length < minDigits
+      ? stringNumber
+      : spaceStart(stringNumber);
+  };
 
-export const spaceNumberForAnyValue = <T>(config: SpaceNumberConfig) => (
-  value: T
-): T | string => {
-  if (!_.isNumber(value)) {
-    return value;
-  }
+export const spaceNumberForAnyValue =
+  <T>(config: SpaceNumberConfig) =>
+  (value: T): T | string => {
+    if (!_.isNumber(value)) {
+      return value;
+    }
 
-  return spaceNumber(config)(value);
-};
+    return spaceNumber(config)(value);
+  };

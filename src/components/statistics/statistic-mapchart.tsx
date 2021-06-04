@@ -18,18 +18,17 @@ const findCountryValue = (
   countryCode: string
 ): number | undefined => countries[countryCode.toLowerCase()];
 
-const getCountryColor = (
-  countries: Record<string, number>,
-  primary: PaletteColor
-) => (geo: any): string => {
-  const countryCode = geo.properties.ISO_A2.toLowerCase();
-  const countryValue = findCountryValue(countries, countryCode);
-  const countryColorGetter = getColorGradient(primary);
-  const maxValue = Math.max(...Object.values(countries));
-  return countryValue
-    ? countryColorGetter(countryValue, maxValue)
-    : DEFAULT_COLOR;
-};
+const getCountryColor =
+  (countries: Record<string, number>, primary: PaletteColor) =>
+  (geo: any): string => {
+    const countryCode = geo.properties.ISO_A2.toLowerCase();
+    const countryValue = findCountryValue(countries, countryCode);
+    const countryColorGetter = getColorGradient(primary);
+    const maxValue = Math.max(...Object.values(countries));
+    return countryValue
+      ? countryColorGetter(countryValue, maxValue)
+      : DEFAULT_COLOR;
+  };
 
 type StatisticMapChartProps = {
   statistic: MapChartStatisticConfig;
