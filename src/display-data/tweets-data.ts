@@ -28,22 +28,19 @@ export const tweetIds = [
 export const homepageTweets = [
   {
     date: "28 avril 2020",
-    text:
-      "Je viens de télécharger @ArchiFiltre et j'ai fait analyser des répertoires. Des arborescences et métadonnées sont apparues dans une visualisation claire. Très chouette !",
+    text: "Je viens de télécharger @ArchiFiltre et j'ai fait analyser des répertoires. Des arborescences et métadonnées sont apparues dans une visualisation claire. Très chouette !",
     url: "https://twitter.com/ItStartsWithARC/status/1255205190015254528",
     username: "@ItStartsWithARC",
   },
   {
     date: "24 avril 2020",
-    text:
-      "Découverte de #ArchiFiltre grâce à un super pote archiviste... Je vois le bout du tunnel et vais enfin me lancer dans le classement des archives électroniques sans peur ! Merci !!!!",
+    text: "Découverte de #ArchiFiltre grâce à un super pote archiviste... Je vois le bout du tunnel et vais enfin me lancer dans le classement des archives électroniques sans peur ! Merci !!!!",
     url: "https://twitter.com/Marumotto93/status/1253683077664182272",
     username: "@Marumotto93",
   },
   {
     date: "19 avril 2018",
-    text:
-      "Très sympa comme outil @ArchiFiltre. Facile à prendre en main. La visualisation est intéressante. On voit bien la profondeur de l'arborescence et on repère facilement les dossiers les plus volumineux. ",
+    text: "Très sympa comme outil @ArchiFiltre. Facile à prendre en main. La visualisation est intéressante. On voit bien la profondeur de l'arborescence et on repère facilement les dossiers les plus volumineux. ",
     url: "https://twitter.com/brullier7/status/986932580250505216",
     username: "@brullier7",
   },

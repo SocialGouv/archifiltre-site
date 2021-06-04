@@ -67,8 +67,7 @@ export const timelineElements: TimelineElement[] = [
   {
     date: "11/2018",
     icon: <SyncIcon />,
-    link:
-      "https://www.programmevitam.fr/ressources/Newsletter/2019_Newsletter%20Vitam_n10_janvier_2019.pdf",
+    link: "https://www.programmevitam.fr/ressources/Newsletter/2019_Newsletter%20Vitam_n10_janvier_2019.pdf",
     title:
       "Première entrée dans Adamant d’un versement traité dans Archifiltre",
   },
@@ -87,8 +86,7 @@ export const timelineElements: TimelineElement[] = [
   {
     date: "04/2019",
     icon: <ForumIcon />,
-    link:
-      "https://forum.archivistes.org/wp-content/uploads/sites/13/2019/03/guide-150319-v3.pdf",
+    link: "https://forum.archivistes.org/wp-content/uploads/sites/13/2019/03/guide-150319-v3.pdf",
     title:
       "Présentation au forum de l’AAF (Association des archivistes français)",
   },
@@ -132,8 +130,7 @@ export const timelineElements: TimelineElement[] = [
   {
     date: "04/2020",
     icon: <MenuBookIcon />,
-    link:
-      "https://www.lemondeinformatique.fr/actualites/lire-vitam-et-archifiltre-entrent-au-sill-referentiel-de-logiciels-libres-de-l-etat-79010.html",
+    link: "https://www.lemondeinformatique.fr/actualites/lire-vitam-et-archifiltre-entrent-au-sill-referentiel-de-logiciels-libres-de-l-etat-79010.html",
     title: (
       <span>
         Article évoquant Archifiltre dans{" "}
@@ -144,8 +141,7 @@ export const timelineElements: TimelineElement[] = [
   {
     date: "06/2020",
     icon: <MenuBookIcon />,
-    link:
-      "https://blog-ica.org/fr/2020/06/13/presentation-darchifiltre-un-outil-libre/",
+    link: "https://blog-ica.org/fr/2020/06/13/presentation-darchifiltre-un-outil-libre/",
     title: "Présentation d’Archifiltre sur le blog de l'ICA",
   },
   {
