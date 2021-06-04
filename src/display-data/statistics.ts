@@ -79,7 +79,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             tooltip:
               "Données calculées à partir des formules exprimées par le Cyber World CleanUp Day et par monconvertisseurco2.fr",
             type: "interpolate",
-            unit: "tonnes CO2eq économisées",
+            unit: "tonnes d'équivalent CO2 économisées",
             value: "<%= carbonFootprintInKilo %>",
           },
         ],
