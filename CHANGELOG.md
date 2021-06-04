@@ -1,3 +1,11 @@
+## [1.63.3](https://github.com/SocialGouv/archifiltre-site/compare/v1.63.2...v1.63.3) (2021-06-04)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#198](https://github.com/SocialGouv/archifiltre-site/issues/198)) ([738fa7a](https://github.com/SocialGouv/archifiltre-site/commit/738fa7a45a35dee9910f2e967245689eb8b2f52b))
+* **stats:** change molecule notations ([#203](https://github.com/SocialGouv/archifiltre-site/issues/203)) ([68d34c3](https://github.com/SocialGouv/archifiltre-site/commit/68d34c3867e3e55957d2a285f956c1a15549809a))
+
 ## [1.63.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.63.1...v1.63.2) (2021-06-03)
 
 
