@@ -1,27 +1,21 @@
 export const currentMembers = [
   {
-    job: "Designer UX/UI",
-    name: "Saniya AL SAADI",
-    photo: "images/team/saniya.jpg",
-    url: "https://www.linkedin.com/in/saniyaas/",
-  },
-  {
     job: "Développeur",
     name: "Clément BERTHOU",
     photo: "images/team/clement.jpg",
     url: "https://www.linkedin.com/in/cberthou/",
   },
   {
+    job: "Archiviste",
+    name: "Pauline CLAUDE",
+    photo: "images/team/pauline.jpeg",
+    url: "https://www.linkedin.com/in/pauline-claude-59622a171/",
+  },
+  {
     job: "Product Manager de la Fabrique",
     name: "Eric HEIJLIGERS",
     photo: "images/team/eric.jpg",
     url: "https://www.linkedin.com/in/eric-heijligers-34522444/",
-  },
-  {
-    job: "Apprentie Archiviste",
-    name: "Jennifer JACQUOT",
-    photo: "images/team/jennifer.jpg",
-    url: "https://www.linkedin.com/in/jennifer-jacquot-026967152/",
   },
   {
     job: "Cheffe du bureau des Archives",
@@ -37,9 +31,9 @@ export const currentMembers = [
   },
   {
     job: "Développeur",
-    name: "Benjamin MORALI",
-    photo: "images/team/benjamin.jpg",
-    url: "https://www.linkedin.com/in/benjamin-morali/",
+    name: "Mehdi LOURAOUI",
+    photo: "images/team/mehdi.jpeg",
+    url: "https://www.linkedin.com/company/archifiltre/",
   },
   {
     job: "Product Owner d’Archifiltre",
@@ -50,6 +44,12 @@ export const currentMembers = [
 ];
 
 export const oldMembers = [
+  {
+    job: "Designer UX/UI",
+    name: "Saniya AL SAADI",
+    photo: "images/team/saniya.jpg",
+    url: "https://www.linkedin.com/in/saniyaas/",
+  },
   {
     job: "Développeur",
     name: "Jean-Baptiste ASSOUAD",
@@ -69,9 +69,21 @@ export const oldMembers = [
     url: "https://www.linkedin.com/in/emmanuelgautierecp/",
   },
   {
+    job: "Apprentie Archiviste",
+    name: "Jennifer JACQUOT",
+    photo: "images/team/jennifer.jpg",
+    url: "https://www.linkedin.com/in/jennifer-jacquot-026967152/",
+  },
+  {
     job: "Designer UX/UI",
     name: "Christophe MAMFOUMBI",
     photo: "images/team/christophe.jpg",
     url: "https://www.linkedin.com/in/christophemamfoumbiphalente/",
+  },
+  {
+    job: "Développeur",
+    name: "Benjamin MORALI",
+    photo: "images/team/benjamin.jpg",
+    url: "https://www.linkedin.com/in/benjamin-morali/",
   },
 ];
