@@ -1,3 +1,16 @@
+# [1.64.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.63.3...v1.64.0) (2021-06-08)
+
+
+### Bug Fixes
+
+* **stats:** arrange layout and add datas ([#206](https://github.com/SocialGouv/archifiltre-site/issues/206)) ([4b34d75](https://github.com/SocialGouv/archifiltre-site/commit/4b34d75817e678f00a44c3e0ab6eccc7e21144ad))
+
+
+### Features
+
+* **stats:** trigger production mode ([#207](https://github.com/SocialGouv/archifiltre-site/issues/207)) ([d4b2b99](https://github.com/SocialGouv/archifiltre-site/commit/d4b2b995a37f349a873a621e7f5d3f8db10a89f6))
+* update team members ([#204](https://github.com/SocialGouv/archifiltre-site/issues/204)) ([9f14115](https://github.com/SocialGouv/archifiltre-site/commit/9f14115cb78ccc857519703539781a75103a0d62))
+
 ## [1.63.3](https://github.com/SocialGouv/archifiltre-site/compare/v1.63.2...v1.63.3) (2021-06-04)
 
 
