@@ -54,7 +54,7 @@ const StatisticsConnectedDots: FC<StatisticsConnectedDotsProps> = ({
   }, [renderedLabels]);
 
   return (
-    <Box>
+    <Box margin="10% 0">
       <Chart data={data} height={100}>
         <EventTracker />
         <ArgumentAxis
