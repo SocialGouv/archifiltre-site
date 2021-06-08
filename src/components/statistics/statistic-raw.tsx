@@ -17,7 +17,7 @@ const useDataStyle = makeStyles(({ palette: { type } }) => ({
   root: {
     color: type === THEME_LIGHT ? "#000" : "#fff",
     fontSize: "30px",
-    lineHeight: "20px",
+    lineHeight: "21px",
     margin: "25px 0",
   },
 }));
