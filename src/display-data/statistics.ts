@@ -4,70 +4,17 @@ export const statisticsLayout: StatisticsGroup[] = [
   {
     blocks: [
       {
-        size: 6,
+        size: 4,
         statistics: [
           {
-            fields: ["appDownload", "download"],
-            label: "toutes versions confondues",
-            switchDisplayConfig: {
-              field: "monthlyDownload",
-              formatting: "connected_dots",
-              label: "",
-              type: "simple",
-            },
-            type: "aggregated",
-            unit: "téléchargements",
-          },
-        ],
-        title: "Téléchargements",
-      },
-      {
-        size: 6,
-        statistics: [
-          {
-            field: "averageMonthlyVisitors",
-            label: "au mois ",
-            switchDisplayConfig: {
-              field: "totalMonthVisitors",
-              formatting: "connected_dots",
-              label: "utilisateurs",
-              type: "simple",
-            },
+            field: "totalMonthVisitors",
+            formatting: "connected_dots",
+            label: "",
             type: "simple",
             unit: "utilisations",
           },
         ],
-        title: "Utilisations",
-      },
-    ],
-    date: "depuis 1er janvier 2020",
-    title: "Usages 🌐",
-  },
-  {
-    blocks: [
-      {
-        size: 4,
-        statistics: [
-          {
-            fields: ["totalDropVolume"],
-            label: "de données analysées",
-            type: "aggregated",
-            unit: "To",
-          },
-        ],
-        title: "Total",
-      },
-      {
-        size: 4,
-        statistics: [
-          {
-            fields: ["totalMarkedToDelete"],
-            label: "de données identifiées « à supprimer »",
-            type: "aggregated",
-            unit: "Go",
-          },
-        ],
-        title: "Gain de stockage",
+        title: "Nombre d'utilisations par mois",
       },
       {
         size: 4,
@@ -77,17 +24,177 @@ export const statisticsLayout: StatisticsGroup[] = [
             sublabel:
               "Équivalence en feuilles A4 : <%= carbonFootprintPaperEquivalence %>",
             tooltip:
-              "Données calculées à partir des formules exprimées par le Cyber World CleanUp Day et par monconvertisseurco2.fr",
+              'Volume cumulé calculé à partir du volume de fichiers tagués "à supprimer". Données calculées à partir des formules exprimées par le Cyber World CleanUp Day et par monconvertisseurco2.fr',
             type: "interpolate",
             unit: "tonnes d'équivalent CO2 économisées",
             value: "<%= carbonFootprintInKilo %>",
           },
         ],
-        title: "Donnée écologique",
+        title: "Economies de CO2 identifiées",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            field: "rating",
+            label: "note donnée par un panel de 150 utilisateurs",
+            tooltip:
+              "En réponse à la question : « Et si vous deviez donner une note à Archifiltre ? »",
+            type: "simple",
+            unit: "sur 5",
+          },
+        ],
+        title: "Note donnée par les utilisateurs",
+      },
+    ],
+    date: "",
+    title: "En résumé 📄",
+  },
+  {
+    blocks: [
+      {
+        size: 4,
+        statistics: [
+          {
+            field: "averageMonthlyVisitors",
+            label: "Nombre moyen à partir des utilisations",
+            tooltip: "",
+            type: "simple",
+            unit: "utilisations par mois",
+          },
+        ],
+        title: "",
+      },
+      {
+        size: 8,
+        statistics: [
+          {
+            field: "totalMonthVisitors",
+            formatting: "connected_dots",
+            label: "toutes versions confondues",
+            type: "simple",
+          },
+        ],
+        title: "Evolution du nombre de utlisations par mois",
+      },
+    ],
+    date: "depuis 1er janvier 2020",
+    title: "Utilisations 🌐",
+  },
+  {
+    blocks: [
+      {
+        size: 4,
+        statistics: [
+          {
+            fields: ["totalDropVolume"],
+            label: "Fichiers bureautiques: tableurs, pdf, multimédia",
+            tooltip:
+              "Volume de fichiers (cumulé) analysés par dépôt dans Archifiltre ",
+            type: "aggregated",
+            unit: "To de fichiers analysés",
+          },
+        ],
+        title: "",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            fields: ["totalMarkedToDelete"],
+            label: "de données identifiées « à supprimer »",
+            tooltip: `Fichiers identifiés par le tag "à supprimer" dans l'interface Archifiltre`,
+            type: "aggregated",
+            unit: "Go de fichiers supprimés",
+          },
+        ],
+        title: "",
+      },
+      {
+        size: 4,
+        statistics: [
+          {
+            label: "",
+            sublabel:
+              "Équivalence en feuilles A4 : <%= carbonFootprintPaperEquivalence %>",
+            tooltip:
+              'Volume cumulé calculé à partir du volume de fichiers tagués "à supprimer". Données calculées à partir des formules exprimées par le Cyber World CleanUp Day et par monconvertisseurco2.fr',
+            type: "interpolate",
+            unit: "tonnes d'équivalent CO2 économisées",
+            value: "<%= carbonFootprintInKilo %>",
+          },
+        ],
+        title: "",
       },
     ],
     date: "depuis le 14 avril 2021",
     title: "Volume de données 🗄️",
+  },
+  {
+    blocks: [
+      {
+        size: 6,
+        statistics: [
+          {
+            field: "rating",
+            label: "Note donnée par un panel de 150 utilisateurs",
+            tooltip:
+              "En réponse à la question : « Et si vous deviez donner une note à Archifiltre ? »",
+            type: "simple",
+            unit: "sur 5",
+          },
+        ],
+        title: "",
+      },
+      {
+        size: 6,
+        statistics: [
+          {
+            field: "recommendation",
+            label:
+              "de recommandation par les utilisateurs/utilisatrices à leurs collègues",
+            tooltip:
+              "Question posée : « A quel point recommanderiez-vous Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10.",
+            type: "simple",
+            unit: "%",
+          },
+        ],
+        title: "",
+      },
+    ],
+    title: "Évaluation ✨",
+  },
+  {
+    blocks: [
+      {
+        size: 4,
+        statistics: [
+          {
+            fields: ["appDownload", "download"],
+            label: "",
+            tooltip:
+              "Archifiltre est un exécutable à télécharger sur le site. Le nombre correspond aux téléchargements cumulés (toutes versions confondues).",
+            type: "aggregated",
+            unit: "téléchargements d'Archifiltre",
+          },
+        ],
+        title: "",
+      },
+      {
+        size: 8,
+        statistics: [
+          {
+            field: "monthlyDownload",
+            formatting: "connected_dots",
+            label: "Evolution du nombre de téléchargements par mois",
+            type: "simple",
+          },
+        ],
+        title: "Evolution du nombre de téléchargements par mois",
+      },
+    ],
+    date: "depuis 1er janvier 2020",
+    title: "Téléchargements 🌐",
   },
   {
     blocks: [
@@ -101,7 +208,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             type: "simple",
           },
         ],
-        title: "Localisation",
+        title: "",
       },
       {
         size: 4,
@@ -113,7 +220,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             value: 102,
           },
         ],
-        title: "Présentations",
+        title: "",
       },
       {
         size: 4,
@@ -125,7 +232,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             value: 2315,
           },
         ],
-        title: "Personnes touchées",
+        title: "",
       },
       {
         size: 4,
@@ -137,7 +244,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             value: 777,
           },
         ],
-        title: "Followers",
+        title: "",
       },
     ],
     date: "depuis le 3 avril 2019",
@@ -155,7 +262,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             unit: "visiteurs uniques",
           },
         ],
-        title: "Site web",
+        title: "",
       },
       {
         size: 4,
@@ -164,7 +271,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             field: "wikiViews",
             label: "en moyenne par mois",
             type: "simple",
-            unit: "vues sur le Wiki",
+            unit: "",
           },
         ],
         title: "Wiki",
@@ -179,43 +286,10 @@ export const statisticsLayout: StatisticsGroup[] = [
             unit: "vues",
           },
         ],
-        title: "Youtube",
+        title: "",
       },
     ],
     date: "depuis le 1er janvier 2020",
     title: "Vues sur les autres canaux 👀",
-  },
-  {
-    blocks: [
-      {
-        size: 6,
-        statistics: [
-          {
-            field: "rating",
-            label: "note donnée par les utilisateurs/utilisatrices, sur 5",
-            tooltip:
-              "Question posée : « Et si vous deviez donner une note à Archifiltre ? » (49 répondants)",
-            type: "simple",
-          },
-        ],
-        title: "note",
-      },
-      {
-        size: 6,
-        statistics: [
-          {
-            field: "recommendation",
-            label:
-              "de recommandation par les utilisateurs/utilisatrices à leurs collègues",
-            tooltip:
-              "Question posée : « A quel point recommanderiez-vous Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10. (49 répondants)",
-            type: "simple",
-            unit: "%",
-          },
-        ],
-        title: "recommandation",
-      },
-    ],
-    title: "Evalutation auprès d'un panel sondé ✨",
   },
 ];

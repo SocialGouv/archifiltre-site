@@ -17,7 +17,7 @@ import {
 } from "../types/statistic-types";
 import { formatStatistics } from "../utils/statistics-util";
 
-const DEFAULT_VISIBLE_BLOCK = 2;
+const DEFAULT_VISIBLE_BLOCK = 1;
 
 const minutesSinceTimestamp = (lastFetchTimestamp: number) => {
   const timeDifference = Date.now() - lastFetchTimestamp;
