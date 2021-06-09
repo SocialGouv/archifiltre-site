@@ -271,7 +271,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             field: "wikiViews",
             label: "en moyenne par mois",
             type: "simple",
-            unit: "",
+            unit: "vues",
           },
         ],
         title: "Wiki",
