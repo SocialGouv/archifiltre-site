@@ -1,3 +1,10 @@
+## [1.64.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.0...v1.64.1) (2021-06-10)
+
+
+### Bug Fixes
+
+* **stats:** add unit to wiki views ([#208](https://github.com/SocialGouv/archifiltre-site/issues/208)) ([adb5be3](https://github.com/SocialGouv/archifiltre-site/commit/adb5be39e5f78c407c92edf2e443c57068a27fed))
+
 # [1.64.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.63.3...v1.64.0) (2021-06-08)
 
 
