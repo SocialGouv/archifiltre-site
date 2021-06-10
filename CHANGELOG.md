@@ -1,3 +1,10 @@
+## [1.64.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.1...v1.64.2) (2021-06-10)
+
+
+### Bug Fixes
+
+* **stats:** change wording stats ([#209](https://github.com/SocialGouv/archifiltre-site/issues/209)) ([05ac6d0](https://github.com/SocialGouv/archifiltre-site/commit/05ac6d0dbba5f0c39311697601c0891ad69d843b))
+
 ## [1.64.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.0...v1.64.1) (2021-06-10)
 
 
