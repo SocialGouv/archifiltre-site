@@ -75,7 +75,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             type: "simple",
           },
         ],
-        title: "Evolution du nombre de utlisations par mois",
+        title: "Evolution du nombre d'utlisations par mois",
       },
     ],
     date: "depuis 1er janvier 2020",
