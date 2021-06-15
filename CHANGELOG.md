@@ -1,3 +1,10 @@
+## [1.64.3](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.2...v1.64.3) (2021-06-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency socialgouv/gitlab-ci-yml to v23 ([#210](https://github.com/SocialGouv/archifiltre-site/issues/210)) ([e6c8c36](https://github.com/SocialGouv/archifiltre-site/commit/e6c8c3654b74f437edf8c1eedbe0c649fc61b303))
+
 ## [1.64.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.1...v1.64.2) (2021-06-10)
 
 
