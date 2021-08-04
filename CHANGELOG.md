@@ -1,3 +1,10 @@
+## [1.64.8](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.7...v1.64.8) (2021-08-04)
+
+
+### Bug Fixes
+
+* **ingress:** rm CSP for stats ([69c916a](https://github.com/SocialGouv/archifiltre-site/commit/69c916aef1819b60d36fa7fcbd203bd4b56e8559))
+
 ## [1.64.7](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.6...v1.64.7) (2021-08-04)
 
 
