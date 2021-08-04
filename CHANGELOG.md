@@ -1,3 +1,10 @@
+## [1.64.6](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.5...v1.64.6) (2021-08-04)
+
+
+### Bug Fixes
+
+* **ingress:** add some security headers ([#216](https://github.com/SocialGouv/archifiltre-site/issues/216)) ([1a86ee4](https://github.com/SocialGouv/archifiltre-site/commit/1a86ee4f8eb699e4a59d28e072952dcf87a4c14e))
+
 ## [1.64.5](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.4...v1.64.5) (2021-07-11)
 
 
