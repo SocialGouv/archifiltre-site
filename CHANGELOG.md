@@ -1,3 +1,10 @@
+## [1.64.7](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.6...v1.64.7) (2021-08-04)
+
+
+### Bug Fixes
+
+* **ingress:** fix ingress annotation ([8c3b9ee](https://github.com/SocialGouv/archifiltre-site/commit/8c3b9ee32491ddabb5fae4246309ee0958d2745d))
+
 ## [1.64.6](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.5...v1.64.6) (2021-08-04)
 
 
