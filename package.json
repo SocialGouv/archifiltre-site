@@ -50,7 +50,7 @@
     "react-use": "^17.2.4"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.171",
+    "@types/lodash": "^4.14.172",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
