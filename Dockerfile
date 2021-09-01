@@ -1,3 +1,16 @@
-FROM ghcr.io/socialgouv/docker/nginx4spa:6.17.0
+FROM node:14-alpine as builder
 
-COPY ./public /usr/share/nginx/html
+COPY . .
+
+RUN apk add automake autoconf libtool dpkg pkgconfig nasm libpng libpng-dev g++ make
+
+RUN yarn --frozen-lockfile --prefer-offline && yarn cache clean
+RUN yarn build
+
+FROM ghcr.io/socialgouv/docker/nginx4spa:6.24.0
+
+COPY --from=builder ./public /usr/share/nginx/html
+
+# FROM ghcr.io/socialgouv/docker/nginx4spa:6.17.0
+
+# COPY ./public /usr/share/nginx/html

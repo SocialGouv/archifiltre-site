@@ -2,6 +2,8 @@
   "type": "static",
   "name": "archifiltre-site",
   "subdomain": "archifiltre",
+  "project": "archifiltre",
+  "registry": "ghcr",
   "ingress": {
     "annotations": {}
   }
