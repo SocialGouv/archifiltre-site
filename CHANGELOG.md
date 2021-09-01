@@ -1,3 +1,10 @@
+## [1.64.9](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.8...v1.64.9) (2021-09-01)
+
+
+### Bug Fixes
+
+* Use autodevops actions. ([#224](https://github.com/SocialGouv/archifiltre-site/issues/224)) ([9197ad7](https://github.com/SocialGouv/archifiltre-site/commit/9197ad7bdd5a69bcb61ca5a09a589194af2e415d))
+
 ## [1.64.9-alpha.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.9-alpha.1...v1.64.9-alpha.2) (2021-09-01)
 
 
