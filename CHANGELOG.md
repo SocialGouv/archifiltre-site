@@ -1,3 +1,10 @@
+## [1.64.10](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.9...v1.64.10) (2021-09-05)
+
+
+### Bug Fixes
+
+* **deps:** update all dependencies ([#225](https://github.com/SocialGouv/archifiltre-site/issues/225)) ([c361e09](https://github.com/SocialGouv/archifiltre-site/commit/c361e09ffc718307772dcda55b131cd204099207))
+
 ## [1.64.9](https://github.com/SocialGouv/archifiltre-site/compare/v1.64.8...v1.64.9) (2021-09-01)
 
 
