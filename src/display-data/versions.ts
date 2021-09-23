@@ -2,6 +2,49 @@ import { OS } from "../utils/os-util";
 
 export default [
   {
+    date: "22/09/2021",
+    name: "Romantic Raccoon",
+    number: "3.2.2",
+    platforms: [
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-win64.sha512",
+        id: OS.WIN64,
+        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2.exe",
+      },
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-win32.sha512",
+        id: OS.WIN32,
+        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2-32bit.exe",
+      },
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-linux.sha512",
+        id: OS.LINUX,
+        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2.AppImage",
+      },
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-mac.sha512",
+        id: OS.MAC,
+        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2.dmg",
+      },
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-win64-msi.sha512",
+        id: OS.MSI64,
+        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2.msi",
+      },
+      {
+        hashUrl:
+          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-win32-msi.sha512",
+        id: OS.MSI32,
+        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2-32bit.msi",
+      },
+    ],
+  },
+  {
     date: "19/04/2021",
     name: "Romantic Raccoon",
     number: "3.2.1",
