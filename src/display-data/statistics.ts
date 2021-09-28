@@ -24,7 +24,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             sublabel:
               "Équivalence en feuilles A4 : <%= carbonFootprintPaperEquivalence %>",
             tooltip:
-              'Volume cumulé calculé à partir du volume de fichiers tagués "à supprimer". Données calculées à partir des formules exprimées par le Cyber World CleanUp Day et par monconvertisseurco2.fr',
+              'Volume cumulé calculé à partir du volume de fichiers tagués "à supprimer". Données calculées à partir des formules exprimées par le Cyber World CleanUp Day et par monconvertisseurco2.fr.',
             type: "interpolate",
             unit: "tonnes d'équivalent CO2 économisées",
             value: "<%= carbonFootprintInKilo %>",
