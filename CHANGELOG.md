@@ -1,3 +1,10 @@
+## [1.65.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.65.1...v1.65.2) (2021-09-28)
+
+
+### Bug Fixes
+
+* **stats:** fetch fixed stats ([#231](https://github.com/SocialGouv/archifiltre-site/issues/231)) ([efd876f](https://github.com/SocialGouv/archifiltre-site/commit/efd876f23613b31154b285565d72052cf5542b26))
+
 ## [1.65.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.65.0...v1.65.1) (2021-09-27)
 
 
