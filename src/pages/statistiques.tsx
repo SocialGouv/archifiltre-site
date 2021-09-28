@@ -24,6 +24,11 @@ const minutesSinceTimestamp = (lastFetchTimestamp: number) => {
   return Math.floor(timeDifference / (60 * 1000));
 };
 
+const getStat = async (slug: string) =>
+  await axios
+    .get(`${process.env.STATISTICS_URL}/${slug}`)
+    .then(({ data }) => data);
+
 const Statistiques = () => {
   const [statistics, setStatistics] = useState<
     StatisticsGroupType<RenderingStatisticConfig>[]
@@ -35,12 +40,16 @@ const Statistiques = () => {
   useEffect(() => {
     const fetchStatistics = async () => {
       setIsLoading(true);
-      const fetchedStatistics = await axios
-        .get(`${process.env.STATISTICS_URL}/statistics`)
-        .then(({ data }) => data);
-      const sanitizedStatistics = formatStatistics(statisticsLayout)(
-        fetchedStatistics.result
-      );
+      const fetchedStatistics = await getStat("statistics");
+      const fetchedFixedStatistics = await getStat("statistics-fix");
+      const cumulatedStatistics = [
+        ...fetchedStatistics.result,
+        ...fetchedFixedStatistics.result,
+      ];
+
+      const sanitizedStatistics =
+        formatStatistics(statisticsLayout)(cumulatedStatistics);
+
       setLastFetchTimestamp(fetchedStatistics.lastFetchTimestamp);
       setStatistics(sanitizedStatistics);
       setIsLoading(false);
