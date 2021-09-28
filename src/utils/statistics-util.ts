@@ -55,13 +55,13 @@ const extractCommonProps = ({
   unit,
 });
 
-const formatAggregatedStatistic = (statistic: AggregatedStatisticConfig) => (
-  data: Statistic[]
-): RenderingStatisticConfig => ({
-  ...extractCommonProps(statistic),
-  type: "raw",
-  value: extractAggregatedStatisticProps(data, statistic),
-});
+const formatAggregatedStatistic =
+  (statistic: AggregatedStatisticConfig) =>
+  (data: Statistic[]): RenderingStatisticConfig => ({
+    ...extractCommonProps(statistic),
+    type: "raw",
+    value: extractAggregatedStatisticProps(data, statistic),
+  });
 
 const formatInterpolateData = (data: Statistic[]): Record<string, number> =>
   mapValues(keyBy(data, "label"), ({ value }) => value);
@@ -71,23 +71,23 @@ const kiloToTons = (elementToRounded: string): number => {
   return round(+roundedElement, 1);
 };
 
-const formatInterpolateStatistic = (statistic: InterpolateStatisticConfig) => (
-  data: Statistic[]
-): RenderingStatisticConfig => {
-  return {
-    ...extractCommonProps(statistic),
-    sublabel: template(statistic.sublabel || "")(formatInterpolateData(data)),
-    type: "raw",
-    value: kiloToTons(template(statistic.value)(formatInterpolateData(data))),
+const formatInterpolateStatistic =
+  (statistic: InterpolateStatisticConfig) =>
+  (data: Statistic[]): RenderingStatisticConfig => {
+    return {
+      ...extractCommonProps(statistic),
+      sublabel: template(statistic.sublabel || "")(formatInterpolateData(data)),
+      type: "raw",
+      value: kiloToTons(template(statistic.value)(formatInterpolateData(data))),
+    };
   };
-};
-const formatSimpleStatistic = (statistic: SimpleStatisticConfig) => (
-  data: Statistic[]
-): RenderingStatisticConfig => ({
-  ...extractCommonProps(statistic),
-  type: "raw",
-  value: extractSimpleStatisticProps(data, statistic),
-});
+const formatSimpleStatistic =
+  (statistic: SimpleStatisticConfig) =>
+  (data: Statistic[]): RenderingStatisticConfig => ({
+    ...extractCommonProps(statistic),
+    type: "raw",
+    value: extractSimpleStatisticProps(data, statistic),
+  });
 
 const baseFormatStatistic = (statistic: StatisticConfig) => {
   if (isAggregatedStatistic(statistic)) {
@@ -104,34 +104,34 @@ const baseFormatStatistic = (statistic: StatisticConfig) => {
   return formatSimpleStatistic(statistic);
 };
 
-const formatStatistic = (statistic: StatisticConfig) => (
-  data: Statistic[]
-): RenderingStatisticConfig => {
-  return {
-    ...baseFormatStatistic(statistic)(data),
-    switchDisplayConfig: statistic.switchDisplayConfig
-      ? formatStatistic(statistic.switchDisplayConfig)(data)
-      : undefined,
+const formatStatistic =
+  (statistic: StatisticConfig) =>
+  (data: Statistic[]): RenderingStatisticConfig => {
+    return {
+      ...baseFormatStatistic(statistic)(data),
+      switchDisplayConfig: statistic.switchDisplayConfig
+        ? formatStatistic(statistic.switchDisplayConfig)(data)
+        : undefined,
+    };
   };
-};
 
-const formatBlock = (block: StatisticsBlock) => (
-  data: Statistic[]
-): StatisticsBlock<RenderingStatisticConfig> => ({
-  size: block.size,
-  statistics: block.statistics.map((stat) => formatStatistic(stat)(data)),
-  title: block.title,
-});
+const formatBlock =
+  (block: StatisticsBlock) =>
+  (data: Statistic[]): StatisticsBlock<RenderingStatisticConfig> => ({
+    size: block.size,
+    statistics: block.statistics.map((stat) => formatStatistic(stat)(data)),
+    title: block.title,
+  });
 
-const formatGroup = (group: StatisticsGroup) => (
-  data: Statistic[]
-): StatisticsGroup<RenderingStatisticConfig> => ({
-  blocks: group.blocks.map((block) => formatBlock(block)(data)),
-  date: group.date,
-  title: group.title,
-});
+const formatGroup =
+  (group: StatisticsGroup) =>
+  (data: Statistic[]): StatisticsGroup<RenderingStatisticConfig> => ({
+    blocks: group.blocks.map((block) => formatBlock(block)(data)),
+    date: group.date,
+    title: group.title,
+  });
 
-export const formatStatistics = (statisticsLayout: StatisticsGroup[]) => (
-  data: Statistic[]
-): StatisticsGroup<RenderingStatisticConfig>[] =>
-  statisticsLayout.map((group) => formatGroup(group)(data));
+export const formatStatistics =
+  (statisticsLayout: StatisticsGroup[]) =>
+  (data: Statistic[]): StatisticsGroup<RenderingStatisticConfig>[] =>
+    statisticsLayout.map((group) => formatGroup(group)(data));
