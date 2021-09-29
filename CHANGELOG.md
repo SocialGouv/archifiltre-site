@@ -1,3 +1,11 @@
+## [1.65.3](https://github.com/SocialGouv/archifiltre-site/compare/v1.65.2...v1.65.3) (2021-09-29)
+
+
+### Bug Fixes
+
+* **ci:** actions ([#232](https://github.com/SocialGouv/archifiltre-site/issues/232)) ([7549014](https://github.com/SocialGouv/archifiltre-site/commit/7549014ea7918b278a33de98ce5e6d5070bbf914))
+* use regular nginx ([#230](https://github.com/SocialGouv/archifiltre-site/issues/230)) ([057008b](https://github.com/SocialGouv/archifiltre-site/commit/057008b8be01dca11080fbd1313e6bee8cc7e046))
+
 ## [1.65.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.65.1...v1.65.2) (2021-09-28)
 
 
