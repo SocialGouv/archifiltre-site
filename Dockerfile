@@ -7,6 +7,6 @@ RUN apk add automake autoconf libtool dpkg pkgconfig nasm libpng libpng-dev g++ 
 RUN yarn --frozen-lockfile --prefer-offline && yarn cache clean
 RUN yarn build
 
-FROM ghcr.io/socialgouv/docker/nginx:6.53.1
+FROM ghcr.io/socialgouv/docker/nginx:6.53.2
 
 COPY --from=builder ./public /usr/share/nginx/html
