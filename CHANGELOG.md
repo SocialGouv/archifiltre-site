@@ -1,3 +1,10 @@
+## [1.65.5](https://github.com/SocialGouv/archifiltre-site/compare/v1.65.4...v1.65.5) (2021-10-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-material-ui to v4 ([#236](https://github.com/SocialGouv/archifiltre-site/issues/236)) ([f952c38](https://github.com/SocialGouv/archifiltre-site/commit/f952c3849ed940d6da8ec1509bd0e9983d772e98))
+
 ## [1.65.4](https://github.com/SocialGouv/archifiltre-site/compare/v1.65.3...v1.65.4) (2021-10-11)
 
 
