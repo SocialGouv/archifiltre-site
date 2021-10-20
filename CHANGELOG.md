@@ -1,3 +1,10 @@
+## [1.65.6](https://github.com/SocialGouv/archifiltre-site/compare/v1.65.5...v1.65.6) (2021-10-20)
+
+
+### Bug Fixes
+
+* **renavate:** Fix deps and renovate overdoing his job ([dcf0e65](https://github.com/SocialGouv/archifiltre-site/commit/dcf0e65ca1fc49e468a72b2aa762516b3c652657))
+
 ## [1.65.5](https://github.com/SocialGouv/archifiltre-site/compare/v1.65.4...v1.65.5) (2021-10-15)
 
 
