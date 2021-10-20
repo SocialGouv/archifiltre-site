@@ -1,3 +1,14 @@
 {
-  "extends": ["github>SocialGouv/renovate-config:light"]
+  "extends": [
+    "github>SocialGouv/renovate-config:light"
+  ],
+  "updatePinnedDependencies": false,
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "gatsby-plugin-material-ui"
+      ],
+      "allowedVersions": "<4"
+    }
+  ]
 }
