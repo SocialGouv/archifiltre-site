@@ -35,7 +35,7 @@
     "gatsby-plugin-mdx": "^2.14.0",
     "gatsby-plugin-offline": "latest",
     "gatsby-plugin-react-helmet": "latest",
-    "gatsby-plugin-sharp": "^3.14.2",
+    "gatsby-plugin-sharp": "^3.14.3",
     "gatsby-plugin-typescript": "latest",
     "gatsby-remark-autolink-headers": "^4.11.0",
     "gatsby-source-filesystem": "^3.14.0",
