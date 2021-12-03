@@ -1,3 +1,10 @@
+# [1.66.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.65.8...v1.66.0) (2021-12-03)
+
+
+### Features
+
+* GDPR ([#248](https://github.com/SocialGouv/archifiltre-site/issues/248)) ([fbe685e](https://github.com/SocialGouv/archifiltre-site/commit/fbe685e1a0d69972e78b2bbdcc9a41e2ebd4212c))
+
 ## [1.65.8](https://github.com/SocialGouv/archifiltre-site/compare/v1.65.7...v1.65.8) (2021-11-08)
 
 
