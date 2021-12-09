@@ -2152,10 +2152,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/lodash@^4.14.176", "@types/lodash@^4.14.92":
-  version "4.14.176"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.176.tgz#641150fc1cda36fbfa329de603bbb175d7ee20c0"
-  integrity sha512-xZmuPTa3rlZoIbtDUyJKZQimJV3bxCmzMIO2c9Pz9afyDro6kr7R79GwcB6mRhuoPmV2p1Vb66WOJH7F886WKQ==
+"@types/lodash@^4.14.178", "@types/lodash@^4.14.92":
+  version "4.14.178"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.178.tgz#341f6d2247db528d4a13ddbb374bcdc80406f4f8"
+  integrity sha512-0d5Wd09ItQWH1qFbEyQ7oTQ3GZrMfth5JkbN3EvTKLXcHLRDSXeLnlvlOn0wvxVIwK5o2M8JzP/OWz7T3NRsbw==
 
 "@types/mdast@^3.0.0", "@types/mdast@^3.0.3":
   version "3.0.3"
@@ -6285,10 +6285,10 @@ gatsby-worker@^0.5.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^3.14.5:
-  version "3.14.5"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-3.14.5.tgz#917dfa512f83ec3feddca2f68b236ab70eeb8df7"
-  integrity sha512-j1Dvm6iIlUcfYXXNKZWULanOF7UI/01uRMbIBP10iqjJClv+ZbqnFnkwQKvFwLaC88h6jPcEIbR7kZFTqbfbZQ==
+gatsby@^3.14.6:
+  version "3.14.6"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-3.14.6.tgz#b05769f27ccccaf90c7c5b483a7d11bf74f45101"
+  integrity sha512-H9IOoqkyzu0gEDzLUcm7pGSgwJbR338z+fjp4NsLlE4DkkA2T4H6nWRXLYoDwtNC+X2wfWSrwX8ui2wosAmQOQ==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
@@ -11614,10 +11614,10 @@ source-map-resolve@^0.5.0:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
-source-map-support@^0.5.17, source-map-support@^0.5.19, source-map-support@^0.5.20, source-map-support@~0.5.19:
-  version "0.5.20"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.20.tgz#12166089f8f5e5e8c56926b377633392dd2cb6c9"
-  integrity sha512-n1lZZ8Ve4ksRqizaBQgxXDgKwttHDhyfQjA6YZZn8+AroHbsIz+JjwxQDxbp+7y5OYCI8t1Yk7etjD9CRd2hIw==
+source-map-support@^0.5.17, source-map-support@^0.5.19, source-map-support@^0.5.21, source-map-support@~0.5.19:
+  version "0.5.21"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.21.tgz#04fe7c7f9e1ed2d662233c28cb2b35b9f63f6e4f"
+  integrity sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
