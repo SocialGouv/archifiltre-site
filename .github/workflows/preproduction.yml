@@ -7,7 +7,7 @@ on:
 
 concurrency:
   cancel-in-progress: true
-  group: preprod-${{ github.ref }}
+  group: preproduction
 
 jobs:
 
