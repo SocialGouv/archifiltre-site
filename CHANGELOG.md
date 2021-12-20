@@ -1,3 +1,10 @@
+## [1.66.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.66.0...v1.66.1) (2021-12-20)
+
+
+### Bug Fixes
+
+* **ci:** add preprod workflow ([#253](https://github.com/SocialGouv/archifiltre-site/issues/253)) ([36e4ebe](https://github.com/SocialGouv/archifiltre-site/commit/36e4ebe2e528f424bffc31800b73bedc8a7c5ec3))
+
 # [1.66.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.65.8...v1.66.0) (2021-12-03)
 
 
