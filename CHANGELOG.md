@@ -1,3 +1,10 @@
+## [1.66.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.66.1...v1.66.2) (2022-01-04)
+
+
+### Bug Fixes
+
+* **secu:** use non-root container ([#254](https://github.com/SocialGouv/archifiltre-site/issues/254)) ([1f04a50](https://github.com/SocialGouv/archifiltre-site/commit/1f04a5097fd26e846f5242a19276dd18ed6aecd8))
+
 ## [1.66.1](https://github.com/SocialGouv/archifiltre-site/compare/v1.66.0...v1.66.1) (2021-12-20)
 
 
