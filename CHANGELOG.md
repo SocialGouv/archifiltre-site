@@ -1,3 +1,10 @@
+## [1.66.3](https://github.com/SocialGouv/archifiltre-site/compare/v1.66.2...v1.66.3) (2022-01-05)
+
+
+### Bug Fixes
+
+* add mention accessibilité ([#255](https://github.com/SocialGouv/archifiltre-site/issues/255)) ([5b339e2](https://github.com/SocialGouv/archifiltre-site/commit/5b339e2f75bfcc9d8497a7dd5e76adc4b1bd1b33))
+
 ## [1.66.2](https://github.com/SocialGouv/archifiltre-site/compare/v1.66.1...v1.66.2) (2022-01-04)
 
 
