@@ -64,6 +64,11 @@ const Footer: FC = () => {
               Statistiques
             </Link>
           </Grid>
+          <Grid item>
+            <Link component={GatsbyLink} to="#" color="primary">
+              Accessiblité : non conforme
+            </Link>
+          </Grid>
         </Grid>
         <Grid
           container
