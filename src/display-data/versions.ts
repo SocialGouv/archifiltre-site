@@ -8,39 +8,39 @@ export default [
     platforms: [
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-win64.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-win64.sha512",
         id: OS.WIN64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-3.2.2.exe",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-win32.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-win32.sha512",
         id: OS.WIN32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2-32bit.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-3.2.2-32bit.exe",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-linux.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-linux.sha512",
         id: OS.LINUX,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2.AppImage",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-3.2.2.AppImage",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-mac.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-mac.sha512",
         id: OS.MAC,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2.dmg",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-3.2.2.dmg",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-win64-msi.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-win64-msi.sha512",
         id: OS.MSI64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2.msi",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-3.2.2.msi",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-win32-msi.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-win32-msi.sha512",
         id: OS.MSI32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.2/archifiltre-3.2.2-32bit.msi",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.2/archifiltre-3.2.2-32bit.msi",
       },
     ],
   },
@@ -51,39 +51,39 @@ export default [
     platforms: [
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-win64.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-win64.sha512",
         id: OS.WIN64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-3.2.1.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-3.2.1.exe",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-win32.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-win32.sha512",
         id: OS.WIN32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-3.2.1-32bit.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-3.2.1-32bit.exe",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-linux.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-linux.sha512",
         id: OS.LINUX,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-3.2.1.AppImage",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-3.2.1.AppImage",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-mac.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-mac.sha512",
         id: OS.MAC,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-3.2.1.dmg",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-3.2.1.dmg",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-win64-msi.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-win64-msi.sha512",
         id: OS.MSI64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-3.2.1.msi",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-3.2.1.msi",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-win32-msi.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-win32-msi.sha512",
         id: OS.MSI32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.1/archifiltre-3.2.1-32bit.msi",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.1/archifiltre-3.2.1-32bit.msi",
       },
     ],
   },
@@ -94,39 +94,39 @@ export default [
     platforms: [
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-win64.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-win64.sha512",
         id: OS.WIN64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-3.2.0.exe",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-win32.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-win32.sha512",
         id: OS.WIN32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0-32bit.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-3.2.0-32bit.exe",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-linux.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-linux.sha512",
         id: OS.LINUX,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0.AppImage",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-3.2.0.AppImage",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-mac.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-mac.sha512",
         id: OS.MAC,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0.dmg",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-3.2.0.dmg",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-win64-msi.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-win64-msi.sha512",
         id: OS.MSI64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0.msi",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-3.2.0.msi",
       },
       {
         hashUrl:
-          "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-win32-msi.sha512",
+          "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-win32-msi.sha512",
         id: OS.MSI32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.2.0/archifiltre-3.2.0-32bit.msi",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.2.0/archifiltre-3.2.0-32bit.msi",
       },
     ],
   },
@@ -137,27 +137,27 @@ export default [
     platforms: [
       {
         id: OS.WIN64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.1/archifiltre-3.1.1.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.1/archifiltre-3.1.1.exe",
       },
       {
         id: OS.WIN32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.1/archifiltre-3.1.1-32bit.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.1/archifiltre-3.1.1-32bit.exe",
       },
       {
         id: OS.LINUX,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.1/archifiltre-3.1.1.AppImage",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.1/archifiltre-3.1.1.AppImage",
       },
       {
         id: OS.MAC,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.1/archifiltre-3.1.1.dmg",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.1/archifiltre-3.1.1.dmg",
       },
       {
         id: OS.MSI64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.1/archifiltre-3.1.1.msi",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.1/archifiltre-3.1.1.msi",
       },
       {
         id: OS.MSI32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.1/archifiltre-3.1.1-32bit.msi",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.1/archifiltre-3.1.1-32bit.msi",
       },
     ],
   },
@@ -168,27 +168,27 @@ export default [
     platforms: [
       {
         id: OS.WIN64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.0.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.0/archifiltre-3.1.0.exe",
       },
       {
         id: OS.WIN32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.0-32bit.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.0/archifiltre-3.1.0-32bit.exe",
       },
       {
         id: OS.LINUX,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.0.AppImage",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.0/archifiltre-3.1.0.AppImage",
       },
       {
         id: OS.MAC,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.0.dmg",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.0/archifiltre-3.1.0.dmg",
       },
       {
         id: OS.MSI64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.0.msi",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.0/archifiltre-3.1.0.msi",
       },
       {
         id: OS.MSI32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.1.0/archifiltre-3.1.0-32bit.msi",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.1.0/archifiltre-3.1.0-32bit.msi",
       },
     ],
   },
@@ -199,19 +199,19 @@ export default [
     platforms: [
       {
         id: OS.WIN64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.0.0/archifiltre.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.0.0/archifiltre.exe",
       },
       {
         id: OS.WIN32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.0.0/archifiltre-32bit.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.0.0/archifiltre-32bit.exe",
       },
       {
         id: OS.LINUX,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.0.0/archifiltre.tar.gz",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.0.0/archifiltre.tar.gz",
       },
       {
         id: OS.MAC,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v3.0.0/archifiltre.dmg",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v3.0.0/archifiltre.dmg",
       },
     ],
   },
@@ -222,19 +222,19 @@ export default [
     platforms: [
       {
         id: OS.WIN64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v2.1.1/archifiltre.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v2.1.1/archifiltre.exe",
       },
       {
         id: OS.WIN32,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v2.1.1/archifiltre-32bit.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v2.1.1/archifiltre-32bit.exe",
       },
       {
         id: OS.LINUX,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v2.1.1/archifiltre.tar.gz",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v2.1.1/archifiltre.tar.gz",
       },
       {
         id: OS.MAC,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v2.1.1/archifiltre.dmg",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v2.1.1/archifiltre.dmg",
       },
     ],
   },
@@ -245,15 +245,15 @@ export default [
     platforms: [
       {
         id: OS.WIN64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v2.1.0/archifiltre.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v2.1.0/archifiltre.exe",
       },
       {
         id: OS.LINUX,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v2.1.0/archifiltre.tar.gz",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v2.1.0/archifiltre.tar.gz",
       },
       {
         id: OS.MAC,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v2.1.0/archifiltre.dmg",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v2.1.0/archifiltre.dmg",
       },
     ],
   },
@@ -264,15 +264,15 @@ export default [
     platforms: [
       {
         id: OS.WIN64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v2.0.0/archifiltre.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v2.0.0/archifiltre.exe",
       },
       {
         id: OS.LINUX,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v2.0.0/archifiltre.tar.gz",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v2.0.0/archifiltre.tar.gz",
       },
       {
         id: OS.MAC,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v2.0.0/archifiltre.dmg",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v2.0.0/archifiltre.dmg",
       },
     ],
   },
@@ -283,15 +283,15 @@ export default [
     platforms: [
       {
         id: OS.WIN64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v13.1/archifiltre.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v13.1/archifiltre.exe",
       },
       {
         id: OS.LINUX,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v13.1/archifiltre.tar.gz",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v13.1/archifiltre.tar.gz",
       },
       {
         id: OS.MAC,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v13.1/archifiltre.dmg",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v13.1/archifiltre.dmg",
       },
     ],
   },
@@ -302,11 +302,11 @@ export default [
     platforms: [
       {
         id: OS.WIN64,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v13/archifiltre.exe",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v13/archifiltre.exe",
       },
       {
         id: OS.LINUX,
-        url: "https://github.com/SocialGouv/archifiltre/releases/download/v13/archifiltre.tar.gz",
+        url: "https://github.com/SocialGouv/archifiltre-docs/releases/download/v13/archifiltre.tar.gz",
       },
     ],
   },

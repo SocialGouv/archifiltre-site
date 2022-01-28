@@ -53,7 +53,7 @@ const IndexPage: FC = () => {
       <Box p={3} pb={6} textAlign="center">
         <Box p={3} pb={6}>
           <Typography variant="h4" component="h2" color="textPrimary">
-            Ce qu&rsquo;Archifiltre permet
+            Ce que Docs par Archifiltre permet
           </Typography>
         </Box>
         <Presentation />
@@ -63,7 +63,7 @@ const IndexPage: FC = () => {
               color="primary"
               target="_blank"
               rel="noopener"
-              href="https://github.com/SocialGouv/archifiltre/wiki/Wiki-Archifiltre"
+              href="https://github.com/SocialGouv/archifiltre-docs/wiki/Wiki-Archifiltre"
               endIcon={<ArrowForwardIcon />}
             >
               Documentation

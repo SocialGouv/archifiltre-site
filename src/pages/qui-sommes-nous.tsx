@@ -34,12 +34,12 @@ const Downloads: FC = () => {
       </Box>
       <Box textAlign="center">
         <Typography variant="body1">
-          Le produit Archifiltre est développé au sein d&rsquo;une start-up
-          d&rsquo;Etat faisant partie de la Fabrique numérique des ministères
-          sociaux. L&rsquo;équipe associe les archivistes des ministères sociaux
-          et des profils techniques complémentaires (Développeur, UX designer,
-          Product Manager, etc) pour développer un outil avec les méthodes
-          agiles en co-construction permanente avec ses utilisateur·trice·s.
+          Les produits Archifiltre sont développés au sein d’une start-up d’Etat
+          faisant partie de la Fabrique Numérique des Ministères Sociaux.
+          L’équipe associe les archivistes des Ministères Sociaux et des profils
+          techniques complémentaires (Développeurs, UX designers, Product
+          Managers, etc.) pour développer un outil avec les méthodes agiles en
+          co-construction permanente avec ses utilisateur·trice·s.
         </Typography>
         <Box p={2}>
           <Button
