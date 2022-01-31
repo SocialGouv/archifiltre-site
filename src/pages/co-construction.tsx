@@ -78,7 +78,7 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
           <p>
             Un Openlab est un <strong>moment d’échanges</strong>, le temps d’une
             journée ou d’un atelier, entre l’équipe projet Archifiltre et les
-            utilisateur·trice·s, à propos des outil Archifiltre. Durant cet
+            utilisateur·trice·s, à propos des outils Archifiltre. Durant cet
             openlab, des ateliers de co-construction ont lieu afin de discuter
             des fonctionnalités et de l’interface de l’outil, des attentes des
             utilisateur·trice·s et des cas d’usage rencontrés. Quelques exemples
