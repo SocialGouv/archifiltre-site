@@ -62,7 +62,7 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
         </Typography>
       </Box>
       <Box pb={5}>
-        La suite Archifiltre sont des produits développés en amélioration
+        Les logiciels de la suite Archifiltre sont des produits développés en amélioration
         continue. Les choix de développement sont basés sur les retours et
         besoins formulés par les utilisateur·trice·s lors des openlabs ou auprès
         des ambassadeur·drice·s Archifiltre.
