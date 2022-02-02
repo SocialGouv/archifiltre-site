@@ -90,7 +90,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             fields: ["totalDropVolume"],
             label: "Fichiers bureautiques: tableurs, pdf, multimédia",
             tooltip:
-              "Volume de fichiers (cumulé) analysés par dépôt dans Archifiltre ",
+              "Volume de fichiers (cumulé) analysés par dépôt dans Docs par Archifiltre ",
             type: "aggregated",
             unit: "To de fichiers analysés",
           },
@@ -103,7 +103,7 @@ export const statisticsLayout: StatisticsGroup[] = [
           {
             fields: ["totalMarkedToDelete"],
             label: "de données identifiées « à supprimer »",
-            tooltip: `Fichiers identifiés par le tag "à supprimer" dans l'interface Archifiltre`,
+            tooltip: `Fichiers identifiés par le tag "à supprimer" dans l'interface Docs par Archifiltre`,
             type: "aggregated",
             unit: "Go de fichiers supprimés",
           },
@@ -139,7 +139,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             field: "rating",
             label: "Note donnée par un panel de 150 utilisateurs",
             tooltip:
-              "En réponse à la question : « Et si vous deviez donner une note à Archifiltre ? »",
+              "En réponse à la question : « Et si vous deviez donner une note à Docs par Archifiltre ? »",
             type: "simple",
             unit: "sur 5",
           },
@@ -154,7 +154,7 @@ export const statisticsLayout: StatisticsGroup[] = [
             label:
               "de recommandation par les utilisateurs/utilisatrices à leurs collègues",
             tooltip:
-              "Question posée : « A quel point recommanderiez-vous Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10.",
+              "Question posée : « A quel point recommanderiez-vous Docs par Archifiltre à des collègues ? » Réponse sur une échelle de 1 à 10.",
             type: "simple",
             unit: "%",
           },
@@ -173,9 +173,9 @@ export const statisticsLayout: StatisticsGroup[] = [
             fields: ["appDownload", "download"],
             label: "",
             tooltip:
-              "Archifiltre est un exécutable à télécharger sur le site. Le nombre correspond aux téléchargements cumulés (toutes versions confondues).",
+              "Docs par Archifiltre est un exécutable à télécharger sur le site. Le nombre correspond aux téléchargements cumulés (toutes versions confondues).",
             type: "aggregated",
-            unit: "téléchargements d'Archifiltre",
+            unit: "téléchargements de Docs par Archifiltre",
           },
         ],
         title: "",

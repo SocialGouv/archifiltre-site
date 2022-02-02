@@ -58,14 +58,14 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
       <SEO title="Co-construction" />
       <Box p={3} textAlign="center">
         <Typography component="h1" variant="h4" color="textPrimary">
-          Co-créez Archifiltre
+          Co-créez la suite Archifiltre
         </Typography>
       </Box>
       <Box pb={5}>
-        Archifiltre est un produit développé en amélioration continue. Les choix
-        de développement sont basés sur les retours et besoins formulés par les
-        utilisateur·trice·s lors des openlabs ou auprès des ambassadeur·drice·s
-        Archifiltre.
+        Les logiciels de la suite Archifiltre sont des produits développés en amélioration
+        continue. Les choix de développement sont basés sur les retours et
+        besoins formulés par les utilisateur·trice·s lors des openlabs ou auprès
+        des ambassadeur·drice·s Archifiltre.
       </Box>
       <Box pb={4} textAlign="center">
         <Typography variant="h5">Participez aux openlabs</Typography>
@@ -78,7 +78,7 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
           <p>
             Un Openlab est un <strong>moment d’échanges</strong>, le temps d’une
             journée ou d’un atelier, entre l’équipe projet Archifiltre et les
-            utilisateur·trice·s, à propos de l’outil Archifiltre. Durant cet
+            utilisateur·trice·s, à propos des outils Archifiltre. Durant cet
             openlab, des ateliers de co-construction ont lieu afin de discuter
             des fonctionnalités et de l’interface de l’outil, des attentes des
             utilisateur·trice·s et des cas d’usage rencontrés. Quelques exemples
@@ -87,8 +87,8 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
           <ul>
             <li>
               Atelier sur la <strong>réorganisation de l’arborescence</strong> :
-              qu’est-ce que le reclassement numérique, comment Archifiltre peut
-              nous aider et quels sont les freins
+              qu’est-ce que le reclassement numérique, comment Docs par
+              Archifiltre peut nous aider et quels sont les freins
             </li>
             <li>
               Atelier sur le <strong>rapport d’audit</strong> : comment enrichir
@@ -101,7 +101,7 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
           <p>
             Les openlabs peuvent se dérouler{" "}
             <strong>à Paris, en présentiel</strong> sur une journée,{" "}
-            <strong>ou en visioconférence</strong> sur des temps d'ateliers plus
+            <strong>ou en visioconférence</strong> sur des temps d’ateliers plus
             courts (maximum 2 heures). La mise en place d’openlabs en
             visioconférence avec des outils interactifs nous permet de
             multiplier le nombre d’ateliers et d’être en contact avec l’ensemble
@@ -113,7 +113,7 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
           <p>
             Un mail est envoyé par l’équipe Archifiltre via les listes de
             diffusions ou sur les réseaux sociaux (Twitter ou LinkedIn)
-            indiquant l'organisation d'un nouvel openlab. Les conditions
+            indiquant l’organisation d’un nouvel openlab. Les conditions
             d’inscription sont communiquées dans ces communications. Dès la
             publication ou la réception du message, n’hésitez pas à vous
             inscrire très rapidement car{" "}
@@ -166,7 +166,7 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
           </Typography>
           <p>
             Un ambassadeur·drice Archifiltre est un utilisateur·trice{" "}
-            <strong>expert de notre outil</strong> Archifiltre. Il{" "}
+            <strong>expert d’un de nos outils</strong> Archifiltre. Il{" "}
             <strong>représente l’équipe</strong> Archifiltre autour de son
             périmètre géographique. Il conseille, répond aux questions, forme
             les personnes qui le sollicitent. Il fait également{" "}
@@ -178,7 +178,7 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
           </Typography>
           <p>
             Tout le monde peut devenir ambassadeur·drice ! Il faut simplement{" "}
-            <strong>utiliser l’outil Archifiltre</strong> et{" "}
+            <strong>utiliser les outils Archifiltre</strong> et{" "}
             <strong>être a minima disponible pour répondre</strong> aux
             sollicitations et questions des utilisateur·trice·s. Un{" "}
             <strong>soutien de votre hiérarchie</strong> semble nécessaire dans

@@ -1,11 +1,5 @@
 export const currentMembers = [
   {
-    job: "Développeur",
-    name: "Clément BERTHOU",
-    photo: "images/team/clement.jpg",
-    url: "https://www.linkedin.com/in/cberthou/",
-  },
-  {
     job: "Archiviste",
     name: "Pauline CLAUDE",
     photo: "images/team/pauline.jpeg",
@@ -36,10 +30,16 @@ export const currentMembers = [
     url: "https://www.linkedin.com/company/archifiltre/",
   },
   {
-    job: "Product Owner d’Archifiltre",
+    job: "Product Owner de la startup Archifiltre",
     name: "Chloé MOSER",
     photo: "images/team/chloe.jpg",
     url: "https://www.linkedin.com/in/chlo%C3%A9-moser-4a86554a/",
+  },
+  {
+    job: "Lead Développeur",
+    name: "Lilian SAGET-LETHIAS",
+    photo: "images/team/lilian.jpeg",
+    url: "https://www.linkedin.com/in/lsagetlethias/",
   },
 ];
 
@@ -85,5 +85,11 @@ export const oldMembers = [
     name: "Benjamin MORALI",
     photo: "images/team/benjamin.jpg",
     url: "https://www.linkedin.com/in/benjamin-morali/",
+  },
+  {
+    job: "Développeur",
+    name: "Clément BERTHOU",
+    photo: "images/team/clement.jpg",
+    url: "https://www.linkedin.com/in/cberthou/",
   },
 ];

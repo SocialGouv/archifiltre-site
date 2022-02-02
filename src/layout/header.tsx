@@ -102,7 +102,7 @@ const Header: FC<HeaderProps> = ({ onToggleTheme, theme }) => {
                   component={GatsbyLink}
                   to="/co-construction"
                 >
-                  Co-créez Archifiltre
+                  Co-créez Docs par Archifiltre
                 </Button>
                 <Tooltip
                   title={theme === "light" ? "Thème sombre" : "Thème clair"}

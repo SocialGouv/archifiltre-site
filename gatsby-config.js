@@ -61,13 +61,13 @@ module.exports = {
   ],
   siteMetadata: {
     author: {
-      content: "Fabrique des ministères sociaux",
-      name: "Archifiltre",
+      content: "Fabrique Numérique des Ministères Sociaux",
+      name: "Docs par Archifiltre",
     },
     description: `Visualisez et améliorez vos arborescences de fichiers !`,
     social: {
-      github: "https://github.com/SocialGouv/archifiltre",
+      github: "https://github.com/SocialGouv/archifiltre-docs",
     },
-    title: `Archifiltre`,
+    title: `Docs par Archifiltre`,
   },
 };

@@ -27,7 +27,7 @@ const Footer: FC = () => {
         <Grid container spacing={2} justify="center">
           <Grid item>
             <Link
-              href="https://github.com/SocialGouv/archifiltre/wiki/Wiki-Archifiltre"
+              href="https://github.com/SocialGouv/archifiltre-docs/wiki/Wiki-Archifiltre"
               target="_blank"
               rel="noopener"
               color="primary"
@@ -126,7 +126,7 @@ const Footer: FC = () => {
           </Grid>
           <Grid item>
             <Link
-              href="https://github.com/SocialGouv/archifiltre"
+              href="https://github.com/SocialGouv/archifiltre-docs/"
               target="_blank"
               rel="noopener"
               color="inherit"

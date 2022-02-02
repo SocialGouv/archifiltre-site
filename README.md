@@ -1,6 +1,6 @@
 # Archifiltre site
 
-This is the Archifiltre website, used to share news and download the application. It's powered by [gatsby](https://www.gatsbyjs.com/).
+This is the Archifiltre product suit website, used to share news and download the application. It's powered by [gatsby](https://www.gatsbyjs.com/).
 
 ## 🚀 Quick start
 

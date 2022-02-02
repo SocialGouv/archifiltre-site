@@ -5,20 +5,20 @@ export const faqData = [
   {
     answer: (
       <span>
-        Vous pouvez installer Archifiltre en cliquant sur le lien de la page
+        Vous pouvez installer Docs en cliquant sur le lien de la page
         d&rsquo;accueil. <strong>Pas besoin d&rsquo;installation</strong>, un
-        double clic sur l&rsquo;exécutable ouvrira Archifiltre. Des versions web
-        sont disponibles (jusqu&rsquo;à la version 1.8) mais ne sont plus
-        maintenues à jour.
+        double clic sur l&rsquo;exécutable ouvrira Docs. Des versions web sont
+        disponibles (jusqu&rsquo;à la version 1.8) mais ne sont plus maintenues
+        à jour.
       </span>
     ),
-    question: "Comment installer Archifiltre ?",
+    question: "Comment installer Docs par Archifiltre ?",
   },
   {
     answer: (
       <span>
         <p>
-          Voici la configuration recommandée pour faire fonctionner Archifiltre
+          Voici la configuration recommandée pour faire fonctionner Docs
           correctement :
         </p>
         <ul>
@@ -32,13 +32,13 @@ export const faqData = [
           </li>
           <li>Pas de limite de mémoire de processus</li>
         </ul>
-        Depuis la version 1.9, Archifiltre est une{" "}
-        <strong>application locale</strong>. Téléchargez simplement l’exécutable
-        et double-cliquez dessus, inutile de l’installer !
+        Depuis la version 1.9, Docs est une <strong>application locale</strong>.
+        Téléchargez simplement l’exécutable et double-cliquez dessus, inutile de
+        l’installer !
       </span>
     ),
     question:
-      "Quelles sont les caractéristiques minimales pour faire fonctionner Archifiltre ?",
+      "Quelles sont les caractéristiques minimales pour faire fonctionner Docs par Archifiltre ?",
   },
   {
     answer: (
@@ -47,13 +47,13 @@ export const faqData = [
       </span>
     ),
     question:
-      "Est-ce que j'ai besoin de me créer un compte pour utiliser Archifiltre ?",
+      "Est-ce que j'ai besoin de me créer un compte pour utiliser Docs par Archifiltre ?",
   },
   {
     answer: (
       <span>
         <strong>
-          Archifiltre n&rsquo;exploite pas les données personnelles des
+          Docs n&rsquo;exploite pas les données personnelles des
           utilisateur·trice·s
         </strong>
         . Cependant, nous utilisons{" "}
@@ -61,7 +61,7 @@ export const faqData = [
           Matomo
         </Link>
         , un outil open-source pour avoir des statistiques d&#39;utilisation sur
-        notre outil. Lorsque vous utilisez Archifiltre, voici les informations
+        notre outil. Lorsque vous utilisez Docs, voici les informations
         auxquelles nous avons accès :
         <ul>
           <li>
@@ -126,7 +126,7 @@ export const faqData = [
         </ul>
         <strong>
           Si vous ne souhaitez pas nous envoyer ces données, vous pouvez
-          désactiver leur remontée depuis les paramètres d&#39;Archifiltre.
+          désactiver leur remontée depuis les paramètres de Docs.
         </strong>
       </span>
     ),
@@ -136,7 +136,7 @@ export const faqData = [
   {
     answer: (
       <span>
-        Oui, <strong>Archifiltre peut être utilisé par tout le monde</strong>.{" "}
+        Oui, <strong>Docs peut être utilisé par tout le monde</strong>.{" "}
         <strong>
           Certaines fonctionnalités ont été conçues spécialement pour les
           archivistes
@@ -146,15 +146,14 @@ export const faqData = [
       </span>
     ),
     question:
-      "Je ne suis pas archiviste, est-ce que je peux utiliser Archifiltre ?",
+      "Je ne suis pas archiviste, est-ce que je peux utiliser Docs par Archifiltre ?",
   },
   {
     answer: (
       <span>
-        Archifiltre prend en compte{" "}
-        <strong>toutes les extensions de fichiers</strong> et exclut juste les
-        fichiers cachés et système de l&#39;analyse. De plus, la plupart des{" "}
-        <strong>extensions</strong> de fichiers auront un{" "}
+        Docs prend en compte <strong>toutes les extensions de fichiers</strong>{" "}
+        et exclut juste les fichiers cachés et système de l&#39;analyse. De
+        plus, la plupart des <strong>extensions</strong> de fichiers auront un{" "}
         <strong>code couleur</strong> dans l&#39;arborescence, mais celles qui
         ne peuvent pas être catégorisées seront affichées en gris.
       </span>
@@ -184,7 +183,7 @@ export const faqData = [
         hash.
       </span>
     ),
-    question: "Comment Archifiltre détecte-t-il les doublons ?",
+    question: "Comment Docs par Archifiltre détecte-t-il les doublons ?",
   },
   {
     answer: (
@@ -197,7 +196,8 @@ export const faqData = [
         versions.
       </span>
     ),
-    question: "Est-ce que je dois mettre à jour régulièrement Archifiltre ?",
+    question:
+      "Est-ce que je dois mettre à jour régulièrement Docs par Archifiltre ?",
   },
   {
     answer: (
@@ -225,7 +225,7 @@ export const faqData = [
   {
     answer: (
       <span>
-        <p>Archifiltre est développé avec les technologies suivantes :</p>
+        <p>Docs est développé avec les technologies suivantes :</p>
         <ul>
           <li>
             <strong>Javascript</strong> et <strong>Typescript</strong> pour les
@@ -261,7 +261,7 @@ export const faqData = [
       </span>
     ),
     question:
-      "Avec quels langages et technologies Archifiltre est-il développé ?",
+      "Avec quels langages et technologies Docs par Archifiltre est-il développé ?",
   },
   {
     answer: (
@@ -271,7 +271,7 @@ export const faqData = [
           <strong>
             issue sur{" "}
             <Link
-              href="https://github.com/SocialGouv/archifiltre/issues"
+              href="https://github.com/SocialGouv/archifiltre-docs/issues"
               target="_blank"
               color="primary"
             >
@@ -281,7 +281,7 @@ export const faqData = [
           , suggérer du code via une{" "}
           <strong>
             <Link
-              href="https://github.com/SocialGouv/archifiltre/pulls"
+              href="https://github.com/SocialGouv/archifiltre-docs/pulls"
               target="_blank"
               color="primary"
             >
@@ -309,18 +309,18 @@ export const faqData = [
   {
     answer: (
       <span>
-        Archifiltre n’a pas fait l’objet d’un audit RSSI. Cependant, l’outil est
-        aligné et conforme au process qualité mis en place à la Fabrique
-        Numérique des ministères sociaux, à savoir : l’amélioration continue du
-        code de l’outil (<strong>refactoring</strong>) ainsi qu’une phase
-        obligatoire de vérification du code par un autre développeur (
+        Docs n’a pas fait l’objet d’un audit RSSI. Cependant, l’outil est aligné
+        et conforme au process qualité mis en place à la Fabrique Numérique des
+        ministères sociaux, à savoir : l’amélioration continue du code de
+        l’outil (<strong>refactoring</strong>) ainsi qu’une phase obligatoire de
+        vérification du code par un autre développeur (
         <strong>code review</strong>) avant toutes publications. La qualité du
         code est assurée par des{" "}
         <strong>tests unitaires et fonctionnels</strong>. Il sont automatisés et
         lancés à chaque changement dans le code.
         <br />
         <br />
-        De plus, plusieurs robots analysent le code d’Archifiltre en continu :{" "}
+        De plus, plusieurs robots analysent le code de Docs en continu :{" "}
         <Link
           href="https://www.whitesourcesoftware.com/free-developer-tools/renovate"
           target="_blank"
@@ -357,7 +357,7 @@ export const faqData = [
         correctifs sont automatiquement proposés.
         <br />
         <br />
-        Au sujet du build d’Archifiltre, il ne se fait pas sur la machine d’un
+        Au sujet du build de Docs, il ne se fait pas sur la machine d’un
         développeur mais directement sur les <strong>serveurs de GitHub</strong>
         . Cette plateforme offre les dernières garanties de sécurité :
         <strong>authentification multi-facteurs, segmentations, etc</strong>. De
@@ -404,17 +404,18 @@ export const faqData = [
         <strong>
           publics et vérifiables sur le{" "}
           <Link
-            href="https://github.com/SocialGouv/archifiltre"
+            href="https://github.com/SocialGouv/archifiltre-docs/"
             target="_blank"
             color="primary"
             rel="noopener"
           >
-            GitHub d’Archifiltre
+            GitHub de Docs
           </Link>
         </strong>
         .
       </span>
     ),
-    question: "Quelles sont les garanties de sécurité d'Archifiltre ?",
+    question:
+      "Quelles sont les garanties de sécurité de Docs par Archifiltre ?",
   },
 ];

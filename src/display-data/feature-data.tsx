@@ -13,7 +13,7 @@ export const featureData = [
   },
   {
     description:
-      "Traitez en masse vos répertoires grâce aux exports Archifiltre (transferts, élimination, réorganisation)",
+      "Traitez en masse vos répertoires grâce aux exports de Docs (transferts, élimination, réorganisation)",
     icon: <StorageIcon />,
     title: "En quelques clics",
   },

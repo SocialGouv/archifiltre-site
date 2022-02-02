@@ -54,7 +54,7 @@ const Presentation: FC = () => {
             <Link to="/produit" component={GatsbyLink}>
               <Img
                 fluid={data.file.childImageSharp.fluid}
-                alt="Screenshot d'Archifiltre"
+                alt="Screenshot de Docs par Archifiltre"
               />
             </Link>
           </Grid>

@@ -18,14 +18,14 @@ const Telechargements: FC = () => (
       <h3>Script d&rsquo;import (serveur)</h3>
       <Box>
         <DownloadLink
-          url="https://raw.githubusercontent.com/SocialGouv/archifiltre/master/scripts/load-from-filesystem.ps1"
+          url="https://raw.githubusercontent.com/SocialGouv/archifiltre-docs/main/scripts/load-from-filesystem.ps1"
           label="Windows"
           version="Script"
         />
       </Box>
       <Box>
         <DownloadLink
-          url="https://raw.githubusercontent.com/SocialGouv/archifiltre/master/scripts/load-filesystem.sh"
+          url="https://raw.githubusercontent.com/SocialGouv/archifiltre-docs/main/scripts/load-filesystem.sh"
           label="Linux/MacOS"
           version="Script"
         />

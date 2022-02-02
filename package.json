@@ -2,8 +2,8 @@
   "name": "archifiltre-site",
   "description": "Archifiltre website",
   "version": "1.0.0",
-  "author": "Archifiltre",
-  "license": "MIT",
+  "author": "Fabrique des ministère sociaux",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
