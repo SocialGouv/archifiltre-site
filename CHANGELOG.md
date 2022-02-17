@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/SocialGouv/archifiltre-site/compare/v1.66.3...v2.0.0) (2022-02-17)
+
+
+### Features
+
+* **rebrand:** change archifiltre to archifiltre-docs ([#256](https://github.com/SocialGouv/archifiltre-site/issues/256)) ([4619349](https://github.com/SocialGouv/archifiltre-site/commit/46193490d833ca18c2f40cedf7e73aaca2a9e9f0))
+
+
+### BREAKING CHANGES
+
+* **rebrand:** Rebrand!
+
 ## [1.66.3](https://github.com/SocialGouv/archifiltre-site/compare/v1.66.2...v1.66.3) (2022-01-05)
 
 
