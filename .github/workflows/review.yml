@@ -49,3 +49,4 @@ jobs:
         kubeconfig: ${{ secrets.KUBECONFIG }}
         rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
         imageName: archifiltre/${{ env.project }}
+        socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
