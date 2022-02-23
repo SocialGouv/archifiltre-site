@@ -29,22 +29,7 @@ jobs:
         environment: preprod
         project: ${{ env.project }}
         token: ${{ secrets.GITHUB_TOKEN }}
-        imageName: archifiltre/${{ env.project }}
-
-  ##############################################################################
-  ## GENERATE KUBERNETES MANIFESTS
-  ##############################################################################
-  manifests:
-    name: Generate k8s manifests
-    runs-on: ubuntu-latest
-    steps:
-
-    - name: Use autodevops manifests generation
-      uses: SocialGouv/actions/autodevops-manifests@v1
-      with:
-        environment: "preprod"
-        rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
-        socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
+        imageName: archifiltre/archifiltre-site
 
   ##############################################################################
   ## DEPLOY APPLICATION OVER KUBERNETES
@@ -52,15 +37,16 @@ jobs:
   deploy:
     name: Deploy application
     runs-on: ubuntu-latest
-    needs: [register, manifests]
+    needs: [register]
     environment:
       name: preproduction
       url: https://archifiltre-site-preprod.dev.fabrique.social.gouv.fr
     steps:
     - name: Use autodevops deployment
-      uses: SocialGouv/actions/autodevops-deploy@v1
+      uses: SocialGouv/actions/autodevops-helm-deploy@v1
       with:
         environment: "preprod"
         token: ${{ secrets.GITHUB_TOKEN }}
         kubeconfig: ${{ secrets.KUBECONFIG }}
         rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
+        imageName: archifiltre/archifiltre-site

@@ -3,9 +3,5 @@
   "name": "archifiltre-site",
   "subdomain": "archifiltre",
   "project": "archifiltre",
-  "registry": "ghcr",
-  "containerPort": 3000, 
-  "ingress": {
-    "annotations": {}
-  }
+  "registry": "ghcr"
 }

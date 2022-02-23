@@ -29,7 +29,7 @@ jobs:
         environment: "prod"
         project: ${{ env.project }}
         token: ${{ secrets.GITHUB_TOKEN }}
-        imageName: archifiltre/${{ env.project }}
+        imageName: archifiltre/archifiltre-site
 
   ##############################################################################
   ## DEPLOY PRODUCTION APPLICATION
@@ -43,21 +43,11 @@ jobs:
       url: https://archifiltre.fabrique.social.gouv.fr
     steps:
 
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Use autodevops manifests generation
-      uses: SocialGouv/actions/autodevops-manifests@v1
-      with:
-        environment: "prod"
-        rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
-        socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
-
     - name: Use autodevops deployment
-      uses: SocialGouv/actions/autodevops-deploy@v1
+      uses: SocialGouv/actions/autodevops-helm-deploy@v1
       with:
         environment: "prod"
         token: ${{ secrets.GITHUB_TOKEN }}
         kubeconfig: ${{ secrets.KUBECONFIG }}
         rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
-
+        imageName: archifiltre/archifiltre-site
