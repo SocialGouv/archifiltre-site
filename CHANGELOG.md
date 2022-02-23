@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.2...v2.0.3) (2022-02-23)
+
+
+### Bug Fixes
+
+* **ci:** autodevops-helm ([#260](https://github.com/SocialGouv/archifiltre-site/issues/260)) ([03dd32f](https://github.com/SocialGouv/archifiltre-site/commit/03dd32fbb2026ecd1bf2f8d4ffa64ad75b399e2e))
+
 ## [2.0.2](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.1...v2.0.2) (2022-02-23)
 
 
