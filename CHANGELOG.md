@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.4...v2.0.5) (2022-03-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-tweet-embed to v2 ([#262](https://github.com/SocialGouv/archifiltre-site/issues/262)) ([2b17f81](https://github.com/SocialGouv/archifiltre-site/commit/2b17f81423194a62991ac042c5963d6359156d56))
+
 ## [2.0.4](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.3...v2.0.4) (2022-02-23)
 
 
