@@ -1,8 +1,0 @@
-{
-  "type": "app",
-  "name": "archifiltre-site",
-  "subdomain": "archifiltre",
-  "project": "archifiltre",
-  "registry": "ghcr",
-  "containerPort": 8080
-}
