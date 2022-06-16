@@ -3,5 +3,6 @@
   "name": "archifiltre-site",
   "subdomain": "archifiltre",
   "project": "archifiltre",
-  "registry": "ghcr"
+  "registry": "ghcr",
+  "containerPort": "8080"
 }
