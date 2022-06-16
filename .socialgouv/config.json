@@ -1,5 +1,5 @@
 {
-  "type": "static",
+  "type": "app",
   "name": "archifiltre-site",
   "subdomain": "archifiltre",
   "project": "archifiltre",
