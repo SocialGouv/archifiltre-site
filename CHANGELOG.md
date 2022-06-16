@@ -1,3 +1,10 @@
+## [2.0.6](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.5...v2.0.6) (2022-06-16)
+
+
+### Bug Fixes
+
+* nginx upgrade ([#264](https://github.com/SocialGouv/archifiltre-site/issues/264)) ([cee2aae](https://github.com/SocialGouv/archifiltre-site/commit/cee2aae36e233bb4d797244263931d36dcbaad4b))
+
 ## [2.0.5](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.4...v2.0.5) (2022-03-14)
 
 
