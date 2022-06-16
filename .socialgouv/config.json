@@ -4,5 +4,5 @@
   "subdomain": "archifiltre",
   "project": "archifiltre",
   "registry": "ghcr",
-  "containerPort": "8080"
+  "containerPort": 8080
 }
