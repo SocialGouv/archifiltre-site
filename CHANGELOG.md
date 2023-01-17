@@ -1,3 +1,10 @@
+## [2.0.7](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.6...v2.0.7) (2023-01-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-mdx to v2.14.1 [security] ([#265](https://github.com/SocialGouv/archifiltre-site/issues/265)) ([5fa2205](https://github.com/SocialGouv/archifiltre-site/commit/5fa2205773e89f7af31cf9df4b1499a57548fdd0))
+
 ## [2.0.6](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.5...v2.0.6) (2022-06-16)
 
 
