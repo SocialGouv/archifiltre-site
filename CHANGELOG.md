@@ -1,3 +1,10 @@
+## [2.0.8](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.7...v2.0.8) (2023-01-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-transformer-remark to v5 [security] ([#268](https://github.com/SocialGouv/archifiltre-site/issues/268)) ([6b86390](https://github.com/SocialGouv/archifiltre-site/commit/6b86390b6f5ccd569d5fcf6d9f363acf51608d70))
+
 ## [2.0.7](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.6...v2.0.7) (2023-01-17)
 
 
