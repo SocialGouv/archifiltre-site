@@ -1,3 +1,10 @@
+## [2.0.9](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.8...v2.0.9) (2023-01-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-simple-maps to v3 ([#267](https://github.com/SocialGouv/archifiltre-site/issues/267)) ([c6467dc](https://github.com/SocialGouv/archifiltre-site/commit/c6467dc25a1a1b212addecae4777fa818606c51b))
+
 ## [2.0.8](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.7...v2.0.8) (2023-01-23)
 
 
