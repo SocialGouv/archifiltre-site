@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.9...v2.1.0) (2023-05-22)
+
+
+### Features
+
+* ci on kontinuous ([#273](https://github.com/SocialGouv/archifiltre-site/issues/273)) ([98ca80e](https://github.com/SocialGouv/archifiltre-site/commit/98ca80ea51c706953386137ec0f11c4b37238aad))
+
 ## [2.0.9](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.8...v2.0.9) (2023-01-31)
 
 
