@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/SocialGouv/archifiltre-site/compare/v2.1.0...v2.1.1) (2023-05-22)
+
+
+### Bug Fixes
+
+* prod host ([96db041](https://github.com/SocialGouv/archifiltre-site/commit/96db041cc8a812ad8790bd00c38d765b6414486c))
+
 # [2.1.0](https://github.com/SocialGouv/archifiltre-site/compare/v2.0.9...v2.1.0) (2023-05-22)
 
 
