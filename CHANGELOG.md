@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/SocialGouv/archifiltre-site/compare/v2.1.1...v2.1.2) (2023-05-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-sharp to v4 [security] ([#270](https://github.com/SocialGouv/archifiltre-site/issues/270)) ([aff7701](https://github.com/SocialGouv/archifiltre-site/commit/aff7701a08c49acb457ca5e2092984d70e3c44dd))
+
 ## [2.1.1](https://github.com/SocialGouv/archifiltre-site/compare/v2.1.0...v2.1.1) (2023-05-22)
 
 
