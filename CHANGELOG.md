@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/SocialGouv/archifiltre-site/compare/v2.1.2...v2.2.0) (2023-07-26)
+
+
+### Features
+
+* ovh for dev, preprod ([#275](https://github.com/SocialGouv/archifiltre-site/issues/275)) ([e3c527c](https://github.com/SocialGouv/archifiltre-site/commit/e3c527c5b25d459ae2f38bb00b395a5622925e54))
+
 ## [2.1.2](https://github.com/SocialGouv/archifiltre-site/compare/v2.1.1...v2.1.2) (2023-05-23)
 
 
