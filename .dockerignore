@@ -1,5 +1,6 @@
 .dockerignore
 Dockerfile
+.git
 .github
 .kontinuous
 .socialgouv.yaml
