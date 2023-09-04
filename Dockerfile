@@ -2,6 +2,8 @@ FROM node:14-alpine as builder
 
 RUN apk add automake autoconf libtool dpkg pkgconfig nasm libpng libpng-dev g++ make
 
+WORKDIR /app
+
 COPY yarn.lock .yarnrc.yml ./
 COPY .yarn .yarn
 RUN yarn fetch --immutable && yarn cache clean
