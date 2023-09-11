@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/SocialGouv/archifiltre-site/compare/v2.2.0...v2.2.1) (2023-09-11)
+
+
+### Bug Fixes
+
+* up to yarn berry + fetch + docker opti ([#277](https://github.com/SocialGouv/archifiltre-site/issues/277)) ([8d99803](https://github.com/SocialGouv/archifiltre-site/commit/8d998032eb0caadde191f4979229aa62b15a46dc))
+
 # [2.2.0](https://github.com/SocialGouv/archifiltre-site/compare/v2.1.2...v2.2.0) (2023-07-26)
 
 
