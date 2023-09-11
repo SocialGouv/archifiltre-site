@@ -1,0 +1,9 @@
+.dockerignore
+Dockerfile
+.git
+.github
+.kontinuous
+.socialgouv.yaml
+.releaserc.yml
+*.md
+LICENSE
