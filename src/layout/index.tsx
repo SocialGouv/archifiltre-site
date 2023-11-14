@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: "flex",
     flexDirection: "column",
     minHeight: "100vh",
+    opacity: 0,
   },
 }));
 
