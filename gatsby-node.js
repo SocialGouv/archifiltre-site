@@ -16,5 +16,3 @@ require("ts-node").register({
     target: "es2017",
   },
 });
-
-// Import typescript files below

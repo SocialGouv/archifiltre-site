@@ -6,6 +6,7 @@ import TweetEmbed from "react-tweet-embed";
 
 import SEO from "../components/seo";
 import { tweetIds } from "../display-data/tweets-data";
+import { useRedirect } from "../hooks/useRedirect";
 import Layout, { ThemeContext } from "../layout";
 
 const Social: FC = () => {
@@ -14,6 +15,8 @@ const Social: FC = () => {
   const onTweetLoad = useCallback(() => {
     setIsLoaded(true);
   }, [setIsLoaded]);
+
+  useRedirect("/qui-sommes-nous");
 
   return (
     <Layout>

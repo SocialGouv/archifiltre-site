@@ -12,6 +12,7 @@ import HomepageTweets from "../components/homepage-tweets";
 import Presentation from "../components/presentation";
 import ProductFeatures from "../components/product-features";
 import SEO from "../components/seo";
+import { useRedirect } from "../hooks/useRedirect";
 import Layout from "../layout";
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 const IndexPage: FC = () => {
   const classes = useStyles();
+  useRedirect("/");
 
   return (
     <Layout>

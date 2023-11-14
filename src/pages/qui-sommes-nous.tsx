@@ -12,6 +12,7 @@ import TeamMember from "../components/team-member";
 import TimelineElement from "../components/timeline-element";
 import { currentMembers, oldMembers } from "../display-data/team-data";
 import { timelineElements } from "../display-data/timeline-data";
+import { useRedirect } from "../hooks/useRedirect";
 import Layout from "../layout";
 
 const useStyles = makeStyles(() =>
@@ -24,6 +25,8 @@ const useStyles = makeStyles(() =>
 
 const Downloads: FC = () => {
   const classes = useStyles();
+  useRedirect("/qui-sommes-nous");
+
   return (
     <Layout>
       <SEO title="Qui sommes-nous ?" />

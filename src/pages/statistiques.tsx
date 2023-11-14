@@ -10,6 +10,7 @@ import ShowMoreButton from "../components/statistics/show-more";
 import StatisticsGroup from "../components/statistics/statistics-group";
 import StatisticsLoading from "../components/statistics/statistics-loading";
 import { statisticsLayout } from "../display-data/statistics";
+import { useRedirect } from "../hooks/useRedirect";
 import Layout from "../layout";
 import {
   RenderingStatisticConfig,
@@ -36,6 +37,8 @@ const Statistiques = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [lastFetchTimestamp, setLastFetchTimestamp] = useState(0);
   const [showMore, toggleShowMore] = useToggle(false);
+
+  useRedirect("/stats");
 
   useEffect(() => {
     const fetchStatistics = async () => {

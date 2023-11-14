@@ -8,9 +8,11 @@ import React, { FC } from "react";
 
 import SEO from "../components/seo";
 import { faqData } from "../display-data/faq-data";
+import { useRedirect } from "../hooks/useRedirect";
 import Layout from "../layout";
 
 const FAQ: FC = () => {
+  useRedirect("/faq");
   return (
     <Layout>
       <SEO title="FAQ" />
