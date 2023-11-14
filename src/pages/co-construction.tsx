@@ -10,6 +10,7 @@ import React, { FC } from "react";
 
 import SEO from "../components/seo";
 import ThemeImage from "../components/theme-image";
+import { useRedirect } from "../hooks/useRedirect";
 import Layout from "../layout";
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -53,6 +54,9 @@ type CoConstructionProps = {
 
 const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
   const classes = useStyles();
+
+  useRedirect("/co-creation");
+
   return (
     <Layout>
       <SEO title="Co-construction" />
@@ -62,10 +66,10 @@ const CoConstruction: FC<CoConstructionProps> = ({ data }) => {
         </Typography>
       </Box>
       <Box pb={5}>
-        Les logiciels de la suite Archifiltre sont des produits développés en amélioration
-        continue. Les choix de développement sont basés sur les retours et
-        besoins formulés par les utilisateur·trice·s lors des openlabs ou auprès
-        des ambassadeur·drice·s Archifiltre.
+        Les logiciels de la suite Archifiltre sont des produits développés en
+        amélioration continue. Les choix de développement sont basés sur les
+        retours et besoins formulés par les utilisateur·trice·s lors des
+        openlabs ou auprès des ambassadeur·drice·s Archifiltre.
       </Box>
       <Box pb={4} textAlign="center">
         <Typography variant="h5">Participez aux openlabs</Typography>
