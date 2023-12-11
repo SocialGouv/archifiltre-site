@@ -58,7 +58,7 @@
     "@types/react-simple-maps": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.0",
     "eslint-import-resolver-typescript": "^3.0.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^5.0.0",
