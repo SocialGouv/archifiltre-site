@@ -1,3 +1,10 @@
+## [2.2.2](https://github.com/SocialGouv/archifiltre-site/compare/v2.2.1...v2.2.2) (2023-12-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency axios to v1 [security] ([#278](https://github.com/SocialGouv/archifiltre-site/issues/278)) ([8c5d7cb](https://github.com/SocialGouv/archifiltre-site/commit/8c5d7cbae0ad38782665d2771bd72d2fea36135a))
+
 ## [2.2.1](https://github.com/SocialGouv/archifiltre-site/compare/v2.2.0...v2.2.1) (2023-09-11)
 
 
