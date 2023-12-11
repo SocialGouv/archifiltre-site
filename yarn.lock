@@ -4254,7 +4254,7 @@ __metadata:
     gatsby: ^3.9.0
     gatsby-image: ^3.11.0
     gatsby-plugin-material-ui: ^3
-    gatsby-plugin-matomo: ^0.10.0
+    gatsby-plugin-matomo: ^0.16.0
     gatsby-plugin-mdx: ^2.14.0
     gatsby-plugin-offline: latest
     gatsby-plugin-react-helmet: latest
@@ -8715,14 +8715,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-matomo@npm:^0.10.0":
-  version: 0.10.0
-  resolution: "gatsby-plugin-matomo@npm:0.10.0"
+"gatsby-plugin-matomo@npm:^0.16.0":
+  version: 0.16.2
+  resolution: "gatsby-plugin-matomo@npm:0.16.2"
   peerDependencies:
-    gatsby: ^2.0.0 || ^3.0.0
-    react: ">=16.8"
-    react-dom: ">=16.8"
-  checksum: cb1a8191304f2a2aa5d7182e9a16f19d0dfcd338e3f7813d4e159000f367c4f399ba3d228403973139bfdd2d97f52732e1bf80fb4c46491a5a07383676fef94a
+    gatsby: ^4.0.0 || ^5.0.0
+    react: ">=17.0.0"
+    react-dom: ">=17.0.0"
+  checksum: 8d9e99460fde6091b1f6b91f8b0df2b838754ea265b4a2d7d0f557a9cd2e387ba92eafaf4daeabb2bc390a79d4e1d3379bf93911daed1a71519574b534564280
   languageName: node
   linkType: hard
 
