@@ -4267,7 +4267,7 @@ __metadata:
     graphql: 15.6.1
     lodash: ^4.17.21
     npm-run-all: ^4.1.5
-    prettier: ^2.4.1
+    prettier: ^3.0.0
     react: latest
     react-dom: latest
     react-helmet: ^6.1.0
@@ -14877,12 +14877,21 @@ gatsby-plugin-typescript@latest:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.3.2, prettier@npm:^2.4.1":
+"prettier@npm:^2.3.2":
   version: 2.4.1
   resolution: "prettier@npm:2.4.1"
   bin:
     prettier: bin-prettier.js
   checksum: cc6830588b401b0d742862fe9c46bc9118204fb307c3abe0e49e95b35ed23629573807ffdf9cdd65289c252a0bb51fc0171437f6626ee36378dea80f0ee80b91
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.0.0":
+  version: 3.1.1
+  resolution: "prettier@npm:3.1.1"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: e386855e3a1af86a748e16953f168be555ce66d6233f4ba54eb6449b88eb0c6b2ca79441b11eae6d28a7f9a5c96440ce50864b9d5f6356d331d39d6bb66c648e
   languageName: node
   linkType: hard
 
